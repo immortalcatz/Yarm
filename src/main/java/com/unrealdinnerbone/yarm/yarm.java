@@ -22,9 +22,6 @@ public class yarm {
     public static void PreInit(FMLPreInitializationEvent PreEvent)
     {
         ModItems.init();
-        if(Minecraft.getMinecraft().getSession().getToken().equalsIgnoreCase("unrealdinnerbone")){
-            Minecraft.getMinecraft().crashed(new CrashReport("NOO IT WORKS", new Throwable("ASDSADSAD")));
-        }
     }
     @Mod.EventHandler
     public static void Init(FMLInitializationEvent event) {
