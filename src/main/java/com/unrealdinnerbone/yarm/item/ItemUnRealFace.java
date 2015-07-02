@@ -9,7 +9,7 @@ public class ItemUnRealFace extends ItemYarm
     {
         super();
         this.setUnlocalizedName("UnReal_Face");
-        this.setMaxStackSize(10);
+        this.setTextureName( "yarm" + ":UnReal_Face");
     }
 
 }

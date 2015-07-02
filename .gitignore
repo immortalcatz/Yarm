@@ -1,0 +1,26 @@
+# Pet Rock #
+*.class
+
+# Package Files #
+*.war
+*.ear
+
+# IDEA Files #
+*.iml
+*.ipr
+*.iws
+/.idea
+
+# Eclipse #
+/bin
+/.settings
+/.classpath
+/eclipse
+/.project
+/.metadata
+
+# Gradle #
+/.gradle
+/build
+/libs
+/lib
