@@ -1,13 +1,22 @@
 package com.unrealdinnerbone.yarm.blocks;
 
 
-import javafx.scene.paint.Material;
+
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 
 public class BlockYarm extends Block
 {
-    public Block(Material material)
+    public BlockYarm(Material material)
     {
         super(material);
     }
+
+    public BlockYarm()
+    {
+        this(Material.rock);
+    }
+
+
+
 }
