@@ -1,14 +1,14 @@
 [
 {
-  "modid": "Yarm",
+  "modid": "yarm",
   "name": "Yet Another Random Mod",
   "description": "Stuff(TM)",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
+  "version": "1.0",
+  "mcversion": "1.7.10",
   "url": "",
   "updateUrl": "",
   "authorList": ["UnRealDinnerbone"],
-  "credits": "Pahmair For His Videos on how to make minecraft mod",
+  "credits": "Pahamir, Manmaed, Johnsmith0508",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
