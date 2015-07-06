@@ -1,8 +1,7 @@
 package com.unrealdinnerbone.yarm.item;
 
-/**
- * Created by Travis on 6/10/2015.
- */
+import net.minecraft.creativetab.CreativeTabs;
+
 public class ItemManmaedFace extends ItemYarm
 {
 
@@ -10,5 +9,6 @@ public class ItemManmaedFace extends ItemYarm
             super();
             this.setUnlocalizedName("Manmaed_Face");
             this.setTextureName("yarm" + ":" + "Manmaed_Face");
+            this.setCreativeTab(CreativeTabs.tabDecorations);
         }
 }
