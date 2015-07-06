@@ -11,7 +11,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModBlocks
 {
     public static final BlockYarm UnReal_Block = new BlockUnRealFace();
-    public static final BlockYarm UnRealChest = new BlockUnRealChest();
+    public static final BlockUnRealChest UnRealChest = new BlockUnRealChest();
 
     public static void init()
     {

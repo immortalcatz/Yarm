@@ -11,6 +11,5 @@ public class BlockUnRealFace extends BlockYarm
         this.setBlockName("UnReal_Block");
         this.setBlockTextureName("yarm" + ":UnReal_Face");
         this.setStepSound(soundTypeStone);
-        this.setCreativeTab(Tab.Yarm_Tab);
     }
 }
