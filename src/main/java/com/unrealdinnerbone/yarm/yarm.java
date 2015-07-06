@@ -1,7 +1,9 @@
 package com.unrealdinnerbone.yarm;
 
+import com.unrealdinnerbone.yarm.blocks.BlockUnRealChest;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
 import com.unrealdinnerbone.yarm.init.ModItems;
+import com.unrealdinnerbone.yarm.init.Recpies;
 import com.unrealdinnerbone.yarm.proxy.IProxy;
 import com.unrealdinnerbone.yarm.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -25,6 +27,9 @@ public class yarm {
         ModItems.init();
 
         ModBlocks.init();
+
+        Recpies.init();
+
     }
     @Mod.EventHandler
     public static void Init(FMLInitializationEvent event) {

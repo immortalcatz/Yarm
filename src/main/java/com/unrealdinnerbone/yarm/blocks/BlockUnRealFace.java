@@ -1,7 +1,7 @@
 package com.unrealdinnerbone.yarm.blocks;
 
-import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 
 public class BlockUnRealFace extends BlockYarm
 {
@@ -10,6 +10,7 @@ public class BlockUnRealFace extends BlockYarm
         super();
         this.setBlockName("UnReal_Block");
         this.setBlockTextureName("yarm" + ":UnReal_Face");
-        this.setCreativeTab(CreativeTabs.tabDecorations);
+        this.setStepSound(soundTypeStone);
+        this.setCreativeTab(Tab.Yarm_Tab);
     }
 }

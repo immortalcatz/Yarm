@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.init;
 
+import com.unrealdinnerbone.yarm.blocks.BlockUnRealChest;
 import com.unrealdinnerbone.yarm.blocks.BlockUnRealFace;
 import com.unrealdinnerbone.yarm.blocks.BlockYarm;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -10,9 +11,12 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModBlocks
 {
     public static final BlockYarm UnReal_Block = new BlockUnRealFace();
+    public static final BlockYarm UnRealChest = new BlockUnRealChest();
 
     public static void init()
     {
         GameRegistry.registerBlock(UnReal_Block, "UnReal_Block");
+        GameRegistry.registerBlock(UnRealChest, "UnRealChest");
     }
+
 }

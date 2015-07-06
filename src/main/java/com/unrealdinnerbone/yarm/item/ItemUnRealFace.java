@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.item;
 
+import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import net.minecraft.creativetab.CreativeTabs;
 
 /**
@@ -12,7 +13,7 @@ public class ItemUnRealFace extends ItemYarm
         super();
         this.setUnlocalizedName("UnReal_Face");
         this.setTextureName("yarm" + ":UnReal_Face");
-        this.setCreativeTab(CreativeTabs.tabDecorations);
+        this.setCreativeTab(Tab.Yarm_Tab);
     }
 
 }
