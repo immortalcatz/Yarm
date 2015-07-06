@@ -6,9 +6,9 @@ package com.unrealdinnerbone.yarm.item;
 public class ItemManmaedFace extends ItemYarm
 {
 
-        public ItemManmaedFace()
-        {
+        public ItemManmaedFace() {
             super();
-            this.setUnlocalizedName("Manmed_Face");
+            this.setUnlocalizedName("Manmaed_Face");
+            this.setTextureName("yarm" + ":" + "Manmaed_Face");
         }
 }
