@@ -20,6 +20,7 @@
 /.metadata
 
 # Gradle #
+/.gradle
 /build
 /libs
 /lib
