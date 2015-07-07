@@ -5,4 +5,6 @@
 # Items
 item.yarm:UnReal_Face.name=UnReal's Face
 #Blocks
-tile.yarm:UnReal_Block.name=UnReal's Block
+tile.UnReal_Block.name=UnReal's Block
+tile.CompressedIron.name=Compressed Iron Block
+tile.DoubleCompressedIron.name=Double Compressed Iron Block
