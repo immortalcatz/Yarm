@@ -38,6 +38,10 @@ public class entityUnReal extends EntityAnimal
         this.entityDropItem(item, 0.0F);
         return Item.getItemById(0);
     }
+    public boolean isAIEnable()
+    {
+        return true;
+    }
 
     @Override
     public EntityAgeable createChild(EntityAgeable p_90011_1_)
