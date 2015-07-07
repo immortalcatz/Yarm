@@ -10,6 +10,5 @@ public class ItemManmaedFace extends ItemYarm
             super();
             this.setUnlocalizedName("Manmaed_Face");
             this.setTextureName("yarm" + ":" + "Manmaed_Face");
-            this.setCreativeTab(Tab.Yarm_Tab);
         }
 }

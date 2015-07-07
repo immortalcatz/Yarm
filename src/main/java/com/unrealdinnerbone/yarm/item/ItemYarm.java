@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.item;
 
+import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,6 +14,7 @@ public class ItemYarm extends Item
     public ItemYarm()
     {
         super();
+        this.setCreativeTab(Tab.Yarm_Tab);
     }
 
 

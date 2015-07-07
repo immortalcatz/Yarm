@@ -1,5 +1,7 @@
 package com.unrealdinnerbone.yarm.blocks;
 
+import com.unrealdinnerbone.yarm.CreativeTab.Tab;
+
 public class BlockCompressedIron extends BlockYarm {
 
     public BlockCompressedIron()

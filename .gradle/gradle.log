@@ -5,7 +5,25 @@
  R4wk, ZeuX, IngisKahn, bspkrs
  MCP Data version : unknown
 ****************************
+:ideaModule
+Download http://mobiusstrip.eu/maven/mcp/mobius/waila/Waila/1.5.10_1.7.10/Waila-1.5.10_1.7.10.pom
+Download http://maven.tterrag.com/tterrag/core/ttCore/MC1.7.10-0.1.0-67/ttCore-MC1.7.10-0.1.0-67.pom
+Download http://repo1.maven.org/maven2/org/projectlombok/lombok/1.14.8/lombok-1.14.8.pom
+Download http://files.minecraftforge.net/maven/codechicken/CodeChickenLib/1.7.10-1.1.3.138/CodeChickenLib-1.7.10-1.1.3.138-dev.jar
+Download http://chickenbones.net/maven/codechicken/CodeChickenCore/1.7.10-1.0.7.46/CodeChickenCore-1.7.10-1.0.7.46-dev.jar
+Download http://chickenbones.net/maven/codechicken/NotEnoughItems/1.7.10-1.0.5.111/NotEnoughItems-1.7.10-1.0.5.111-dev.jar
+Download http://mobiusstrip.eu/maven/mcp/mobius/waila/Waila/1.5.10_1.7.10/Waila-1.5.10_1.7.10.jar
+Download http://maven.tterrag.com/tterrag/core/ttCore/MC1.7.10-0.1.0-67/ttCore-MC1.7.10-0.1.0-67-deobf.jar
+Download http://repo1.maven.org/maven2/org/projectlombok/lombok/1.14.8/lombok-1.14.8.jar
+Download http://mobiusstrip.eu/maven/mcp/mobius/waila/Waila/1.5.10_1.7.10/Waila-1.5.10_1.7.10-sources.jar
+Download http://maven.tterrag.com/tterrag/core/ttCore/MC1.7.10-0.1.0-67/ttCore-MC1.7.10-0.1.0-67-sources.jar
+Download http://maven.tterrag.com/tterrag/core/ttCore/MC1.7.10-0.1.0-67/ttCore-MC1.7.10-0.1.0-67-javadoc.jar
+Download http://repo1.maven.org/maven2/org/projectlombok/lombok/1.14.8/lombok-1.14.8-sources.jar
+Download http://repo1.maven.org/maven2/org/projectlombok/lombok/1.14.8/lombok-1.14.8-javadoc.jar
+:ideaProject
+:ideaWorkspace
+:idea
 
 BUILD SUCCESSFUL
 
-Total time: 30.04 secs
+Total time: 1 mins 22.039 secs

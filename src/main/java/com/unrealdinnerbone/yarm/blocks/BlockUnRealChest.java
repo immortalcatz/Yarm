@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.blocks;
 
+import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.item.ItemYarm;
 import net.minecraft.block.BlockChest;
 import net.minecraft.block.BlockContainer;

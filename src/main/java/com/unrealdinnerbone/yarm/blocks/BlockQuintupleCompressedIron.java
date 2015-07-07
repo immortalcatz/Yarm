@@ -1,5 +1,7 @@
 package com.unrealdinnerbone.yarm.blocks;
 
+import com.unrealdinnerbone.yarm.CreativeTab.Tab;
+
 /**
  * Created by Travis on 7/6/2015.
  */
