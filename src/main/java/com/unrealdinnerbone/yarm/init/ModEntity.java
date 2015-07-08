@@ -14,6 +14,7 @@ public class ModEntity
     public static void initEntity()
     {
         createEntity(entityUnReal.class, "entityUnReal", 0x535353, 0xB8B8B8);
+        createEntity(entityUnReal.class, "entityUnReal", 0x535353, 0xB8B8B8);
     }
 
     public static void createEntity(Class entityClass, String entityName, int eggPrimaryColor, int eggSecondaryColor)
