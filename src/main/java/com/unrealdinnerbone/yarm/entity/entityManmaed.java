@@ -4,7 +4,10 @@ package com.unrealdinnerbone.yarm.entity;
 import com.unrealdinnerbone.yarm.init.ModItems;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.monster.EntityCreeper;
+import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -12,13 +15,12 @@ import net.minecraft.world.World;
 
 public class entityManmaed extends EntityAnimal
 {
-    public entityManmaed(World world)
-    {
+    public entityManmaed(World world) {
         super(world);
         this.setSize(1.0F, 2.0F);
     }
 
-    @Override
+   @Override
     protected boolean isAIEnabled()
     {
         return true;
@@ -29,12 +31,12 @@ public class entityManmaed extends EntityAnimal
     {
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(20.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(5.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.5D);
     }
 
     protected Item getDropItem()
     {
-        ItemStack item = new ItemStack(ModItems.ManmedFace);
+        ItemStack item = new ItemStack(ModItems.UnRealFace);
         this.entityDropItem(item, 0.0F);
         return Item.getItemById(0);
     }
@@ -47,5 +49,6 @@ public class entityManmaed extends EntityAnimal
     public EntityAgeable createChild(EntityAgeable p_90011_1_)
     {
         return new entityUnReal(worldObj);
-    }
+   }
 }
+

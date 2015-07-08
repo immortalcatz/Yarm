@@ -14,7 +14,9 @@ public class ModEntity
     public static void initEntity()
     {
         createEntity(entityUnReal.class, "entityUnReal", 0x535353, 0xB8B8B8);
-        createEntity(entityUnReal.class, "entityUnReal", 0x535353, 0xB8B8B8);
+        createEntity(com.unrealdinnerbone.yarm.entity.entityManmaed.class, "entityManmaed", 0x535353, 0xB8B8B8);
+        // How To Regsiter An Enity
+        // createEntity(entityclassname, "entityname", firsteggcolor, secondaryeggcolor);
     }
 
     public static void createEntity(Class entityClass, String entityName, int eggPrimaryColor, int eggSecondaryColor)
