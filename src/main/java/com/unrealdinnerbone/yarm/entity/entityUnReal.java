@@ -1,14 +1,15 @@
 package com.unrealdinnerbone.yarm.entity;
 
 
-import com.unrealdinnerbone.yarm.init.ModItems;
-import net.minecraft.entity.EntityAgeable;
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.passive.EntityAnimal;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
+        import com.unrealdinnerbone.yarm.init.ModItems;
+        import net.minecraft.entity.EntityAgeable;
+        import net.minecraft.entity.SharedMonsterAttributes;
+        import net.minecraft.entity.passive.EntityAnimal;
+        import net.minecraft.entity.passive.EntityWolf;
+        import net.minecraft.entity.player.EntityPlayer;
+        import net.minecraft.item.Item;
+        import net.minecraft.item.ItemStack;
+        import net.minecraft.world.World;
 
 public class entityUnReal extends EntityAnimal
 {
@@ -18,7 +19,7 @@ public class entityUnReal extends EntityAnimal
         this.setSize(1.0F, 2.0F);
     }
 
-    @Override
+   @Override
     protected boolean isAIEnabled()
     {
         return true;
@@ -29,7 +30,7 @@ public class entityUnReal extends EntityAnimal
     {
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(20.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(5.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.5d);
     }
 
     protected Item getDropItem()
