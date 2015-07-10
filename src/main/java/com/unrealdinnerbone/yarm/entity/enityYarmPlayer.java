@@ -8,9 +8,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class enityYarm extends EntityAnimal {
+public class enityYarmPlayer extends EntityAnimal {
 
-    public enityYarm(World world)
+    public enityYarmPlayer(World world)
     {
         super(world);
         this.setSize(1.0F, 2.0F);
@@ -31,12 +31,7 @@ public class enityYarm extends EntityAnimal {
         this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(0.5D);
     }
 
-    protected Item getDropItem()
-    {
-        ItemStack item = new ItemStack(ModItems.UnRealFace);
-        this.entityDropItem(item, 0.0F);
-        return Item.getItemById(0);
-    }
+
     public boolean isAIEnable()
     {
         return true;
@@ -48,4 +43,3 @@ public class enityYarm extends EntityAnimal {
         return new entityUnReal(worldObj);
     }
 }
-
