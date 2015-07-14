@@ -36,10 +36,10 @@ public class enityYarmPlayer extends EntityAnimal {
     {
         return true;
     }
-
     @Override
     public EntityAgeable createChild(EntityAgeable p_90011_1_)
     {
         return new entityUnReal(worldObj);
     }
+
 }
