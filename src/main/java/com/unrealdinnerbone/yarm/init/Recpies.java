@@ -1,10 +1,9 @@
 package com.unrealdinnerbone.yarm.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.BlockGrass;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 public class Recpies
 {
@@ -13,14 +12,15 @@ public class Recpies
     {
         //Shaped
         //Shaped Recipe
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.BLOCK_UNREAL_FACE, 1),
-                "AAA",
-                "AAA",
-                "AAA",
-                'A', ModItems.UnRealFace);
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.BLOCK_UNREAL_FACE ),
+                    "AAA",
+                    "AAA",
+                    "AAA",
+                    'A', ModItems.UnRealFace));
 
         //Shapless
-                GameRegistry.addShapelessRecipe(new ItemStack(ModItems.UnRealFace, 9), new ItemStack(ModBlocks.BLOCK_UNREAL_FACE));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.UnRealFace, 9),
+                    new ItemStack(ModBlocks.BLOCK_UNREAL_FACE)));
 
-                  }
+    }
 }

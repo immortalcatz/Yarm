@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm;
 
+import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
 import com.unrealdinnerbone.yarm.init.ModEntity;
 import com.unrealdinnerbone.yarm.init.ModItems;
@@ -13,6 +14,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class yarm {
@@ -27,13 +29,16 @@ public class yarm {
     public static void PreInit(FMLPreInitializationEvent PreEvent)
     {
         ModItems.init();
+        //Load Item Class
 
         ModBlocks.init();
+        //Load Block Class
 
         Recpies.init();
+        //Load Recipes Class
 
         ModEntity.initEntity();
-        //WHAT DID NOT SEE WHAT YOU SAID
+        //Load Entity Class
 
         if(PreEvent.getSide().isClient())
         {
@@ -42,11 +47,20 @@ public class yarm {
 
     }
     @Mod.EventHandler
-    public static void Init(FMLInitializationEvent event) {
+    public static void Init(FMLInitializationEvent event)
+    {
+
     }
     @Mod.EventHandler
-    public static void PostInit(FMLPostInitializationEvent PostEvent){
+    public static void PostInit(FMLPostInitializationEvent PostEvent)
+    {
+        LogHelper.info("Post Init Compete");
 
+       /* for (String oreName : OreDictionary.getOreNames())
+        {
+            LogHelper.info(oreName);
+            OreDictionary.getOres("");
+        }*/
     }
 
 }
