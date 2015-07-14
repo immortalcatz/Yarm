@@ -21,6 +21,8 @@ public class Recpies
         //Shapless
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.UnRealFace, 9),
                     new ItemStack(ModBlocks.BLOCK_UNREAL_FACE)));
+        //Shapless
+        GameRegistry.addSmelting(ModBlocks.BLOCK_ANTIMONY_ORE, new ItemStack(ModItems.AntimonyIgont), 0.5f);
 
     }
 }

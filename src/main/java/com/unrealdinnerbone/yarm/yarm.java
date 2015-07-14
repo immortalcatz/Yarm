@@ -5,12 +5,13 @@ import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.proxy.ClientProxy;
 import com.unrealdinnerbone.yarm.proxy.IProxy;
 import com.unrealdinnerbone.yarm.reference.Reference;
-import com.unrealdinnerbone.yarm.world.YarmWorld;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import com.unrealdinnerbone.yarm.init.OreGen;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class yarm {
@@ -24,12 +25,14 @@ public class yarm {
     @Mod.EventHandler
     public static void PreInit(FMLPreInitializationEvent PreEvent)
     {
+        OreGen WorldGen = new OreGen();
+
         ModItems.init();
         ModBlocks.init();
         Recpies.init();
         ModEntity.initEntity();
-        YarmWorld.mainRegistery();
         ModOreDictionary.OreDictionary();
+        GameRegistry.registerWorldGenerator(WorldGen, 1);
 
         if(PreEvent.getSide().isClient())
         {

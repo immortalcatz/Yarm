@@ -10,11 +10,13 @@ public class ModBlocks
 {
     public static final BlockUnRealFace BLOCK_UNREAL_FACE = new BlockUnRealFace();
     public static final BlockUnRealChest BLOCK_UNREAL_CHEST = new BlockUnRealChest();
+    public static final BlockAntimonyOre BLOCK_ANTIMONY_ORE = new BlockAntimonyOre();
 
     public static void init()
     {
         GameRegistry.registerBlock(BLOCK_UNREAL_FACE, "UnReal_Block");
         GameRegistry.registerBlock(BLOCK_UNREAL_CHEST, "UnReal_Chest");
+        GameRegistry.registerBlock(BLOCK_ANTIMONY_ORE, "Antimony_Ore");
     }
 
 }
