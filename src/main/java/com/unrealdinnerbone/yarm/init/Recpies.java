@@ -21,7 +21,6 @@ public class Recpies
 
         //Shapless
                 GameRegistry.addShapelessRecipe(new ItemStack(ModItems.UnRealFace, 9), new ItemStack(ModBlocks.BLOCK_UNREAL_FACE));
-                GameRegistry.addShapelessRecipe(new ItemStack(Items.diamond, 1), new ItemStack(Blocks.dirt));
 
                   }
 }
