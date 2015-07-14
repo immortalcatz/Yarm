@@ -40,7 +40,6 @@ public class OreGen implements IWorldGenerator
             int chunkZ = z + random.nextInt(16); //Where it spawns
 
             (new WorldGenMinable(ModBlocks.BLOCK_ANTIMONY_ORE, 3)).generate(world, random, chunkX, chunkY, chunkZ); //Chunks of ...
-            LogHelper.info("Loaded World Gen");
         }
     }
 
