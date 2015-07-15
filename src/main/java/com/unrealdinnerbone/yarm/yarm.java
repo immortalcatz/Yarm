@@ -2,6 +2,9 @@ package com.unrealdinnerbone.yarm;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.init.*;
+import com.unrealdinnerbone.yarm.init.Recpies.Shapless;
+import com.unrealdinnerbone.yarm.init.Recpies.Shpaed;
+import com.unrealdinnerbone.yarm.init.Recpies.Smelting;
 import com.unrealdinnerbone.yarm.proxy.ClientProxy;
 import com.unrealdinnerbone.yarm.proxy.IProxy;
 import com.unrealdinnerbone.yarm.reference.Reference;
@@ -27,11 +30,24 @@ public class yarm {
     {
         OreGen WorldGen = new OreGen();
 
+        //Items
         ModItems.init();
+
+        //Blocks
         ModBlocks.init();
-        Recpies.init();
+
+        //Recpies
+        Shpaed.init();
+        Smelting.init();
+        Shapless.init();
+
+        //Enitys
         ModEntity.initEntity();
+
+        //Ore Dictionary
         ModOreDictionary.OreDictionary();
+
+        //Ore Generator
         GameRegistry.registerWorldGenerator(WorldGen, 1);
 
         if(PreEvent.getSide().isClient())
