@@ -13,6 +13,7 @@ public class ModBlocks
     public static final BlockAntimonyOre BLOCK_ANTIMONY_ORE = new BlockAntimonyOre();
     public static final BlockAntimony BLOCK_ANTIMONY = new BlockAntimony();
 
+
     public static void init()
     {
         GameRegistry.registerBlock(BLOCK_UNREAL_FACE, "UnReal_Block");

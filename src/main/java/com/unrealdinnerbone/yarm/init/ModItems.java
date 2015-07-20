@@ -22,7 +22,6 @@ public class ModItems
         GameRegistry.registerItem(YunusFace, "ItemYunus1903Face");
         GameRegistry.registerItem(AntimonyIngot, "AntimonyIngot");
 
-
     }
 
 }
