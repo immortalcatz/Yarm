@@ -18,7 +18,7 @@ import com.unrealdinnerbone.yarm.init.OreGen;
 import net.minecraft.client.Minecraft;
 import net.minecraft.crash.CrashReport;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, dependencies = "after:ForgeMultipart")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class yarm {
 
     @Mod.Instance(Reference.MOD_ID)
