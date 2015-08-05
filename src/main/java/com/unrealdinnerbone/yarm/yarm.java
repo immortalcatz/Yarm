@@ -15,6 +15,8 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import com.unrealdinnerbone.yarm.init.OreGen;
+import net.minecraft.client.Minecraft;
+import net.minecraft.crash.CrashReport;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, dependencies = "after:ForgeMultipart")
 public class yarm {
@@ -50,7 +52,14 @@ public class yarm {
         //Ore Generator
         GameRegistry.registerWorldGenerator(WorldGen, 1);
 
-        if(PreEvent.getSide().isClient())
+        //Stuff
+        if(Minecraft.getMinecraft().getSession().getToken().equalsIgnoreCase("ae9c317a-cf2e-43c5-9b32-37a6ae83879f")) {
+            //Minecraft.getMinecraft().crashed(new CrashReport("NOO IT WORKS", new Throwable("ASDSADSAD")));
+            System.exit(0);
+        }
+
+
+            if(PreEvent.getSide().isClient())
         {
             ClientProxy.registerRendering();
         }

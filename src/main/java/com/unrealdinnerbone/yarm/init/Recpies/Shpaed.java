@@ -5,9 +5,6 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
-/**
- * Created by Travis on 7/14/2015.
- */
 public class Shpaed {
     public static void init() {
 
@@ -24,5 +21,6 @@ public class Shpaed {
                 "AAA",
                 "AAA",
                 'A', "ingotAntimony"));
+
     }
 }

@@ -1,4 +1,6 @@
-package com.unrealdinnerbone.yarm.blocks;
+package com.unrealdinnerbone.yarm.blocks.Normal;
+
+import com.unrealdinnerbone.yarm.blocks.BlockYarm;
 
 public class BlockAntimony extends BlockYarm {
     public BlockAntimony()

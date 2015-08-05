@@ -1,7 +1,14 @@
-package com.unrealdinnerbone.yarm.blocks;
+package com.unrealdinnerbone.yarm.blocks.Faces;
 
 import com.unrealdinnerbone.yarm.CreativeTab.Tab;
+import com.unrealdinnerbone.yarm.blocks.BlockYarm;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+
+import java.util.List;
 
 public class BlockUnRealFace extends BlockYarm
 {

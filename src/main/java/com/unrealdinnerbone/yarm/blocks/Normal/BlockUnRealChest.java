@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.blocks;
+package com.unrealdinnerbone.yarm.blocks.Normal;
 
 import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.item.ItemYarm;
