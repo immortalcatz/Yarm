@@ -6,7 +6,7 @@ public class BlockNetherStar8 extends BlockBaseNetherStar {
     public BlockNetherStar8()
     {
         this.setBlockName("BlockNetherStar8");
-        this.setBlockTextureName("BlockNetherStar8");
+        this.setBlockTextureName("Yarm:" + "BlockNetherStar8");
 
     }
 }
