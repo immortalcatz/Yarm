@@ -8,6 +8,11 @@ item.yarm:Manmaed_Face.name=Manmaed's Face
 item.yarm:TheKayneGameFace.name=TheKayneGame's Face
 item.yarm:Yunus1903Face.name=Yunus1903's Face
 item.yarm:AntimonyIngot.name=Antimony Ingot
+item.OpSword.name=Nether Star Sword
+item.OpPick.name=Nether Star Pickaxe
+item.OpHoe.name=Nether Star Hoe
+item.OpSpade.name=Nether Star Shovel
+
 #Blocks
 tile.UnReal_Block.name=UnReal's Block
 tile.AntimonyBlock.name=Antimony Block

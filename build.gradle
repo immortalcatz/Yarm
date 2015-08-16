@@ -31,7 +31,7 @@ repositories {
 
 apply plugin: 'forge'
 
-version = "1.5"
+version = "1.5Beta1"
 group= "com.unrealdinnerbone.yarm" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Yarm"
 

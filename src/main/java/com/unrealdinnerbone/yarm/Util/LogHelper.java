@@ -3,6 +3,7 @@ package com.unrealdinnerbone.yarm.Util;
 import com.unrealdinnerbone.yarm.reference.Reference;
 import cpw.mods.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
+import sun.rmi.runtime.Log;
 
 public class LogHelper
 {

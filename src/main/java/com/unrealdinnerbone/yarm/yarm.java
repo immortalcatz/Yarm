@@ -17,9 +17,13 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import com.unrealdinnerbone.yarm.init.OreGen;
 import net.minecraft.client.Minecraft;
 import net.minecraft.crash.CrashReport;
+import net.minecraft.item.Item;
+import net.minecraftforge.common.util.EnumHelper;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class yarm {
+
+
 
     @Mod.Instance(Reference.MOD_ID)
     public static yarm instance;
@@ -75,7 +79,7 @@ public class yarm {
     public static void PostInit(FMLPostInitializationEvent PostEvent)
     {
         LogHelper.info("Post Init Compete");
-        LogHelper.info("Lets Hope It Does not Shot Fire and blow up");
+        LogHelper.info("Lets Hope It Does not Shot Fire and blow up" + "-Ichun 2015");
 
        /* for (String oreName : OreDictionary.getOreNames())
         {
