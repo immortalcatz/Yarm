@@ -16,6 +16,7 @@ public class ModItems
     public static final ItemYarm KyaneFace = new ItemTheKayneGameFace();
     public static final ItemYarm YunusFace = new ItemYunus1903Face();
     public static final ItemYarm AntimonyIngot = new ItemAntimonyIngot();
+    public static final ItemYarm ItemNetherStarRod = new ItemNetherStarRod();
     public static final ItemAxe ItemToolOpAxe = new ItemToolOpAxe(OpTools);
     public static final ItemHoe ItemToolOpHoe = new ItemToolOpHoe(OpTools);
     public static final ItemPickaxe ItemToolOpPick = new ItemToolOpPick(OpTools);
@@ -31,6 +32,7 @@ public class ModItems
         GameRegistry.registerItem(KyaneFace, "ItemTheKayneGameFace");
         GameRegistry.registerItem(YunusFace, "ItemYunus1903Face");
         GameRegistry.registerItem(AntimonyIngot, "AntimonyIngot");
+        GameRegistry.registerItem(ItemNetherStarRod,"NetherStarRod");
         GameRegistry.registerItem(ItemToolOpAxe, "ItemOpAxe");
         GameRegistry.registerItem(ItemToolOpHoe, "ItemOpHoe");
         GameRegistry.registerItem(ItemToolOpPick, "ItemOpPick");

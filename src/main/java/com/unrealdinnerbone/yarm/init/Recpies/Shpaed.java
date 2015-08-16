@@ -1,6 +1,7 @@
 package com.unrealdinnerbone.yarm.init.Recpies;
 
 import com.unrealdinnerbone.yarm.init.ModBlocks;
+import com.unrealdinnerbone.yarm.init.ModItems;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -65,6 +66,42 @@ public class Shpaed {
                 "AAA",
                 "AAA",
                 'A', "materialNetherStar7"));
+
+        //Nether Star Axe
+        GameRegistry.addRecipe(new ItemStack(ModItems.ItemToolOpAxe),
+                " AA",
+                " BA",
+                " B ",
+                'A', ModBlocks.BLOCK_NETHER_STAR_3,
+                'B', ModItems.ItemNetherStarRod);
+        //Nether Star Hoe
+        GameRegistry.addRecipe(new ItemStack(ModItems.ItemToolOpHoe),
+                "AA ",
+                " B ",
+                " B ",
+                'A', ModBlocks.BLOCK_NETHER_STAR_3,
+                'B', ModItems.ItemNetherStarRod);
+        //Nether Star Pick
+        GameRegistry.addRecipe(new ItemStack(ModItems.ItemToolOpPick),
+                "AAA",
+                " B ",
+                " B ",
+                'A', ModBlocks.BLOCK_NETHER_STAR_3,
+                'B', ModItems.ItemNetherStarRod);
+        //Nether Star Shovel
+        GameRegistry.addRecipe(new ItemStack(ModItems.ItemToolOpSpade),
+                "AA ",
+                " B ",
+                " B ",
+                'A', ModBlocks.BLOCK_NETHER_STAR_3,
+                'B', ModItems.ItemNetherStarRod);
+        //Nether Star Sword
+        GameRegistry.addRecipe(new ItemStack(ModItems.ItemToolOpSword),
+                "AA ",
+                " B ",
+                " B ",
+                'A', ModBlocks.BLOCK_NETHER_STAR_3,
+                'B', ModItems.ItemNetherStarRod);
 
 
 
