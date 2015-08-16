@@ -75,6 +75,7 @@ public class yarm {
     public static void PostInit(FMLPostInitializationEvent PostEvent)
     {
         LogHelper.info("Post Init Compete");
+        LogHelper.info("Lets Hope It Does not Shot Fire and blow up");
 
        /* for (String oreName : OreDictionary.getOreNames())
         {
