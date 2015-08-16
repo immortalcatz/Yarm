@@ -36,6 +36,7 @@ public class ModItems
         GameRegistry.registerItem(ItemToolOpPick, "ItemOpPick");
         GameRegistry.registerItem(ItemToolOpSpade, "ItemOpSpade");
         GameRegistry.registerItem(ItemToolOpSword, "ItemOpSword");
+        LogHelper.info("Loaded Items");
     }
 
 }

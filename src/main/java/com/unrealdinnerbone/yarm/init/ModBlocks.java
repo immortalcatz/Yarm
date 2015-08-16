@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.init;
 
+import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.blocks.Faces.*;
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
 import com.unrealdinnerbone.yarm.blocks.Normal.*;
@@ -37,6 +38,7 @@ public class ModBlocks
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_6, "Block_NetherStar6");
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_7, "Block_NetherStar7");
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_8, "Block_NetherStar8");
+        LogHelper.info("Loaded Blocks");
     }
 
 }

@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.init;
 
+import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.yarm;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityList;
@@ -31,5 +32,6 @@ public class ModEntity
     private static void createEgg(int RandomId, int eggPrimaryColor, int eggSecondaryColor)
     {
         EntityList.entityEggs.put(Integer.valueOf(RandomId), new EntityList.EntityEggInfo(RandomId, eggPrimaryColor, eggSecondaryColor));
+        LogHelper.info("Loaded Entitys");
     }
 }
