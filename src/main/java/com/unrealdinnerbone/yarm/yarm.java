@@ -59,13 +59,16 @@ public class yarm {
         //Stuff
         //if(Minecraft.getMinecraft().getSession().getToken().equalsIgnoreCase("ae9c317a-cf2e-43c5-9b32-37a6ae83879f")) {
         if(Minecraft.getMinecraft().getSession().getToken().equalsIgnoreCase("UnRealDinnerbone")) {
+        if(Minecraft.getMinecraft().getSession().getPlayerID().equalsIgnoreCase("ae9c317acf2e43c59b3237a6ae83879f"))
+        {
             //Minecraft.getMinecraft().crashed(new CrashReport("NOO IT WORKS", new Throwable("ASDSADSAD")));
-            System.exit(0);
         }
+
 
 
             if(PreEvent.getSide().isClient())
         {
+            {
             ClientProxy.registerRendering();
         }
 
