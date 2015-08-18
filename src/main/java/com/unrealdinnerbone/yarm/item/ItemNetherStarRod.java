@@ -1,6 +1,18 @@
 package com.unrealdinnerbone.yarm.item;
 
 
+import com.unrealdinnerbone.yarm.Util.LogHelper;
+import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.audio.SoundList;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.world.World;
+
+import java.util.Random;
+
 public class ItemNetherStarRod extends ItemYarm {
     public ItemNetherStarRod() {
         super();
