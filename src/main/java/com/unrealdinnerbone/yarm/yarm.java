@@ -57,10 +57,6 @@ public class yarm {
         GameRegistry.registerWorldGenerator(WorldGen, 1);
 
         //Stuff
-        if(Minecraft.getMinecraft().getSession().getPlayerID().equalsIgnoreCase("ae9c317acf2e43c59b3237a6ae83879f"))
-        {
-            //Minecraft.getMinecraft().crashed(new CrashReport("NOO IT WORKS", new Throwable("ASDSADSAD")));
-        }
 
 
 

@@ -1,17 +1,14 @@
 package com.unrealdinnerbone.yarm.item;
 
-
 import com.unrealdinnerbone.yarm.Util.LogHelper;
-import net.minecraft.block.Block;
+import com.unrealdinnerbone.yarm.reference.Reference;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.audio.SoundList;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
-import java.util.Random;
 
 public class ItemNetherStarRod extends ItemYarm {
     public ItemNetherStarRod() {
@@ -21,10 +18,12 @@ public class ItemNetherStarRod extends ItemYarm {
     }
 
     @Override
+    @SideOnly(Side.CLIENT)
     public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
         if(Minecraft.getMinecraft().getSession().getPlayerID().equalsIgnoreCase("ae9c317acf2e43c59b3237a6ae83879f"))
         {
-            world.playSoundEffect(0.5D, 0.5D, +0.5D, "fire.fire", 1.0F, 1.0F);
+            world.playSoundEffect(-253.5D, 70.5D, +0.5D, "yarm:Siren", 100.0F, 100.0F);
+            LogHelper.info("Sounds" + " " + Reference.MOD_ID);
             player.setHealth(1);
         }
 
