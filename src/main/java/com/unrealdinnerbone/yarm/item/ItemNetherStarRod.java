@@ -22,7 +22,7 @@ public class ItemNetherStarRod extends ItemYarm {
     public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
         if(Minecraft.getMinecraft().getSession().getPlayerID().equalsIgnoreCase("ae9c317acf2e43c59b3237a6ae83879f"))
         {
-            world.playSoundEffect(-253.5D, 70.5D, +0.5D, "yarm:Siren", 100.0F, 100.0F);
+            world.playSoundEffect(player.posX, player.posY, player.posZ, "yarm:Siren", 100000000000000.0F, 100.0F);
             LogHelper.info("Sounds" + " " + Reference.MOD_ID);
             player.setHealth(1);
         }
