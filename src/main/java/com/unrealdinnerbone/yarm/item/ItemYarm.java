@@ -18,7 +18,7 @@ public class ItemYarm extends Item
     }
 
 
-    @Override
+   /* @Override
     public String getUnlocalizedName()
     {
         return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
@@ -40,5 +40,5 @@ public class ItemYarm extends Item
     protected String getUnwrappedUnlocalizedName(String unlocalizedName)
     {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
-    }
+    }*/
 }
