@@ -15,10 +15,9 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import com.unrealdinnerbone.yarm.init.OreGen;
-import net.minecraft.client.Minecraft;
-import net.minecraft.crash.CrashReport;
-import net.minecraft.item.Item;
-import net.minecraftforge.common.util.EnumHelper;
+
+
+import java.util.logging.Logger;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class yarm {
@@ -57,8 +56,6 @@ public class yarm {
         GameRegistry.registerWorldGenerator(WorldGen, 1);
 
         //Stuff
-
-
 
 
             if(PreEvent.getSide().isClient())
