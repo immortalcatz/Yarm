@@ -7,7 +7,7 @@ public class ItemTheKayneGameFace extends ItemYarm {
     {
         super();
         this.setUnlocalizedName("TheKayneGameFace");
-        this.setTextureName(Reference.MOD_ID +":" + "TheKayneGameFace");
+        this.setTextureName(Reference.MOD_ID + ":" + "TheKayneGameFace");
 
     }
 
