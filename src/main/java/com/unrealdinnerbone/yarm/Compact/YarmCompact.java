@@ -1,8 +1,8 @@
-/*
 package com.unrealdinnerbone.yarm.Compact;
 
 import com.unrealdinnerbone.yarm.Compact.Util.CompactReference;
 import com.unrealdinnerbone.yarm.Compact.Util.LogHelper;
+import com.unrealdinnerbone.yarm.Compact.init.EE3ModBlocks;
 import com.unrealdinnerbone.yarm.proxy.IProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -22,7 +22,6 @@ public class YarmCompact {
     @Mod.EventHandler
     public static void PreInit(FMLPreInitializationEvent PreEvent)
     {
-        LogHelper.info("Loading");
 
     }
 
@@ -34,9 +33,25 @@ public class YarmCompact {
     @Mod.EventHandler
     public static void PostInit(FMLPostInitializationEvent PostEvent)
     {
+        LogHelper.info("Looking For EE3");
+        try{
+            Class ModEE3 = Class.forName("com.pahimar.ee3.EquivalentExchange3");
+            LogHelper.info("Yea EE3 Found");
+            EE3ModBlocks.init();
+        } catch (ClassNotFoundException e)
+        {
+            LogHelper.info(":( No EE3");
+    }
+        LogHelper.info("Looking For Qlib");
+        try{
+            Class ModEE3 = Class.forName("uk.co.qmunity.lib.QmunityLib");
+            LogHelper.info("Yea Time To Hack into Qlib");
+        } catch (ClassNotFoundException e)
+        {
+            LogHelper.info("Fine No Qlib Fun");
+        }
 
     }
 
 
 }
-*/
