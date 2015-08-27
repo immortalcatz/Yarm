@@ -1,0 +1,17 @@
+1.6.1:
+New
+- 404 Error
+
+Changes
+- 404 Error
+
+Fixes
+- 404 Error
+
+Removed
+- Yarm Compact
+
+Info
+- Update Build System To Auto upload to curseforge 
+- Thanks Jenkins and Gradle CurseForge Plugin 
+- Aomust Tpyed Gradlew Above :p 

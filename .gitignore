@@ -20,6 +20,7 @@
 /.metadata
 
 # Gradle #
+gradle.properties
 /.gradle
 /out
 /build

@@ -35,8 +35,9 @@ repositories {
 }
 
 apply plugin: 'forge'
+apply plugin: 'curseforge'
 
-version = "1.6.0Beta4"
+version = "1.6.1"
 group= "com.unrealdinnerbone.yarm" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Yarm"
 
@@ -75,6 +76,15 @@ dependencies {
 	
 
 
+}
+
+curse {
+    projectId = project.projectId
+    apiKey = project.curseForgeApiKey
+    releaseType = 'beta'
+	displayName = Yarm - ${mod_version}, 
+	changelog = System.getenv("CHANGELOG").equals("none") ? getChangelogText() : System.getenv("CHANGELOG")
+	addGameVersion '1.7.10'
 }
 
 processResources
