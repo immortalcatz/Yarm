@@ -1,11 +1,8 @@
 package com.unrealdinnerbone.yarm.blocks.Normal;
 
-import com.unrealdinnerbone.yarm.CreativeTab.Tab;
-import com.unrealdinnerbone.yarm.item.ItemYarm;
-import net.minecraft.block.BlockChest;
+import com.unrealdinnerbone.yarm.reference.Reference;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
@@ -15,7 +12,7 @@ public class BlockUnRealChest extends BlockContainer {
     {
         super(Material.iron);
         setBlockName("UnRealChest");
-        setBlockTextureName("yarm" + ":UnRealChest");
+        setBlockTextureName(Reference.MOD_ID + ":" + "UnRealChest");
         setHardness(3.0F);
         setBlockBounds(0.0625F, 0F, 0.0625F, 0.9375F, 0.875F, 0.9375F);
         this.isBlockContainer = true;

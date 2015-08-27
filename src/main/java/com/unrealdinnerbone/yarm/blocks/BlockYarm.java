@@ -18,6 +18,7 @@ public class BlockYarm extends Block
         this(Material.rock);
         this.setCreativeTab(Tab.Yarm_Tab);
         this.setHardness(3.5F);
+        this.setStepSound(soundTypeStone);
 
     }
 
