@@ -1,8 +1,6 @@
 package com.unrealdinnerbone.yarm.item;
 
-import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.reference.Reference;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class ItemManmaedFace extends ItemYarm
 {

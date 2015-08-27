@@ -15,6 +15,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import com.unrealdinnerbone.yarm.init.OreGen;
+import sun.rmi.runtime.Log;
 
 
 import java.util.logging.Logger;
@@ -33,23 +34,31 @@ public class yarm {
     @Mod.EventHandler
     public static void PreInit(FMLPreInitializationEvent PreEvent)
     {
+        LogHelper.info("Starting Post Init");
         OreGen WorldGen = new OreGen();
 
         //Items
+        LogHelper.info("Starting To Load Items");
         ModItems.init();
 
         //Blocks
+        LogHelper.info("Stating To Load Blocks");
         ModBlocks.init();
 
         //Recpies
+        LogHelper.info("Stating To Load Shaped Recipes");
         Shpaed.init();
+        LogHelper.info("Stating To Load Smelting Recipes");
         Smelting.init();
+        LogHelper.info("Stating To Load Shapeless Recipe");
         Shapless.init();
 
         //Enitys
+        LogHelper.info("Loading Entity's");
         ModEntity.initEntity();
 
         //Ore Dictionary
+        LogHelper.info("Loading Ore Dic");
         ModOreDictionary.OreDictionary();
 
         //Ore Generator
@@ -72,6 +81,7 @@ public class yarm {
     @Mod.EventHandler
     public static void PostInit(FMLPostInitializationEvent PostEvent)
     {
+        LogHelper.info("Stating Post Init");
         LogHelper.info("Post Init Compete");
         LogHelper.info("Lets Hope It Does not Shot Fire and blow up" + "-Ichun 2015");
 

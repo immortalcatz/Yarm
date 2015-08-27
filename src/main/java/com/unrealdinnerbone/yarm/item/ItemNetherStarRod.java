@@ -1,7 +1,6 @@
 package com.unrealdinnerbone.yarm.item;
 
 import com.unrealdinnerbone.yarm.reference.Reference;
-import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;

@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.init.Recpies;
 
+import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
 import com.unrealdinnerbone.yarm.init.ModItems;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -102,6 +103,7 @@ public class Shpaed {
                 " B ",
                 'A', ModBlocks.BLOCK_NETHER_STAR_3,
                 'B', ModItems.ItemNetherStarRod);
+        LogHelper.info("Loaded Shaped Recipes");
 
 
 

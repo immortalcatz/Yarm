@@ -1,12 +1,12 @@
 1.6.1:
 New
-- 404 Error
+- Added More Info To Log
 
 Changes
-- 404 Error
+- Cleaned Up Blocks Code
 
 Fixes
-- 404 Error
+- UnLocalesed Names
 
 Removed
 - Yarm Compact
@@ -14,4 +14,4 @@ Removed
 Info
 - Update Build System To Auto upload to curseforge 
 - Thanks Jenkins and Gradle CurseForge Plugin 
-- Aomust Tpyed Gradlew Above :p 
+- Almost Typed Gradlew Above :p

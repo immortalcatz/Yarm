@@ -32,6 +32,6 @@ public class ModEntity
     private static void createEgg(int RandomId, int eggPrimaryColor, int eggSecondaryColor)
     {
         EntityList.entityEggs.put(Integer.valueOf(RandomId), new EntityList.EntityEggInfo(RandomId, eggPrimaryColor, eggSecondaryColor));
-        LogHelper.info("Loaded Entitys");
+        LogHelper.info("Loaded Entity's");
     }
 }

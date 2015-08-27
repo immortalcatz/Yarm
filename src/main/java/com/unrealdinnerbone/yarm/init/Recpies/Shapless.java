@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.init.Recpies;
 
+import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
 import com.unrealdinnerbone.yarm.init.ModItems;
 import cpw.mods.fml.common.Mod;
@@ -37,6 +38,7 @@ public class Shapless {
                 "materialNetherStar7"));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.BLOCK_NETHER_STAR_7, 9),
                 "materialNetherStar8"));
+        LogHelper.info("Loaded Shapeless Recipe");
 
     }
 }

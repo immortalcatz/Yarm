@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.init;
 
+import com.unrealdinnerbone.yarm.Util.LogHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
@@ -25,6 +26,7 @@ public class ModOreDictionary {
         OreDictionary.registerOre("materialNetherStar6", new ItemStack(ModBlocks.BLOCK_NETHER_STAR_6));
         OreDictionary.registerOre("materialNetherStar7", new ItemStack(ModBlocks.BLOCK_NETHER_STAR_7));
         OreDictionary.registerOre("materialNetherStar8", new ItemStack(ModBlocks.BLOCK_NETHER_STAR_8));
+        LogHelper.info("Loaded Ore Dic");
 
     }
 
