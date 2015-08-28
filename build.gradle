@@ -82,7 +82,7 @@ curse {
     projectId = project.projectId
     apiKey = project.curseForgeApiKey
     releaseType = 'beta'
-	displayName = Yarm - ${mod_version}, 
+	displayName = "Yarm - 1.6.1 "
 	changelog = System.getenv("CHANGELOG").equals("none") ? getChangelogText() : System.getenv("CHANGELOG")
 	addGameVersion '1.7.10'
 }
