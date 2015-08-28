@@ -3,7 +3,7 @@
   "modid": "yarm",
   "name": "Yet Another Random Mod",
   "description": "A lot of random stuff in a mod :P",
-  "version": "${mod_version}",
+  "version": "1.6.1",
   "mcversion": "1.7.10",
   "url": "",
   "updateUrl": "",
