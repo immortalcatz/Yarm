@@ -78,6 +78,15 @@ dependencies {
 
 }
 
+curse {
+    projectId = project.projectId
+    apiKey = project.curseForgeApiKey
+    releaseType = 'beta'
+	displayName = "Yarm - 1.6.1 "
+	changelog = System.getenv("CHANGELOG").equals("none") ? getChangelogText() : System.getenv("CHANGELOG")
+	addGameVersion '1.7.10'
+}
+
 processResources
 {
     // this will ensure that this task is redone when the versions change.
