@@ -50,4 +50,4 @@ processResources
 //    displayName = "Yarm - 1.6.2"
 //    changelog = System.getenv("CHANGELOG").equals("none") ? getChangelogText() : System.getenv("CHANGELOG")
 //    addGameVersion '1.8.8'
-}
+//}
