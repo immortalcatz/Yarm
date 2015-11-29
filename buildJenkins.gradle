@@ -11,7 +11,7 @@ buildscript {
     }
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
-apply plguin: 'curse'
+//apply plguin: 'curse'
 
 version = "1.6.1"
 group= "com.unrealdinnerbone.yarm"
