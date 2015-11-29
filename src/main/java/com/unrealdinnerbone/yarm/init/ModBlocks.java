@@ -5,6 +5,12 @@ import com.unrealdinnerbone.yarm.blocks.Faces.*;
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
 import com.unrealdinnerbone.yarm.blocks.Normal.*;
 import com.unrealdinnerbone.yarm.blocks.Ores.*;
+import com.unrealdinnerbone.yarm.reference.Reference;
+import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks
@@ -26,19 +32,42 @@ public class ModBlocks
 
     public static void init()
     {
-//        GameRegistry.registerBlock(BLOCK_UNREAL_FACE, "UnReal_Block");
-//        GameRegistry.registerBlock(BLOCK_UNREAL_CHEST, "UnReal_Chest");
-//        GameRegistry.registerBlock(BLOCK_ANTIMONY_ORE, "Antimony_Ore");
-//        GameRegistry.registerBlock(BLOCK_ANTIMONY, "Block_Antimony");
-//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_1, "Block_NetherStar1");
-//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_2, "Block_NetherStar2");
-//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_3, "Block_NetherStar3");
-//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_4, "Block_NetherStar4");
-//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_5, "Block_NetherStar5");
-//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_6, "Block_NetherStar6");
-//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_7, "Block_NetherStar7");
-//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_8, "Block_NetherStar8");
+        GameRegistry.registerBlock(BLOCK_UNREAL_FACE, "UnReal_Block");
+        GameRegistry.registerBlock(BLOCK_UNREAL_CHEST, "UnReal_Chest");
+        GameRegistry.registerBlock(BLOCK_ANTIMONY_ORE, "Antimony_Ore");
+        GameRegistry.registerBlock(BLOCK_ANTIMONY, "Block_Antimony");
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_1, "Block_NetherStar1");
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_2, "Block_NetherStar2");
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_3, "Block_NetherStar3");
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_4, "Block_NetherStar4");
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_5, "Block_NetherStar5");
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_6, "Block_NetherStar6");
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_7, "Block_NetherStar7");
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_8, "Block_NetherStar8");
         LogHelper.info("Loaded Blocks");
+    }
+
+    public static void renderBlocks()
+    {
+        RenderRegister(BLOCK_ANTIMONY);
+        RenderRegister(BLOCK_ANTIMONY_ORE);
+        RenderRegister(BLOCK_NETHER_STAR_1);
+        RenderRegister(BLOCK_NETHER_STAR_2);
+        RenderRegister(BLOCK_NETHER_STAR_3);
+        RenderRegister(BLOCK_NETHER_STAR_4);
+        RenderRegister(BLOCK_NETHER_STAR_5);
+        RenderRegister(BLOCK_NETHER_STAR_6);
+        RenderRegister(BLOCK_NETHER_STAR_7);
+        RenderRegister(BLOCK_NETHER_STAR_8);
+        RenderRegister(BLOCK_UNREAL_CHEST);
+        RenderRegister(BLOCK_UNREAL_FACE);
+    }
+
+    public static void RenderRegister(Block block)
+    {
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+                .register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Reference.RE_PREFIX + block.getUnlocalizedName().substring(5), "inventory"));
+
     }
 
 }

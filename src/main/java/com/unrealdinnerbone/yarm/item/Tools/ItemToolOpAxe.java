@@ -14,7 +14,7 @@ public class ItemToolOpAxe extends ItemAxe {
 
         super(material);
         this.setCreativeTab(Tab.Yarm_Tab);
-        setUnlocalizedName(Reference.MOD_ID + "_" + name);
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
     }
 
     public static String getName() {

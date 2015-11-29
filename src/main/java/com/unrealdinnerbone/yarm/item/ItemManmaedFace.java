@@ -8,6 +8,6 @@ public class ItemManmaedFace extends ItemYarm
 
         public ItemManmaedFace() {
             super();
-            this.setUnlocalizedName(Reference.MOD_ID + "_" + name);
+            this.setUnlocalizedName(Reference.RE_PREFIX + name);
         }
 }

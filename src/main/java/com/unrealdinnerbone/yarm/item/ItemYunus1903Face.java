@@ -8,6 +8,6 @@ public class ItemYunus1903Face extends ItemYarm {
     public ItemYunus1903Face()
     {
         super();
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + name);
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
     }
 }

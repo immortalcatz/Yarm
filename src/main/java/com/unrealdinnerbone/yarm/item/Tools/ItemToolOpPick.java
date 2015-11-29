@@ -11,7 +11,7 @@ public class ItemToolOpPick extends ItemPickaxe
     public ItemToolOpPick(ToolMaterial material) {
         super(material);
         this.setCreativeTab(Tab.Yarm_Tab);
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + name);
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
     }
 
 

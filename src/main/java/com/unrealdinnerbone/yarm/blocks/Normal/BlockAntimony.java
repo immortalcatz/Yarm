@@ -4,9 +4,16 @@ import com.unrealdinnerbone.yarm.blocks.BlockYarm;
 import com.unrealdinnerbone.yarm.reference.Reference;
 
 public class BlockAntimony extends BlockYarm {
+
+    private static String name = "BlockAntimony";
+
     public BlockAntimony()
     {
         super();
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + "AntimonyBlock");
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
+    }
+    public static String getName()
+    {
+        return name;
     }
 }

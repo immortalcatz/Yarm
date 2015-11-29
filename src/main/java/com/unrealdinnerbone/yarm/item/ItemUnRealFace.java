@@ -9,7 +9,7 @@ public class ItemUnRealFace extends ItemYarm
     public ItemUnRealFace()
     {
         super();
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + name);
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
 
 
     }

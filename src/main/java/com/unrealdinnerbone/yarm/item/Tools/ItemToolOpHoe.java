@@ -11,7 +11,7 @@ public class ItemToolOpHoe extends ItemHoe
     public ItemToolOpHoe(ToolMaterial material) {
         super(material);
         this.setCreativeTab(Tab.Yarm_Tab);
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + name);
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
     }
     public static String getName()
     {

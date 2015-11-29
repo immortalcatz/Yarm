@@ -8,9 +8,15 @@ import java.util.List;
 
 public class BlockUnRealFace extends BlockYarm
 {
+    private static String name = "BlockUnRealFace";
+
     public BlockUnRealFace()
     {
         super(Material.rock);
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + "UnReal_Face");
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
+    }
+    public static String getName()
+    {
+        return name;
     }
 }

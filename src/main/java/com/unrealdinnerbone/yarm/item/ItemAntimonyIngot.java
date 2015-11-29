@@ -11,15 +11,11 @@ public class ItemAntimonyIngot extends ItemYarm
     public ItemAntimonyIngot()
     {
         super();
-        this.setUnlocalizedName(name);
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
     }
     public static String getName()
     {
         return name;
     }
 
-    @Override
-    public Item setUnlocalizedName(String unlocalizedName) {
-        return super.setUnlocalizedName(Reference.RE_PREFIX + unlocalizedName);
-    }
 }

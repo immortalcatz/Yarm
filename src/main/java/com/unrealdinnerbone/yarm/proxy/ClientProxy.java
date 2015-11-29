@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.proxy;
 
+import com.unrealdinnerbone.yarm.init.ModBlocks;
 import com.unrealdinnerbone.yarm.init.ModItems;
 
 public class ClientProxy extends CommonProxy
@@ -11,6 +12,7 @@ public class ClientProxy extends CommonProxy
     public void render()
     {
         ModItems.registerItemRenderer();
+        ModBlocks.renderBlocks();
     }
 
 }

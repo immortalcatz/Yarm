@@ -9,7 +9,7 @@ public class ItemTheKayneGameFace extends ItemYarm
     public ItemTheKayneGameFace()
     {
         super();
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + name);
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
 
     }
 

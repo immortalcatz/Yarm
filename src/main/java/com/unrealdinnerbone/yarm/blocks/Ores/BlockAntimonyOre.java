@@ -11,10 +11,17 @@ import net.minecraft.block.state.IBlockState;
 import java.util.Collection;
 
 public class BlockAntimonyOre extends BlockYarm implements IBlockState {
+
+    private static String name = "BlockAntimonyOre";
+
     public BlockAntimonyOre()
     {
         super(Material.iron);
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + "AntimonyOre");
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
+    }
+    public static String getName()
+    {
+        return name;
     }
 
     @Override
