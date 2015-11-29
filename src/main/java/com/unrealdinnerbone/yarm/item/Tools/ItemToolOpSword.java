@@ -4,13 +4,11 @@ import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.reference.Reference;
 import net.minecraft.item.ItemSword;
 
-public class ItemToolOpSword extends ItemSword
-{
-    private final String name = "ToolOpSword";
-
+public class ItemToolOpSword extends ItemSword {
     public ItemToolOpSword(ToolMaterial material) {
         super(material);
         this.setCreativeTab(Tab.Yarm_Tab);
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + name);
+        this.setUnlocalizedName("OpSword");
+        this.setTextureName(Reference.MOD_ID + ":" + "OpSword");
     }
 }

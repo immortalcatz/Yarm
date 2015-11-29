@@ -9,11 +9,11 @@ public class ModOreDictionary {
     public static void OreDictionary()
     {
         //Items
-        OreDictionary.registerOre("materialUnRealFace", new ItemStack(ModItems.ItemUnRealFace));
-        OreDictionary.registerOre("materialManmaedFace", new ItemStack(ModItems.ItemManmedFace));
-        OreDictionary.registerOre("materialYunus1903Face", new ItemStack(ModItems.ItemYunusFace));
-        OreDictionary.registerOre("materialTheKayneGameFace", new ItemStack(ModItems.ItemKyaneFace));
-        OreDictionary.registerOre("ingotAntimony", new ItemStack(ModItems.ItemAntimonyIngot));
+        OreDictionary.registerOre("materialUnRealFace", new ItemStack(ModItems.UnRealFace));
+        OreDictionary.registerOre("materialManmaedFace", new ItemStack(ModItems.ManmedFace));
+        OreDictionary.registerOre("materialYunus1903Face", new ItemStack(ModItems.YunusFace));
+        OreDictionary.registerOre("materialTheKayneGameFace", new ItemStack(ModItems.KyaneFace));
+        OreDictionary.registerOre("ingotAntimony", new ItemStack(ModItems.AntimonyIngot));
         //Blocks
         OreDictionary.registerOre("materialBlockUnReal", new ItemStack(ModBlocks.BLOCK_UNREAL_FACE));
         OreDictionary.registerOre("oreAntimony", new ItemStack(ModBlocks.BLOCK_ANTIMONY_ORE));

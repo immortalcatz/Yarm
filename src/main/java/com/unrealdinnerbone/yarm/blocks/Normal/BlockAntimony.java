@@ -7,6 +7,7 @@ public class BlockAntimony extends BlockYarm {
     public BlockAntimony()
     {
         super();
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + "AntimonyBlock");
+        this.setBlockName("AntimonyBlock");
+        this.setBlockTextureName(Reference.MOD_ID + ":" + "AntimonyBlock");
     }
 }

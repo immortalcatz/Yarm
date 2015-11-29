@@ -11,6 +11,7 @@ public class BlockUnRealFace extends BlockYarm
     public BlockUnRealFace()
     {
         super(Material.rock);
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + "UnReal_Face");
+        this.setBlockName("UnReal_Block");
+        this.setBlockTextureName(Reference.MOD_ID + ":" + "UnReal_Face");
     }
 }

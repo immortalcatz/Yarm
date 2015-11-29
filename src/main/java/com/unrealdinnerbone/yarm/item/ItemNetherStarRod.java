@@ -1,8 +1,8 @@
 package com.unrealdinnerbone.yarm.item;
 
 import com.unrealdinnerbone.yarm.reference.Reference;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -10,12 +10,10 @@ import net.minecraft.world.World;
 
 
 public class ItemNetherStarRod extends ItemYarm {
-
-    private final String name = "NetherStarRod";
-
     public ItemNetherStarRod() {
         super();
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + name);
+        this.setUnlocalizedName("NetherStarRod");
+        this.setTextureName(Reference.MOD_ID + ":" + "NetherStarRod");
     }
 
     @Override

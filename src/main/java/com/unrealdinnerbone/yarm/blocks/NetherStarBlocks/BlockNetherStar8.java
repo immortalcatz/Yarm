@@ -6,7 +6,8 @@ import com.unrealdinnerbone.yarm.reference.Reference;
 public class BlockNetherStar8 extends BlockBaseNetherStar {
     public BlockNetherStar8()
     {
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + "BlockNetherStar8");
+        this.setBlockName("BlockNetherStar8");
+        this.setBlockTextureName(Reference.MOD_ID + ":" + "BlockNetherStar8");
 
     }
 }

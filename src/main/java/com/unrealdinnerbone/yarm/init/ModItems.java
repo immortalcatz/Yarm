@@ -3,10 +3,7 @@ package com.unrealdinnerbone.yarm.init;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.item.*;
 import com.unrealdinnerbone.yarm.item.Tools.*;
-import com.unrealdinnerbone.yarm.reference.Reference;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.*;
 import net.minecraftforge.common.util.EnumHelper;
 
@@ -14,11 +11,11 @@ public class ModItems
     {
     public static final Item.ToolMaterial OpTools = EnumHelper.addToolMaterial("OpTools", 10, -1, 100.0F, 25.0F, 100);
 
-    public static final ItemYarm ItemUnRealFace = new ItemUnRealFace();
-    public static final ItemYarm ItemManmedFace = new ItemManmaedFace();
-    public static final ItemYarm ItemKyaneFace = new ItemTheKayneGameFace();
-    public static final ItemYarm ItemYunusFace = new ItemYunus1903Face();
-    public static final ItemYarm ItemAntimonyIngot = new ItemAntimonyIngot();
+    public static final ItemYarm UnRealFace = new ItemUnRealFace();
+    public static final ItemYarm ManmedFace = new ItemManmaedFace();
+    public static final ItemYarm KyaneFace = new ItemTheKayneGameFace();
+    public static final ItemYarm YunusFace = new ItemYunus1903Face();
+    public static final ItemYarm AntimonyIngot = new ItemAntimonyIngot();
     public static final ItemYarm ItemNetherStarRod = new ItemNetherStarRod();
     public static final ItemAxe ItemToolOpAxe = new ItemToolOpAxe(OpTools);
     public static final ItemHoe ItemToolOpHoe = new ItemToolOpHoe(OpTools);
@@ -30,11 +27,11 @@ public class ModItems
     public static void init()
     {
 
-        GameRegistry.registerItem(ItemUnRealFace, "ItemUnRealFace");
-        GameRegistry.registerItem(ItemManmedFace, "ItemManmedFace");
-        GameRegistry.registerItem(ItemKyaneFace, "ItemTheKayneGameFace");
-        GameRegistry.registerItem(ItemYunusFace, "ItemYunus1903Face");
-        GameRegistry.registerItem(ItemAntimonyIngot, "AntimonyIngot");
+        GameRegistry.registerItem(UnRealFace, "ItemUnRealFace");
+        GameRegistry.registerItem(ManmedFace, "ItemManmedFace");
+        GameRegistry.registerItem(KyaneFace, "ItemTheKayneGameFace");
+        GameRegistry.registerItem(YunusFace, "ItemYunus1903Face");
+        GameRegistry.registerItem(AntimonyIngot, "AntimonyIngot");
         GameRegistry.registerItem(ItemNetherStarRod,"NetherStarRod");
         GameRegistry.registerItem(ItemToolOpAxe, "ItemOpAxe");
         GameRegistry.registerItem(ItemToolOpHoe, "ItemOpHoe");
@@ -43,21 +40,5 @@ public class ModItems
         GameRegistry.registerItem(ItemToolOpSword, "ItemOpSword");
         LogHelper.info("Loaded Items");
     }
-        public static void reg(Item item) {
-            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.RE_PREFIX + item.getUnlocalizedName().substring(5), "inventory"));
-        }
-        public static void registerItemRenderer() {
-            reg(ItemToolOpAxe);
-            reg(ItemToolOpSword);
-            reg(ItemToolOpSpade);
-            reg(ItemToolOpPick);
-            reg(ItemNetherStarRod);
-            reg(ItemToolOpHoe);
-            reg(ItemAntimonyIngot);
-            reg(ItemKyaneFace);
-            reg(ItemManmedFace);
-            reg(ItemUnRealFace);
-            reg(ItemYunusFace);
-        }
 
 }

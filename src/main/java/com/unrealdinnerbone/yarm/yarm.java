@@ -5,24 +5,16 @@ import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.init.Recpies.Shapless;
 import com.unrealdinnerbone.yarm.init.Recpies.Shpaed;
 import com.unrealdinnerbone.yarm.init.Recpies.Smelting;
-import com.unrealdinnerbone.yarm.item.ItemAntimonyIngot;
-import com.unrealdinnerbone.yarm.item.Tools.ItemToolOpAxe;
 import com.unrealdinnerbone.yarm.proxy.ClientProxy;
 import com.unrealdinnerbone.yarm.proxy.IProxy;
 import com.unrealdinnerbone.yarm.reference.Reference;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.ItemRenderer;
-import net.minecraft.client.renderer.entity.RenderItem;
-import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import com.unrealdinnerbone.yarm.init.OreGen;
-import net.minecraftforge.fml.relauncher.Side;
 import sun.rmi.runtime.Log;
 
 
@@ -72,23 +64,18 @@ public class yarm {
         //Ore Generator
         GameRegistry.registerWorldGenerator(WorldGen, 1);
 
+        //Stuff
 
-        if(PreEvent.getSide().isClient())
-        {
+
+            if(PreEvent.getSide().isClient())
+            {
             ClientProxy.registerRendering();
         }
 
     }
-
-
-
     @Mod.EventHandler
     public static void Init(FMLInitializationEvent event)
     {
-        if(event.getSide().isClient())
-        {
-            ClientProxy.registerRendering();
-        }
 
     }
     @Mod.EventHandler
@@ -98,6 +85,11 @@ public class yarm {
         LogHelper.info("Post Init Compete");
         LogHelper.info("Lets Hope It Does not Shot Fire and blow up" + "-Ichun 2015");
 
+       /* for (String oreName : OreDictionary.getOreNames())
+        {
+            LogHelper.info(oreName);
+            OreDictionary.getOres("");
+        }*/
     }
 
 }

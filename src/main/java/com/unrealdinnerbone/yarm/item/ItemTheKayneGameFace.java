@@ -2,14 +2,12 @@ package com.unrealdinnerbone.yarm.item;
 
 import com.unrealdinnerbone.yarm.reference.Reference;
 
-public class ItemTheKayneGameFace extends ItemYarm
-{
-    private final String name = "TheKayneGameFace";
-
+public class ItemTheKayneGameFace extends ItemYarm {
     public ItemTheKayneGameFace()
     {
         super();
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + name);
+        this.setUnlocalizedName("TheKayneGameFace");
+        this.setTextureName(Reference.MOD_ID + ":" + "TheKayneGameFace");
 
     }
 

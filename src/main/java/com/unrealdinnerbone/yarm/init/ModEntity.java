@@ -8,7 +8,7 @@ import net.minecraft.world.WorldType;
 
 import com.unrealdinnerbone.yarm.entity.entityUnReal;
 
-import net.minecraftforge.fml.common.registry.EntityRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
 
 public class ModEntity
 {

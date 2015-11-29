@@ -6,7 +6,8 @@ public class BlockNetherStar1 extends BlockBaseNetherStar {
     public BlockNetherStar1()
     {
         super();
-        this.setUnlocalizedName(Reference.MOD_ID + "_" + "BlockNetherStar1");
+        this.setBlockName("BlockNetherStar1");
+        this.setBlockTextureName(Reference.MOD_ID + ":" + "BlockNetherStar1");
         
     }
 }
