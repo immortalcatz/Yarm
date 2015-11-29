@@ -3,8 +3,8 @@ package com.unrealdinnerbone.yarm.init.Recpies;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
 import com.unrealdinnerbone.yarm.init.ModItems;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -14,11 +14,11 @@ public class Shapless {
     public static void init()
     {
        //UnRealBlock To UnRealFace
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.UnRealFace, 9),
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.ItemUnRealFace, 9),
                 new ItemStack(ModBlocks.BLOCK_UNREAL_FACE)));
 
         //Antimony Block To An Antimony Ingot
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.AntimonyIngot, 9),
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.ItemAntimonyIngot, 9),
                 "materialAntimony"));
 
         //Nether Star Incess Level

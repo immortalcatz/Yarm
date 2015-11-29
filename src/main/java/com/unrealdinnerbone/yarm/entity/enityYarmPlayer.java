@@ -1,11 +1,8 @@
 package com.unrealdinnerbone.yarm.entity;
 
-import com.unrealdinnerbone.yarm.init.ModItems;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.passive.EntityAnimal;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 public class enityYarmPlayer extends EntityAnimal {
@@ -14,12 +11,6 @@ public class enityYarmPlayer extends EntityAnimal {
     {
         super(world);
         this.setSize(1.0F, 2.0F);
-    }
-
-    @Override
-    protected boolean isAIEnabled()
-    {
-        return true;
     }
 
     @Override

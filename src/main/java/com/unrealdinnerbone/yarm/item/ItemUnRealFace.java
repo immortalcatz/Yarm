@@ -4,11 +4,12 @@ import com.unrealdinnerbone.yarm.reference.Reference;
 
 public class ItemUnRealFace extends ItemYarm
 {
+    private final String name = "UnRealFace";
+
     public ItemUnRealFace()
     {
         super();
-        this.setUnlocalizedName("UnReal_Face");
-        this.setTextureName(Reference.MOD_ID + ":" + "UnReal_Face");
+        this.setUnlocalizedName(Reference.MOD_ID + "_" + name);
 
 
     }
