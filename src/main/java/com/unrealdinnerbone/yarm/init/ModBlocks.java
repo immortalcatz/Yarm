@@ -5,12 +5,7 @@ import com.unrealdinnerbone.yarm.blocks.Faces.*;
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
 import com.unrealdinnerbone.yarm.blocks.Normal.*;
 import com.unrealdinnerbone.yarm.blocks.Ores.*;
-import com.unrealdinnerbone.yarm.reference.Reference;
-import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
+import com.unrealdinnerbone.yarm.render.RenderHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks
@@ -49,25 +44,20 @@ public class ModBlocks
 
     public static void renderBlocks()
     {
-        RenderRegister(BLOCK_ANTIMONY);
-        RenderRegister(BLOCK_ANTIMONY_ORE);
-        RenderRegister(BLOCK_NETHER_STAR_1);
-        RenderRegister(BLOCK_NETHER_STAR_2);
-        RenderRegister(BLOCK_NETHER_STAR_3);
-        RenderRegister(BLOCK_NETHER_STAR_4);
-        RenderRegister(BLOCK_NETHER_STAR_5);
-        RenderRegister(BLOCK_NETHER_STAR_6);
-        RenderRegister(BLOCK_NETHER_STAR_7);
-        RenderRegister(BLOCK_NETHER_STAR_8);
-        RenderRegister(BLOCK_UNREAL_CHEST);
-        RenderRegister(BLOCK_UNREAL_FACE);
-    }
-
-    public static void RenderRegister(Block block)
-    {
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-                .register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Reference.RE_PREFIX + block.getUnlocalizedName().substring(5), "inventory"));
-
+        LogHelper.info("Registering Block Renders");
+        RenderHelper.BlockRenderRegister(BLOCK_ANTIMONY);
+        RenderHelper.BlockRenderRegister(BLOCK_ANTIMONY_ORE);
+        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_1);
+        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_2);
+        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_3);
+        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_4);
+        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_5);
+        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_6);
+        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_7);
+        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_8);
+        RenderHelper.BlockRenderRegister(BLOCK_UNREAL_CHEST);
+        RenderHelper.BlockRenderRegister(BLOCK_UNREAL_FACE);
+        LogHelper.info("Registered Block Renders");
     }
 
 }

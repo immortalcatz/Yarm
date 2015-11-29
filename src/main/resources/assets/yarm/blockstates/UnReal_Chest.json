@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "normal": { "model": "yarm:UnReal_Chest" },
+		"inventory": { "model": "yarm:UnReal_Chest" }
+    }
+}

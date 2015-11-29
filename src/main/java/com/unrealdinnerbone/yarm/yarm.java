@@ -72,12 +72,6 @@ public class yarm {
         //Ore Generator
         GameRegistry.registerWorldGenerator(WorldGen, 1);
 
-
-        if(PreEvent.getSide().isClient())
-        {
-            ClientProxy.registerRendering();
-        }
-
     }
 
 

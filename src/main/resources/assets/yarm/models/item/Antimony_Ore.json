@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "tutorial:blocks/UnReal_Face"
+        "all": "yarm:blocks/UnReal_Face"
     }
 }

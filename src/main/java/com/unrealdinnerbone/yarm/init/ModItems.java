@@ -3,12 +3,13 @@ package com.unrealdinnerbone.yarm.init;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.item.*;
 import com.unrealdinnerbone.yarm.item.Tools.*;
-import com.unrealdinnerbone.yarm.reference.Reference;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
+import com.unrealdinnerbone.yarm.render.RenderHelper;
+import net.minecraft.util.LazyLoadBase;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.item.*;
 import net.minecraftforge.common.util.EnumHelper;
+
+import static com.unrealdinnerbone.yarm.render.RenderHelper.ItemRenderRegister;
 
 public class ModItems
     {
@@ -43,21 +44,21 @@ public class ModItems
         GameRegistry.registerItem(ItemToolOpSword, "ItemOpSword");
         LogHelper.info("Loaded Items");
     }
-        public static void reg(Item item) {
-            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.RE_PREFIX + item.getUnlocalizedName().substring(5), "inventory"));
-        }
         public static void registerItemRenderer() {
-            reg(ItemToolOpAxe);
-            reg(ItemToolOpSword);
-            reg(ItemToolOpSpade);
-            reg(ItemToolOpPick);
-            reg(ItemNetherStarRod);
-            reg(ItemToolOpHoe);
-            reg(ItemAntimonyIngot);
-            reg(ItemKyaneFace);
-            reg(ItemManmedFace);
-            reg(ItemUnRealFace);
-            reg(ItemYunusFace);
+            LogHelper.info("Registering Item Rendering");
+            RenderHelper.ItemRenderRegister(ItemToolOpAxe);
+            RenderHelper.ItemRenderRegister(ItemToolOpSword);
+            RenderHelper.ItemRenderRegister(ItemToolOpSpade);
+            RenderHelper.ItemRenderRegister(ItemToolOpPick);
+            RenderHelper.ItemRenderRegister(ItemNetherStarRod);
+            RenderHelper.ItemRenderRegister(ItemToolOpHoe);
+            RenderHelper.ItemRenderRegister(ItemAntimonyIngot);
+            RenderHelper.ItemRenderRegister(ItemKyaneFace);
+            RenderHelper.ItemRenderRegister(ItemManmedFace);
+            RenderHelper.ItemRenderRegister(ItemUnRealFace);
+            RenderHelper.ItemRenderRegister(ItemYunusFace);
+            LogHelper.info("Register Item Rending");
+
         }
 
 }
