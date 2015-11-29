@@ -11,8 +11,7 @@ public class BlockUnRealChest extends BlockContainer {
     public BlockUnRealChest()
     {
         super(Material.iron);
-        setBlockName("UnRealChest");
-        setBlockTextureName(Reference.MOD_ID + ":" + "UnRealChest");
+        setUnlocalizedName(Reference.MOD_ID + "_" + "UnRealChest");
         setHardness(3.0F);
         setBlockBounds(0.0625F, 0F, 0.0625F, 0.9375F, 0.875F, 0.9375F);
         this.isBlockContainer = true;
@@ -27,12 +26,6 @@ public class BlockUnRealChest extends BlockContainer {
     }
     @Override
     public boolean isOpaqueCube()
-    {
-        return false;
-    }
-
-    @Override
-    public boolean renderAsNormalBlock()
     {
         return false;
     }

@@ -5,7 +5,7 @@ import com.unrealdinnerbone.yarm.blocks.Faces.*;
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
 import com.unrealdinnerbone.yarm.blocks.Normal.*;
 import com.unrealdinnerbone.yarm.blocks.Ores.*;
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks
 {
@@ -26,18 +26,18 @@ public class ModBlocks
 
     public static void init()
     {
-        GameRegistry.registerBlock(BLOCK_UNREAL_FACE, "UnReal_Block");
-        GameRegistry.registerBlock(BLOCK_UNREAL_CHEST, "UnReal_Chest");
-        GameRegistry.registerBlock(BLOCK_ANTIMONY_ORE, "Antimony_Ore");
-        GameRegistry.registerBlock(BLOCK_ANTIMONY, "Block_Antimony");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_1, "Block_NetherStar1");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_2, "Block_NetherStar2");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_3, "Block_NetherStar3");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_4, "Block_NetherStar4");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_5, "Block_NetherStar5");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_6, "Block_NetherStar6");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_7, "Block_NetherStar7");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_8, "Block_NetherStar8");
+//        GameRegistry.registerBlock(BLOCK_UNREAL_FACE, "UnReal_Block");
+//        GameRegistry.registerBlock(BLOCK_UNREAL_CHEST, "UnReal_Chest");
+//        GameRegistry.registerBlock(BLOCK_ANTIMONY_ORE, "Antimony_Ore");
+//        GameRegistry.registerBlock(BLOCK_ANTIMONY, "Block_Antimony");
+//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_1, "Block_NetherStar1");
+//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_2, "Block_NetherStar2");
+//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_3, "Block_NetherStar3");
+//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_4, "Block_NetherStar4");
+//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_5, "Block_NetherStar5");
+//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_6, "Block_NetherStar6");
+//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_7, "Block_NetherStar7");
+//        GameRegistry.registerBlock(BLOCK_NETHER_STAR_8, "Block_NetherStar8");
         LogHelper.info("Loaded Blocks");
     }
 

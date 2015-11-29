@@ -7,7 +7,7 @@ import com.unrealdinnerbone.yarm.Util.LogHelper;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
-import cpw.mods.fml.common.IWorldGenerator;
+import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class OreGen implements IWorldGenerator
 {
@@ -16,7 +16,7 @@ public class OreGen implements IWorldGenerator
         world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
         {
 
-            switch(world.provider.dimensionId)
+            switch(world.provider.getDimensionId())
             {
                 case -1:
                     generateInNether(world, random, chunkX*16, chunkZ*16);
@@ -39,7 +39,7 @@ public class OreGen implements IWorldGenerator
             int chunkY = random.nextInt(60); //Below number ** it will spawn
             int chunkZ = z + random.nextInt(16); //Where it spawns
 
-            (new WorldGenMinable(ModBlocks.BLOCK_ANTIMONY_ORE, 3)).generate(world, random, chunkX, chunkY, chunkZ); //Chunks of ...
+           // (new WorldGenMinable(ModBlocks.BLOCK_ANTIMONY_ORE, 3)).generate(world, random, chunkX, chunkY, chunkZ); //Chunks of ...
         }
     }
 

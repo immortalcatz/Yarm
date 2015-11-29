@@ -1,5 +1,7 @@
 # Pet Rock #
 *.class
+/run
+run\
 
 # Package Files #
 *.war
@@ -31,4 +33,9 @@ MinecraftForge-Credits.txt
 README.txt
 CREDITS-fml.txt
 LICENSE-fml.txt
+gradle/*
 
+run/*
+gradle/wrapper/gradle-wrapper.properties
+gradle/wrapper/gradle-wrapper.properties
+gradle/wrapper/gradle-wrapper.properties
