@@ -11,7 +11,6 @@ buildscript {
     }
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
-//apply plguin: 'curse'
 
 version = "1.6.1"
 group= "com.unrealdinnerbone.yarm"
@@ -42,12 +41,3 @@ processResources
                 exclude 'mcmod.info'
             }
         }
-
-//curse {
-//    projectId = project.projectId
-//    apiKey = project.curseForgeApiKey
-//    releaseType = 'beta'
-//    displayName = "Yarm - 1.6.2"
-//    changelog = System.getenv("CHANGELOG").equals("none") ? getChangelogText() : System.getenv("CHANGELOG")
-//    addGameVersion '1.8.8'
-//}
