@@ -1,7 +1,7 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "yarm:blocks/UnReal_Face"
+        "all": "yarm:blocks/NetherStar3"
     },
     "display": {
         "thirdperson": {

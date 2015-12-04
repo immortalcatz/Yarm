@@ -1,10 +1,9 @@
 package com.unrealdinnerbone.yarm.CreativeTab;
 
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-
-import com.unrealdinnerbone.yarm.init.ModItems;
 import com.unrealdinnerbone.yarm.reference.Reference;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 
 public class Tab
 {
@@ -13,7 +12,8 @@ public class Tab
         @Override
         public Item getTabIconItem()
         {
-            return ModItems.ItemUnRealFace;
+            // return ModItems.ItemUnRealFace;
+            return Items.apple;
 
         }
 

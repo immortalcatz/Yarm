@@ -1,6 +1,8 @@
 {
     "variants": {
         "normal": { "model": "yarm:Block_NetherStar1" },
-		"inventory": { "model": "yarm:Antimony_Ore" }
+        "inventory": {
+            "model": "yarm:Block_NetherStar1"
+        }
     }
 }

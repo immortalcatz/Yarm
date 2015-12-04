@@ -1,10 +1,11 @@
 package com.unrealdinnerbone.yarm.init;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
-import com.unrealdinnerbone.yarm.blocks.Faces.*;
+import com.unrealdinnerbone.yarm.blocks.Faces.BlockUnRealFace;
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
-import com.unrealdinnerbone.yarm.blocks.Normal.*;
-import com.unrealdinnerbone.yarm.blocks.Ores.*;
+import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
+import com.unrealdinnerbone.yarm.blocks.Normal.BlockUnRealChest;
+import com.unrealdinnerbone.yarm.blocks.Ores.BlockAntimonyOre;
 import com.unrealdinnerbone.yarm.render.RenderHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 

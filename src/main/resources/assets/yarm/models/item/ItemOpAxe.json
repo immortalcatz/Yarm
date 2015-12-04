@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "yarm:items/debug"
+        "layer0": "items/apple"
     },
     "display": {
         "thirdperson": {

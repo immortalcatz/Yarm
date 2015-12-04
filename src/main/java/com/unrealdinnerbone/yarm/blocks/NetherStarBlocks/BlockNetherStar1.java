@@ -4,7 +4,7 @@ import com.unrealdinnerbone.yarm.reference.Reference;
 
 public class BlockNetherStar1 extends BlockBaseNetherStar {
 
-    private static String name = "blocknetherstar1";
+    private static String name = "BlockNetherStar1";
 
     public BlockNetherStar1()
     {

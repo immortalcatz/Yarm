@@ -3,21 +3,21 @@
 # Creative Tabs
 
 # Items
-item.yarm:UnReal_Face.name=UnReal's Face
+item.yarm:UnRealFace.name=UnReal's Face
 item.yarm:ManmaedFace.name=Manmaed's Face
 item.yarm:TheKayneGameFace.name=TheKayneGame's Face
 item.yarm:Yunus1903Face.name=Yunus1903's Face
 item.yarm:AntimonyIngot.name=Antimony Ingot
-item.yarm:OpAxe.name=Nether Star Axe
+item.yarm:ToolOpAxe.name=Nether Star Axe
 item.yarm:NetherStarRod.name=Nether Star Rod
-item.yarm:OpSword.name=Nether Star Sword
-item.yarm:OpPick.name=Nether Star Pickaxe
-item.yarm:OpHoe.name=Nether Star Hoe
-item.yarm:OpSpade.name=Nether Star Shovel
+item.yarm:ToolOpSword.name=Nether Star Sword
+item.yarm:ToolOpPick.name=Nether Star Pickaxe
+item.yarm:ToolOpHoe.name=Nether Star Hoe
+item.yarm:ToolOpSpade.name=Nether Star Shovel
 
 #Blocks
 tile.yarm:UnReal_Block.name=UnReal's Block
-tile.yarm:AntimonyBlock.name=Antimony Block
+tile.yarm:BlockAntimony.name=Antimony Block
 tile.yarm:AntimonyOre.name=Antimony Ore
 tile.yarm:BlockNetherStar1.name=Compressed Nether Star Block
 tile.yarm:BlockNetherStar2.name=Double Compressed Nether Star Block
