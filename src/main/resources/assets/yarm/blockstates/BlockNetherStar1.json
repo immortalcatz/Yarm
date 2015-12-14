@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "normal": { "model": "yarm:BlockNetherStar1" },
+        "inventory": {
+            "model": "yarm:BlockNetherStar1"
+        }
+    }
+}
