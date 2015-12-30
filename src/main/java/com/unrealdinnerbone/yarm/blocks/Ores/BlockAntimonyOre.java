@@ -41,8 +41,4 @@ public class BlockAntimonyOre extends BlockYarm implements IBlockTextureProvider
         return 1;
     }
 
-    @Override
-    public IBlockState getStateFromMetaValue(int meta) {
-        return null;
-    }
 }
