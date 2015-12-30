@@ -28,8 +28,4 @@ public class BlockNetherStar2 extends BlockBaseNetherStar implements IBlockTextu
         return 1;
     }
 
-    @Override
-    public IBlockState getStateFromMetaValue(int meta) {
-        return null;
-    }
 }

@@ -39,9 +39,14 @@ public class yarm {
     @SidedProxy(clientSide = Reference.CLIENT_SIDE, serverSide = Reference.SERVER_SIDE, modId = Reference.MOD_ID)
     public static IProxy proxy;
 
+
     @Mod.EventHandler
-    public static void PreInit(FMLPreInitializationEvent PreEvent)
+    public static void Init(FMLInitializationEvent event)
     {
+        if(event.getSide().isClient())
+        {
+            ClientProxy.registerRendering();
+        }
         LogHelper.info("Starting Post Init");
         OreGen WorldGen = new OreGen();
 
@@ -71,18 +76,6 @@ public class yarm {
 
         //Ore Generator
         GameRegistry.registerWorldGenerator(WorldGen, 1);
-
-    }
-
-
-
-    @Mod.EventHandler
-    public static void Init(FMLInitializationEvent event)
-    {
-        if(event.getSide().isClient())
-        {
-            ClientProxy.registerRendering();
-        }
 
     }
     @Mod.EventHandler

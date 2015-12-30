@@ -29,9 +29,5 @@ public class BlockNetherStar5 extends BlockBaseNetherStar implements IBlockTextu
     public int amountOfVariants() {
         return 1;
     }
-
-    @Override
-    public IBlockState getStateFromMetaValue(int meta) {
-        return null;
-    }
+    
 }

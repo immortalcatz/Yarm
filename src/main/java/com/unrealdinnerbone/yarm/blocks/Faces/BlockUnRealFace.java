@@ -32,10 +32,6 @@ public class BlockUnRealFace extends BlockYarm implements IBlockTextureProvider
         return 1;
     }
 
-    @Override
-    public IBlockState getStateFromMetaValue(int meta) {
-        return null;
-    }
     public static String getName()
     {
         return name;
