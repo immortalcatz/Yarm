@@ -1,16 +1,20 @@
 package com.unrealdinnerbone.yarm.blocks.Ores;
 
 import com.google.common.collect.ImmutableMap;
+import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.blocks.BlockYarm;
 import com.unrealdinnerbone.yarm.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.util.EnumFacing;
+import reborncore.api.IBlockTextureProvider;
+import reborncore.api.TextureRegistry;
 
 import java.util.Collection;
 
-public class BlockAntimonyOre extends BlockYarm implements IBlockState {
+public class BlockAntimonyOre extends BlockYarm implements IBlockTextureProvider {
 
     private static String name = "BlockAntimonyOre";
 
@@ -18,6 +22,8 @@ public class BlockAntimonyOre extends BlockYarm implements IBlockState {
     {
         super(Material.iron);
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
+        this.setCreativeTab(Tab.Yarm_Tab);
+        TextureRegistry.registerBlock(this);
     }
     public static String getName()
     {
@@ -25,32 +31,18 @@ public class BlockAntimonyOre extends BlockYarm implements IBlockState {
     }
 
     @Override
-    public Collection<IProperty> getPropertyNames() {
-        return null;
+    public String getTextureName(IBlockState blockState, EnumFacing facing) {
+        return Reference.TEXTURE_PATH_BLOCK + name;
+
     }
 
     @Override
-    public <T extends Comparable<T>> T getValue(IProperty<T> property) {
-        return null;
+    public int amountOfVariants() {
+        return 1;
     }
 
     @Override
-    public <T extends Comparable<T>, V extends T> IBlockState withProperty(IProperty<T> property, V value) {
-        return null;
-    }
-
-    @Override
-    public <T extends Comparable<T>> IBlockState cycleProperty(IProperty<T> property) {
-        return null;
-    }
-
-    @Override
-    public ImmutableMap<IProperty, Comparable> getProperties() {
-        return null;
-    }
-
-    @Override
-    public Block getBlock() {
+    public IBlockState getStateFromMetaValue(int meta) {
         return null;
     }
 }

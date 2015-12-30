@@ -6,7 +6,6 @@ import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockUnRealChest;
 import com.unrealdinnerbone.yarm.blocks.Ores.BlockAntimonyOre;
-import com.unrealdinnerbone.yarm.render.RenderHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks
@@ -41,24 +40,6 @@ public class ModBlocks
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_7, BlockNetherStar7.getName());
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_8, BlockNetherStar8.getName());
         LogHelper.info("Loaded Blocks");
-    }
-
-    public static void renderBlocks()
-    {
-        LogHelper.info("Registering Block Renders");
-        RenderHelper.BlockRenderRegister(BLOCK_ANTIMONY);
-        RenderHelper.BlockRenderRegister(BLOCK_ANTIMONY_ORE);
-        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_1);
-        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_2);
-        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_3);
-        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_4);
-        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_5);
-        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_6);
-        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_7);
-        RenderHelper.BlockRenderRegister(BLOCK_NETHER_STAR_8);
-        RenderHelper.BlockRenderRegister(BLOCK_UNREAL_CHEST);
-        RenderHelper.BlockRenderRegister(BLOCK_UNREAL_FACE);
-        LogHelper.info("Registered Block Renders");
     }
 
 }

@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.item;
+package com.unrealdinnerbone.yarm.item.ItemHelpers;
 
 import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.reference.Reference;
@@ -8,6 +8,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.world.WorldEvent;
+import reborncore.api.TextureRegistry;
 
 public class ItemYarm extends Item
 {
@@ -15,6 +16,7 @@ public class ItemYarm extends Item
     {
         super();
         this.setCreativeTab(Tab.Yarm_Tab);
+        TextureRegistry.registerItem(this);
     }
 
 

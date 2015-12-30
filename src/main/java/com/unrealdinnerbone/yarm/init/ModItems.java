@@ -2,14 +2,11 @@ package com.unrealdinnerbone.yarm.init;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.item.*;
+import com.unrealdinnerbone.yarm.item.ItemHelpers.ItemYarm;
 import com.unrealdinnerbone.yarm.item.Tools.*;
-import com.unrealdinnerbone.yarm.render.RenderHelper;
-import net.minecraft.util.LazyLoadBase;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.item.*;
 import net.minecraftforge.common.util.EnumHelper;
-
-import static com.unrealdinnerbone.yarm.render.RenderHelper.ItemRenderRegister;
 
 public class ModItems
     {
@@ -44,21 +41,5 @@ public class ModItems
         GameRegistry.registerItem(ItemToolOpSword, "ItemOpSword");
         LogHelper.info("Loaded Items");
     }
-        public static void registerItemRenderer() {
-            LogHelper.info("Registering Item Rendering");
-            RenderHelper.ItemRenderRegister(ItemToolOpAxe);
-            RenderHelper.ItemRenderRegister(ItemToolOpSword);
-            RenderHelper.ItemRenderRegister(ItemToolOpSpade);
-            RenderHelper.ItemRenderRegister(ItemToolOpPick);
-            RenderHelper.ItemRenderRegister(ItemNetherStarRod);
-            RenderHelper.ItemRenderRegister(ItemToolOpHoe);
-            RenderHelper.ItemRenderRegister(ItemAntimonyIngot);
-            RenderHelper.ItemRenderRegister(ItemKyaneFace);
-            RenderHelper.ItemRenderRegister(ItemManmedFace);
-            RenderHelper.ItemRenderRegister(ItemUnRealFace);
-            RenderHelper.ItemRenderRegister(ItemYunusFace);
-            LogHelper.info("Register Item Rending");
-
-        }
 
 }
