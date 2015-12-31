@@ -16,9 +16,9 @@ item.yarm:ToolOpHoe.name=Nether Star Hoe
 item.yarm:ToolOpSpade.name=Nether Star Shovel
 
 #Blocks
-tile.yarm:UnReal_Block.name=UnReal's Block
+tile.yarm:BlockUnRealFace.name=UnReal's Block
 tile.yarm:BlockAntimony.name=Antimony Block
-tile.yarm:AntimonyOre.name=Antimony Ore
+tile.yarm:BlockAntimonyOre.name=Antimony Ore
 tile.yarm:BlockNetherStar1.name=Compressed Nether Star Block
 tile.yarm:BlockNetherStar2.name=Double Compressed Nether Star Block
 tile.yarm:BlockNetherStar3.name=Triple Compressed Nether Star Block

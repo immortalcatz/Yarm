@@ -45,7 +45,7 @@ public class yarm {
     {
         if(event.getSide().isClient())
         {
-            ClientProxy.registerRendering();
+            //Put Stuff Here For Client Only
         }
         LogHelper.info("Starting Post Init");
         OreGen WorldGen = new OreGen();

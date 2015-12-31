@@ -11,6 +11,7 @@ public class ItemUnRealFace extends ItemTextureBase
     {
         super();
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
+        this.setFull3D();
 
 
     }
