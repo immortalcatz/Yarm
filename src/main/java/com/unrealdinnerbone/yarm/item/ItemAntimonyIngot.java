@@ -1,9 +1,9 @@
 package com.unrealdinnerbone.yarm.item;
 
-import com.unrealdinnerbone.yarm.item.ItemHelpers.ItemTextureBase;
+import com.unrealdinnerbone.yarm.item.ItemHelpers.ItemYarm;
 import com.unrealdinnerbone.yarm.reference.Reference;
 
-public class ItemAntimonyIngot extends ItemTextureBase
+public class ItemAntimonyIngot extends ItemYarm
 {
     private static String name = "AntimonyIngot";
 
@@ -15,15 +15,5 @@ public class ItemAntimonyIngot extends ItemTextureBase
     public static String getName()
     {
         return name;
-    }
-
-    @Override
-    public String getTextureName(int damage) {
-        return Reference.TEXTURE_PATH_ITEM + name;
-    }
-
-    @Override
-    public int getMaxMeta() {
-        return 1;
     }
 }

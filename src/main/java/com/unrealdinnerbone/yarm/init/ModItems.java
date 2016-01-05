@@ -28,17 +28,17 @@ public class ModItems
     public static void init()
     {
 
-        GameRegistry.registerItem(ItemUnRealFace, "ItemUnRealFace");
-        GameRegistry.registerItem(ItemManmedFace, "ItemManmedFace");
-        GameRegistry.registerItem(ItemKyaneFace, "ItemTheKayneGameFace");
-        GameRegistry.registerItem(ItemYunusFace, "ItemYunus1903Face");
-        GameRegistry.registerItem(ItemAntimonyIngot, "AntimonyIngot");
-        GameRegistry.registerItem(ItemNetherStarRod,"NetherStarRod");
-        GameRegistry.registerItem(ItemToolOpAxe, "ItemOpAxe");
-        GameRegistry.registerItem(ItemToolOpHoe, "ItemOpHoe");
-        GameRegistry.registerItem(ItemToolOpPick, "ItemOpPick");
-        GameRegistry.registerItem(ItemToolOpSpade, "ItemOpSpade");
-        GameRegistry.registerItem(ItemToolOpSword, "ItemOpSword");
+//        GameRegistry.registerItem(ItemUnRealFace, "ItemUnRealFace");
+//        GameRegistry.registerItem(ItemManmedFace, "ItemManmedFace");
+//        GameRegistry.registerItem(ItemKyaneFace, "ItemTheKayneGameFace");
+//        GameRegistry.registerItem(ItemYunusFace, "ItemYunus1903Face");
+//        GameRegistry.registerItem(ItemAntimonyIngot, "AntimonyIngot");
+//        GameRegistry.registerItem(ItemNetherStarRod,"NetherStarRod");
+//        GameRegistry.registerItem(ItemToolOpAxe, "ItemOpAxe");
+//        GameRegistry.registerItem(ItemToolOpHoe, "ItemOpHoe");
+//        GameRegistry.registerItem(ItemToolOpPick, "ItemOpPick");
+//        GameRegistry.registerItem(ItemToolOpSpade, "ItemOpSpade");
+//        GameRegistry.registerItem(ItemToolOpSword, "ItemOpSword");
         LogHelper.info("Loaded Items");
     }
 

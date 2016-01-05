@@ -6,6 +6,10 @@ import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockUnRealChest;
 import com.unrealdinnerbone.yarm.blocks.Ores.BlockAntimonyOre;
+import com.unrealdinnerbone.yarm.reference.Reference;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks
@@ -27,10 +31,10 @@ public class ModBlocks
 
     public static void init()
     {
-        GameRegistry.registerBlock(BLOCK_UNREAL_FACE, "UnReal_Block");
-        GameRegistry.registerBlock(BLOCK_UNREAL_CHEST, "UnReal_Chest");
-        GameRegistry.registerBlock(BLOCK_ANTIMONY_ORE, "Antimony_Ore");
-        GameRegistry.registerBlock(BLOCK_ANTIMONY, "Block_Antimony");
+//        GameRegistry.registerBlock(BLOCK_UNREAL_FACE, "UnReal_Block");
+//        GameRegistry.registerBlock(BLOCK_UNREAL_CHEST, "UnReal_Chest");
+//        GameRegistry.registerBlock(BLOCK_ANTIMONY_ORE, "Antimony_Ore");
+//        GameRegistry.registerBlock(BLOCK_ANTIMONY, "Block_Antimony");
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_1, BlockNetherStar1.getName());
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_2, BlockNetherStar2.getName());
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_3, BlockNetherStar3.getName());
@@ -40,6 +44,12 @@ public class ModBlocks
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_7, BlockNetherStar7.getName());
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_8, BlockNetherStar8.getName());
         LogHelper.info("Loaded Blocks");
+    }
+
+    public static void RenderBlocks()
+
+    {
+   //     ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(BLOCK_NETHER_STAR_1), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar1.getName(), "inventory"));
     }
 
 }
