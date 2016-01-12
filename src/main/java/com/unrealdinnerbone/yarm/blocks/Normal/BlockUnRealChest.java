@@ -8,16 +8,22 @@ import net.minecraft.world.World;
 
 public class BlockUnRealChest extends BlockContainer {
 
+    private static String name = "BlockUnRealChest";
+
     public BlockUnRealChest()
     {
         super(Material.iron);
-        setBlockName("UnRealChest");
-        setBlockTextureName(Reference.MOD_ID + ":" + "UnRealChest");
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
         setHardness(3.0F);
         setBlockBounds(0.0625F, 0F, 0.0625F, 0.9375F, 0.875F, 0.9375F);
         this.isBlockContainer = true;
 
 
+    }
+
+    public static String getName()
+    {
+        return name;
     }
 
     @Override
@@ -27,12 +33,6 @@ public class BlockUnRealChest extends BlockContainer {
     }
     @Override
     public boolean isOpaqueCube()
-    {
-        return false;
-    }
-
-    @Override
-    public boolean renderAsNormalBlock()
     {
         return false;
     }

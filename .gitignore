@@ -1,5 +1,7 @@
-# Pet Rock #
+# Yarm #
 *.class
+/run
+run\
 
 # Package Files #
 *.war
@@ -31,4 +33,6 @@ MinecraftForge-Credits.txt
 README.txt
 CREDITS-fml.txt
 LICENSE-fml.txt
+gradle/*
 
+run/*

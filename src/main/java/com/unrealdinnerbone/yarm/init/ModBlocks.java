@@ -1,11 +1,12 @@
 package com.unrealdinnerbone.yarm.init;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
-import com.unrealdinnerbone.yarm.blocks.Faces.*;
+import com.unrealdinnerbone.yarm.blocks.Faces.BlockUnRealFace;
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
-import com.unrealdinnerbone.yarm.blocks.Normal.*;
-import com.unrealdinnerbone.yarm.blocks.Ores.*;
-import cpw.mods.fml.common.registry.GameRegistry;
+import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
+import com.unrealdinnerbone.yarm.blocks.Normal.BlockUnRealChest;
+import com.unrealdinnerbone.yarm.blocks.Ores.BlockAntimonyOre;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks
 {
@@ -30,14 +31,14 @@ public class ModBlocks
         GameRegistry.registerBlock(BLOCK_UNREAL_CHEST, "UnReal_Chest");
         GameRegistry.registerBlock(BLOCK_ANTIMONY_ORE, "Antimony_Ore");
         GameRegistry.registerBlock(BLOCK_ANTIMONY, "Block_Antimony");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_1, "Block_NetherStar1");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_2, "Block_NetherStar2");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_3, "Block_NetherStar3");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_4, "Block_NetherStar4");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_5, "Block_NetherStar5");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_6, "Block_NetherStar6");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_7, "Block_NetherStar7");
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_8, "Block_NetherStar8");
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_1, BlockNetherStar1.getName());
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_2, BlockNetherStar2.getName());
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_3, BlockNetherStar3.getName());
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_4, BlockNetherStar4.getName());
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_5, BlockNetherStar5.getName());
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_6, BlockNetherStar6.getName());
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_7, BlockNetherStar7.getName());
+        GameRegistry.registerBlock(BLOCK_NETHER_STAR_8, BlockNetherStar8.getName());
         LogHelper.info("Loaded Blocks");
     }
 

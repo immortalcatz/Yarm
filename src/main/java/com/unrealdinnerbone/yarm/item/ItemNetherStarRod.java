@@ -1,19 +1,22 @@
 package com.unrealdinnerbone.yarm.item;
 
+import com.unrealdinnerbone.yarm.item.ItemHelpers.ItemTextureBase;
 import com.unrealdinnerbone.yarm.reference.Reference;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 
-public class ItemNetherStarRod extends ItemYarm {
+public class ItemNetherStarRod extends ItemTextureBase {
+
+    private final String name = "NetherStarRod";
+
     public ItemNetherStarRod() {
         super();
-        this.setUnlocalizedName("NetherStarRod");
-        this.setTextureName(Reference.MOD_ID + ":" + "NetherStarRod");
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
     }
 
     @Override
@@ -31,5 +34,15 @@ public class ItemNetherStarRod extends ItemYarm {
         }
 
         return super.onItemRightClick(itemStack, world, player);
+    }
+
+    @Override
+    public String getTextureName(int damage) {
+        return Reference.TEXTURE_PATH_ITEM + name;
+    }
+
+    @Override
+    public int getMaxMeta() {
+        return 1;
     }
 }

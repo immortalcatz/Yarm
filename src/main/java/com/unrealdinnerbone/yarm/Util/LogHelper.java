@@ -1,15 +1,14 @@
 package com.unrealdinnerbone.yarm.Util;
 
 import com.unrealdinnerbone.yarm.reference.Reference;
-import cpw.mods.fml.common.FMLLog;
+import net.minecraftforge.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
-import sun.rmi.runtime.Log;
 
 public class LogHelper
 {
     public static void log(Level logLevel, Object object)
     {
-        FMLLog.log(Reference.MOD_NAME, logLevel, String.valueOf(object));
+        FMLLog.log(Reference.MOD_DISPLAY_NAME_WITH_VERSION, logLevel, String.valueOf(object));
     }
 
     public static void all(Object object)

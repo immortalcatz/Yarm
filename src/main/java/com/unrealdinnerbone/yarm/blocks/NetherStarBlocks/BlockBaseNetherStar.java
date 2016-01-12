@@ -4,6 +4,7 @@ import com.unrealdinnerbone.yarm.blocks.BlockYarm;
 import net.minecraft.world.World;
 
 public class BlockBaseNetherStar extends BlockYarm {
+
     public BlockBaseNetherStar()
     {
         super();

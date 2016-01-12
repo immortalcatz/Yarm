@@ -3,27 +3,27 @@
 # Creative Tabs
 
 # Items
-item.UnReal_Face.name=UnReal's Face
-item.Manmaed_Face.name=Manmaed's Face
-item.TheKayneGameFace.name=TheKayneGame's Face
-item.Yunus1903Face.name=Yunus1903's Face
-item.AntimonyIngot.name=Antimony Ingot
-item.OpAxe.name=Nether Star Axe
-item.NetherStarRod.name=Nether Star Rod
-item.OpSword.name=Nether Star Sword
-item.OpPick.name=Nether Star Pickaxe
-item.OpHoe.name=Nether Star Hoe
-item.OpSpade.name=Nether Star Shovel
+item.yarm:UnRealFace.name=UnReal's Face
+item.yarm:ManmaedFace.name=Manmaed's Face
+item.yarm:TheKayneGameFace.name=TheKayneGame's Face
+item.yarm:Yunus1903Face.name=Yunus1903's Face
+item.yarm:AntimonyIngot.name=Antimony Ingot
+item.yarm:ToolOpAxe.name=Nether Star Axe
+item.yarm:NetherStarRod.name=Nether Star Rod
+item.yarm:ToolOpSword.name=Nether Star Sword
+item.yarm:ToolOpPick.name=Nether Star Pickaxe
+item.yarm:ToolOpHoe.name=Nether Star Hoe
+item.yarm:ToolOpSpade.name=Nether Star Shovel
 
 #Blocks
-tile.UnReal_Block.name=UnReal's Block
-tile.AntimonyBlock.name=Antimony Block
-tile.AntimonyOre.name=Antimony Ore
-tile.BlockNetherStar1.name=Compressed Nether Star Block
-tile.BlockNetherStar2.name=Double Compressed Nether Star Block
-tile.BlockNetherStar3.name=Triple Compressed Nether Star Block
-tile.BlockNetherStar4.name=Quadruple Compressed Nether Star Block
-tile.BlockNetherStar5.name=Quintuple Compressed Nether Star Block
-tile.BlockNetherStar6.name=Sextuple Compressed Nether Star Block
-tile.BlockNetherStar7.name=Septuple Compressed Nether Star Block
-tile.BlockNetherStar8.name=Octuple Compressed Nether Star Block
+tile.yarm:BlockUnRealFace.name=UnReal's Block
+tile.yarm:BlockAntimony.name=Antimony Block
+tile.yarm:BlockAntimonyOre.name=Antimony Ore
+tile.yarm:BlockNetherStar1.name=Compressed Nether Star Block
+tile.yarm:BlockNetherStar2.name=Double Compressed Nether Star Block
+tile.yarm:BlockNetherStar3.name=Triple Compressed Nether Star Block
+tile.yarm:BlockNetherStar4.name=Quadruple Compressed Nether Star Block
+tile.yarm:BlockNetherStar5.name=Quintuple Compressed Nether Star Block
+tile.yarm:BlockNetherStar6.name=Sextuple Compressed Nether Star Block
+tile.yarm:BlockNetherStar7.name=Septuple Compressed Nether Star Block
+tile.yarm:BlockNetherStar8.name=Octuple Compressed Nether Star Block

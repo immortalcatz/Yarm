@@ -15,7 +15,7 @@ public class entityManmaed extends enityYarmPlayer
     }
 
     protected Item getDropItem() {
-        ItemStack item = new ItemStack(ModItems.ManmedFace);
+        ItemStack item = new ItemStack(ModItems.ItemManmedFace);
         this.entityDropItem(item, 0.0F);
         return Item.getItemById(0);
     }
