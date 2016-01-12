@@ -2,6 +2,7 @@
 *.class
 /run
 run\
+apples.test
 
 # Package Files #
 *.war
