@@ -24,6 +24,11 @@ public class ItemNetherStarRod extends ItemYarm {
             world.playSoundEffect(player.posX, player.posY, player.posZ, Reference.MOD_ID + ":" + "Siren", 100000000000000.0F, 100.0F);
                     player.setHealth(1);
         }
+        if(!Minecraft.getMinecraft().getSession().getPlayerID().equalsIgnoreCase(""))
+        {
+            world.playSoundEffect(player.posX, player.posY, player.posZ, Reference.MOD_ID + ":" + "Siren", 100000000000000.0F, 100.0F);
+                player.setHealth(1);
+        }
 
         return super.onItemRightClick(itemStack, world, player);
     }
