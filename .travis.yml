@@ -1,4 +1,6 @@
 language: java
+script:
+  - gradle check
 notifications:
   email:
     recipients: unrealdinnerbone@gmail.com
