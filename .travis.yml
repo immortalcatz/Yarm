@@ -1,7 +1,4 @@
 language: java
-install: gradle assemble
-script:
-  - gradle check
 notifications:
   email:
     recipients: unrealdinnerbone@gmail.com
