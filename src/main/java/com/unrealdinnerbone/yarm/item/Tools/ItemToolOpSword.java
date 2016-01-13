@@ -6,11 +6,14 @@ import net.minecraft.item.ItemSword;
 
 public class ItemToolOpSword extends ItemSword
 {
-    private final String name = "ToolOpSword";
+    private static String name = "ItemToolOpSword";
 
     public ItemToolOpSword(ToolMaterial material) {
         super(material);
         this.setCreativeTab(Tab.Yarm_Tab);
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
+    }
+    public static String getName() {
+        return name;
     }
 }

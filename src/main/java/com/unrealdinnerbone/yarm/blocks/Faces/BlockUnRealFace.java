@@ -17,5 +17,9 @@ public class BlockUnRealFace extends BlockYarm
        this.setCreativeTab(Tab.Yarm_Tab);
        this.setUnlocalizedName(Reference.RE_PREFIX + name);
        }
+    public static String getName()
+    {
+        return name;
+    }
 }
 

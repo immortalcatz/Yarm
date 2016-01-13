@@ -31,10 +31,10 @@ public class ModBlocks
 
     public static void init()
     {
-//        GameRegistry.registerBlock(BLOCK_UNREAL_FACE, "UnReal_Block");
-//        GameRegistry.registerBlock(BLOCK_UNREAL_CHEST, "UnReal_Chest");
-//        GameRegistry.registerBlock(BLOCK_ANTIMONY_ORE, "Antimony_Ore");
-//        GameRegistry.registerBlock(BLOCK_ANTIMONY, "Block_Antimony");
+        GameRegistry.registerBlock(BLOCK_UNREAL_FACE, BlockUnRealFace.getName());
+        GameRegistry.registerBlock(BLOCK_UNREAL_CHEST, BlockUnRealChest.getName());
+        GameRegistry.registerBlock(BLOCK_ANTIMONY_ORE, BlockAntimonyOre.getName());
+        GameRegistry.registerBlock(BLOCK_ANTIMONY, BlockAntimony.getName());
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_1, BlockNetherStar1.getName());
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_2, BlockNetherStar2.getName());
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_3, BlockNetherStar3.getName());

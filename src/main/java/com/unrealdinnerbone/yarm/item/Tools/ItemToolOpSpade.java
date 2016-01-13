@@ -6,11 +6,14 @@ import net.minecraft.item.ItemSpade;
 
 public class ItemToolOpSpade extends ItemSpade
 {
-    private final String name = "ToolOpSpade";
+    private static String name = "ItemToolOpSpade";
 
     public ItemToolOpSpade(ToolMaterial material) {
         super(material);
         this.setCreativeTab(Tab.Yarm_Tab);
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
+    }
+    public static String getName() {
+        return name;
     }
 }

@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "normal": { "model": "yarm:BlockUnRealFace" },
+        "inventory": { "model": "yarm:BlockUnRealFace" }
+    }
+}

@@ -5,7 +5,7 @@ import com.unrealdinnerbone.yarm.reference.Reference;
 
 public class ItemAntimonyIngot extends ItemYarm
 {
-    private static String name = "AntimonyIngot";
+    private static String name = "ItemAntimonyIngot";
 
     public ItemAntimonyIngot()
     {

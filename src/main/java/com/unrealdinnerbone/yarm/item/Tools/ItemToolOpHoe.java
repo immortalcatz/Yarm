@@ -5,7 +5,7 @@ import com.unrealdinnerbone.yarm.reference.Reference;
 import net.minecraft.item.ItemHoe;
 
 public class ItemToolOpHoe extends ItemHoe {
-    private static String name = "ToolOpHoe";
+    private static String name = "ItemToolOpHoe";
 
     public ItemToolOpHoe(ToolMaterial material) {
         super(material);

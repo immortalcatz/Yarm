@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 
 public class ItemNetherStarRod extends ItemYarm {
 
-    private final String name = "NetherStarRod";
+    private static String name = "ItemNetherStarRod";
 
     public ItemNetherStarRod() {
         super();
@@ -29,5 +29,8 @@ public class ItemNetherStarRod extends ItemYarm {
         }
 
         return super.onItemRightClick(itemStack, world, player);
+    }
+    public static String getName() {
+        return name;
     }
 }

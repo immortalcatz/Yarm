@@ -6,7 +6,7 @@ import net.minecraft.item.ItemAxe;
 
 public class ItemToolOpAxe extends ItemAxe {
 
-    private static String name = "ToolOpAxe";
+    private static String name = "ItemToolOpAxe";
 
     public ItemToolOpAxe(ToolMaterial material) {
 

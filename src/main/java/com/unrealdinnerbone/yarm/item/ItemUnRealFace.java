@@ -5,7 +5,7 @@ import com.unrealdinnerbone.yarm.reference.Reference;
 
 public class ItemUnRealFace extends ItemYarm
 {
-    private final String name = "UnRealFace";
+    private static String name = "ItemUnRealFace";
 
     public ItemUnRealFace()
     {
@@ -13,6 +13,8 @@ public class ItemUnRealFace extends ItemYarm
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
         this.setFull3D();
 
-
+    }
+    public static String getName() {
+        return name;
     }
 }

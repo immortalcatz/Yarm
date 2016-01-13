@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm;
 
+import com.unrealdinnerbone.yarm.EventTester.EventTester;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.init.Recpies.Shapless;
@@ -52,10 +53,13 @@ public class yarm {
         ModBlocks.init();
         ModBlocks.RenderBlocks();
         Shpaed.init();
+        ModItems.init();
         Smelting.init();
         Shapless.init();
         ModEntity.initEntity();
         ModOreDictionary.OreDictionary();
+        EventTester.init();
+
         GameRegistry.registerWorldGenerator(WorldGen, 1);
         if(Event.getSide().isClient())
         {

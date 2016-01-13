@@ -6,11 +6,14 @@ import net.minecraft.item.ItemPickaxe;
 
 public class ItemToolOpPick extends ItemPickaxe
 {
-    private final String name = "ToolOpPick";
+    private static String name = "ItemToolOpPick";
 
     public ItemToolOpPick(ToolMaterial material) {
         super(material);
         this.setCreativeTab(Tab.Yarm_Tab);
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
+    }
+    public static String getName() {
+        return name;
     }
 }
