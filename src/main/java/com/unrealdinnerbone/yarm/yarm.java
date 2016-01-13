@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm;
 
+import com.unrealdinnerbone.yarm.EventTester.EventTester;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.init.Recpies.Shapless;
@@ -28,7 +29,7 @@ import sun.rmi.runtime.Log;
 
 import java.util.logging.Logger;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MC_VERSION)
 public class yarm {
 
 
@@ -39,52 +40,36 @@ public class yarm {
     @SidedProxy(clientSide = Reference.CLIENT_SIDE, serverSide = Reference.SERVER_SIDE, modId = Reference.MOD_ID)
     public static IProxy proxy;
 
-
     @Mod.EventHandler
-    public static void Init(FMLInitializationEvent event)
+    public static void PreInit(FMLPreInitializationEvent PreEvent)
     {
-        if(event.getSide().isClient())
-        {
-            //Put Stuff Here For Client Only
-        }
-        LogHelper.info("Starting Post Init");
+
+    }
+    @Mod.EventHandler
+    public static void Init(FMLInitializationEvent Event)
+    {
+
         OreGen WorldGen = new OreGen();
-
-        //Items
-        LogHelper.info("Starting To Load Items");
-        ModItems.init();
-
-        //Blocks
-        LogHelper.info("Stating To Load Blocks");
         ModBlocks.init();
-
-        //Recpies
-        LogHelper.info("Stating To Load Shaped Recipes");
+        ModBlocks.RenderBlocks();
         Shpaed.init();
-        LogHelper.info("Stating To Load Smelting Recipes");
+        ModItems.init();
         Smelting.init();
-        LogHelper.info("Stating To Load Shapeless Recipe");
         Shapless.init();
-
-        //Enitys
-        LogHelper.info("Loading Entity's");
         ModEntity.initEntity();
-
-        //Ore Dictionary
-        LogHelper.info("Loading Ore Dic");
         ModOreDictionary.OreDictionary();
+        EventTester.init();
 
-        //Ore Generator
         GameRegistry.registerWorldGenerator(WorldGen, 1);
-
+        if(Event.getSide().isClient())
+        {
+            ClientProxy.render();
+        }
     }
     @Mod.EventHandler
     public static void PostInit(FMLPostInitializationEvent PostEvent)
     {
-        LogHelper.info("Stating Post Init");
-        LogHelper.info("Post Init Compete");
         LogHelper.info("Lets Hope It Does not Shot Fire and blow up" + "-Ichun 2015");
-
     }
 
 }

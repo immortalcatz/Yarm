@@ -3,33 +3,17 @@ package com.unrealdinnerbone.yarm.item.Tools;
 import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.reference.Reference;
 import net.minecraft.item.ItemPickaxe;
-import reborncore.api.IItemTexture;
-import reborncore.api.TextureRegistry;
 
-public class ItemToolOpPick extends ItemPickaxe implements IItemTexture
+public class ItemToolOpPick extends ItemPickaxe
 {
-    private final String name = "ToolOpPick";
+    private static String name = "ItemToolOpPick";
 
     public ItemToolOpPick(ToolMaterial material) {
         super(material);
         this.setCreativeTab(Tab.Yarm_Tab);
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
-        TextureRegistry.registerItem(this);
     }
-
-
-    @Override
-    public String getTextureName(int damage) {
-        return Reference.TEXTURE_PATH_ITEM + "debug";
-    }
-
-    @Override
-    public int getMaxMeta() {
-        return 1;
-    }
-
-    @Override
-    public String getModID() {
-        return Reference.MOD_ID;
+    public static String getName() {
+        return name;
     }
 }

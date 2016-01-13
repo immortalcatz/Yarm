@@ -1,11 +1,8 @@
 package com.unrealdinnerbone.yarm.blocks.NetherStarBlocks;
 
 import com.unrealdinnerbone.yarm.reference.Reference;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.util.EnumFacing;
-import reborncore.api.IBlockTextureProvider;
 
-public class BlockNetherStar2 extends BlockBaseNetherStar implements IBlockTextureProvider {
+public class BlockNetherStar2 extends BlockBaseNetherStar {
 
     private static String name = "BlockNetherStar2";
 
@@ -16,16 +13,6 @@ public class BlockNetherStar2 extends BlockBaseNetherStar implements IBlockTextu
     public static String getName()
     {
         return name;
-    }
-
-    @Override
-    public String getTextureName(IBlockState blockState, EnumFacing facing) {
-        return Reference.TEXTURE_PATH_BLOCK + name;
-    }
-
-    @Override
-    public int amountOfVariants() {
-        return 1;
     }
 
 }

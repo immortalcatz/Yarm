@@ -1,11 +1,11 @@
 package com.unrealdinnerbone.yarm.item;
 
-import com.unrealdinnerbone.yarm.item.ItemHelpers.ItemTextureBase;
+import com.unrealdinnerbone.yarm.item.ItemHelpers.ItemYarm;
 import com.unrealdinnerbone.yarm.reference.Reference;
 
-public class ItemUnRealFace extends ItemTextureBase
+public class ItemUnRealFace extends ItemYarm
 {
-    private final String name = "UnRealFace";
+    private static String name = "ItemUnRealFace";
 
     public ItemUnRealFace()
     {
@@ -13,16 +13,8 @@ public class ItemUnRealFace extends ItemTextureBase
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
         this.setFull3D();
 
-
     }
-
-    @Override
-    public String getTextureName(int damage) {
-        return Reference.TEXTURE_PATH_ITEM + name;
-    }
-
-    @Override
-    public int getMaxMeta() {
-        return 1;
+    public static String getName() {
+        return name;
     }
 }

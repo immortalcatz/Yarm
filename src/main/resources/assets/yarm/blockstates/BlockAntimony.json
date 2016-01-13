@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "normal": { "model": "yarm:BlockAntimony" },
+        "inventory": { "model": "yarm:BlockAntimony" }
+    }
+}
