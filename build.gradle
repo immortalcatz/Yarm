@@ -61,4 +61,3 @@ processResources
 minecraft {
     useDepAts = true
 }
-//TESTING THINGS WITH IRC

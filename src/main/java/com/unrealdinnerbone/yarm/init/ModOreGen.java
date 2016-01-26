@@ -10,7 +10,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
-public class OreGen implements IWorldGenerator
+public class ModOreGen implements IWorldGenerator
 {
         // Which dimension to generate in by dimension ID (Nether -1, Overworld 0, End 1, etc)
         @Override
