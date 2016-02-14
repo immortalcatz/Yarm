@@ -1,32 +1,59 @@
 buildscript {
     repositories {
+buildscript
+{
+    repositories
+    {
         jcenter()
         maven {
+        maven
+        {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
         }
+        maven
+        {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
+    dependencies
+    {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
+        classpath "gradle.plugin.com.matthewprenger:CurseGradle:1.0.7"
     }
 }
 
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'maven'
+apply plugin: "com.matthewprenger.cursegradle"
 
 version = "2.0.0"
+version = "${mod_version}.${buildnumber}"
 group= "com.unrealdinnerbone.yarm"
 archivesBaseName = "Yarm"
 
 minecraft {
     version = "1.8.9-11.15.0.1683"
+minecraft
+{
+    version = "${minecraft_version}-${forge_version}"
+    mappings = "${forge_mappings}"
     runDir = "run"
     mappings = "snapshot_20151230"
+
+    replaceIn "reference.Reference.java"
+    replace "@VERSION@", project.version
 }
 
 repositories {
     maven {
         name = "THE BEST REPO EVER"
+repositories
+{
+    maven
+    {
+        name = "McMutiPart Repo"
         url = "http://maven.amadornes.com/"
     }
     maven {
@@ -35,30 +62,87 @@ repositories {
     }
     maven {
         name = "Mobius Repo"
+    maven
+    {
+        name = "Waila Repo"
         url = "http://mobiusstrip.eu/maven"
     }
+    maven
+    {
+       name = "MM repo"
+       url = "http://maven.k-4u.nl/"
+    }
+    maven
+    {
+            name = "Jei Maven"
+            url = "http://dvs1.progwml6.com/files/maven"
+    }
 }
-	
+
 dependencies {
    deobfCompile "MCMultiPart:MCMultiPart:1.0.0:universal"
    deobfCompile "mezz.jei:jei_1.8.9:2.15.1.71"
    deobfCompile "mcp.mobius.waila:Waila:1.6.0-B3_1.8.8"
+dependencies
+{
+   deobfCompile "MCMultiPart:MCMultiPart-experimental:${mcmutipart_version}:universal"
+   deobfCompile "mcp.mobius.waila:Waila:${waila_version}_1.8.8"
+   deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
 }
 
 processResources
 {
+
+ def versionPropsFile = file('gradle.properties')
+
+    if (versionPropsFile.canRead())
+    {
+        def Properties versionProps = new Properties()
+
+        versionProps.load(new FileInputStream(versionPropsFile))
+
+        def code = versionProps['buildnumber'].toInteger() + 1
+
+        versionProps['buildnumber']=code.toString()
+        versionProps.store(versionPropsFile.newWriter(), null)
+    }
+    else
+    {
+        throw new GradleException("Could not read version.properties!")
+    }
+
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
     from(sourceSets.main.resources.srcDirs) {
+    from(sourceSets.main.resources.srcDirs)
+    {
         include 'mcmod.info'
         expand 'version':project.version, 'mcversion':project.minecraft.version
     }
     from(sourceSets.main.resources.srcDirs) {
+    from(sourceSets.main.resources.srcDirs)
+    {
         exclude 'mcmod.info'
     }
 }
 
 minecraft {
     useDepAts = true
+minecraft
+{
+   useDepAts = true
 }
-//TESTING THINGS WITH IRC
+
+curseforge {
+  apiKey = project.curse_api_key
+  project {
+    id = project.curse_project_id
+    changelog = file('changelog.txt')
+    releaseType = project.release_type
+    addGameVersion project.minecraft_version
+
+    mainArtifact(jar) {
+      displayName = "Yarm-: $project.version"
+    }
+  }
+}

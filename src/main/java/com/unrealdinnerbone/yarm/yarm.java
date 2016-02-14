@@ -2,32 +2,24 @@ package com.unrealdinnerbone.yarm;
 
 import com.unrealdinnerbone.yarm.EventTester.EventTester;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
+import com.unrealdinnerbone.yarm.commands.YarmCommandVerison;
 import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.init.Recpies.Shapless;
 import com.unrealdinnerbone.yarm.init.Recpies.Shpaed;
 import com.unrealdinnerbone.yarm.init.Recpies.Smelting;
-import com.unrealdinnerbone.yarm.item.ItemAntimonyIngot;
-import com.unrealdinnerbone.yarm.item.Tools.ItemToolOpAxe;
 import com.unrealdinnerbone.yarm.proxy.ClientProxy;
 import com.unrealdinnerbone.yarm.proxy.IProxy;
 import com.unrealdinnerbone.yarm.reference.Reference;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.ItemRenderer;
-import net.minecraft.client.renderer.entity.RenderItem;
-import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import com.unrealdinnerbone.yarm.init.OreGen;
+import com.unrealdinnerbone.yarm.init.ModOreGen;
 import net.minecraftforge.fml.relauncher.Side;
-import sun.rmi.runtime.Log;
-
-
-import java.util.logging.Logger;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MC_VERSION)
 public class yarm {
@@ -49,7 +41,7 @@ public class yarm {
     public static void Init(FMLInitializationEvent Event)
     {
 
-        OreGen WorldGen = new OreGen();
+        ModOreGen WorldGen = new ModOreGen();
         ModBlocks.init();
         ModBlocks.RenderBlocks();
         Shpaed.init();
@@ -72,5 +64,12 @@ public class yarm {
         LogHelper.info("Lets Hope It Does not Shot Fire and blow up" + "-Ichun 2015");
     }
 
+    @Mod.EventHandler
+    @SideOnly(Side.SERVER)
+    public void ServerLoad(FMLServerStartingEvent event) {
+
+        event.registerServerCommand(new YarmCommandVerison());
+        LogHelper.all("LOADED COMMANDS");
+    }
 }
 
