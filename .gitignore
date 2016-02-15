@@ -23,6 +23,7 @@ apples.test
 /.metadata
 
 # Gradle #
+/classes
 /.gradle
 /out
 /build

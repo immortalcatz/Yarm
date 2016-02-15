@@ -1,6 +1,7 @@
 package com.unrealdinnerbone.yarm.proxy;
 
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
+import com.unrealdinnerbone.yarm.blocks.Normal.BlockStoneTorch;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
 import com.unrealdinnerbone.yarm.init.ModItems;
 import com.unrealdinnerbone.yarm.item.*;
@@ -20,9 +21,7 @@ public class ClientProxy extends CommonProxy
     public static void render()
     {
         RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
-
         //Blocks
-
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_NETHER_STAR_1), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar1.getName()));
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_NETHER_STAR_2), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar2.getName()));
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_NETHER_STAR_3), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar3.getName()));
@@ -31,7 +30,7 @@ public class ClientProxy extends CommonProxy
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_NETHER_STAR_6), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar6.getName()));
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_NETHER_STAR_7), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar7.getName()));
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_NETHER_STAR_8), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar8.getName()));
-
+        renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_STONE_TORCH),   0, new ModelResourceLocation(Reference.RE_PREFIX + BlockStoneTorch.getName()));
 
         //Items
         renderItem.getItemModelMesher().register(ModItems.ItemUnRealFace, 0, new ModelResourceLocation(Reference.RE_PREFIX + ItemUnRealFace.getName(), "inventory"));

@@ -67,6 +67,7 @@ dependencies
    deobfCompile "MCMultiPart:MCMultiPart-experimental:${mcmutipart_version}:universal"
    deobfCompile "mcp.mobius.waila:Waila:${waila_version}_1.8.8"
    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
+  // compile files("libs/Psi-beta-14-deobf.jar")
 }
 
 processResources
