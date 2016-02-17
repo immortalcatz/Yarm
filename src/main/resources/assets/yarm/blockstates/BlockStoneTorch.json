@@ -4,6 +4,7 @@
     "facing=east": { "model": "yarm:BlockStoneTorchWall" },
     "facing=south": { "model": "yarm:BlockStoneTorchWall", "y": 90 },
     "facing=west": { "model": "yarm:BlockStoneTorchWall", "y": 180 },
-    "facing=north": { "model": "yarm:BlockStoneTorchWall", "y": 270 }
+    "facing=north": { "model": "yarm:BlockStoneTorchWall", "y": 270 },
+    "inventory": { "model": "yarm:BlockStoneTorch" }
   }
 }

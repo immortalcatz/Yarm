@@ -1,7 +1,10 @@
 package com.unrealdinnerbone.yarm.proxy;
 
+import com.unrealdinnerbone.yarm.blocks.Faces.BlockUnRealFace;
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
+import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockStoneTorch;
+import com.unrealdinnerbone.yarm.blocks.Ores.BlockAntimonyOre;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
 import com.unrealdinnerbone.yarm.init.ModItems;
 import com.unrealdinnerbone.yarm.item.*;
@@ -30,7 +33,10 @@ public class ClientProxy extends CommonProxy
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_NETHER_STAR_6), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar6.getName()));
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_NETHER_STAR_7), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar7.getName()));
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_NETHER_STAR_8), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar8.getName()));
+        renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_ANTIMONY), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockAntimony.getName()));
+        renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_ANTIMONY_ORE), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockAntimonyOre.getName()));
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_STONE_TORCH),   0, new ModelResourceLocation(Reference.RE_PREFIX + BlockStoneTorch.getName()));
+        renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_UNREAL_FACE), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockUnRealFace.getName()));
 
         //Items
         renderItem.getItemModelMesher().register(ModItems.ItemUnRealFace, 0, new ModelResourceLocation(Reference.RE_PREFIX + ItemUnRealFace.getName(), "inventory"));

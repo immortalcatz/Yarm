@@ -1,5 +1,5 @@
 {
-  "parent": "builtin/generated",
+  "parent": "yarm:block/BlockStoneTorch",
   "textures": {
     "layer0": "yarm:blocks/BlockStoneTorch"
   },

@@ -13,8 +13,7 @@ public class BlockUnRealFace extends BlockYarm
        {
        super(Material.rock);
        this.setCreativeTab(Tab.Yarm_Tab);
-    //   this.setUnlocalizedName(Reference.RE_PREFIX + name);
-       this.setRegistryName(name);
+       this.setUnlocalizedName(Reference.RE_PREFIX + name);
        }
     public static String getName()
     {

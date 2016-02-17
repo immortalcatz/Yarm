@@ -1,6 +1,5 @@
 package com.unrealdinnerbone.yarm.commands;
 
-import com.sun.webkit.graphics.Ref;
 import com.unrealdinnerbone.yarm.Util.OpChecker;
 import com.unrealdinnerbone.yarm.reference.Reference;
 import net.minecraft.command.CommandBase;
