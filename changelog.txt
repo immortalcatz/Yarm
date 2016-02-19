@@ -4,6 +4,10 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
+2.3.0
+
+    ? Updated most Jason file to forge jason way and add the Stone Torch -_-
+
 
 2.2.X
     * Update Build.gradle they may be bugs with uploads -_-
