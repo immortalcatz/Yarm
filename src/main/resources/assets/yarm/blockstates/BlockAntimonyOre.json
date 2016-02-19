@@ -1,6 +1,13 @@
 {
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "all": "yarm:blocks/BlockAntimonyOre"
+        },
+        "model": "yarm:BlockYarmBlock"
+    },
     "variants": {
-        "normal": { "model": "yarm:BlockAntimonyOre" },
-        "inventory": { "model": "yarm:BlockAntimonyOre" }
+        "normal": [{}],
+        "inventory": [{}]
     }
 }

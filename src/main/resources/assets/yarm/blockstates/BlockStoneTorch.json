@@ -1,10 +1,20 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "yarm:blocks/BlockStoneTorch"
+    },
+    "model": "yarm:StoneTorch",
+    "uvlock": true
+  },
   "variants": {
-    "facing=up": { "model": "yarm:BlockStoneTorch" },
-    "facing=east": { "model": "yarm:BlockStoneTorchWall" },
-    "facing=south": { "model": "yarm:BlockStoneTorchWall", "y": 90 },
-    "facing=west": { "model": "yarm:BlockStoneTorchWall", "y": 180 },
-    "facing=north": { "model": "yarm:BlockStoneTorchWall", "y": 270 },
-    "inventory": { "model": "yarm:BlockStoneTorch" }
+    "facing" : {
+      "up": { "model": "yarm:BlockStoneTorch" },
+      "east": { "model": "yarm:BlockStoneTorchWall" },
+      "south": { "model": "yarm:BlockStoneTorchWall", "y": 90 },
+      "west": { "model": "yarm:BlockStoneTorchWall", "y": 180 },
+      "north": { "model": "yarm:BlockStoneTorchWall", "y": 270 }
+    },
+    "inventory": [{}]
   }
 }

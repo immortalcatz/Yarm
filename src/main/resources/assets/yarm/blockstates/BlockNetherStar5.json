@@ -1,6 +1,13 @@
 {
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "all": "yarm:blocks/BlockNetherStar5"
+        },
+        "model": "yarm:BlockYarmBlock"
+    },
     "variants": {
-        "normal": { "model": "yarm:BlockNetherStar5" },
-        "inventory": { "model": "yarm:BlockNetherStar5" }
+        "normal": [{}],
+        "inventory": [{}]
     }
 }
