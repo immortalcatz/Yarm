@@ -4,16 +4,16 @@
     "textures": {
       "all": "yarm:blocks/BlockStoneTorch"
     },
-    "model": "yarm:StoneTorch",
+    "model": "yarm:BlockStoneTorch",
     "uvlock": true
   },
   "variants": {
     "facing" : {
       "up": { "model": "yarm:BlockStoneTorch" },
-      "east": { "model": "yarm:BlockStoneTorchWall" },
-      "south": { "model": "yarm:BlockStoneTorchWall", "y": 90 },
-      "west": { "model": "yarm:BlockStoneTorchWall", "y": 180 },
-      "north": { "model": "yarm:BlockStoneTorchWall", "y": 270 }
+      "east": { "model": "yarm:BlockStoneTorch" },
+      "south": { "model": "yarm:BlockStoneTorch", "y": 90 },
+      "west": { "model": "yarm:BlockStoneTorch", "y": 180 },
+      "north": { "model": "yarm:BlockStoneTorch", "y": 270 }
     },
     "inventory": [{}]
   }
