@@ -1,7 +1,7 @@
 package com.unrealdinnerbone.yarm.blocks.NetherStarBlocks;
 
 
-import com.unrealdinnerbone.yarm.reference.Reference;
+import com.unrealdinnerbone.yarm.Util.Reference;
 
 public class BlockNetherStar8 extends BlockBaseNetherStar {
 

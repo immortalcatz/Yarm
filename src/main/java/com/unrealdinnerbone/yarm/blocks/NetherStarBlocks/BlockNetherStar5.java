@@ -1,7 +1,6 @@
 package com.unrealdinnerbone.yarm.blocks.NetherStarBlocks;
 
-import com.unrealdinnerbone.yarm.reference.Reference;
-import net.minecraft.block.state.IBlockState;
+import com.unrealdinnerbone.yarm.Util.Reference;
 
 public class BlockNetherStar5 extends BlockBaseNetherStar {
 

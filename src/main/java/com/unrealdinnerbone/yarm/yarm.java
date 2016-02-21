@@ -1,27 +1,18 @@
 package com.unrealdinnerbone.yarm;
 
-import com.unrealdinnerbone.yarm.EventTester.EventTester;
+import com.unrealdinnerbone.yarm.Util.ConfigManger;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
-import com.unrealdinnerbone.yarm.commands.YarmCommandVerison;
 import com.unrealdinnerbone.yarm.init.*;
-import com.unrealdinnerbone.yarm.init.Recpies.Shapless;
-import com.unrealdinnerbone.yarm.init.Recpies.Shpaed;
-import com.unrealdinnerbone.yarm.init.Recpies.Smelting;
-import com.unrealdinnerbone.yarm.proxy.ClientProxy;
-import com.unrealdinnerbone.yarm.proxy.IProxy;
-import com.unrealdinnerbone.yarm.reference.Reference;
+import com.unrealdinnerbone.yarm.init.Recpies.*;
+import com.unrealdinnerbone.yarm.proxy.*;
+import com.unrealdinnerbone.yarm.Util.Reference;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.event.*;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import com.unrealdinnerbone.yarm.init.ModOreGen;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MC_VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MC_VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class yarm {
 
 
@@ -35,7 +26,8 @@ public class yarm {
     @Mod.EventHandler
     public static void PreInit(FMLPreInitializationEvent PreEvent)
     {
-
+       ConfigManger.ConfigManger(PreEvent.getSuggestedConfigurationFile());
+       FMLCommonHandler.instance().bus().register(new ConfigManger());
     }
     @Mod.EventHandler
     public static void Init(FMLInitializationEvent Event)
@@ -50,7 +42,6 @@ public class yarm {
         Shapless.init();
         ModEntity.initEntity();
         ModOreDictionary.OreDictionary();
-        EventTester.init();
 
         GameRegistry.registerWorldGenerator(WorldGen, 1);
         if(Event.getSide().isClient())
@@ -62,14 +53,6 @@ public class yarm {
     public static void PostInit(FMLPostInitializationEvent PostEvent)
     {
         LogHelper.info("Lets Hope It Does not Shot Fire and blow up" + "-Ichun 2015");
-    }
-
-    @Mod.EventHandler
-    @SideOnly(Side.SERVER)
-    public void ServerLoad(FMLServerStartingEvent event) {
-
-        event.registerServerCommand(new YarmCommandVerison());
-        LogHelper.all("LOADED COMMANDS");
     }
 }
 

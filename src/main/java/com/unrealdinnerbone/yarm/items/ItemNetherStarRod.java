@@ -1,7 +1,7 @@
-package com.unrealdinnerbone.yarm.item;
+package com.unrealdinnerbone.yarm.items;
 
-import com.unrealdinnerbone.yarm.item.ItemHelpers.ItemYarm;
-import com.unrealdinnerbone.yarm.reference.Reference;
+import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarm;
+import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;

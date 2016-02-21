@@ -60,6 +60,11 @@ repositories
        name = "MM repo"
        url = "http://maven.k-4u.nl/"
     }
+    maven
+    {
+      name = "ModMuss50"
+      url = "http://maven.modmuss50.me/"
+    }
 }
 
 dependencies
@@ -67,7 +72,9 @@ dependencies
    deobfCompile "MCMultiPart:MCMultiPart-experimental:${mcmutipart_version}:universal"
    deobfCompile "mcp.mobius.waila:Waila:${waila_version}_1.8.8"
    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
-  // compile files("libs/Psi-beta-14-deobf.jar")
+   deobfCompile "k4unl:k4lib:1.8-${k4lib_version}:universal"
+
+
 }
 
 processResources

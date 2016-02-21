@@ -1,7 +1,7 @@
-package com.unrealdinnerbone.yarm.item.Tools;
+package com.unrealdinnerbone.yarm.items.Tools;
 
 import com.unrealdinnerbone.yarm.CreativeTab.Tab;
-import com.unrealdinnerbone.yarm.reference.Reference;
+import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraft.item.ItemSword;
 
 public class ItemToolOpSword extends ItemSword

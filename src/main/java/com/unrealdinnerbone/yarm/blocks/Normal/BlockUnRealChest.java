@@ -1,6 +1,6 @@
 package com.unrealdinnerbone.yarm.blocks.Normal;
 
-import com.unrealdinnerbone.yarm.reference.Reference;
+import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;

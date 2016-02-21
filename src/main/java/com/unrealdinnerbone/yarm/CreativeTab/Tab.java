@@ -1,6 +1,6 @@
 package com.unrealdinnerbone.yarm.CreativeTab;
 
-import com.unrealdinnerbone.yarm.reference.Reference;
+import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;

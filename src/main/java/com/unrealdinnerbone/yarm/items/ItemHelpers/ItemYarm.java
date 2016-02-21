@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.item.ItemHelpers;
+package com.unrealdinnerbone.yarm.items.ItemHelpers;
 
 import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import net.minecraft.item.Item;

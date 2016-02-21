@@ -1,7 +1,7 @@
 package com.unrealdinnerbone.yarm.blocks.Normal;
 
 import com.unrealdinnerbone.yarm.blocks.BlockYarm;
-import com.unrealdinnerbone.yarm.reference.Reference;
+import com.unrealdinnerbone.yarm.Util.Reference;
 
 public class BlockAntimony extends BlockYarm {
 

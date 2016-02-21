@@ -7,11 +7,6 @@ import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockStoneTorch;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockUnRealChest;
 import com.unrealdinnerbone.yarm.blocks.Ores.BlockAntimonyOre;
-import com.unrealdinnerbone.yarm.reference.Reference;
-import net.minecraft.block.BlockStone;
-import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.item.Item;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks

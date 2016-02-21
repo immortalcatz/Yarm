@@ -2,7 +2,7 @@ package com.unrealdinnerbone.yarm.blocks.Faces;
 
 import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.blocks.BlockYarm;
-import com.unrealdinnerbone.yarm.reference.Reference;
+import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraft.block.material.Material;
 
 public class BlockUnRealFace extends BlockYarm

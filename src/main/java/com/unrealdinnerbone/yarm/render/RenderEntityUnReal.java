@@ -1,7 +1,7 @@
 package com.unrealdinnerbone.yarm.render;
 
 import com.unrealdinnerbone.yarm.entity.entityUnReal;
-import com.unrealdinnerbone.yarm.reference.Reference;
+import com.unrealdinnerbone.yarm.Util.Reference;
 
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraftforge.fml.relauncher.Side;

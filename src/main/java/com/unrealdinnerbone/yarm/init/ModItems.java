@@ -1,9 +1,9 @@
 package com.unrealdinnerbone.yarm.init;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
-import com.unrealdinnerbone.yarm.item.*;
-import com.unrealdinnerbone.yarm.item.ItemHelpers.ItemYarm;
-import com.unrealdinnerbone.yarm.item.Tools.*;
+import com.unrealdinnerbone.yarm.items.*;
+import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarm;
+import com.unrealdinnerbone.yarm.items.Tools.*;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.common.util.EnumHelper;
@@ -28,17 +28,17 @@ public class ModItems
     public static void init()
     {
 
-        GameRegistry.registerItem(ItemUnRealFace, com.unrealdinnerbone.yarm.item.ItemUnRealFace.getName());
-        GameRegistry.registerItem(ItemManmedFace, com.unrealdinnerbone.yarm.item.ItemManmaedFace.getName());
-        GameRegistry.registerItem(ItemKyaneFace, com.unrealdinnerbone.yarm.item.ItemTheKayneGameFace.getName());
-        GameRegistry.registerItem(ItemYunusFace, com.unrealdinnerbone.yarm.item.ItemYunus1903Face.getName());
-        GameRegistry.registerItem(ItemAntimonyIngot, com.unrealdinnerbone.yarm.item.ItemAntimonyIngot.getName());
-        GameRegistry.registerItem(ItemNetherStarRod, com.unrealdinnerbone.yarm.item.ItemNetherStarRod.getName());
-        GameRegistry.registerItem(ItemToolOpAxe, com.unrealdinnerbone.yarm.item.Tools.ItemToolOpAxe.getName());
-        GameRegistry.registerItem(ItemToolOpHoe, com.unrealdinnerbone.yarm.item.Tools.ItemToolOpHoe.getName());
-        GameRegistry.registerItem(ItemToolOpSpade, com.unrealdinnerbone.yarm.item.Tools.ItemToolOpSpade.getName());
-        GameRegistry.registerItem(ItemToolOpPick, com.unrealdinnerbone.yarm.item.Tools.ItemToolOpPick.getName());
-        GameRegistry.registerItem(ItemToolOpSword, com.unrealdinnerbone.yarm.item.Tools.ItemToolOpSword.getName());
+        GameRegistry.registerItem(ItemUnRealFace, com.unrealdinnerbone.yarm.items.ItemUnRealFace.getName());
+        GameRegistry.registerItem(ItemManmedFace, com.unrealdinnerbone.yarm.items.ItemManmaedFace.getName());
+        GameRegistry.registerItem(ItemKyaneFace, com.unrealdinnerbone.yarm.items.ItemTheKayneGameFace.getName());
+        GameRegistry.registerItem(ItemYunusFace, com.unrealdinnerbone.yarm.items.ItemYunus1903Face.getName());
+        GameRegistry.registerItem(ItemAntimonyIngot, com.unrealdinnerbone.yarm.items.ItemAntimonyIngot.getName());
+        GameRegistry.registerItem(ItemNetherStarRod, com.unrealdinnerbone.yarm.items.ItemNetherStarRod.getName());
+        GameRegistry.registerItem(ItemToolOpAxe, com.unrealdinnerbone.yarm.items.Tools.ItemToolOpAxe.getName());
+        GameRegistry.registerItem(ItemToolOpHoe, com.unrealdinnerbone.yarm.items.Tools.ItemToolOpHoe.getName());
+        GameRegistry.registerItem(ItemToolOpSpade, com.unrealdinnerbone.yarm.items.Tools.ItemToolOpSpade.getName());
+        GameRegistry.registerItem(ItemToolOpPick, com.unrealdinnerbone.yarm.items.Tools.ItemToolOpPick.getName());
+        GameRegistry.registerItem(ItemToolOpSword, com.unrealdinnerbone.yarm.items.Tools.ItemToolOpSword.getName());
         LogHelper.info("Loaded Items");
     }
 
