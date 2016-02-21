@@ -15,8 +15,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MC_VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class yarm {
 
-
-
     @Mod.Instance(Reference.MOD_ID)
     public static yarm instance;
 
@@ -28,26 +26,21 @@ public class yarm {
     {
        ConfigManger.ConfigManger(PreEvent.getSuggestedConfigurationFile());
        FMLCommonHandler.instance().bus().register(new ConfigManger());
+       ModBlocks.init();
+       ModItems.init();
+       ModEntity.initEntity();
     }
     @Mod.EventHandler
     public static void Init(FMLInitializationEvent Event)
     {
 
         ModOreGen WorldGen = new ModOreGen();
-        ModBlocks.init();
-        ModBlocks.RenderBlocks();
         Shpaed.init();
-        ModItems.init();
         Smelting.init();
         Shapless.init();
-        ModEntity.initEntity();
         ModOreDictionary.OreDictionary();
-
         GameRegistry.registerWorldGenerator(WorldGen, 1);
-        if(Event.getSide().isClient())
-        {
-            ClientProxy.render();
-        }
+        ClientProxy.RegisterRenders(Event);
     }
     @Mod.EventHandler
     public static void PostInit(FMLPostInitializationEvent PostEvent)

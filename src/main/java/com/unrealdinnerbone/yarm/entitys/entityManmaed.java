@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.entity;
+package com.unrealdinnerbone.yarm.entitys;
 
 
 import com.unrealdinnerbone.yarm.init.ModItems;

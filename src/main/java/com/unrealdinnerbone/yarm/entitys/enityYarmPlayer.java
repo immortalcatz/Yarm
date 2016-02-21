@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.entity;
+package com.unrealdinnerbone.yarm.entitys;
 
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.SharedMonsterAttributes;

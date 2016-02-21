@@ -1,6 +1,6 @@
-package com.unrealdinnerbone.yarm.render;
+package com.unrealdinnerbone.yarm.client.render;
 
-import com.unrealdinnerbone.yarm.entity.entityUnReal;
+import com.unrealdinnerbone.yarm.entitys.entityUnReal;
 import com.unrealdinnerbone.yarm.Util.Reference;
 
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -14,7 +14,7 @@ import net.minecraft.util.ResourceLocation;
 @SideOnly(Side.CLIENT)
 public class RenderEntityUnReal extends RenderLiving
 {
-    private static final ResourceLocation entityTextures = new ResourceLocation(Reference.MOD_ID +  ":textures/entity/entityUnReal.png");
+    private static final ResourceLocation entityTextures = new ResourceLocation(Reference.MOD_ID +  ":textures/entitys/entityUnReal.png");
     private static final String __OBFID = "CL_00000984";
 
     public RenderEntityUnReal(RenderManager rendermanagerIn, ModelBase modelbaseIn, float shadowsizeIn)

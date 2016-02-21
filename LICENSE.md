@@ -12,8 +12,12 @@ Section 2: License
 
 Section 3: Distribution
 	
-	A. This mod soruce code may only be on Github or other sites that are owned by github
-	B. This mod may be distributed on Curse and CurseForge or Outher was stated elsewhere in this License
+	A. This mod source code may only be on Github or other sites that are owned by github
+	B. You may use less then 25% of this mod source code in your mod with out perms and credit, if the code is less then 50% but more
+	then 25% you most ask.
+	C. if you want to use more then 50% of my code you cant.
+	D. the Owner made use his code over in a another mod with out perms/credits.
+	E. This mod may be distributed on Curse and CurseForge or Outher was stated elsewhere in this License
 	
 	Section 3B: ModPacks
 		
@@ -21,6 +25,6 @@ Section 3: Distribution
 		
 Section 4: Owner Rights
 
-	A. The Outher resrevs the right to ask the removel of the mod from any pack. They mod most remved on the pack withen 10 days of the owner asking the removel of the mod before legal acation may be taking.
+	A. The Owner resvers the right to ask the removel of the mod from any pack. They mod most remved on the pack withen 10 days of the owner asking the removel of the mod before legal acation may be taking.
 
 	

@@ -44,11 +44,4 @@ public class ModBlocks
         GameRegistry.registerBlock(BLOCK_STONE_TORCH, BlockStoneTorch.getName());
         LogHelper.info("Loaded Blocks");
     }
-
-    public static void RenderBlocks()
-
-    {
-   //     ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(BLOCK_NETHER_STAR_1), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar1.getName(), "inventory"));
-    }
-
 }

@@ -14,7 +14,7 @@ public interface IToolHammer {
      * @param item
      *            The itemstack for the tool. Not required to match equipped item (e.g., multi-tools that contain other tools)
      * @param user
-     *            The entity using the tool
+     *            The entitys using the tool
      * @param x
      *            X location of the block/tile
      * @param y
@@ -31,7 +31,7 @@ public interface IToolHammer {
      * @param item
      *            The ItemStack for the tool. Not required to match equipped item (e.g., multi-tools that contain other tools)
      * @param user
-     *            The entity using the tool
+     *            The entitys using the tool
      * @param x
      *            X location of the block/tile
      * @param y
