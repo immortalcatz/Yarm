@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
-public class Shpaed {
+public class ShpaedRecpices {
     public static void init() {
 
         //UnRealFace's To UnRealBlock

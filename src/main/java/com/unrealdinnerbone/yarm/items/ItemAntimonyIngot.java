@@ -2,6 +2,7 @@ package com.unrealdinnerbone.yarm.items;
 
 import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarm;
 import com.unrealdinnerbone.yarm.Util.Reference;
+import net.minecraft.item.ItemStack;
 
 public class ItemAntimonyIngot extends ItemYarm
 {

@@ -12,7 +12,6 @@ public class ItemUnRealFace extends ItemYarm
         super();
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
         this.setFull3D();
-
     }
     public static String getName() {
         return name;

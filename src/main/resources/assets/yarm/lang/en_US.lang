@@ -27,3 +27,21 @@ tile.yarm:BlockNetherStar5.name=Quintuple Compressed Nether Star Block
 tile.yarm:BlockNetherStar6.name=Sextuple Compressed Nether Star Block
 tile.yarm:BlockNetherStar7.name=Septuple Compressed Nether Star Block
 tile.yarm:BlockNetherStar8.name=Octuple Compressed Nether Star Block
+
+#Acaments
+achievement.CraftNetherStar1=The Start of something BIG
+achievement.CraftNetherStar1.desc=Craft 9 nether stars together
+achievement.CraftNetherStar2=!!!Bigger!!!
+achievement.CraftNetherStar2.desc=Craft 9 Compressed Nether Star Blocks Together
+achievement.CraftNetherStar3=!!!EVEN BIGGER!!!
+achievement.CraftNetherStar3.desc=Craft 9 Double Compressed Nether Star Blocks Together
+achievement.CraftNetherStar4=!!!PIG SIZE!!!
+achievement.CraftNetherStar4.desc=Craft 9 Triple Compressed Nether Star Blocks Together
+achievement.CraftNetherStar5=!!!PEARCELL ZISE!!!
+achievement.CraftNetherStar5.desc=Craft 9 Quadruple Compressed Nether Star Blocks Together
+achievement.CraftNetherStar6=!!!MAN-NORMUS!!!
+achievement.CraftNetherStar6.desc=Craft 9 Quintuple Compressed Nether Star Blocks Together
+achievement.CraftNetherStar7=!!!UnReal SIZE!!!
+achievement.CraftNetherStar7.desc=Craft 9 Sextuple Compressed Nether Star Blocks Together
+achievement.CraftNetherStar8=!!!BOOOOOOOM TO BIG!!!
+achievement.CraftNetherStar8.desc=Craft 9 Septuple Compressed Nether Star Block Together

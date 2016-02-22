@@ -6,7 +6,7 @@ import com.unrealdinnerbone.yarm.init.ModItems;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.item.ItemStack;
 
-public class Smelting {
+public class SmeltingRecpices {
     public static void init()
     {
         //Antimony Ore To Antimony Igont

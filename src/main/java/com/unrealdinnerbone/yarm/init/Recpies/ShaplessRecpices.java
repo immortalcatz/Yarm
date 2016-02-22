@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
-public class Shapless {
+public class ShaplessRecpices {
     public static void init()
     {
        //UnRealBlock To UnRealFace

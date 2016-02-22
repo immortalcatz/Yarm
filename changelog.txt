@@ -4,7 +4,15 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
-2.3.0
+
+2.4.0:
+    + Added Achements
+	? They there no way to get them yet also sorry about you first crafting affter this update -_- 
+    ? Cleaned up clode
+    ? PLEASE REPORT BUGS :P
+    ? but not the one about the torch :P
+    + Added one config with in game one to
+2.3.0:
 
     ? Updated most Jason file to forge jason way and add the Stone Torch -_-
 

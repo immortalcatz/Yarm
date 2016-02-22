@@ -1,6 +1,5 @@
 package com.unrealdinnerbone.yarm.Util;
 
-
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
