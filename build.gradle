@@ -24,7 +24,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'maven'
 apply plugin: "com.matthewprenger.cursegradle"
 
-version = "${mod_version}.${buildnumber}"
+version = "${minecraft_version}-${mod_version}"
 group= "com.unrealdinnerbone.yarm"
 archivesBaseName = "Yarm"
 
@@ -33,7 +33,6 @@ minecraft
     version = "${minecraft_version}-${forge_version}"
     mappings = "${forge_mappings}"
     runDir = "run"
-    mappings = "snapshot_20151230"
 
     replaceIn "reference.Reference.java"
     replace "@VERSION@", project.version
@@ -43,27 +42,17 @@ repositories
 {
     maven
     {
-        name = "McMutiPart Repo"
+        name = "Amadornes Repo"
         url = "http://maven.amadornes.com/"
     }
     maven {
-        name = "JEI MAVEN"
+        name = "The JEI Repo"
         url = "http://dvs1.progwml6.com/files/maven"
     }
     maven
     {
         name = "Waila Repo"
         url = "http://mobiusstrip.eu/maven"
-    }
-    maven
-    {
-       name = "MM repo"
-       url = "http://maven.k-4u.nl/"
-    }
-    maven
-    {
-      name = "ModMuss50"
-      url = "http://maven.modmuss50.me/"
     }
 }
 
@@ -72,32 +61,10 @@ dependencies
    deobfCompile "MCMultiPart:MCMultiPart-experimental:${mcmutipart_version}:universal"
    deobfCompile "mcp.mobius.waila:Waila:${waila_version}_1.8.8"
    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
-   deobfCompile "k4unl:k4lib:1.8-${k4lib_version}:universal"
-
-
 }
 
 processResources
 {
-
- def versionPropsFile = file('gradle.properties')
-
-    if (versionPropsFile.canRead())
-    {
-        def Properties versionProps = new Properties()
-
-        versionProps.load(new FileInputStream(versionPropsFile))
-
-        def code = versionProps['buildnumber'].toInteger() + 1
-
-        versionProps['buildnumber']=code.toString()
-        versionProps.store(versionPropsFile.newWriter(), null)
-    }
-    else
-    {
-        throw new GradleException("Could not read version.properties!")
-    }
-
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
     from(sourceSets.main.resources.srcDirs)

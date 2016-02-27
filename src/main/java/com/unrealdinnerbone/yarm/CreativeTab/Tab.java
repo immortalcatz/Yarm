@@ -1,9 +1,11 @@
 package com.unrealdinnerbone.yarm.CreativeTab;
 
 import com.unrealdinnerbone.yarm.Util.Reference;
+import com.unrealdinnerbone.yarm.init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.util.StatCollector;
 
 public class Tab
 {
@@ -12,15 +14,14 @@ public class Tab
         @Override
         public Item getTabIconItem()
         {
-            // return ModItems.ItemUnRealFace;
-            return Items.apple;
+            return ModItems.ItemUnRealFace;
 
         }
 
         @Override
     public String getTranslatedTabLabel()
         {
-                return "Yarm";
+            return StatCollector.translateToLocal("creativetab.maintab.name");
         }
     };
 }
