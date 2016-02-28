@@ -5,6 +5,11 @@ ICONS
     ~ BugFix
     ? Something Else
 
+2.4.1:
+	~ Achements Work Right
+	~ Fixed 3rd Person Render
+	? Code Clean Up
+	
 2.4.0:
     + Added Achements
 	? They there no way to get them yet also sorry about you first crafting affter this update -_- 
