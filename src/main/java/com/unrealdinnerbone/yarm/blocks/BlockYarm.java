@@ -2,6 +2,7 @@ package com.unrealdinnerbone.yarm.blocks;
 
 import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
 public class BlockYarm extends Block
@@ -16,7 +17,7 @@ public class BlockYarm extends Block
         this(Material.rock);
         this.setCreativeTab(Tab.Yarm_Tab);
         this.setHardness(3.5F);
-        this.setStepSound(soundTypeStone);
+        this.setStepSound(SoundType.STONE);
     }
 
 

@@ -5,7 +5,6 @@ import com.unrealdinnerbone.yarm.init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.util.StatCollector;
 
 public class Tab
 {
@@ -21,7 +20,8 @@ public class Tab
         @Override
     public String getTranslatedTabLabel()
         {
-            return StatCollector.translateToLocal("creativetab.maintab.name");
+            return "Yarm Tab";
+//            return StatCollector.translateToLocal("creativetab.maintab.name");
         }
     };
 }

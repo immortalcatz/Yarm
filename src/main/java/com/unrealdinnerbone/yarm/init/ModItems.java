@@ -18,7 +18,7 @@ public class ModItems
     public static final ItemYarm ItemYunusFace = new ItemYunus1903Face();
     public static final ItemYarm ItemAntimonyIngot = new ItemAntimonyIngot();
     public static final ItemYarm ItemNetherStarRod = new ItemNetherStarRod();
-    public static final ItemAxe ItemToolOpAxe = new ItemToolOpAxe(OpTools);
+    public static final ItemAxe ItemToolOpAxe = new ItemToolOpAxe();
     public static final ItemHoe ItemToolOpHoe = new ItemToolOpHoe(OpTools);
     public static final ItemPickaxe ItemToolOpPick = new ItemToolOpPick(OpTools);
     public static final ItemSpade ItemToolOpSpade = new ItemToolOpSpade(OpTools);

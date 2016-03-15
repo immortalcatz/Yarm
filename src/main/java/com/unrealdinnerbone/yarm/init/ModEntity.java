@@ -24,12 +24,12 @@ public class ModEntity
 
         EntityRegistry.registerGlobalEntityID(entityClass, entityName, RandomId);
         EntityRegistry.registerModEntity(entityClass, entityName, RandomId, yarm.instance, 64, 1, true);
-        createEgg(RandomId, eggPrimaryColor, eggSecondaryColor);
+        createEgg(RandomId, eggPrimaryColor, eggSecondaryColor, entityName);
     }
 
-    private static void createEgg(int RandomId, int eggPrimaryColor, int eggSecondaryColor)
+    private static void createEgg(int RandomId, int eggPrimaryColor, int eggSecondaryColor, String EnityName)
     {
-        EntityList.entityEggs.put(Integer.valueOf(RandomId), new EntityList.EntityEggInfo(RandomId, eggPrimaryColor, eggSecondaryColor));
+        EntityList.entityEggs.put(String.valueOf(Integer.valueOf(RandomId)), new EntityList.EntityEggInfo(EnityName, eggPrimaryColor, eggSecondaryColor));
         LogHelper.info("Loaded Entity's");
     }
 }

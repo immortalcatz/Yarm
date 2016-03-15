@@ -8,9 +8,9 @@ public class ItemToolOpAxe extends ItemAxe {
 
     private static String name = "ItemToolOpAxe";
 
-    public ItemToolOpAxe(ToolMaterial material) {
+    public ItemToolOpAxe() {
 
-        super(material);
+        super(ToolMaterial.DIAMOND);
         this.setCreativeTab(Tab.Yarm_Tab);
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
     }

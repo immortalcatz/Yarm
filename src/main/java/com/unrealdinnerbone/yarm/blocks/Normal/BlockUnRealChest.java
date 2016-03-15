@@ -15,7 +15,6 @@ public class BlockUnRealChest extends BlockContainer {
         super(Material.iron);
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
         setHardness(3.0F);
-        setBlockBounds(0.0625F, 0F, 0.0625F, 0.9375F, 0.875F, 0.9375F);
         this.isBlockContainer = true;
 
 
@@ -31,13 +30,12 @@ public class BlockUnRealChest extends BlockContainer {
     {
         return null;
     }
-    @Override
+
     public boolean isOpaqueCube()
     {
         return false;
     }
 
-    @Override
     public int getRenderType()
     {
         return 22;

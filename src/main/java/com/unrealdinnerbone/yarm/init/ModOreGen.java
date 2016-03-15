@@ -3,9 +3,9 @@ package com.unrealdinnerbone.yarm.init;
 
 import java.util.Random;
 
-import com.unrealdinnerbone.yarm.Util.LogHelper;
-import net.minecraft.util.BlockPos;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.fml.common.IWorldGenerator;
@@ -14,8 +14,8 @@ public class ModOreGen implements IWorldGenerator
 {
         // Which dimension to generate in by dimension ID (Nether -1, Overworld 0, End 1, etc)
         @Override
-        public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
-            switch (world.provider.getDimensionId()) {
+        public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
+            switch (world.provider.getDimension()) {
                 case -1:
                     break;
                 case 0:

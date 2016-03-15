@@ -69,7 +69,7 @@ public class ShpaedRecpices {
                 'A', "materialNetherStar7"));
 
         //Nether Star Axe
-        GameRegistry.addRecipe(new ItemStack(ModItems.ItemToolOpAxe),
+/*        GameRegistry.addRecipe(new ItemStack(ModItems.ItemToolOpAxe),
                 " AA",
                 " BA",
                 " B ",
@@ -102,7 +102,7 @@ public class ShpaedRecpices {
                 " B ",
                 " B ",
                 'A', ModBlocks.BLOCK_NETHER_STAR_3,
-                'B', ModItems.ItemNetherStarRod);
+                'B', ModItems.ItemNetherStarRod);*/
         LogHelper.info("Loaded Shaped Recipes");
 
 
