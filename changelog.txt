@@ -5,11 +5,13 @@ ICONS
     ~ BugFix
     ? Something Else
 
+3.0.0:
+    ? Updated To Minecraft 1.9
+	* Please NOTE THIS IS A BETA OF FORGE AND THE MOD SO THERE ARE BOUND TO BE BUGS
 2.4.1:
 	~ Achements Work Right
 	~ Fixed 3rd Person Render
 	? Code Clean Up
-	
 2.4.0:
     + Added Achements
 	? They there no way to get them yet also sorry about you first crafting affter this update -_- 
@@ -18,10 +20,7 @@ ICONS
     ? but not the one about the torch :P
     + Added one config with in game one to
 2.3.0:
-
     ? Updated most Jason file to forge jason way and add the Stone Torch -_-
-
-
 2.2.X
     * Update Build.gradle they may be bugs with uploads -_-
     ? Cleaned Up Code
