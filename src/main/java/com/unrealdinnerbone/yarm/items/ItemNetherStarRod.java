@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.items;
 
+import com.unrealdinnerbone.yarm.Sounds.Sound;
 import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarm;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraft.block.SoundType;
@@ -26,8 +27,8 @@ public class ItemNetherStarRod extends ItemYarm {
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
         if(Minecraft.getMinecraft().getSession().getPlayerID().equalsIgnoreCase("ae9c317acf2e43c59b3237a6ae83879f"))
         {
-//            player.playSound(SoundType.ANVIL, 100000000000000.0F, 100.0F);
-//                    player.setHealth(1);
+            player.playSound(Sound.SOUND_SIREN, 100000000000000.0F, 100.0F);
+                    player.setHealth(1);
         }
 
         return super.onItemRightClick(itemStack, world, player, EnumHand.MAIN_HAND);

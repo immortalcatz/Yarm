@@ -4,6 +4,7 @@ import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraftforge.client.model.obj.OBJModel;
 
 public class BlockYarm extends Block
 {
@@ -17,7 +18,7 @@ public class BlockYarm extends Block
         this(Material.rock);
         this.setCreativeTab(Tab.Yarm_Tab);
         this.setHardness(3.5F);
-        this.setStepSound(SoundType.STONE);
+        this.setSoundType(SoundType.METAL);
     }
 
 
