@@ -30,7 +30,7 @@ archivesBaseName = "Yarm"
 
 minecraft
 {
-    version = "${minecraft_version}-${forge_version}"
+    version = "${minecraft_version}-${forge_version}-${minecraft_version}"
     mappings = "${forge_mappings}"
     runDir = "run"
 
@@ -59,7 +59,7 @@ repositories
 dependencies
 {
    deobfCompile "MCMultiPart:MCMultiPart-experimental:${mcmutipart_version}:universal"
-   deobfCompile "mcp.mobius.waila:Waila:${waila_version}_1.8.8"
+//   deobfCompile "mcp.mobius.waila:Waila:${waila_version}_1.8.8"
    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
 }
 
