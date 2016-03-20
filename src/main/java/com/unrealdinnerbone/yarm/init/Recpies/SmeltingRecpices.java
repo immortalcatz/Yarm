@@ -10,7 +10,7 @@ public class SmeltingRecpices {
     public static void init()
     {
         //Antimony Ore To Antimony Igont
-        GameRegistry.addSmelting(ModBlocks.BLOCK_ANTIMONY_ORE, new ItemStack(ModItems.ItemAntimonyIngot), 0.5f);
+        GameRegistry.addSmelting(ModBlocks.BLOCK_ANTIMONY_ORE, new ItemStack(ModItems.Item_AntimonyIngot), 0.5f);
         LogHelper.info("Loaded Smelting Recipes\"");
 
     }

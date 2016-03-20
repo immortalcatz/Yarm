@@ -1,6 +1,6 @@
 package com.unrealdinnerbone.yarm.init;
 
-import com.unrealdinnerbone.yarm.Tools.ToolTypes;
+import com.unrealdinnerbone.yarm.Util.ToolTypes;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.items.*;
 import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarm;

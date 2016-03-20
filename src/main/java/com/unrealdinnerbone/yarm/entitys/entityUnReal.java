@@ -13,7 +13,7 @@ public class entityUnReal extends enityYarmPlayer {
     }
 
     protected Item getDropItem() {
-        ItemStack item = new ItemStack(ModItems.ItemUnRealFace);
+        ItemStack item = new ItemStack(ModItems.Item_UnRealFace);
         this.entityDropItem(item, 0.0F);
         return Item.getItemById(0);
     }

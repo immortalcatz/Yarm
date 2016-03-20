@@ -28,11 +28,12 @@ public class ItemNetherStarRod extends ItemYarm {
         if(Minecraft.getMinecraft().getSession().getPlayerID().equalsIgnoreCase("ae9c317acf2e43c59b3237a6ae83879f"))
         {
             player.playSound(Sound.SOUND_SIREN, 100000000000000.0F, 100.0F);
-                    player.setHealth(1);
+            player.setHealth(1);
         }
 
         return super.onItemRightClick(itemStack, world, player, EnumHand.MAIN_HAND);
     }
+
     public static String getName() {
         return name;
     }

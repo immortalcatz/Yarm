@@ -9,6 +9,7 @@ public class ItemYarm extends Item
     {
         super();
         this.setCreativeTab(Tab.Yarm_Tab);
+        this.setFull3D();
     }
 
 

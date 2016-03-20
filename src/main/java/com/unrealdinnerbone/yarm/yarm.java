@@ -2,6 +2,7 @@ package com.unrealdinnerbone.yarm;
 
 import com.unrealdinnerbone.yarm.Achievements.Achievements;
 import com.unrealdinnerbone.yarm.Achievements.AchievementsHandler;
+import com.unrealdinnerbone.yarm.init.Recpies.BannerMaker;
 import com.unrealdinnerbone.yarm.Util.ConfigManger;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.init.*;
@@ -46,11 +47,12 @@ public class yarm {
         ClientProxy.RegisterRenders(Event);
         Achievements.LoadAchievements();
         AchievementsHandler.RegisterPage();
+        BannerMaker.initCraftingBanners();
     }
     @Mod.EventHandler
     public static void PostInit(FMLPostInitializationEvent PostEvent)
     {
-        LogHelper.info("Lets Hope It Does not Shot Fire and blow up" + "-Ichun 2015");
+        LogHelper.info("Lets Hope It Does not Shot Fire and blow up ****" + "-Ichun 2015");
     }
 }
 

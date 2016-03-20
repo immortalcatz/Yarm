@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.Tools;
+package com.unrealdinnerbone.yarm.Util;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
