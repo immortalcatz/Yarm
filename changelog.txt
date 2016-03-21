@@ -5,6 +5,11 @@ ICONS
     ~ BugFix
     ? Something Else
 
+3.1.0:
+	~ Fixed the Rendering of the Tools
+	+ UnReal Face Banner
+	? MORE TO COME SOON ONCE I FIGURE IT OUT RIGHT
+	
 3.0.0:
     ? Updated To Minecraft 1.9
 	* Please NOTE THIS IS A BETA OF FORGE AND THE MOD SO THERE ARE BOUND TO BE BUGS
