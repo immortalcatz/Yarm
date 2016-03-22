@@ -10,7 +10,8 @@ public class BannerMaker {
     public static void initCraftingBanners () {
 
         BannerUtils.addCraftingPattern("UnRealFace", new ItemStack(ModItems.Item_UnRealFace));
-        BannerUtils.addCraftingPattern("Elerta", new ItemStack(Items.elytra));
+        BannerUtils.addCraftingPattern("Elytra", new ItemStack(Items.elytra));
+        BannerUtils.addCraftingPattern("Pearcell", new ItemStack(Items.beetroot));
     }
 
 }

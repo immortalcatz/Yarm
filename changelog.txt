@@ -4,6 +4,10 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
+3.2.0:
+	+ Added The Pear Banner (User Beat Root)
+	+ Added Elytra Banner 
+	? Sheilds for the Banners with the custom items are still broken :P
 
 3.1.0:
 	~ Fixed the Rendering of the Tools
