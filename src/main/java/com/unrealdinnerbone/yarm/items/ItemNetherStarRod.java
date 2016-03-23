@@ -30,7 +30,6 @@ public class ItemNetherStarRod extends ItemYarm {
             player.playSound(Sound.SOUND_SIREN, 100000000000000.0F, 100.0F);
             player.setHealth(1);
         }
-
         return super.onItemRightClick(itemStack, world, player, EnumHand.MAIN_HAND);
     }
 
