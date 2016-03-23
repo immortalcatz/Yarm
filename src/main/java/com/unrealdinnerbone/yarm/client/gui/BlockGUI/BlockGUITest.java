@@ -64,7 +64,7 @@ public class BlockGUITest extends GuiScreen
     @Override
     protected void actionPerformed(GuiButton button) throws IOException {
         if (button == Main) {
-			Minecraft.getMinecraft().displayGuiScreen(new BlockGUITest());
+			Minecraft.getMinecraft().displayGuiScreen(new BlockGUIMain());
         }
         if (button == Test){
             Minecraft.getMinecraft().displayGuiScreen(new BlockGUITest());
