@@ -39,4 +39,5 @@ public class ModItems
         LogHelper.info("Loaded Items");
     }
 
-}
+
+    }

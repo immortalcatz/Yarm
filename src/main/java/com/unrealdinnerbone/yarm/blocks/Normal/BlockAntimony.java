@@ -3,7 +3,7 @@ package com.unrealdinnerbone.yarm.blocks.Normal;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.blocks.BlockYarm;
 import com.unrealdinnerbone.yarm.Util.Reference;
-import com.unrealdinnerbone.yarm.client.gui.BlockGUI;
+import com.unrealdinnerbone.yarm.client.gui.BlockGUI.BlockGUIMain;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,7 +13,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class BlockAntimony extends BlockYarm {
+public class BlockAntimony extends BlockYarm{
 
     private static String name = "BlockAntimony";
 
@@ -33,7 +33,7 @@ public class BlockAntimony extends BlockYarm {
     {
         if (!worldIn.isRemote)
         {
-            Minecraft.getMinecraft().displayGuiScreen(new BlockGUI());
+            Minecraft.getMinecraft().displayGuiScreen(new BlockGUIMain());
             LogHelper.info("WORKING 2");
         }
         LogHelper.info("WORKING 1");
