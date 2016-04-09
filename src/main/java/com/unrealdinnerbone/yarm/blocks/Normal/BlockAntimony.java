@@ -1,12 +1,11 @@
 package com.unrealdinnerbone.yarm.blocks.Normal;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
+import com.unrealdinnerbone.yarm.Yarm;
 import com.unrealdinnerbone.yarm.blocks.BlockYarm;
 import com.unrealdinnerbone.yarm.Util.Reference;
-import com.unrealdinnerbone.yarm.blocks.YarmTitleEnity;
-import com.unrealdinnerbone.yarm.client.gui.BlockGUI.BlockGUIMain;
+import com.unrealdinnerbone.yarm.network.GUIHandler;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
@@ -17,6 +16,7 @@ import net.minecraft.world.World;
 public class BlockAntimony extends BlockYarm{
 
     private static String name = "BlockAntimony";
+
 
     public BlockAntimony()
     {
@@ -32,13 +32,7 @@ public class BlockAntimony extends BlockYarm{
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
     {
-        if (!worldIn.isRemote)
-        {
-            Minecraft.getMinecraft().displayGuiScreen(new BlockGUIMain());
-            LogHelper.info("WORKING 2");
-        }
-        LogHelper.info("WORKING 1");
-
+        playerIn.openGui(Yarm.instance, GUIHandler.TEST_GUI_MAIN_MASTER, worldIn, pos.getX(), pos.getY(), pos.getZ());
         return true;
     }
 }

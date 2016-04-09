@@ -8,15 +8,12 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.text.ITextComponent;
 
-/**
- * Created by UnRealDinnerbone on 3/25/2016.
- */
-public class ModTileEnity extends TileEntity implements IInventory {
+public class ModTileEntity extends TileEntity implements IInventory {
 
     private ItemStack[] inventory;
     private String customName;
 
-    public ModTileEnity() {
+    public ModTileEntity() {
         this.inventory = new ItemStack[this.getSizeInventory()];
     }
 
@@ -37,7 +34,7 @@ public class ModTileEnity extends TileEntity implements IInventory {
 
     @Override
     public int getSizeInventory() {
-        return 9;
+        return 64;
     }
 
     @Override

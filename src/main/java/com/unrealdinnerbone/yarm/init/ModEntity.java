@@ -1,7 +1,7 @@
 package com.unrealdinnerbone.yarm.init;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
-import com.unrealdinnerbone.yarm.yarm;
+import com.unrealdinnerbone.yarm.Yarm;
 import net.minecraft.entity.EntityList;
 
 import com.unrealdinnerbone.yarm.entitys.entityUnReal;
@@ -23,7 +23,7 @@ public class ModEntity
         int RandomId = EntityRegistry.findGlobalUniqueEntityId();
 
         EntityRegistry.registerGlobalEntityID(entityClass, entityName, RandomId);
-        EntityRegistry.registerModEntity(entityClass, entityName, RandomId, yarm.instance, 64, 1, true);
+        EntityRegistry.registerModEntity(entityClass, entityName, RandomId, Yarm.instance, 64, 1, true);
         createEgg(RandomId, eggPrimaryColor, eggSecondaryColor, entityName);
     }
 

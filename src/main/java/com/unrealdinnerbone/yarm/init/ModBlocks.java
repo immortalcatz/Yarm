@@ -7,7 +7,7 @@ import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockStoneTorch;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockUnRealChest;
 import com.unrealdinnerbone.yarm.blocks.Ores.BlockAntimonyOre;
-import com.unrealdinnerbone.yarm.blocks.TileEnity.ModTileEnity;
+import com.unrealdinnerbone.yarm.blocks.TileEnity.ModTileEntity;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks
@@ -25,7 +25,7 @@ public class ModBlocks
     public static final BlockNetherStar7 BLOCK_NETHER_STAR_7 = new BlockNetherStar7();
     public static final BlockNetherStar8 BLOCK_NETHER_STAR_8 = new BlockNetherStar8();
     public static final BlockStoneTorch BLOCK_STONE_TORCH = new BlockStoneTorch();
-    public static final Class<? extends ModTileEnity> MOD_TILE_ENITY = new ModTileEnity().getClass();
+    public static final Class<? extends ModTileEntity> MOD_TILE_ENITY = new ModTileEntity().getClass();
 
 
 

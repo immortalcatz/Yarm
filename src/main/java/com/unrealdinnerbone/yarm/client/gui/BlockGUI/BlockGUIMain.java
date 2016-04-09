@@ -3,11 +3,11 @@ package com.unrealdinnerbone.yarm.client.gui.BlockGUI;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import com.unrealdinnerbone.yarm.init.ModItems;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
 
 import java.io.IOException;
 
@@ -19,25 +19,20 @@ public class BlockGUIMain extends GuiScreen
     private final int ButtonWidth = 51;
     private final int ButtonHeight = 107;
 
-    int x = (width - guiWidth) / 2;
-    int y = (height - guiHeight) / 2;
+    static EntityPlayer player;
+    static World world;
 
-    public BlockGUIMain()
-    {
-
+    public BlockGUIMain() {
+        super();
     }
 
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks)
-
     {
+        int x = (width - guiWidth) / 2;
+        int y = (height - guiHeight) / 2;
+
         try {
-
-            int x = (width - guiWidth) / 2;
-            int y = (height - guiHeight) / 2;
-
-            int LOL = 1;
-
             super.drawScreen(mouseX, mouseY, partialTicks);
             mc.renderEngine.bindTexture(new ResourceLocation(Reference.MOD_ID, "textures/gui/test/test.png"));
             drawTexturedModalRect(x, y, 0, 0 , guiWidth, guiHeight);
@@ -48,14 +43,12 @@ public class BlockGUIMain extends GuiScreen
             drawTexturedModalRect(x - 24 , y + 132, 1998 / 2 , 11, ButtonWidth / 2, ButtonHeight/ 2);
             drawTexturedModalRect(x - 24 , y + 162, 1998 / 2 , 11, ButtonWidth / 2, ButtonHeight/ 2);
             drawTexturedModalRect(x - 24 , y + 192, 1998 / 2 , 11, ButtonWidth / 2, ButtonHeight/ 2);
-//        fontRendererObj.drawString(String.valueOf(Minecraft.getDebugFPS()), x + 10, y + 10, 0x404040);
-//        fontRendererObj.drawString(Minecraft.getMinecraft().getSession().getUsername(), x + 10, y + 20 , 0x99FF00);
-            fontRendererObj.drawString(String.valueOf(LOL), x + 10, y + 10, 0x404040);
-            LOL++;
             mc.getRenderItem().renderItemIntoGUI(new ItemStack(ModItems.Item_UnRealFace), x + -20 , y + 18);
             mc.getRenderItem().renderItemIntoGUI(new ItemStack(ModItems.Item_ManmedFace), x + -20 , y + 48);
             mc.getRenderItem().renderItemIntoGUI(new ItemStack(ModItems.Item_KyaneFace), x + -20 , y + 78);
             mc.getRenderItem().renderItemIntoGUI(new ItemStack(ModItems.Item_YunusFace), x + -20 , y + 108);
+
+
         }
         catch (Exception e)
         {
@@ -68,7 +61,7 @@ public class BlockGUIMain extends GuiScreen
     @Override
     public void initGui()
     {
-        LogHelper.info("Width: " + width);
+
     }
     @Override
     public boolean doesGuiPauseGame()
@@ -81,15 +74,31 @@ public class BlockGUIMain extends GuiScreen
         super.mouseClicked(mouseX, mouseY, mouseButton);
         int x = (width - guiWidth) / 2;
         int y = (height - guiHeight) / 2;
-        LogHelper.info(x);
+        boolean XAll = x - 24 <= mouseX && x - 24 + (ButtonWidth / 2) >= mouseX;
+        boolean YUnRealButton = mouseY >= y + 12 && mouseY <= y + 12 + (ButtonHeight / 2) - 28;
+        boolean YManmaedFace = mouseY >= y + 42 && mouseY <= y + 12 + (ButtonHeight / 2) - 28;
+        boolean YKaneFace = mouseY >= y + 72 && mouseY <= y + 12 + (ButtonHeight / 2) - 28;
+        boolean YYunuesFace = mouseY >= y + 102 && mouseY <= y + 12 + (ButtonHeight / 2) - 28;
 
-        if(x - 24 <= mouseX && x - 0 + ButtonWidth >= mouseX)
+
+        if(XAll)
         {
-            if(mouseY >= 14 && mouseY <= 40 ) {
-                LogHelper.info("In Button Range");
+            if(YUnRealButton)
+            {
+                sendChatMessage("A");
+            }
+            if(YManmaedFace) {
+                sendChatMessage("B");
+            }
+            if(YKaneFace) {
+                sendChatMessage("C");
+            }
+            if(YYunuesFace) {
+                sendChatMessage("D");
             }
 
         }
     }
+
 
 }

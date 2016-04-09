@@ -7,6 +7,7 @@ import com.unrealdinnerbone.yarm.Util.ConfigManger;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.init.Recpies.*;
+import com.unrealdinnerbone.yarm.network.GUIHandler;
 import com.unrealdinnerbone.yarm.proxy.*;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraftforge.common.MinecraftForge;
@@ -14,13 +15,14 @@ import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.*;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MC_VERSION, guiFactory = Reference.GUI_FACTORY_CLASS, canBeDeactivated = true)
-public class yarm {
+public class Yarm {
 
     @Mod.Instance(Reference.MOD_ID)
-    public static yarm instance;
+    public static Yarm instance;
 
     @SidedProxy(clientSide = Reference.CLIENT_SIDE, serverSide = Reference.SERVER_SIDE, modId = Reference.MOD_ID)
     public static IProxy proxy;
@@ -48,6 +50,7 @@ public class yarm {
         Achievements.LoadAchievements();
         AchievementsHandler.RegisterPage();
         BannerMaker.initCraftingBanners();
+        NetworkRegistry.INSTANCE.registerGuiHandler(Yarm.instance, new GUIHandler());
     }
     @Mod.EventHandler
     public static void PostInit(FMLPostInitializationEvent PostEvent)
