@@ -49,7 +49,7 @@ public class AchievementsHandler
     }
     public static void RegisterPage()
     {
-        YarmPage = new AchievementPage("Yarm Achievements",
+        YarmPage = new AchievementPage("yarm Achievements",
                 Achievements.AchievementCraftNetherStar1,
                 Achievements.AchievementCraftNetherStar2,
                 Achievements.AchievementCraftNetherStar3,

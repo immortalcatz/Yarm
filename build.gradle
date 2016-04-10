@@ -26,7 +26,7 @@ apply plugin: "com.matthewprenger.cursegradle"
 
 version = "${minecraft_version}-${mod_version}"
 group= "com.unrealdinnerbone.yarm"
-archivesBaseName = "Yarm"
+archivesBaseName = "yarm"
 
 minecraft
 {
@@ -92,7 +92,7 @@ curseforge {
     addGameVersion project.minecraft_version
 
     mainArtifact(jar) {
-      displayName = "Yarm-: $project.version"
+      displayName = "yarm-: $project.version"
     }
   }
 }

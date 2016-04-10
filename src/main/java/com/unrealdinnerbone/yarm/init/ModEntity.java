@@ -1,7 +1,7 @@
 package com.unrealdinnerbone.yarm.init;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
-import com.unrealdinnerbone.yarm.Yarm;
+import com.unrealdinnerbone.yarm.yarm;
 import net.minecraft.entity.EntityList;
 
 import com.unrealdinnerbone.yarm.entitys.entityUnReal;

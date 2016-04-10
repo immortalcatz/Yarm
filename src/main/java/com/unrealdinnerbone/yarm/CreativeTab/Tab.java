@@ -21,7 +21,7 @@ public class Tab
         @Override
     public String getTranslatedTabLabel()
         {
-            return "Yarm Tab";
+            return "yarm Tab";
 //            return StatCollector.translateToLocal("creativetab.maintab.name");
         }
     };

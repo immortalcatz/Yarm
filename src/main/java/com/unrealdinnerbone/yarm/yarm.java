@@ -19,10 +19,10 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MC_VERSION, guiFactory = Reference.GUI_FACTORY_CLASS, canBeDeactivated = true, updateJSON = Reference.MOD_UPDATE_JSON_URL)
-public class Yarm {
+public class yarm {
 
     @Mod.Instance(Reference.MOD_ID)
-    public static Yarm instance;
+    public static yarm instance;
 
     @SidedProxy(clientSide = Reference.CLIENT_SIDE, serverSide = Reference.SERVER_SIDE, modId = Reference.MOD_ID)
     public static IProxy proxy;
@@ -50,7 +50,7 @@ public class Yarm {
         Achievements.LoadAchievements();
         AchievementsHandler.RegisterPage();
         BannerMaker.initCraftingBanners();
-        NetworkRegistry.INSTANCE.registerGuiHandler(Yarm.instance, new GUIHandler());
+        NetworkRegistry.INSTANCE.registerGuiHandler(yarm.instance, new GUIHandler());
     }
     @Mod.EventHandler
     public static void PostInit(FMLPostInitializationEvent PostEvent)
