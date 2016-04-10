@@ -23,7 +23,7 @@ public class ModEntity
         int RandomId = EntityRegistry.findGlobalUniqueEntityId();
 
         EntityRegistry.registerGlobalEntityID(entityClass, entityName, RandomId);
-        EntityRegistry.registerModEntity(entityClass, entityName, RandomId, Yarm.instance, 64, 1, true);
+        EntityRegistry.registerModEntity(entityClass, entityName, RandomId, yarm.instance, 64, 1, true);
         createEgg(RandomId, eggPrimaryColor, eggSecondaryColor, entityName);
     }
 
