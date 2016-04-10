@@ -12,7 +12,7 @@ public class BlockUnRealChest extends BlockContainer {
 
     public BlockUnRealChest()
     {
-        super(Material.iron);
+        super(Material.IRON);
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
         setHardness(3.0F);
         this.isBlockContainer = true;

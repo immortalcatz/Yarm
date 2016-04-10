@@ -14,7 +14,7 @@ public class BlockYarm extends Block
 
     public BlockYarm()
     {
-        this(Material.rock);
+        this(Material.ROCK);
         this.setCreativeTab(Tab.Yarm_Tab);
         this.setHardness(3.5F);
         this.setSoundType(SoundType.METAL);

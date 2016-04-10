@@ -14,7 +14,7 @@ public class Sound
     }
 
     private static SoundEvent getRegisteredSoundEvent(String id) {
-        SoundEvent soundevent = (SoundEvent) SoundEvent.soundEventRegistry.getObject(new ResourceLocation(id));
+        SoundEvent soundevent = (SoundEvent) SoundEvent.REGISTRY.getObject(new ResourceLocation(id));
 
         if (soundevent == null) {
             throw new IllegalStateException("Invalid Sound requested: " + id);

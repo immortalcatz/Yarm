@@ -1,12 +1,12 @@
 [
 {
-  "modid": "yarm",
+  "modid": "Yarm",
   "name": "Yet Another Random Mod",
   "description": "My first mod adds random stuffTM",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "mcversion": "1.9",
   "url": "http://minecraft.curseforge.com/projects/yarm-yet-another-random-modification",
-  "updateUrl": "",
+  "updateUrl": "http://mc.unrealdinnerbone.x10.bz/Yarm/Updater.json",
   "authorList": ["UnRealDinnerbone", "Manmaed"],
   "credits": "Code: Pahamir, Manmaed, Johnsmith0508, Yunus1903; Textures: Shane, King_INF3RNO, Outher: Modmuss50",
   "logoFile": "logo.png",

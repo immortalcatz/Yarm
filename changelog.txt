@@ -4,32 +4,36 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
-3.2.0:
+	
+1.9-3.3.0:
+	~ Fixed Banners	
+	
+1.9-3.2.0:
 	+ Added The Pear Banner (User Beat Root)
 	+ Added Elytra Banner 
 	? Sheilds for the Banners with the custom items are still broken :P
 
-3.1.0:
+1.9-3.1.0:
 	~ Fixed the Rendering of the Tools
 	+ UnReal Face Banner
 	? MORE TO COME SOON ONCE I FIGURE IT OUT RIGHT
 	
-3.0.0:
+1.9-3.0.0:
     ? Updated To Minecraft 1.9
 	* Please NOTE THIS IS A BETA OF FORGE AND THE MOD SO THERE ARE BOUND TO BE BUGS
-2.4.1:
+1.8.9-2.4.1:
 	~ Achements Work Right
 	~ Fixed 3rd Person Render
 	? Code Clean Up
-2.4.0:
+1.8.9-2.4.0:
     + Added Achements
 	? They there no way to get them yet also sorry about you first crafting affter this update -_- 
     ? Cleaned up clode
     ? PLEASE REPORT BUGS :P
     ? but not the one about the torch :P
     + Added one config with in game one to
-2.3.0:
+1.8.9-2.3.0:
     ? Updated most Jason file to forge jason way and add the Stone Torch -_-
-2.2.X
+1.8.9-2.2.X
     * Update Build.gradle they may be bugs with uploads -_-
     ? Cleaned Up Code

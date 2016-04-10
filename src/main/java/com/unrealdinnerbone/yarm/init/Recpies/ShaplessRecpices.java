@@ -23,7 +23,7 @@ public class ShaplessRecpices {
                 OreDictionaryNames.Item_AntimonyIngot));
 
         //Nether Star Incess Level
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.nether_star, 9),
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.NETHER_STAR, 9),
                 OreDictionaryNames.BLOCK_NETHER_STAR_1));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.BLOCK_NETHER_STAR_1, 9),
                 OreDictionaryNames.BLOCK_NETHER_STAR_2));

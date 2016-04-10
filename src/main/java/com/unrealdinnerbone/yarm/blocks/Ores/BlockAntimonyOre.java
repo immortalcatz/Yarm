@@ -11,7 +11,7 @@ public class BlockAntimonyOre extends BlockYarm {
 
     public BlockAntimonyOre()
     {
-        super(Material.iron);
+        super(Material.IRON);
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
         this.setCreativeTab(Tab.Yarm_Tab);
     }

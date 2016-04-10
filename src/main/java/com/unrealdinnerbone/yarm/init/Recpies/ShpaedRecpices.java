@@ -33,7 +33,7 @@ public class ShpaedRecpices {
                 "AAA",
                 "AAA",
                 "AAA",
-                'A', Items.nether_star);
+                'A', Items.NETHER_STAR);
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.BLOCK_NETHER_STAR_2),
                 "AAA",
                 "AAA",

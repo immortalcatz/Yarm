@@ -29,7 +29,7 @@ public class ModEntity
 
     private static void createEgg(int RandomId, int eggPrimaryColor, int eggSecondaryColor, String EnityName)
     {
-        EntityList.entityEggs.put(String.valueOf(Integer.valueOf(RandomId)), new EntityList.EntityEggInfo(EnityName, eggPrimaryColor, eggSecondaryColor));
+        //EntityList.entityEggs.put(String.valueOf(Integer.valueOf(RandomId)), new EntityList.EntityEggInfo(EnityName, eggPrimaryColor, eggSecondaryColor));
         LogHelper.info("Loaded Entity's");
     }
 }
