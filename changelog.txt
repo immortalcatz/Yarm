@@ -4,6 +4,9 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
+
+1.9-3.4.0:
+	~ Change Log TM
 	
 1.9-3.3.0:
 	~ Fixed Banners	
