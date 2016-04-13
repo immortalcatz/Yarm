@@ -16,6 +16,7 @@ public class ModItems
     public static final ItemYarm Item_YunusFace = new ItemYunus1903Face();
     public static final ItemYarm Item_AntimonyIngot = new ItemAntimonyIngot();
     public static final ItemYarm Item_NetherStarRod = new ItemNetherStarRod();
+    public static final ItemYarm Item_IronNugget = new ItemIronNugget();
     public static final ItemAxe ItemTool_OpAxe = new ItemToolOpAxe();
     public static final ItemHoe ItemTool_OpHoe = new ItemToolOpHoe(ToolTypes.OpTools);
     public static final ItemPickaxe ItemTool_OpPick = new ItemToolOpPick(ToolTypes.OpTools);
@@ -36,6 +37,7 @@ public class ModItems
         GameRegistry.registerItem(ItemTool_OpSpade, ItemToolOpSpade.getName());
         GameRegistry.registerItem(ItemTool_OpPick, ItemToolOpPick.getName());
         GameRegistry.registerItem(ItemTool_OpSword, ItemToolOpSword.getName());
+        GameRegistry.registerItem(Item_IronNugget, ItemIronNugget.getName());
         LogHelper.info("Loaded Items");
     }
 

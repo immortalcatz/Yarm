@@ -27,6 +27,7 @@ public class ModOreDictionary {
         OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_6, new ItemStack(ModBlocks.BLOCK_NETHER_STAR_6));
         OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_7, new ItemStack(ModBlocks.BLOCK_NETHER_STAR_7));
         OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_8, new ItemStack(ModBlocks.BLOCK_NETHER_STAR_8));
+        OreDictionary.registerOre(OreDictionaryNames.Item_IronNugget, new ItemStack(ModItems.Item_IronNugget));
         LogHelper.info("Loaded Ore Dic");
 
     }

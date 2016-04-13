@@ -1,8 +1,21 @@
 package com.unrealdinnerbone.yarm.proxy;
 
-/**
- * Created by UnRealDinnerbone on 6/3/2015.
- */
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
 public class ServerProxy extends CommonProxy
 {
+    public static void PreInt(FMLPreInitializationEvent Event)
+    {
+
+    }
+    public static void Int(FMLInitializationEvent Event)
+    {
+
+    }
+    public static void PostInt(FMLPostInitializationEvent Event)
+    {
+
+    }
 }

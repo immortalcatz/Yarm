@@ -27,6 +27,7 @@ public class RenderItems {
         renderItem.getItemModelMesher().register(ModItems.ItemTool_OpPick, 0, new ModelResourceLocation(Reference.RE_PREFIX + ItemToolOpPick.getName(), InventoryName));
         renderItem.getItemModelMesher().register(ModItems.ItemTool_OpSpade, 0, new ModelResourceLocation(Reference.RE_PREFIX + ItemToolOpSpade.getName(), InventoryName));
         renderItem.getItemModelMesher().register(ModItems.ItemTool_OpSword, 0, new ModelResourceLocation(Reference.RE_PREFIX + ItemToolOpSword.getName(), InventoryName));
+        renderItem.getItemModelMesher().register(ModItems.Item_IronNugget, 0, new ModelResourceLocation(Reference.RE_PREFIX + ItemIronNugget.getName(), InventoryName));
     }
 }
 

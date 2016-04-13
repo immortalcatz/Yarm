@@ -10,6 +10,7 @@ import com.unrealdinnerbone.yarm.init.Recpies.*;
 import com.unrealdinnerbone.yarm.network.GUIHandler;
 import com.unrealdinnerbone.yarm.proxy.*;
 import com.unrealdinnerbone.yarm.Util.Reference;
+import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
@@ -30,33 +31,23 @@ public class yarm {
     @Mod.EventHandler
     public static void PreInit(FMLPreInitializationEvent PreEvent)
     {
-       ModBlocks.init();
-       ModItems.init();
-       ModEntity.initEntity();
-       ConfigManger.ConfigManger(PreEvent.getSuggestedConfigurationFile());
-       FMLCommonHandler.instance().bus().register(new ConfigManger());
-       MinecraftForge.EVENT_BUS.register(new AchievementsHandler());
+       ClientProxy.PreInt(PreEvent);
+       CommonProxy.PreInt(PreEvent);
+       ServerProxy.PreInt(PreEvent);
     }
     @Mod.EventHandler
     public static void Init(FMLInitializationEvent Event)
     {
-        ModOreGen WorldGen = new ModOreGen();
-        ShpaedRecpices.init();
-        SmeltingRecpices.init();
-        ShaplessRecpices.init();
-        ModOreDictionary.OreDictionary();
-        GameRegistry.registerWorldGenerator(WorldGen, 1);
-        ClientProxy.RegisterRenders(Event);
-        Achievements.LoadAchievements();
-        AchievementsHandler.RegisterPage();
-        BannerMaker.initCraftingBanners();
-        NetworkRegistry.INSTANCE.registerGuiHandler(yarm.instance, new GUIHandler());
+        ClientProxy.Int(Event);
+        CommonProxy.Int(Event);
+        ServerProxy.Int(Event);
     }
     @Mod.EventHandler
     public static void PostInit(FMLPostInitializationEvent PostEvent)
     {
-        LogHelper.info(PostEvent.getModState());
-        LogHelper.info("Lets Hope It Does not Shot Fire and blow up ****" + "-Ichun 2015");
+        ClientProxy.PostInt(PostEvent);
+        CommonProxy.PostInt(PostEvent);
+        ServerProxy.PostInt(PostEvent);
     }
 }
 

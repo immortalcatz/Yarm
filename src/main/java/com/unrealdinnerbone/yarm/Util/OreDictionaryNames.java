@@ -18,6 +18,7 @@ public class OreDictionaryNames
     public static String BLOCK_NETHER_STAR_6 = "materialNetherStar6";
     public static String BLOCK_NETHER_STAR_7 = "materialNetherStar7";
     public static String BLOCK_NETHER_STAR_8 = "materialNetherStar8";
+    public static String Item_IronNugget= "nuggetIron";
     
     
     

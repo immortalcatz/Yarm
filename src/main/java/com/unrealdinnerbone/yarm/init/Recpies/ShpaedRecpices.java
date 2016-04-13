@@ -93,18 +93,23 @@ public class ShpaedRecpices {
                 'B', ModItems.Item_NetherStarRod);
         //Nether Star Shovel
         GameRegistry.addRecipe(new ItemStack(ModItems.ItemTool_OpSpade),
-                "AA ",
+                " A ",
                 " B ",
                 " B ",
                 'A', ModBlocks.BLOCK_NETHER_STAR_3,
                 'B', ModItems.Item_NetherStarRod);
         //Nether Star Sword
         GameRegistry.addRecipe(new ItemStack(ModItems.ItemTool_OpSword),
-                "AA ",
-                " B ",
+                " A ",
+                " A ",
                 " B ",
                 'A', ModBlocks.BLOCK_NETHER_STAR_3,
                 'B', ModItems.Item_NetherStarRod);
+        GameRegistry.addRecipe(new ItemStack(Items.IRON_INGOT),
+                "AAA",
+                "AAA",
+                "AAA",
+                'A', ModItems.Item_IronNugget);
         //Golden Apple
         LogHelper.info("Loaded Shaped Recipes");
 

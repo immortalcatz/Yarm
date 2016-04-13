@@ -10,6 +10,8 @@ public class ConfigManger
 {
     public static Configuration configuration;
     public static int StoneTorchLightLevel = 50;
+    public static boolean IronBarsUnCrafting = true;
+    public static boolean Is_iChun = false;
 
     public static void ConfigManger(File configFile)
     {
@@ -23,6 +25,8 @@ public class ConfigManger
     private static void loadConfiguration()
     {
         StoneTorchLightLevel = configuration.getInt("StoneTorch light level", Configuration.CATEGORY_GENERAL, 50, 1, 100, "Config and how bright the stone torch is.");
+        IronBarsUnCrafting = configuration.getBoolean("UnCraftable IronBars", Configuration.CATEGORY_GENERAL, true, "Turn on and of iron bar uncrafting");
+        Is_iChun = configuration.getBoolean("", Configuration.CATEGORY_CLIENT, false, "");
 
         if (configuration.hasChanged())
         {
@@ -35,7 +39,8 @@ public class ConfigManger
     {
         if (event.getModID().equalsIgnoreCase(Reference.MOD_ID))
         {
-            loadConfiguration();
+
+            loadConfiguration();;
         }
     }
 
