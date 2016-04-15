@@ -110,6 +110,16 @@ public class ShpaedRecpices {
                 "AAA",
                 "AAA",
                 'A', ModItems.Item_IronNugget);
+        GameRegistry.addRecipe(new ItemStack(ModItems.ItemFood_IronApple),
+                "AAA",
+                "ABA",
+                "AAA",
+                'A', Items.IRON_INGOT, 'B', Items.APPLE);
+        GameRegistry.addRecipe(new ItemStack(ModItems.ItemFood_IronCarrot),
+                "AAA",
+                "ABA",
+                "AAA",
+                'A', ModItems.Item_IronNugget, 'B', Items.CARROT);
         //Golden Apple
         LogHelper.info("Loaded Shaped Recipes");
 

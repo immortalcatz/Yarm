@@ -42,11 +42,8 @@ public class ShaplessRecpices {
                 OreDictionaryNames.BLOCK_NETHER_STAR_7));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.BLOCK_NETHER_STAR_7, 9),
                 OreDictionaryNames.BLOCK_NETHER_STAR_8));
-        if(ConfigManger.IronBarsUnCrafting = true)
-        {
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.Item_IronNugget, 9),
                     Items.IRON_INGOT));
-        }
         LogHelper.info("Loaded Shapeless Recipe");
 
     }

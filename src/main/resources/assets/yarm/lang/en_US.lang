@@ -5,6 +5,9 @@ creativetab.maintab.name=Yarm
 
 # Items
 item.yarm:ItemUnRealFace.name=UnReal's Face
+item.yarm:ItemFoodIronApple,name=Iron Apple
+item.yarm:ItemIronNugget.name=Iron Nugget
+item.yarm:ItemFoodIronCarrot.name=Iron Carrot
 item.yarm:ItemManmaedFace.name=Manmaed's Face
 item.yarm:ItemTheKayneGameFace.name=TheKayneGame's Face
 item.yarm:ItemYunus1903Face.name=Yunus1903's Face

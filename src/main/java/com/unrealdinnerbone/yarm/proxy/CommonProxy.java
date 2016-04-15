@@ -27,8 +27,6 @@ public abstract class CommonProxy implements IProxy
         ModBlocks.init();
         ModItems.init();
         ModEntity.initEntity();
-        ConfigManger.ConfigManger(PreEvent.getSuggestedConfigurationFile());
-        FMLCommonHandler.instance().bus().register(new ConfigManger());
         MinecraftForge.EVENT_BUS.register(new AchievementsHandler());
     }
     public static void Int(FMLInitializationEvent Event)

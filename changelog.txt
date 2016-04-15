@@ -4,9 +4,13 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
+1.9-3.5.0:
+    + Iron Apple
+    + Iron Carrot
 
 1.9-3.4.0:
-	~ Change Log TM
+	+ Iron Nugget
+	+ Smelt Iron Bars for iron
 	
 1.9-3.3.0:
 	~ Fixed Banners	

@@ -10,8 +10,9 @@ public class ConfigManger
 {
     public static Configuration configuration;
     public static int StoneTorchLightLevel = 50;
-    public static boolean IronBarsUnCrafting = true;
-    public static boolean Is_iChun = false;
+    public static boolean IronAppleGivesPositiveEffects = true;
+    public static boolean IronAppleGivesNegativesEffects = true;
+
 
     public static void ConfigManger(File configFile)
     {
@@ -25,8 +26,8 @@ public class ConfigManger
     private static void loadConfiguration()
     {
         StoneTorchLightLevel = configuration.getInt("StoneTorch light level", Configuration.CATEGORY_GENERAL, 50, 1, 100, "Config and how bright the stone torch is.");
-        IronBarsUnCrafting = configuration.getBoolean("UnCraftable IronBars", Configuration.CATEGORY_GENERAL, true, "Turn on and of iron bar uncrafting");
-        Is_iChun = configuration.getBoolean("", Configuration.CATEGORY_CLIENT, false, "");
+        IronAppleGivesPositiveEffects = configuration.getBoolean("Iron Apple Positive Effects", Configuration.CATEGORY_GENERAL, true, "Does the iron apple give that player positive effects when it is eaten");
+        IronAppleGivesNegativesEffects = configuration.getBoolean("Iron Apple Gives Negative Effects", Configuration.CATEGORY_GENERAL, true, "Does the iron apple give that player negative effects when it is eaten");
 
         if (configuration.hasChanged())
         {

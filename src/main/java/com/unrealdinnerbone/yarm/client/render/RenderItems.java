@@ -2,7 +2,8 @@ package com.unrealdinnerbone.yarm.client.render;
 
 import com.unrealdinnerbone.yarm.Util.Reference;
 import com.unrealdinnerbone.yarm.init.ModItems;
-import com.unrealdinnerbone.yarm.items.*;
+import com.unrealdinnerbone.yarm.items.Foods.*;
+import com.unrealdinnerbone.yarm.items.Item.*;
 import com.unrealdinnerbone.yarm.items.Tools.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
@@ -28,6 +29,8 @@ public class RenderItems {
         renderItem.getItemModelMesher().register(ModItems.ItemTool_OpSpade, 0, new ModelResourceLocation(Reference.RE_PREFIX + ItemToolOpSpade.getName(), InventoryName));
         renderItem.getItemModelMesher().register(ModItems.ItemTool_OpSword, 0, new ModelResourceLocation(Reference.RE_PREFIX + ItemToolOpSword.getName(), InventoryName));
         renderItem.getItemModelMesher().register(ModItems.Item_IronNugget, 0, new ModelResourceLocation(Reference.RE_PREFIX + ItemIronNugget.getName(), InventoryName));
+        renderItem.getItemModelMesher().register(ModItems.ItemFood_IronApple, 0, new ModelResourceLocation(Reference.RE_PREFIX + ItemFoodIronApple.getName(), InventoryName));
+        renderItem.getItemModelMesher().register(ModItems.ItemFood_IronCarrot, 0, new ModelResourceLocation(Reference.RE_PREFIX + ItemFoodIronCarrot.getName(), InventoryName));
     }
 }
 

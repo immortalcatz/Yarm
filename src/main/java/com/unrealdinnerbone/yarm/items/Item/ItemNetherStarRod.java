@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.items;
+package com.unrealdinnerbone.yarm.items.Item;
 
 import com.unrealdinnerbone.yarm.Sounds.Sound;
 import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarm;

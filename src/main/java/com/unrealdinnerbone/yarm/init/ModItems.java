@@ -2,8 +2,11 @@ package com.unrealdinnerbone.yarm.init;
 
 import com.unrealdinnerbone.yarm.Util.ToolTypes;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
-import com.unrealdinnerbone.yarm.items.*;
+import com.unrealdinnerbone.yarm.items.Foods.ItemFoodIronApple;
+import com.unrealdinnerbone.yarm.items.Foods.ItemFoodIronCarrot;
+import com.unrealdinnerbone.yarm.items.Item.*;
 import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarm;
+import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarmFood;
 import com.unrealdinnerbone.yarm.items.Tools.*;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -22,6 +25,8 @@ public class ModItems
     public static final ItemPickaxe ItemTool_OpPick = new ItemToolOpPick(ToolTypes.OpTools);
     public static final ItemSpade ItemTool_OpSpade = new ItemToolOpSpade(ToolTypes.OpTools);
     public static final ItemSword ItemTool_OpSword = new ItemToolOpSword(ToolTypes.OpTools);
+    public static final ItemFood ItemFood_IronApple = new ItemFoodIronApple(10, 10.0f, false);
+    public static final ItemFood ItemFood_IronCarrot = new ItemFoodIronCarrot(10, 20.0f, false);
 
     public static void init()
     {
@@ -38,6 +43,8 @@ public class ModItems
         GameRegistry.registerItem(ItemTool_OpPick, ItemToolOpPick.getName());
         GameRegistry.registerItem(ItemTool_OpSword, ItemToolOpSword.getName());
         GameRegistry.registerItem(Item_IronNugget, ItemIronNugget.getName());
+        GameRegistry.registerItem(ItemFood_IronApple, ItemFoodIronApple.getName());
+        GameRegistry.registerItem(ItemFood_IronCarrot, ItemFoodIronCarrot.getName());
         LogHelper.info("Loaded Items");
     }
 
