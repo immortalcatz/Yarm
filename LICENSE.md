@@ -20,7 +20,7 @@ Section 3: Distribution
 	C. If you want to use more then 50% of my code you can't.
 	D. The Owner may use his code in another or from another of his mod with out perms/credits.
 	E. This Mod may be distributed on Curse, CurseForge or others unless it was stated elsewhere in this License
-	
+	F. You may not sell any items, blocks, or any outher thing form this mod, if you do i may taken legal action.
 Section 3B: ModPacks
 	
 	A. This mod may only be on packs on the FTB Luncher or on The Curse Client if you want to use this mod in a pack that is not on of the two litsed above you may ask the Owner if you can use it.
