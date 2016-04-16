@@ -30,6 +30,7 @@ public class ItemFoodIronApple extends ItemFood {
         if(ConfigManger.IronAppleGivesPositiveEffects == true) {
         player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 100, Tick * 10));
         LogHelper.info("AAAAAAAA");
+        //AvA
     }
         if(ConfigManger.IronAppleGivesNegativesEffects == true) {
             player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 100, Tick * 15));
