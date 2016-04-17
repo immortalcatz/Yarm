@@ -8,11 +8,18 @@ import com.unrealdinnerbone.yarm.items.Item.*;
 import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarm;
 import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarmFood;
 import com.unrealdinnerbone.yarm.items.Tools.*;
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+import java.util.Set;
+
 public class ModItems
-    {
+{
+
+
+
     public static final ItemYarm Item_UnRealFace = new ItemUnRealFace();
     public static final ItemYarm Item_ManmedFace = new ItemManmaedFace();
     public static final ItemYarm Item_KyaneFace = new ItemTheKayneGameFace();

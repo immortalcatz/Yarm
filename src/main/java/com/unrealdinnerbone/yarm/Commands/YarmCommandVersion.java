@@ -5,6 +5,9 @@ import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.text.TextComponentString;
+import org.fusesource.jansi.Ansi;
+
+import java.awt.*;
 
 public class YarmCommandVersion extends YarmCommandUnRealOPOnly
 {
@@ -15,7 +18,7 @@ public class YarmCommandVersion extends YarmCommandUnRealOPOnly
 
     @Override
     public String getCommandUsage(ICommandSender commandSender) {
-        return null;
+        return "/yarm [verison]";
     }
 
     @Override
@@ -23,8 +26,11 @@ public class YarmCommandVersion extends YarmCommandUnRealOPOnly
     {
         if(args.length > 0){
             if(args[0].toLowerCase().equals("version")){
-                sender.addChatMessage(new TextComponentString(Reference.MOD_NAME + "version " + Reference.VERSION));
+                sender.addChatMessage(new TextComponentString("" + "You are running " + Reference.VERSION + " of, " + Reference.MOD_NAME));
             }
+        }else
+        {
+            sender.addChatMessage(new TextComponentString("/yarm [version]"));
         }
     }
 }

@@ -13,6 +13,7 @@ public class ConfigManger
     public static boolean IronAppleGivesPositiveEffects = true;
     public static boolean IronAppleGivesNegativesEffects = true;
     public static boolean CraftableNotchApples = true;
+    public static boolean DoLoging = true;
 
 
     public static void ConfigManger(File configFile)
@@ -30,6 +31,7 @@ public class ConfigManger
         IronAppleGivesPositiveEffects = configuration.getBoolean("Iron Apple Positive Effects", Configuration.CATEGORY_GENERAL, true, "Does the iron apple give that player positive effects when it is eaten");
         IronAppleGivesNegativesEffects = configuration.getBoolean("Iron Apple Gives Negative Effects", Configuration.CATEGORY_GENERAL, true, "Does the iron apple give that player negative effects when it is eaten");
         CraftableNotchApples = configuration.getBoolean("Craftable Notch Apples", Configuration.CATEGORY_GENERAL, true, "Can you craft notch apples?");
+        DoLoging = configuration.getBoolean("Do Logging", Configuration.CATEGORY_GENERAL, true, CharHelper.RED + "WARRING WILL TURN OF ALL YARM LOGS");
 
         if (configuration.hasChanged())
         {

@@ -10,9 +10,7 @@ import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraftforge.oredict.ShapedOreRecipe;
-import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 public class ShpaedRecpices {
     public static void init() {
@@ -32,7 +30,7 @@ public class ShpaedRecpices {
                 'A', OreDictionaryNames.Item_AntimonyIngot));
 
         //Nether Star incess
-        GameRegistry.addRecipe(new ShapelessOreRecipe(ItemStacks.BlockNetherStar1(1),
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.BlockNetherStar1(1),
                 "AAA",
                 "AAA",
                 "AAA",
@@ -108,7 +106,7 @@ public class ShpaedRecpices {
                 " B ",
                 'A', ModBlocks.BLOCK_NETHER_STAR_3,
                 'B', ModItems.Item_NetherStarRod);
-        GameRegistry.addRecipe(new ShapelessOreRecipe(ItemStacks.ItemIronIngot(1),
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.ItemIronIngot(1),
                 "AAA",
                 "AAA",
                 "AAA",

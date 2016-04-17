@@ -1,33 +1,25 @@
 package com.unrealdinnerbone.yarm.Util;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class CoolPeople
 {
     public static ArrayList CoolPeople = new ArrayList();
-    public static final String iChun_UUID = "0b7509f0245841609ce12772b9a45ac2";
-    public static final String UnRealDinnerbone_UUID = "ae9c317acf2e43c59b3237a6ae83879f";
-    public static final String Manmaed_UUID = "";
-    public static final String JohnSmith0508_UUID = "";
-    public static final String Amadornes = "";
-    public static final String Fireball1725 = "";
-    public static final String Direwolf20 = "";
-    public static final String Soaryn = "";
-    public static final String FavioP96 = "";
 
+    private static void CoolPeople() {
 
-
-    public static void CoolPeople() {
-
-        CoolPeople.add(iChun_UUID);
-        CoolPeople.add(UnRealDinnerbone_UUID);
-        CoolPeople.add(Manmaed_UUID);
-        CoolPeople.add(JohnSmith0508_UUID);
-        CoolPeople.add(Amadornes);
-        CoolPeople.add(Fireball1725);
-        CoolPeople.add(Direwolf20);
-        CoolPeople.add(Soaryn);
-        CoolPeople.add(FavioP96);
+        CoolPeople.add(UUIDHelper.iChun);
+        CoolPeople.add(UUIDHelper.UnRealDinnerbone);
+        CoolPeople.add(UUIDHelper.Manmaed);
+        CoolPeople.add(UUIDHelper.JohnSmith0508);
+        CoolPeople.add(UUIDHelper.Amadornes);
+        CoolPeople.add(UUIDHelper.Fireball1725);
+        CoolPeople.add(UUIDHelper.Direwolf20);
+        CoolPeople.add(UUIDHelper.Soaryn);
+        CoolPeople.add(UUIDHelper.FavioP96);
+        CoolPeople.add(UUIDHelper.Dmaster8);
+        CoolPeople.add(UUIDHelper.Rushmead);
     }
 }
 

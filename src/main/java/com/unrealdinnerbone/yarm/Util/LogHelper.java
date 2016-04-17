@@ -10,8 +10,9 @@ public class LogHelper
         FMLLog.log(Reference.MOD_ID, logLevel, "["+ Reference.MOD_ID.toUpperCase() + "] [" + logLevel + "] " + String.valueOf(object));
     }
 
-    public static void info(Object object)
-    {
-        log(Level.INFO, object);
+    public static void info(Object object) {
+        if (ConfigManger.DoLoging = true) {
+            log(Level.INFO, object);
+        }
     }
 }

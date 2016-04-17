@@ -4,6 +4,11 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
+
+1.9-3.7.0:
+	+ A way to stop the logging
+	+ A Nice thing for UnRealDinnerbone
+	~ The Game not loading
 	
 1.9-3.6.0:
 	+ Crafting For Notch Apple (Config Able)

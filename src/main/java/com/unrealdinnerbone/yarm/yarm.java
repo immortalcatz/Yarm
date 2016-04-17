@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm;
 
+import com.unrealdinnerbone.yarm.Events.Events;
 import com.unrealdinnerbone.yarm.Util.ConfigManger;
 import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.proxy.*;
@@ -33,6 +34,7 @@ public class yarm {
         ClientProxy.Int(Event);
         CommonProxy.Int(Event);
         ServerProxy.Int(Event);
+        Events.init();
     }
     @Mod.EventHandler
     public static void PostInit(FMLPostInitializationEvent PostEvent)

@@ -1,8 +1,13 @@
 package com.unrealdinnerbone.yarm.Util;
 
 import com.mojang.authlib.GameProfile;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.common.FMLCommonHandler;
+
+import java.util.List;
 
 public class OpChecker
 {
@@ -23,5 +28,12 @@ public class OpChecker
             return false;
         }
         return true;
+    }
+
+    public static void sendChatMessageServerWide(TextComponentString message) {
+        for (EntityPlayer player : getServer().getPlayerList().getPlayerList()) {
+            player.addChatMessage(message);
+
+        }
     }
 }

