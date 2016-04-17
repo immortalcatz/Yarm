@@ -4,19 +4,20 @@ import java.util.ArrayList;
 
 public class CoolPeople
 {
+    public static ArrayList CoolPeople = new ArrayList();
+    public static final String iChun_UUID = "0b7509f0245841609ce12772b9a45ac2";
+    public static final String UnRealDinnerbone_UUID = "ae9c317acf2e43c59b3237a6ae83879f";
+    public static final String Manmaed_UUID = "";
+    public static final String JohnSmith0508_UUID = "";
+    public static final String Amadornes = "";
+    public static final String Fireball1725 = "";
+    public static final String Direwolf20 = "";
+    public static final String Soaryn = "";
+    public static final String FavioP96 = "";
 
-    public CoolPeople() {
-        ArrayList CoolPeople = new ArrayList();
-        final String iChun_UUID = "0b7509f0245841609ce12772b9a45ac2";
-        final String UnRealDinnerbone_UUID = "ae9c317acf2e43c59b3237a6ae83879f";
-        final String Manmaed_UUID = "";
-        final String JohnSmith0508_UUID = "";
-        final String Amadornes = "";
-        final String Fireball1725 = "";
-        final String Direwolf20 = "";
-        final String Soaryn = "";
-        final String FavioP96 = "";
 
+
+    public static void CoolPeople() {
 
         CoolPeople.add(iChun_UUID);
         CoolPeople.add(UnRealDinnerbone_UUID);
