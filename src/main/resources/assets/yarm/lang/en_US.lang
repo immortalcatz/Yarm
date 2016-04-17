@@ -1,7 +1,7 @@
 # Keys
 
 # Creative Tabs
-creativetab.maintab.name=Yarm
+tab.yarm.YarmTab=Yarm
 
 # Items
 item.yarm:ItemUnRealFace.name=UnReal's Face

@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.client.render;
+package com.unrealdinnerbone.yarm.Client.render;
 
 import com.unrealdinnerbone.yarm.Util.Reference;
 import com.unrealdinnerbone.yarm.init.ModItems;

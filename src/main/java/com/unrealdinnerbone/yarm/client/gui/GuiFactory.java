@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.client.gui;
+package com.unrealdinnerbone.yarm.Client.gui;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;

@@ -1,33 +1,33 @@
 package com.unrealdinnerbone.yarm.init;
 
+import com.unrealdinnerbone.yarm.Util.ItemStacks;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.OreDictionaryNames;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class ModOreDictionary {
     public static void OreDictionary()
     {
         //Items
-        OreDictionary.registerOre(OreDictionaryNames.Item_UnRealFace, new ItemStack(ModItems.Item_UnRealFace));
-        OreDictionary.registerOre(OreDictionaryNames.Item_ManmaedFace, new ItemStack(ModItems.Item_ManmedFace));
-        OreDictionary.registerOre(OreDictionaryNames.Item_YunusFace, new ItemStack(ModItems.Item_YunusFace));
-        OreDictionary.registerOre(OreDictionaryNames.Item_KyaneFace, new ItemStack(ModItems.Item_KyaneFace));
-        OreDictionary.registerOre(OreDictionaryNames.Item_AntimonyIngot, new ItemStack(ModItems.Item_AntimonyIngot));
-        //Blocks
-        OreDictionary.registerOre(OreDictionaryNames.BLOCK_UNREAL_FACE, new ItemStack(ModBlocks.BLOCK_UNREAL_FACE));
-        OreDictionary.registerOre(OreDictionaryNames.BLOCK_ANTIMONY_ORE, new ItemStack(ModBlocks.BLOCK_ANTIMONY_ORE));
-        OreDictionary.registerOre(OreDictionaryNames.BLOCK_ANTIMONY, new ItemStack(ModBlocks.BLOCK_ANTIMONY));
-        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_1, new ItemStack(ModBlocks.BLOCK_NETHER_STAR_1));
-        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_2, new ItemStack(ModBlocks.BLOCK_NETHER_STAR_2));
-        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_3, new ItemStack(ModBlocks.BLOCK_NETHER_STAR_3));
-        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_4, new ItemStack(ModBlocks.BLOCK_NETHER_STAR_4));
-        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_5, new ItemStack(ModBlocks.BLOCK_NETHER_STAR_5));
-        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_6, new ItemStack(ModBlocks.BLOCK_NETHER_STAR_6));
-        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_7, new ItemStack(ModBlocks.BLOCK_NETHER_STAR_7));
-        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_8, new ItemStack(ModBlocks.BLOCK_NETHER_STAR_8));
-        OreDictionary.registerOre(OreDictionaryNames.Item_IronNugget, new ItemStack(ModItems.Item_IronNugget));
+        OreDictionary.registerOre(OreDictionaryNames.Item_UnRealFace, ItemStacks.ItemUnRealFace(1));
+        OreDictionary.registerOre(OreDictionaryNames.Item_ManmaedFace, ItemStacks.ItemManmaedFace(1));
+        OreDictionary.registerOre(OreDictionaryNames.Item_YunusFace, ItemStacks.ItemYunusFace(1));
+        OreDictionary.registerOre(OreDictionaryNames.Item_KyaneFace, ItemStacks.ItemKyaneFace(1));
+        OreDictionary.registerOre(OreDictionaryNames.Item_AntimonyIngot, ItemStacks.ItemAntimonyIngot(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_UNREAL_FACE, ItemStacks.BlockUnRealFace(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_ANTIMONY_ORE, ItemStacks.BlockAntimonyOre(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_ANTIMONY, ItemStacks.BlockAntimony(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_1, ItemStacks.BlockNetherStar1(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_2, ItemStacks.BlockNetherStar2(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_3, ItemStacks.BlockNetherStar3(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_4, ItemStacks.BlockNetherStar4(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_5, ItemStacks.BlockNetherStar5(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_6, ItemStacks.BlockNetherStar6(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_7, ItemStacks.BlockNetherStar7(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_NETHER_STAR_8, ItemStacks.BlockNetherStar8(1));
+        OreDictionary.registerOre(OreDictionaryNames.Item_IronNugget, ItemStacks.ItemIronNugget(1));
+        OreDictionary.registerOre(OreDictionaryNames.Food_IronApple, ItemStacks.ItemFoodIronApple(1));
+        OreDictionary.registerOre(OreDictionaryNames.Food_IronCarrot, ItemStacks.ItemFoodIronCarrot(1));
         LogHelper.info("Loaded Ore Dic");
 
     }

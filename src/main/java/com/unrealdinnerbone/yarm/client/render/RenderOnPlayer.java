@@ -1,8 +1,8 @@
 //package com.unrealdinnerbone.yarm.client.render;
 //
-//import net.minecraft.client.Minecraft;
-//import net.minecraft.client.renderer.GlStateManager;
-//import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+//import net.minecraft.Client.Minecraft;
+//import net.minecraft.Client.renderer.GlStateManager;
+//import net.minecraft.Client.renderer.entity.layers.LayerRenderer;
 //import net.minecraft.entity.player.EntityPlayer;
 //import net.minecraft.util.ResourceLocation;
 //

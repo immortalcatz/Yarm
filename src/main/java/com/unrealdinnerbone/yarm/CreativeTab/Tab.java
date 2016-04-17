@@ -1,10 +1,9 @@
 package com.unrealdinnerbone.yarm.CreativeTab;
 
+import com.unrealdinnerbone.yarm.Util.LangHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import com.unrealdinnerbone.yarm.init.ModItems;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 public class Tab
@@ -21,8 +20,7 @@ public class Tab
         @Override
     public String getTranslatedTabLabel()
         {
-            return "yarm Tab";
-//            return StatCollector.translateToLocal("creativetab.maintab.name");
+            return LangHelper.TAB.translateMessage("YarmTab");
         }
     };
 }

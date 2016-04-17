@@ -1,5 +1,5 @@
 
-package com.unrealdinnerbone.yarm.client.models;
+package com.unrealdinnerbone.yarm.Client.models;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;

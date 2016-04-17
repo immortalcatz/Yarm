@@ -12,6 +12,7 @@ public class ConfigManger
     public static int StoneTorchLightLevel = 50;
     public static boolean IronAppleGivesPositiveEffects = true;
     public static boolean IronAppleGivesNegativesEffects = true;
+    public static boolean CraftableNotchApples = true;
 
 
     public static void ConfigManger(File configFile)
@@ -28,6 +29,7 @@ public class ConfigManger
         StoneTorchLightLevel = configuration.getInt("StoneTorch light level", Configuration.CATEGORY_GENERAL, 50, 1, 100, "Config and how bright the stone torch is.");
         IronAppleGivesPositiveEffects = configuration.getBoolean("Iron Apple Positive Effects", Configuration.CATEGORY_GENERAL, true, "Does the iron apple give that player positive effects when it is eaten");
         IronAppleGivesNegativesEffects = configuration.getBoolean("Iron Apple Gives Negative Effects", Configuration.CATEGORY_GENERAL, true, "Does the iron apple give that player negative effects when it is eaten");
+        CraftableNotchApples = configuration.getBoolean("Craftable Notch Apples", Configuration.CATEGORY_GENERAL, true, "Can you craft notch apples?");
 
         if (configuration.hasChanged())
         {
