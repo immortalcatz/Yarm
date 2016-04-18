@@ -2,12 +2,14 @@ package com.unrealdinnerbone.yarm.init;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.blocks.Faces.BlockUnRealFace;
+import com.unrealdinnerbone.yarm.blocks.Furn.YarmFurance;
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockStoneTorch;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockUnRealChest;
 import com.unrealdinnerbone.yarm.blocks.Ores.BlockAntimonyOre;
 import com.unrealdinnerbone.yarm.blocks.TileEnity.ModTileEntity;
+import net.minecraft.block.BlockFurnace;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks
@@ -25,6 +27,7 @@ public class ModBlocks
     public static final BlockNetherStar7 BLOCK_NETHER_STAR_7 = new BlockNetherStar7();
     public static final BlockNetherStar8 BLOCK_NETHER_STAR_8 = new BlockNetherStar8();
     public static final BlockStoneTorch BLOCK_STONE_TORCH = new BlockStoneTorch();
+    public static final BlockFurnace BLOCK_FURNACE_YARM = new YarmFurance(false);
     public static final Class<? extends ModTileEntity> MOD_TILE_ENITY = new ModTileEntity().getClass();
 
 
@@ -44,6 +47,7 @@ public class ModBlocks
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_7, BlockNetherStar7.getName());
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_8, BlockNetherStar8.getName());
         GameRegistry.registerBlock(BLOCK_STONE_TORCH, BlockStoneTorch.getName());
+   //     GameRegistry.registerBlock(BLOCK_FURNACE_YARM, YarmFurance.getName());
         GameRegistry.registerTileEntity(MOD_TILE_ENITY, "Bacon");
         LogHelper.info("Loaded Blocks");
     }

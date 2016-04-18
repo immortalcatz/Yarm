@@ -4,7 +4,9 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
-
+1.9-3.7.1:
+	? Lang Fixes
+	? Food on creavtive tab
 1.9-3.7.0:
 	+ A way to stop the logging
 	+ A Nice thing for UnRealDinnerbone

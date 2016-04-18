@@ -5,7 +5,7 @@ tab.yarm.YarmTab=Yarm
 
 # Items
 item.yarm:ItemUnRealFace.name=UnReal's Face
-item.yarm:ItemFoodIronApple,name=Iron Apple
+item.yarm:ItemFoodIronApple.name=Iron Apple
 item.yarm:ItemIronNugget.name=Iron Nugget
 item.yarm:ItemFoodIronCarrot.name=Iron Carrot
 item.yarm:ItemManmaedFace.name=Manmaed's Face

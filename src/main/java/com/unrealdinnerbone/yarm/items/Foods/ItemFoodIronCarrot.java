@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.items.Foods;
 
+import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraft.item.ItemFood;
 
@@ -15,6 +16,7 @@ public class ItemFoodIronCarrot extends ItemFood {
         super(healamount, saturation, wolffood);
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
         this.setAlwaysEdible();
+        this.setCreativeTab(Tab.Yarm_Tab);
     }
     public static String getName()
     {
