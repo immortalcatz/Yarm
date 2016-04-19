@@ -57,4 +57,4 @@ ICONS
     * Update Build.gradle they may be bugs with uploads -_-
     ? Cleaned Up Code
 1.8.9-2.0.0:
-	* Updated To 1.8.9	
+	* Updated To 1.8.9
