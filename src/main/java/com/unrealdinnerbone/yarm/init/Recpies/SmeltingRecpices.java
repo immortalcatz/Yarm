@@ -1,11 +1,9 @@
 package com.unrealdinnerbone.yarm.init.Recpies;
 
-import com.unrealdinnerbone.yarm.Util.ConfigManger;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
 import com.unrealdinnerbone.yarm.init.ModItems;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.item.ItemStack;
 

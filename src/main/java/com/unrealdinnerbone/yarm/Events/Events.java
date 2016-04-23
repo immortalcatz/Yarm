@@ -1,6 +1,8 @@
 package com.unrealdinnerbone.yarm.Events;
 
 import com.unrealdinnerbone.yarm.Util.*;
+import com.unrealdinnerbone.yarm.config.ConfigManger;
+import com.unrealdinnerbone.yarm.config.OtherConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.passive.EntityVillager;
@@ -39,7 +41,7 @@ public class Events {
 
         if (event.getEntity() instanceof EntityVillager) {
             if (!event.getEntity().worldObj.isRemote) {
-                if (ConfigManger.VillgersDropEmeralds == true) {
+                if (OtherConfig.VillgersDropEmeralds == true) {
                     EntityItem ei = new EntityItem(event.getEntityLiving().worldObj);
                     ei.setEntityItemStack(ItemStacks.ItemEmerald(1));
                     ei.setPosition(event.getEntityLiving().posX, event.getEntityLiving().posY, event.getEntityLiving().posZ);

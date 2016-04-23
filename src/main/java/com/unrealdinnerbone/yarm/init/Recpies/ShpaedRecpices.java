@@ -1,9 +1,10 @@
 package com.unrealdinnerbone.yarm.init.Recpies;
 
-import com.unrealdinnerbone.yarm.Util.ConfigManger;
+import com.unrealdinnerbone.yarm.config.ConfigManger;
 import com.unrealdinnerbone.yarm.Util.ItemStacks;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.OreDictionaryNames;
+import com.unrealdinnerbone.yarm.config.OtherConfig;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
 import com.unrealdinnerbone.yarm.init.ModItems;
 import net.minecraft.init.Blocks;
@@ -121,7 +122,7 @@ public class ShpaedRecpices {
                 "ABA",
                 "AAA",
                 'A', ModItems.Item_IronNugget, 'B', Items.CARROT);
-        if(ConfigManger.CraftableNotchApples = true) {
+        if(OtherConfig.CraftableNotchApples = true) {
             GameRegistry.addRecipe(ItemStacks.ItemGoldenApple(1, 1),
                     "AAA",
                     "ABA",

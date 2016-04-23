@@ -1,5 +1,7 @@
 package com.unrealdinnerbone.yarm.Util;
 
+import com.unrealdinnerbone.yarm.config.ConfigManger;
+import com.unrealdinnerbone.yarm.config.OtherConfig;
 import net.minecraftforge.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
 
@@ -11,7 +13,7 @@ public class LogHelper
     }
 
     public static void info(Object object) {
-        if (ConfigManger.DoLoging = true) {
+        if (OtherConfig.DoLoging = true) {
             log(Level.INFO, object);
         }
     }

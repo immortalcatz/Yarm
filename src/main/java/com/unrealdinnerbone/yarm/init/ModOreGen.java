@@ -3,6 +3,7 @@ package com.unrealdinnerbone.yarm.init;
 
 import java.util.Random;
 
+import com.unrealdinnerbone.yarm.config.WorldGenConfig;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkGenerator;
@@ -35,7 +36,57 @@ public class ModOreGen implements IWorldGenerator
                 int quisqueY = rand.nextInt(20);
                 BlockPos quisquePos = new BlockPos(firstBlockXCoord, quisqueY, firstBlockZCoord);
                 //The 10 as the second parameter sets the maximum vein size
-                (new WorldGenMinable(ModBlocks.BLOCK_ANTIMONY_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                if(WorldGenConfig.GenerateOres == true) {
+                    if (WorldGenConfig.GenerateAntimony == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_ANTIMONY_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateBismuth == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_BISMUTH_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateChromium == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_CHROMIUM_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateCobalt == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_COBALT_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateCopper == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_COPPER_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateGallium == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_GALLIUM_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateIndium == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_INDIUM_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateLead == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_LEAD_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateMagnesium == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_MAGNESIUM_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateNickel == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_NICKEL_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateSilver == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_SILVER_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateTin == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_TIN_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateTitanium == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_TITANIUM_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateZinc == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_ZINC_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+                    if (WorldGenConfig.GenerateZirconium == true) {
+                        (new WorldGenMinable(ModBlocks.BLOCK_ZIRCONIUM_ORE.getDefaultState(), 10)).generate(world, rand, quisquePos);
+                    }
+
+                }
+
+
+
             }
         }
 }

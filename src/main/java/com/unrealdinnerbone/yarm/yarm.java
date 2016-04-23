@@ -1,7 +1,7 @@
 package com.unrealdinnerbone.yarm;
 
 import com.unrealdinnerbone.yarm.Events.Events;
-import com.unrealdinnerbone.yarm.Util.ConfigManger;
+import com.unrealdinnerbone.yarm.config.ConfigManger;
 import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.proxy.*;
 import com.unrealdinnerbone.yarm.Util.Reference;
@@ -25,7 +25,7 @@ public class yarm {
        ClientProxy.PreInt(PreEvent);
        CommonProxy.PreInt(PreEvent);
        ServerProxy.PreInt(PreEvent);
-       ConfigManger.init(PreEvent.getSuggestedConfigurationFile());
+       ConfigManger.ConfigManger(PreEvent.getSuggestedConfigurationFile());
        FMLCommonHandler.instance().bus().register(new ConfigManger());
     }
     @Mod.EventHandler
