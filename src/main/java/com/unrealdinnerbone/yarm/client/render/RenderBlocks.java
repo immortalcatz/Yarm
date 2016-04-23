@@ -27,7 +27,6 @@ public class RenderBlocks
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_NETHER_STAR_8), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar8.getName()));
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_ANTIMONY), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockAntimony.getName()));
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_ANTIMONY_ORE), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockAntimonyOre.getName()));
-        renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_STONE_TORCH),   0, new ModelResourceLocation(Reference.RE_PREFIX + BlockStoneTorch.getName()));
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_UNREAL_FACE), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockUnRealFace.getName()));
     }
 }

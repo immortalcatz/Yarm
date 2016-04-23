@@ -4,6 +4,9 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
+1.9-3.7.2:
+	~ Code Clean Up
+	~ Things
 1.9-3.7.1:
 	? Lang Fixes
 	? Food on creavtive tab

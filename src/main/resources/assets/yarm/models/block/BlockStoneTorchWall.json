@@ -1,6 +1,0 @@
-{
-  "parent": "yarm:block/YarmTorchWall",
-  "textures": {
-    "torch": "yarm:Blocks/BlockStoneTorch"
-  }
-}

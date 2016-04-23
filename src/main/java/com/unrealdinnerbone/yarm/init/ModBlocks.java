@@ -26,9 +26,6 @@ public class ModBlocks
     public static final BlockNetherStar6 BLOCK_NETHER_STAR_6 = new BlockNetherStar6();
     public static final BlockNetherStar7 BLOCK_NETHER_STAR_7 = new BlockNetherStar7();
     public static final BlockNetherStar8 BLOCK_NETHER_STAR_8 = new BlockNetherStar8();
-    public static final BlockStoneTorch BLOCK_STONE_TORCH = new BlockStoneTorch();
-    public static final BlockFurnace BLOCK_FURNACE_YARM = new YarmFurance(false);
-    public static final Class<? extends ModTileEntity> MOD_TILE_ENITY = new ModTileEntity().getClass();
 
 
 
@@ -46,9 +43,6 @@ public class ModBlocks
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_6, BlockNetherStar6.getName());
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_7, BlockNetherStar7.getName());
         GameRegistry.registerBlock(BLOCK_NETHER_STAR_8, BlockNetherStar8.getName());
-        GameRegistry.registerBlock(BLOCK_STONE_TORCH, BlockStoneTorch.getName());
-   //     GameRegistry.registerBlock(BLOCK_FURNACE_YARM, YarmFurance.getName());
-        GameRegistry.registerTileEntity(MOD_TILE_ENITY, "Bacon");
         LogHelper.info("Loaded Blocks");
     }
 }

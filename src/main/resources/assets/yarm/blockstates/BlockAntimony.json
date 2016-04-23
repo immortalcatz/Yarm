@@ -4,7 +4,7 @@
         "textures": {
             "all": "yarm:blocks/BlockAntimony"
         },
-        "model": "yarm:BlockYarmBlock"
+        "model": "cube_all"
     },
     "variants": {
         "normal": [{}],

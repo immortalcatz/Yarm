@@ -92,7 +92,7 @@ curseforge {
     addGameVersion project.minecraft_version
 
     mainArtifact(jar) {
-      displayName = "yarm-$project.version"
+      displayName = "Yarm-$project.version"
     }
   }
 }
