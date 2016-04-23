@@ -1,6 +1,5 @@
 package com.unrealdinnerbone.yarm.blocks.TileEnity;
 
-import com.unrealdinnerbone.yarm.blocks.GuiContainer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;

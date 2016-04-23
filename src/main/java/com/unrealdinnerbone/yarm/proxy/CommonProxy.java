@@ -3,17 +3,15 @@ package com.unrealdinnerbone.yarm.proxy;
 
 import com.unrealdinnerbone.yarm.Achievements.Achievements;
 import com.unrealdinnerbone.yarm.Achievements.AchievementsHandler;
-import com.unrealdinnerbone.yarm.Util.ConfigManger;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.init.Recpies.BannerMaker;
 import com.unrealdinnerbone.yarm.init.Recpies.ShaplessRecpices;
 import com.unrealdinnerbone.yarm.init.Recpies.ShpaedRecpices;
 import com.unrealdinnerbone.yarm.init.Recpies.SmeltingRecpices;
-import com.unrealdinnerbone.yarm.network.GUIHandler;
+import com.unrealdinnerbone.yarm.client.gui.GUIHandler;
 import com.unrealdinnerbone.yarm.yarm;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

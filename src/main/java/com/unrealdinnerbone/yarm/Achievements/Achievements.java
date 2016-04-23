@@ -38,7 +38,7 @@ public class Achievements
         AchievementCraftNetherStar5 = new Achievement(Achievement + AchievementNameCraftNetherStar5.toLowerCase(), AchievementNameCraftNetherStar5, 0, 4, ModBlocks.BLOCK_NETHER_STAR_5, AchievementCraftNetherStar4).registerStat();
         AchievementCraftNetherStar6 = new Achievement(Achievement + AchievementNameCraftNetherStar6.toLowerCase(), AchievementNameCraftNetherStar6, 0, 5, ModBlocks.BLOCK_NETHER_STAR_6, AchievementCraftNetherStar5).registerStat();
         AchievementCraftNetherStar7 = new Achievement(Achievement + AchievementNameCraftNetherStar7.toLowerCase(), AchievementNameCraftNetherStar7, 1, 0, ModBlocks.BLOCK_NETHER_STAR_7, AchievementCraftNetherStar6).registerStat();
-        AchievementCraftNetherStar8 = new Achievement(Achievement + AchievementNameCraftNetherStar8.toLowerCase(), AchievementNameCraftNetherStar8, 1, 1, ModBlocks.BLOCK_NETHER_STAR_8, AchievementCraftNetherStar7).registerStat();
+        AchievementCraftNetherStar8 = new Achievement(Achievement + AchievementNameCraftNetherStar8.toLowerCase(), AchievementNameCraftNetherStar8, 1, 1, ModBlocks.BLOCK_NETHER_STAR_8, AchievementCraftNetherStar7).setSpecial().registerStat();
     }
 
 }

@@ -95,5 +95,9 @@ public class ItemStacks
     {
         return new ItemStack(Items.IRON_INGOT, Count);
     }
+    public static ItemStack ItemEmerald(int Count)
+    {
+        return new ItemStack(Items.EMERALD, Count);
+    }
 
 }

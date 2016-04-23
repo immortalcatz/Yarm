@@ -14,24 +14,29 @@ public class ConfigManger
     public static boolean IronAppleGivesNegativesEffects = true;
     public static boolean CraftableNotchApples = true;
     public static boolean DoLoging = true;
+    public static boolean VillgersDropEmeralds = true;
 
 
-    public static void ConfigManger(File configFile)
+    public static Configuration init(File configFile)
     {
         if (configuration == null)
         {
             configuration = new Configuration(configFile);
             loadConfiguration();
         }
+        return configuration;
     }
 
     private static void loadConfiguration()
     {
-        StoneTorchLightLevel = configuration.getInt("StoneTorch light level", Configuration.CATEGORY_GENERAL, 50, 1, 100, "Config and how bright the stone torch is.");
+        configuration.setCategoryLanguageKey("Ores", "config.Ores");
+        StoneTorchLightLevel = configuration.getInt("StoneTorch light level", "Ores", 50, 1, 100, "Config and how bright the stone torch is.");
         IronAppleGivesPositiveEffects = configuration.getBoolean("Iron Apple Positive Effects", Configuration.CATEGORY_GENERAL, true, "Does the iron apple give that player positive effects when it is eaten");
         IronAppleGivesNegativesEffects = configuration.getBoolean("Iron Apple Gives Negative Effects", Configuration.CATEGORY_GENERAL, true, "Does the iron apple give that player negative effects when it is eaten");
         CraftableNotchApples = configuration.getBoolean("Craftable Notch Apples", Configuration.CATEGORY_GENERAL, true, "Can you craft notch apples?");
         DoLoging = configuration.getBoolean("Do Logging", Configuration.CATEGORY_GENERAL, true, CharHelper.RED + "WARRING WILL TURN OF ALL YARM LOGS");
+        VillgersDropEmeralds = configuration.getBoolean("Villger drop emeralds", Configuration.CATEGORY_GENERAL, true, CharHelper.GREEN + "Do villgers drop emerlads when they die");
+
 
         if (configuration.hasChanged())
         {
@@ -44,7 +49,6 @@ public class ConfigManger
     {
         if (event.getModID().equalsIgnoreCase(Reference.MOD_ID))
         {
-
             loadConfiguration();;
         }
     }

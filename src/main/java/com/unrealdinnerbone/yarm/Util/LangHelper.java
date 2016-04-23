@@ -10,7 +10,8 @@ public enum LangHelper {
     DESCRIPTION("description"),
     JEI("jei"),
     NONE(""),
-    TAB("tab"),;
+    TAB("tab"),
+    Achievement("achievement");
 
     private String name;
 

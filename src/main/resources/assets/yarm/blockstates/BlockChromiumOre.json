@@ -2,7 +2,7 @@
     "forge_marker": 1,
     "defaults": {
         "textures": {
-            "all": "yarm:blocks/ores/BlockAntimonyOre"
+            "all": "yarm:blocks/ores/BlockChromiumOre"
         },
         "model": "cube_all"
     },

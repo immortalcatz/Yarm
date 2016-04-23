@@ -5,15 +5,13 @@ import com.unrealdinnerbone.yarm.blocks.BlockYarm;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraft.block.material.Material;
 
-public class BlockAntimonyOre extends BlockYarm {
+public class BlockAntimonyOre extends BlockYarmOre {
 
     private static String name = "BlockAntimonyOre";
 
     public BlockAntimonyOre()
     {
-        super(Material.IRON);
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
-        this.setCreativeTab(Tab.Yarm_Tab);
     }
     public static String getName()
     {

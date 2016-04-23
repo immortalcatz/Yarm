@@ -25,7 +25,7 @@ public class yarm {
        ClientProxy.PreInt(PreEvent);
        CommonProxy.PreInt(PreEvent);
        ServerProxy.PreInt(PreEvent);
-       ConfigManger.ConfigManger(PreEvent.getSuggestedConfigurationFile());
+       ConfigManger.init(PreEvent.getSuggestedConfigurationFile());
        FMLCommonHandler.instance().bus().register(new ConfigManger());
     }
     @Mod.EventHandler

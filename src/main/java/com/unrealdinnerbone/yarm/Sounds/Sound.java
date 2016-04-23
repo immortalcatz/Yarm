@@ -1,7 +1,6 @@
 package com.unrealdinnerbone.yarm.Sounds;
 
 import com.unrealdinnerbone.yarm.Util.Reference;
-import net.minecraft.block.SoundType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 

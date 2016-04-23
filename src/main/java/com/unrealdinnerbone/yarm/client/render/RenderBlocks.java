@@ -4,7 +4,6 @@ import com.unrealdinnerbone.yarm.Util.Reference;
 import com.unrealdinnerbone.yarm.blocks.Faces.BlockUnRealFace;
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
-import com.unrealdinnerbone.yarm.blocks.Normal.BlockStoneTorch;
 import com.unrealdinnerbone.yarm.blocks.Ores.BlockAntimonyOre;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
 import net.minecraft.client.Minecraft;
