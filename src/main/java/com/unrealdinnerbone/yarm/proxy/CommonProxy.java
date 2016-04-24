@@ -4,6 +4,7 @@ package com.unrealdinnerbone.yarm.proxy;
 import com.unrealdinnerbone.yarm.Achievements.Achievements;
 import com.unrealdinnerbone.yarm.Achievements.AchievementsHandler;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
+import com.unrealdinnerbone.yarm.World.ModWorldGen;
 import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.init.Recpies.BannerMaker;
 import com.unrealdinnerbone.yarm.init.Recpies.ShaplessRecpices;
@@ -29,7 +30,7 @@ public abstract class CommonProxy implements IProxy
     }
     public static void Int(FMLInitializationEvent Event)
     {
-        ModOreGen WorldGen = new ModOreGen();
+        ModWorldGen WorldGen = new ModWorldGen();
         ShpaedRecpices.init();
         SmeltingRecpices.init();
         ShaplessRecpices.init();

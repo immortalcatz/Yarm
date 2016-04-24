@@ -3,19 +3,13 @@ package com.unrealdinnerbone.yarm.Util;
 import net.minecraft.util.text.translation.I18n;
 
 public enum LangHelper {
-    MESSAGE("message"),
-    LABEL("label"),
-    BLOCK("tile"),
-    ITEM("item"),
-    DESCRIPTION("description"),
-    JEI("jei"),
-    NONE(""),
     TAB("tab"),
     Achievement("achievement");
 
     private String name;
 
-    LangHelper(String name) {
+    LangHelper(String name)
+    {
         this.name = name;
     }
 

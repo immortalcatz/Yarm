@@ -19,10 +19,13 @@ item.yarm:ItemToolOpPick.name=Nether Star Pickaxe
 item.yarm:ItemToolOpHoe.name=Nether Star Hoe
 item.yarm:ItemToolOpSpade.name=Nether Star Shovel
 
-#Blocks
+#|---------------|
+#|-----Blocks----|
+#|---------------|
+
+
 tile.yarm:BlockUnRealFace.name=UnReal's Block
 tile.yarm:BlockAntimony.name=Antimony Block
-tile.yarm:BlockAntimonyOre.name=Antimony Ore
 tile.yarm:BlockNetherStar1.name=Compressed Nether Star Block
 tile.yarm:BlockNetherStar2.name=Double Compressed Nether Star Block
 tile.yarm:BlockNetherStar3.name=Triple Compressed Nether Star Block
@@ -31,6 +34,24 @@ tile.yarm:BlockNetherStar5.name=Quintuple Compressed Nether Star Block
 tile.yarm:BlockNetherStar6.name=Sextuple Compressed Nether Star Block
 tile.yarm:BlockNetherStar7.name=Septuple Compressed Nether Star Block
 tile.yarm:BlockNetherStar8.name=Octuple Compressed Nether Star Block
+
+
+tile.yarm:BlockAntimonyOre.name= Antimony Ore
+tile.yarm:BlockZirconiumOre.name= Zirconium Ore
+tile.yarm:BlockGalliumOre.name= Gallium Ore
+tile.yarm:BlockZincOre.name= Zinc Ore
+tile.yarm:BlockChromiumOre.name= Chromium Ore
+tile.yarm:BlockCobaltOre.name= Cobalt Ore
+tile.yarm:BlockIndiumOre.name= Indium Ore
+tile.yarm:BlockBismuthOre.name= Bismuth Ore
+tile.yarm:BlockTitaniumOre.name= Titanium Ore
+tile.yarm:BlockCopperOre.name= Copper Ore
+tile.yarm:BlockTinOre.name= Tin Ore
+tile.yarm:BlockSilverOre.name= Silver Ore
+tile.yarm:BlockLeadOre.name= Lead Ore
+tile.yarm:BlockNickelOre.name= Nickel Ore
+tile.yarm:BlockMagnesiumOre.name= Magnesium Ore
+
 
 #Acaments
 achievement.CraftNetherStar1=The Start of something BIG
