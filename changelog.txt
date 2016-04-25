@@ -4,6 +4,10 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
+1.9-3.8.0-Beta:
+	+ Ores Golra
+	+ Configs Golra
+	+ Stuff	
 1.9-3.7.2:
 	~ Code Clean Up
 	~ Things
