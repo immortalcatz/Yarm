@@ -6,6 +6,7 @@ import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
 import com.unrealdinnerbone.yarm.blocks.Ores.BlockAntimonyOre;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -13,7 +14,7 @@ import net.minecraft.item.Item;
 
 public class RenderBlocks
 {
-    public static void RenderBlocks()
+    public static void RenderBlocks(Block block, int meta, String file)
     {
         RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.BLOCK_NETHER_STAR_1), 0, new ModelResourceLocation(Reference.RE_PREFIX + BlockNetherStar1.getName()));
