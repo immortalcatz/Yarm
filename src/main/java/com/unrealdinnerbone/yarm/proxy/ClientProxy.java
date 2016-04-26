@@ -30,7 +30,7 @@ public class ClientProxy extends CommonProxy
     {
         if(Event.getSide().isClient())
         {
-            RenderBlocks.RenderBlocks();
+//            RenderBlocks.RenderBlocks(Block, );
             RenderItems.RenderItems();
         }
     }
