@@ -1,6 +1,5 @@
 package com.unrealdinnerbone.yarm.proxy;
 
-import com.unrealdinnerbone.yarm.Client.render.RenderItems;
 import net.minecraftforge.fml.common.event.*;
 
 public class ClientProxy extends CommonProxy
@@ -17,7 +16,7 @@ public class ClientProxy extends CommonProxy
     {
         if(Event.getSide().isClient())
         {
-            RegisterRenders(Event);
+
         }
     }
     public static void PostInt(FMLPostInitializationEvent Event)
@@ -29,7 +28,7 @@ public class ClientProxy extends CommonProxy
     {
         if(Event.getSide().isClient())
         {
-            RenderItems.RenderItems();
+
         }
     }
 }

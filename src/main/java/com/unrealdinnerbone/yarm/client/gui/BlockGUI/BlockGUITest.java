@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.Client.gui.BlockGUI;
+package com.unrealdinnerbone.yarm.client.gui.BlockGUI;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;

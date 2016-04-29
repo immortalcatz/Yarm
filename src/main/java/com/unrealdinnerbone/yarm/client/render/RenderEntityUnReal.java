@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.Client.render;
+package com.unrealdinnerbone.yarm.client.render;
 
 import com.unrealdinnerbone.yarm.entitys.entityUnReal;
 import com.unrealdinnerbone.yarm.Util.Reference;

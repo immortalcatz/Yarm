@@ -46,7 +46,6 @@ public class ModWorldGen implements IWorldGenerator {
             for (int i = 0; i < WorldGenConfig.AntimonyRarity; i++) {
                 BlockPos AntimonyOrePos = new BlockPos(ChunkX, random.nextInt(WorldGenConfig.AntimonyMaxSpawnHeight), ChunkZ);
                 if (WorldGenConfig.GenerateAntimony == true && AntimonyOrePos.getY() >= WorldGenConfig.AntimonyMinSpawnHeight) {
-                    LogHelper.info("Antiomny");
                     (new WorldGenMinable(ModBlocks.BLOCK_ANTIMONY_ORE.getDefaultState(), WorldGenConfig.AntimonyMaxSize)).generate(world, random, AntimonyOrePos);
                 }
             }
@@ -54,7 +53,6 @@ public class ModWorldGen implements IWorldGenerator {
             {
                 BlockPos BismuthOrePos = new BlockPos(ChunkX, random.nextInt(WorldGenConfig.BismuthMaxSpawnHeight), ChunkZ);
                 if (WorldGenConfig.GenerateBismuth == true && BismuthOrePos.getY() >= WorldGenConfig.BismuthMinSpawnHeight) {
-                    LogHelper.info("a");
                     (new WorldGenMinable(ModBlocks.BLOCK_BISMUTH_ORE.getDefaultState(), WorldGenConfig.BismuthMaxSize)).generate(world, random, BismuthOrePos);
                 }
             }

@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.Client.gui;
+package com.unrealdinnerbone.yarm.client.gui;
 
 import com.unrealdinnerbone.yarm.Util.CharHelper;
 import com.unrealdinnerbone.yarm.config.ConfigManger;

@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.init;
 
+import com.unrealdinnerbone.yarm.Util.RegisterHelper;
 import com.unrealdinnerbone.yarm.Util.ToolTypes;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.items.Foods.ItemFoodIronApple;
@@ -17,9 +18,6 @@ import java.util.Set;
 
 public class ModItems
 {
-
-
-
     public static final ItemYarm Item_UnRealFace = new ItemUnRealFace();
     public static final ItemYarm Item_ManmedFace = new ItemManmaedFace();
     public static final ItemYarm Item_KyaneFace = new ItemTheKayneGameFace();
@@ -38,20 +36,20 @@ public class ModItems
     public static void init()
     {
 
-        GameRegistry.registerItem(Item_UnRealFace, ItemUnRealFace.getName());
-        GameRegistry.registerItem(Item_ManmedFace, ItemManmaedFace.getName());
-        GameRegistry.registerItem(Item_KyaneFace, ItemTheKayneGameFace.getName());
-        GameRegistry.registerItem(Item_YunusFace, ItemYunus1903Face.getName());
-        GameRegistry.registerItem(Item_AntimonyIngot, ItemAntimonyIngot.getName());
-        GameRegistry.registerItem(Item_NetherStarRod, ItemNetherStarRod.getName());
-        GameRegistry.registerItem(ItemTool_OpAxe, ItemToolOpAxe.getName());
-        GameRegistry.registerItem(ItemTool_OpHoe, ItemToolOpHoe.getName());
-        GameRegistry.registerItem(ItemTool_OpSpade, ItemToolOpSpade.getName());
-        GameRegistry.registerItem(ItemTool_OpPick, ItemToolOpPick.getName());
-        GameRegistry.registerItem(ItemTool_OpSword, ItemToolOpSword.getName());
-        GameRegistry.registerItem(Item_IronNugget, ItemIronNugget.getName());
-        GameRegistry.registerItem(ItemFood_IronApple, ItemFoodIronApple.getName());
-        GameRegistry.registerItem(ItemFood_IronCarrot, ItemFoodIronCarrot.getName());
+        RegisterHelper.RegisterItem(Item_UnRealFace, 0, ItemUnRealFace.getName());
+        RegisterHelper.RegisterItem(Item_ManmedFace, 0, ItemManmaedFace.getName());
+        RegisterHelper.RegisterItem(Item_KyaneFace, 0, ItemTheKayneGameFace.getName());
+        RegisterHelper.RegisterItem(Item_YunusFace, 0, ItemYunus1903Face.getName());
+        RegisterHelper.RegisterItem(Item_AntimonyIngot, 0, ItemAntimonyIngot.getName());
+        RegisterHelper.RegisterItem(Item_NetherStarRod, 0, ItemNetherStarRod.getName());
+        RegisterHelper.RegisterItem(ItemTool_OpAxe, 0, ItemToolOpAxe.getName());
+        RegisterHelper.RegisterItem(ItemTool_OpHoe, 0, ItemToolOpHoe.getName());
+        RegisterHelper.RegisterItem(ItemTool_OpSpade, 0, ItemToolOpSpade.getName());
+        RegisterHelper.RegisterItem(ItemTool_OpPick, 0, ItemToolOpPick.getName());
+        RegisterHelper.RegisterItem(ItemTool_OpSword, 0, ItemToolOpSword.getName());
+        RegisterHelper.RegisterItem(Item_IronNugget, 0, ItemIronNugget.getName());
+        RegisterHelper.RegisterItem(ItemFood_IronApple, 0, ItemFoodIronApple.getName());
+        RegisterHelper.RegisterItem(ItemFood_IronCarrot, 0, ItemFoodIronCarrot.getName());
         LogHelper.info("Loaded Items");
     }
 

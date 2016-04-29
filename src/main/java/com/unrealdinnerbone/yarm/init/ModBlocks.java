@@ -1,6 +1,7 @@
 package com.unrealdinnerbone.yarm.init;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
+import com.unrealdinnerbone.yarm.Util.RegisterHelper;
 import com.unrealdinnerbone.yarm.blocks.Faces.BlockUnRealFace;
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
@@ -43,31 +44,31 @@ public class ModBlocks
 
     public static void init()
     {
-        GameRegistry.registerBlock(BLOCK_ZINC_ORE, BlockZincOre.getName());
-        GameRegistry.registerBlock(BLOCK_ZIRCONIUM_ORE, BLOCK_ZIRCONIUM_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_TITANIUM_ORE, BLOCK_TITANIUM_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_TIN_ORE, BLOCK_TIN_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_SILVER_ORE, BLOCK_SILVER_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_NICKEL_ORE, BLOCK_NICKEL_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_MAGNESIUM_ORE, BLOCK_MAGNESIUM_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_LEAD_ORE, BLOCK_LEAD_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_INDIUM_ORE, BLOCK_INDIUM_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_GALLIUM_ORE, BLOCK_GALLIUM_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_COPPER_ORE, BLOCK_COPPER_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_COBALT_ORE, BLOCK_COBALT_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_CHROMIUM_ORE, BLOCK_CHROMIUM_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_BISMUTH_ORE, BLOCK_BISMUTH_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_ANTIMONY_ORE, BLOCK_ANTIMONY_ORE.getName());
-        GameRegistry.registerBlock(BLOCK_UNREAL_FACE, BLOCK_UNREAL_FACE.getName());
-        GameRegistry.registerBlock(BLOCK_ANTIMONY, BLOCK_ANTIMONY.getName());
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_1, BLOCK_NETHER_STAR_1.getName());
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_2, BLOCK_NETHER_STAR_2.getName());
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_3, BLOCK_NETHER_STAR_3.getName());
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_4, BLOCK_NETHER_STAR_4.getName());
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_5, BLOCK_NETHER_STAR_5.getName());
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_6, BLOCK_NETHER_STAR_6.getName());
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_7, BLOCK_NETHER_STAR_7.getName());
-        GameRegistry.registerBlock(BLOCK_NETHER_STAR_8, BLOCK_NETHER_STAR_8.getName());
+         RegisterHelper.RegisterBlock(BLOCK_ZINC_ORE, 0, BlockZincOre.getName());
+         RegisterHelper.RegisterBlock(BLOCK_ZIRCONIUM_ORE, 0, BLOCK_ZIRCONIUM_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_TITANIUM_ORE, 0, BLOCK_TITANIUM_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_TIN_ORE, 0, BLOCK_TIN_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_SILVER_ORE, 0, BLOCK_SILVER_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_NICKEL_ORE, 0, BLOCK_NICKEL_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_MAGNESIUM_ORE, 0, BLOCK_MAGNESIUM_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_LEAD_ORE, 0, BLOCK_LEAD_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_INDIUM_ORE, 0, BLOCK_INDIUM_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_GALLIUM_ORE, 0, BLOCK_GALLIUM_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_COPPER_ORE, 0, BLOCK_COPPER_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_COBALT_ORE, 0, BLOCK_COBALT_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_CHROMIUM_ORE, 0, BLOCK_CHROMIUM_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_BISMUTH_ORE, 0, BLOCK_BISMUTH_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_ANTIMONY_ORE, 0, BLOCK_ANTIMONY_ORE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_UNREAL_FACE, 0, BLOCK_UNREAL_FACE.getName());
+         RegisterHelper.RegisterBlock(BLOCK_ANTIMONY, 0, BLOCK_ANTIMONY.getName());
+         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_1, 0, BLOCK_NETHER_STAR_1.getName());
+         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_2, 0, BLOCK_NETHER_STAR_2.getName());
+         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_3, 0, BLOCK_NETHER_STAR_3.getName());
+         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_4, 0, BLOCK_NETHER_STAR_4.getName());
+         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_5, 0, BLOCK_NETHER_STAR_5.getName());
+         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_6, 0, BLOCK_NETHER_STAR_6.getName());
+         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_7, 0, BLOCK_NETHER_STAR_7.getName());
+         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_8, 0, BLOCK_NETHER_STAR_8.getName());
         LogHelper.info("Loaded Blocks");
     }
 }

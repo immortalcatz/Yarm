@@ -11,6 +11,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class RegisterHelper
 {
+
     public static void RegisterBlock(Block block, int meta, String name)
     {
         IntBlock(block, name);
@@ -19,6 +20,23 @@ public class RegisterHelper
             RenderBlock(block, meta, name);
         }
 
+    }
+    public static void RegisterItem(Item item, int meta, String name)
+    {
+        IntItem(item, name);
+        if(Side.CLIENT.isClient())
+        {
+            RenderItem(item, meta, name);
+        }
+    }
+    private static void IntItem(Item item, String name)
+    {
+        GameRegistry.registerItem(item, name);
+    }
+    private static void RenderItem(Item item, int meta, String name)
+    {
+        String InventoryName = "inventory";
+        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(Reference.RE_PREFIX + name, InventoryName));
     }
     private static void IntBlock(Block block, String name)
     {
