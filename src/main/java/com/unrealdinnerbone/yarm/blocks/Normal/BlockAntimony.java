@@ -3,7 +3,7 @@ package com.unrealdinnerbone.yarm.blocks.Normal;
 import com.unrealdinnerbone.yarm.yarm;
 import com.unrealdinnerbone.yarm.blocks.BlockYarm;
 import com.unrealdinnerbone.yarm.Util.Reference;
-import com.unrealdinnerbone.yarm.client.gui.GUIHandler;
+import com.unrealdinnerbone.yarm.Client.gui.GUIHandler;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;

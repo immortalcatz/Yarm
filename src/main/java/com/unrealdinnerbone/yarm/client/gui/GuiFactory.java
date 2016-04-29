@@ -1,6 +1,5 @@
-package com.unrealdinnerbone.yarm.client.gui;
+package com.unrealdinnerbone.yarm.Client.gui;
 
-import com.unrealdinnerbone.yarm.client.gui.ModGuiConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.fml.client.IModGuiFactory;

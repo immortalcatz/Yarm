@@ -10,7 +10,7 @@ import com.unrealdinnerbone.yarm.init.Recpies.BannerMaker;
 import com.unrealdinnerbone.yarm.init.Recpies.ShaplessRecpices;
 import com.unrealdinnerbone.yarm.init.Recpies.ShpaedRecpices;
 import com.unrealdinnerbone.yarm.init.Recpies.SmeltingRecpices;
-import com.unrealdinnerbone.yarm.client.gui.GUIHandler;
+import com.unrealdinnerbone.yarm.Client.gui.GUIHandler;
 import com.unrealdinnerbone.yarm.yarm;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

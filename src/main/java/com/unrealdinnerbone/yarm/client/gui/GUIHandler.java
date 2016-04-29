@@ -1,9 +1,9 @@
-package com.unrealdinnerbone.yarm.client.gui;
+package com.unrealdinnerbone.yarm.Client.gui;
 
 import com.unrealdinnerbone.yarm.blocks.TileEnity.ContainerModTileEnity;
 import com.unrealdinnerbone.yarm.blocks.TileEnity.ModTileEntity;
-import com.unrealdinnerbone.yarm.client.gui.BlockGUI.BlockGUIMain;
-import com.unrealdinnerbone.yarm.client.gui.BlockGUI.BlockGUITest;
+import com.unrealdinnerbone.yarm.Client.gui.BlockGUI.BlockGUIMain;
+import com.unrealdinnerbone.yarm.Client.gui.BlockGUI.BlockGUITest;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
