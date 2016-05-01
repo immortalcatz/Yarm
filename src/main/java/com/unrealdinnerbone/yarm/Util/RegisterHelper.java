@@ -3,10 +3,12 @@ package com.unrealdinnerbone.yarm.Util;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class RegisterHelper
 {
@@ -20,7 +22,16 @@ public class RegisterHelper
         }
 
     }
-    public static void RegisterItem(Item item, int meta, String name)
+    public static void RegisterItemWithOreDictionary(Item item, int meta, String name, String OreDictionaryName, ItemStack itemStack)
+    {
+        IntItem(item, name);
+        RegisterItemOreDictionary(OreDictionaryName, itemStack);
+        if(Side.CLIENT.isClient())
+        {
+            RenderItem(item, meta, name);
+        }
+    }
+    public static void RegisterItemWithoutOreDictionary(Item item, int meta, String name)
     {
         IntItem(item, name);
         if(Side.CLIENT.isClient())
@@ -28,7 +39,10 @@ public class RegisterHelper
             RenderItem(item, meta, name);
         }
     }
-    private static void RegisterOreDicItem(Item item,)
+    private static void RegisterItemOreDictionary(String OreDictionaryName, ItemStack itemStack)
+    {
+        OreDictionary.registerOre(OreDictionaryName, itemStack);
+    }
     private static void IntItem(Item item, String name)
     {
         GameRegistry.registerItem(item, name);

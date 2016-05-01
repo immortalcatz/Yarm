@@ -1,8 +1,5 @@
 package com.unrealdinnerbone.yarm.World;
 
-import com.unrealdinnerbone.yarm.Util.LangHelper;
-import com.unrealdinnerbone.yarm.Util.LogHelper;
-import com.unrealdinnerbone.yarm.config.ConfigManger;
 import com.unrealdinnerbone.yarm.config.WorldGenConfig;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
 import net.minecraft.util.math.BlockPos;
@@ -11,7 +8,6 @@ import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.fml.common.IWorldGenerator;
-import net.minecraftforge.fml.common.network.PacketLoggingHandler;
 
 import java.util.Random;
 

@@ -29,6 +29,7 @@ public class Events {
                 OpChecker.sendChatMessageServerWide(new TextComponentString(CharHelper.BLUE + "<" + event.getUsername() + "™" + "> " + CharHelper.WHITE + msg));
             }else
             {
+
             }
         }
     }
@@ -45,6 +46,5 @@ public class Events {
                 }
             }
         }
-
     }
 }

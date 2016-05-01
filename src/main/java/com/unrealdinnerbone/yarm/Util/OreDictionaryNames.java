@@ -7,6 +7,7 @@ public class OreDictionaryNames
     public final static String Item_YunusFace = "materialYunus1903Face";
     public final static String Item_KyaneFace = "materialTheKayneGameFace";
     public final static String Item_AntimonyIngot = "ingotAntimony";
+    public final static String Item_NetherStarRod = "netherStarRod";
     public final static String BLOCK_UNREAL_FACE = "materialBlockUnReal";
     public final static String BLOCK_ANTIMONY = "materialAntimony";
     public final static String BLOCK_NETHER_STAR_1 = "materialNetherStar1";
@@ -37,7 +38,11 @@ public class OreDictionaryNames
     public final static String BLOCK_TITANIUM_ORE = "oreTitanium";
     public final static String BLOCK_ZINC_ORE = "oreZinc";
     public final static String BLOCK_ZIRCONIUM_ORE = "oreZirconium";
-
+    public final static String Item_Tool_OpAxe = "toolnetherStarAxe";
+    public final static String Item_Tool_OpSword = "toolnetherStarSword";
+    public final static String Item_Tool_OpSpade = "toolnetherStarSpade";
+    public final static String Item_Tool_OpPic = "toolnetherStarPic";
+    public final static String Item_Tool_OpHoe = "toolnetherStarHoe";
 
 
 }

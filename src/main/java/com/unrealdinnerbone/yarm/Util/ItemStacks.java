@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class ItemStacks
@@ -154,6 +155,30 @@ public class ItemStacks
     public static ItemStack BlockZirconiumOre(int Count)
     {
         return new ItemStack(ModBlocks.BLOCK_ZIRCONIUM_ORE, Count);
+    }
+    public static ItemStack ItemNetherStarRod(int Count)
+    {
+        return new ItemStack(ModItems.Item_NetherStarRod, Count);
+    }
+    public static ItemStack ItemToolNetherStarAxe(int Count)
+    {
+        return new ItemStack(ModItems.ItemTool_OpAxe, Count);
+    }
+    public static ItemStack ItemToolNetherStarHoe(int Count)
+    {
+        return new ItemStack(ModItems.ItemTool_OpHoe, Count);
+    }
+    public static ItemStack ItemToolNetherStarSpade(int Count)
+    {
+        return new ItemStack(ModItems.ItemTool_OpSpade, Count);
+    }
+    public static ItemStack ItemToolNetherStarSword(int Count)
+    {
+        return new ItemStack(ModItems.ItemTool_OpSword, Count);
+    }
+    public static ItemStack ItemToolNetherStarPic(int Count)
+    {
+        return new ItemStack(ModItems.ItemTool_OpPick, Count);
     }
 
 }
