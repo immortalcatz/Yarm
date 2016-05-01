@@ -1,7 +1,6 @@
 package com.unrealdinnerbone.yarm.Achievements;
 
 import com.unrealdinnerbone.yarm.Util.LangHelper;
-import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.init.ModBlocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.AchievementPage;

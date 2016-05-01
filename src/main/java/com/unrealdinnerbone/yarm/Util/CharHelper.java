@@ -11,7 +11,7 @@ public enum CharHelper
     private static final String MCStyle  = "\u00A7";
     private final String color;
 
-    private CharHelper(String num){
+    CharHelper(String num){
         this.color = MCStyle + num;
     }
 

@@ -3,7 +3,7 @@ package com.unrealdinnerbone.yarm.items.Foods;
 import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.config.ConfigManger;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
-import com.unrealdinnerbone.yarm.Util.Reference;;
+import com.unrealdinnerbone.yarm.Util.Reference;
 import com.unrealdinnerbone.yarm.config.OtherConfig;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;

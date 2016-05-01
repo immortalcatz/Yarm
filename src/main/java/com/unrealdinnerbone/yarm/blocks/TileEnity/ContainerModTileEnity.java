@@ -48,7 +48,7 @@ public class ContainerModTileEnity extends Container {
     @Override
     public ItemStack transferStackInSlot(EntityPlayer playerIn, int fromSlot) {
         ItemStack previous = null;
-        Slot slot = (Slot) this.inventorySlots.get(fromSlot);
+        Slot slot = this.inventorySlots.get(fromSlot);
 
         if (slot != null && slot.getHasStack()) {
             ItemStack current = slot.getStack();
@@ -65,7 +65,7 @@ public class ContainerModTileEnity extends Container {
             }
 
             if (current.stackSize == 0)
-                slot.putStack((ItemStack) null);
+                slot.putStack(null);
             else
                 slot.onSlotChanged();
 

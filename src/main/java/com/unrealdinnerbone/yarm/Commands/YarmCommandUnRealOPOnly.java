@@ -1,6 +1,5 @@
 package com.unrealdinnerbone.yarm.Commands;
 
-import com.unrealdinnerbone.yarm.Util.CoolPeople;
 import com.unrealdinnerbone.yarm.Util.OpChecker;
 import com.unrealdinnerbone.yarm.Util.UUIDHelper;
 import net.minecraft.command.ICommandSender;

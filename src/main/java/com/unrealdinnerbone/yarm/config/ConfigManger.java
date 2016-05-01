@@ -136,7 +136,7 @@ public class ConfigManger
     {
         if (event.getModID().equalsIgnoreCase(Reference.MOD_ID))
         {
-            loadConfiguration();;
+            loadConfiguration();
         }
     }
 

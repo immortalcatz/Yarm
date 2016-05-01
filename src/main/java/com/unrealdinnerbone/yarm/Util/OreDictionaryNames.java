@@ -8,7 +8,6 @@ public class OreDictionaryNames
     public final static String Item_KyaneFace = "materialTheKayneGameFace";
     public final static String Item_AntimonyIngot = "ingotAntimony";
     public final static String BLOCK_UNREAL_FACE = "materialBlockUnReal";
-    public final static String BLOCK_ANTIMONY_ORE = "oreAntimony";
     public final static String BLOCK_ANTIMONY = "materialAntimony";
     public final static String BLOCK_NETHER_STAR_1 = "materialNetherStar1";
     public final static String BLOCK_NETHER_STAR_2 = "materialNetherStar2";
@@ -23,7 +22,22 @@ public class OreDictionaryNames
     public final static String Food_IronCarrot = "foodIronCarrot";
     public final static String NetherStar = "netherStar";
     public final static String IngotIron = "ingotIron";
-    
-    
-    
+    public final static String BLOCK_ANTIMONY_ORE = "oreAntimony";
+    public final static String BLOCK_BISMUTH_ORE = "oreBismuth";
+    public final static String BLOCK_CHROMIUM_ORE = "oreChromium";
+    public final static String BLOCK_COBALT_ORE = "oreCobalt";
+    public final static String BLOCK_COPPER_ORE = "oreCopper";
+    public final static String BLOCK_GALLIUM_ORE = "oreGallium";
+    public final static String BLOCK_INDIUM_ORE = "oreIndium";
+    public final static String BLOCK_LEAD_ORE = "oreLead";
+    public final static String BLOCK_MAGNESIUM_ORE = "oreMagnesium";
+    public final static String BLOCK_NICKEL_ORE = "oreNickel";
+    public final static String BLOCK_SILVER_ORE = "oreSilver";
+    public final static String BLOCK_TIN_ORE = "oreTin";
+    public final static String BLOCK_TITANIUM_ORE = "oreTitanium";
+    public final static String BLOCK_ZINC_ORE = "oreZinc";
+    public final static String BLOCK_ZIRCONIUM_ORE = "oreZirconium";
+
+
+
 }

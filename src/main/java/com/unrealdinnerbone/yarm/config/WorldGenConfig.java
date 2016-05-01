@@ -55,7 +55,7 @@ public class WorldGenConfig
     public static boolean GenerateMagnesium;
     public static int MagnesiumMaxSize;
     public static int MagnesiumMaxSpawnHeight;
-    public static int MagnesiumMinSpawnHeight;;
+    public static int MagnesiumMinSpawnHeight;
     public static int MagnesiumRarity;
 
     public static boolean GenerateNickel;

@@ -16,7 +16,7 @@ public class BlockYarmOre extends BlockYarm
         this(Material.ROCK);
         this.setCreativeTab(Tab.Yarm_Tab);
         this.setHardness(4.0F);
-        this.setSoundType(SoundType.GROUND);
+        this.setSoundType(SoundType.STONE);
     }
 
 }

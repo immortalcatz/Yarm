@@ -7,14 +7,9 @@ import com.unrealdinnerbone.yarm.items.Foods.ItemFoodIronApple;
 import com.unrealdinnerbone.yarm.items.Foods.ItemFoodIronCarrot;
 import com.unrealdinnerbone.yarm.items.Item.*;
 import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarm;
-import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarmFood;
 import com.unrealdinnerbone.yarm.items.Tools.*;
-import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.*;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
-import java.util.Set;
 
 public class ModItems
 {

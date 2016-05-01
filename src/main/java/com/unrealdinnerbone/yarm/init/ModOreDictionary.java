@@ -28,6 +28,10 @@ public class ModOreDictionary {
         OreDictionary.registerOre(OreDictionaryNames.Item_IronNugget, ItemStacks.ItemIronNugget(1));
         OreDictionary.registerOre(OreDictionaryNames.Food_IronApple, ItemStacks.ItemFoodIronApple(1));
         OreDictionary.registerOre(OreDictionaryNames.Food_IronCarrot, ItemStacks.ItemFoodIronCarrot(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_BISMUTH_ORE, ItemStacks.BlockBismuthOre(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_CHROMIUM_ORE,ItemStacks.BlockChromiumOre(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_COBALT_ORE, ItemStacks.BlockCobaltOre(1));
+        OreDictionary.registerOre(OreDictionaryNames.BLOCK_COPPER_ORE, ItemStacks.BlockCopperOre(1));
         LogHelper.info("Loaded Ore Dic");
 
     }

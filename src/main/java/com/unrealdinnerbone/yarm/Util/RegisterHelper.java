@@ -1,6 +1,5 @@
 package com.unrealdinnerbone.yarm.Util;
 
-import com.unrealdinnerbone.yarm.init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -29,6 +28,7 @@ public class RegisterHelper
             RenderItem(item, meta, name);
         }
     }
+    private static void RegisterOreDicItem(Item item,)
     private static void IntItem(Item item, String name)
     {
         GameRegistry.registerItem(item, name);
