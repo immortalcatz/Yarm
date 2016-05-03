@@ -1,12 +1,13 @@
 package com.unrealdinnerbone.yarm.init;
 
+import com.unrealdinnerbone.yarm.Util.ItemStacks;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
+import com.unrealdinnerbone.yarm.Util.OreDictionaryNames;
 import com.unrealdinnerbone.yarm.Util.RegisterHelper;
 import com.unrealdinnerbone.yarm.blocks.Faces.BlockUnRealFace;
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
 import com.unrealdinnerbone.yarm.blocks.Ores.*;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks
 {
@@ -44,31 +45,31 @@ public class ModBlocks
 
     public static void init()
     {
-         RegisterHelper.RegisterBlock(BLOCK_ZINC_ORE, 0, BlockZincOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_ZIRCONIUM_ORE, 0, BlockZirconiumOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_TITANIUM_ORE, 0, BlockTitaniumOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_TIN_ORE, 0, BlockTinOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_SILVER_ORE, 0, BlockSilverOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_NICKEL_ORE, 0, BlockNickelOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_MAGNESIUM_ORE, 0, BlockMagnesiumOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_LEAD_ORE, 0, BlockLeadOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_INDIUM_ORE, 0, BlockIndiumOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_GALLIUM_ORE, 0, BlockGalliumOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_COPPER_ORE, 0, BlockCopperOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_COBALT_ORE, 0, BlockCobaltOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_CHROMIUM_ORE, 0, BlockChromiumOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_BISMUTH_ORE, 0, BlockBismuthOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_ANTIMONY_ORE, 0, BlockAntimonyOre.getName());
-         RegisterHelper.RegisterBlock(BLOCK_UNREAL_FACE, 0, BlockUnRealFace.getName());
-         RegisterHelper.RegisterBlock(BLOCK_ANTIMONY, 0, BlockAntimony.getName());
-         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_1, 0, BlockNetherStar1.getName());
-         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_2, 0, BlockNetherStar2.getName());
-         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_3, 0, BlockNetherStar3.getName());
-         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_4, 0, BlockNetherStar4.getName());
-         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_5, 0, BlockNetherStar5.getName());
-         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_6, 0, BlockNetherStar6.getName());
-         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_7, 0, BlockNetherStar7.getName());
-         RegisterHelper.RegisterBlock(BLOCK_NETHER_STAR_8, 0, BlockNetherStar8.getName());
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_ZINC_ORE, 0, BlockZincOre.getName(), OreDictionaryNames.BLOCK_ZINC_ORE, ItemStacks.BlockZincOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_ZIRCONIUM_ORE, 0, BlockZirconiumOre.getName(), OreDictionaryNames.BLOCK_ZIRCONIUM_ORE, ItemStacks.BlockZirconiumOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_TITANIUM_ORE, 0, BlockTitaniumOre.getName(), OreDictionaryNames.BLOCK_TITANIUM_ORE, ItemStacks.BlockTitaniumOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_TIN_ORE, 0, BlockTinOre.getName(), OreDictionaryNames.BLOCK_TIN_ORE, ItemStacks.BlockTinOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_SILVER_ORE, 0, BlockSilverOre.getName(), OreDictionaryNames.BLOCK_SILVER_ORE, ItemStacks.BlockSilverOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NICKEL_ORE, 0, BlockNickelOre.getName(), OreDictionaryNames.BLOCK_NICKEL_ORE, ItemStacks.BlockNickelOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_MAGNESIUM_ORE, 0, BlockMagnesiumOre.getName(), OreDictionaryNames.BLOCK_MAGNESIUM_ORE, ItemStacks.BlockMagnesiumOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_LEAD_ORE, 0, BlockLeadOre.getName(), OreDictionaryNames.BLOCK_LEAD_ORE, ItemStacks.BlockLeadOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_INDIUM_ORE, 0, BlockIndiumOre.getName(), OreDictionaryNames.BLOCK_INDIUM_ORE, ItemStacks.BlockIndiumOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_GALLIUM_ORE, 0, BlockGalliumOre.getName(), OreDictionaryNames.BLOCK_GALLIUM_ORE, ItemStacks.BlockGalliumOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_COPPER_ORE, 0, BlockCopperOre.getName(), OreDictionaryNames.BLOCK_COPPER_ORE, ItemStacks.BlockCobaltOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_COBALT_ORE, 0, BlockCobaltOre.getName(), OreDictionaryNames.BLOCK_COBALT_ORE, ItemStacks.BlockCobaltOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_CHROMIUM_ORE, 0, BlockChromiumOre.getName(), OreDictionaryNames.BLOCK_CHROMIUM_ORE, ItemStacks.BlockChromiumOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_BISMUTH_ORE, 0, BlockBismuthOre.getName(), OreDictionaryNames.BLOCK_BISMUTH_ORE, ItemStacks.BlockBismuthOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_ANTIMONY_ORE, 0, BlockAntimonyOre.getName(), OreDictionaryNames.BLOCK_ANTIMONY_ORE, ItemStacks.BlockAntimonyOre(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_UNREAL_FACE, 0, BlockUnRealFace.getName(), OreDictionaryNames.BLOCK_UNREAL_FACE, ItemStacks.BlockUnRealFace(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_ANTIMONY, 0, BlockAntimony.getName(), OreDictionaryNames.BLOCK_ANTIMONY, ItemStacks.BlockAntimony(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_1, 0, BlockNetherStar1.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_1, ItemStacks.BlockNetherStar1(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_2, 0, BlockNetherStar2.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_2, ItemStacks.BlockNetherStar2(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_3, 0, BlockNetherStar3.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_3, ItemStacks.BlockNetherStar3(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_4, 0, BlockNetherStar4.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_4, ItemStacks.BlockNetherStar4(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_5, 0, BlockNetherStar5.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_5, ItemStacks.BlockNetherStar5(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_6, 0, BlockNetherStar6.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_6, ItemStacks.BlockNetherStar6(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_7, 0, BlockNetherStar7.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_7, ItemStacks.BlockNetherStar7(1));
+         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_8, 0, BlockNetherStar8.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_8, ItemStacks.BlockNetherStar8(1));
         LogHelper.info("Loaded Blocks");
     }
 }

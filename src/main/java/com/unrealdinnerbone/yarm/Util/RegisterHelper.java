@@ -13,9 +13,19 @@ import net.minecraftforge.oredict.OreDictionary;
 public class RegisterHelper
 {
 
-    public static void RegisterBlock(Block block, int meta, String name)
+    public static void RegisterBlockWithoutOreDictionary(Block block, int meta, String name)
     {
         IntBlock(block, name);
+        if(Side.CLIENT.isClient())
+        {
+            RenderBlock(block, meta, name);
+        }
+
+    }
+    public static void RegisterBlockWithOreDictionary(Block block, int meta, String name, String OreDictionaryName, ItemStack itemStack)
+    {
+        IntBlock(block, name);
+        RegisterOreDictionary(OreDictionaryName, itemStack);
         if(Side.CLIENT.isClient())
         {
             RenderBlock(block, meta, name);
@@ -25,7 +35,7 @@ public class RegisterHelper
     public static void RegisterItemWithOreDictionary(Item item, int meta, String name, String OreDictionaryName, ItemStack itemStack)
     {
         IntItem(item, name);
-        RegisterItemOreDictionary(OreDictionaryName, itemStack);
+        RegisterOreDictionary(OreDictionaryName, itemStack);
         if(Side.CLIENT.isClient())
         {
             RenderItem(item, meta, name);
@@ -39,7 +49,7 @@ public class RegisterHelper
             RenderItem(item, meta, name);
         }
     }
-    private static void RegisterItemOreDictionary(String OreDictionaryName, ItemStack itemStack)
+    private static void RegisterOreDictionary(String OreDictionaryName, ItemStack itemStack)
     {
         OreDictionary.registerOre(OreDictionaryName, itemStack);
     }
