@@ -34,7 +34,6 @@ public abstract class CommonProxy implements IProxy
         ShpaedRecpices.init();
         SmeltingRecpices.init();
         ShaplessRecpices.init();
-        ModOreDictionary.OreDictionary();
         GameRegistry.registerWorldGenerator(WorldGen, 1);
         Achievements.LoadAchievements();
         AchievementsHandler.RegisterPage();

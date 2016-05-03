@@ -4,6 +4,9 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
+1.9-3.9.0-Beta:
+	? Reworte the Registery and a few other things
+	? More Textures
 1.9-3.8.0-Beta:
 	+ Ores Golra
 	+ Configs Golra
