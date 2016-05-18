@@ -20,11 +20,7 @@ public class ModEntity
 
     public static void createEntity(Class entityClass, String entityName, int eggPrimaryColor, int eggSecondaryColor)
     {
-        int RandomId = EntityRegistry.findGlobalUniqueEntityId();
-
-        EntityRegistry.registerGlobalEntityID(entityClass, entityName, RandomId);
-        EntityRegistry.registerModEntity(entityClass, entityName, RandomId, yarm.instance, 64, 1, true);
-        createEgg(RandomId, eggPrimaryColor, eggSecondaryColor, entityName);
+        EntityRegistry.registerModEntity(entityClass, entityName, 154154, yarm.instance, 64, 1, true);
     }
 
     private static void createEgg(int RandomId, int eggPrimaryColor, int eggSecondaryColor, String EnityName)

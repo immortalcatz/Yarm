@@ -58,9 +58,9 @@ repositories
 
 dependencies
 {
-  deobfCompile "MCMultiPart:MCMultiPart:${mcmutipart_version}:universal"
-  deobfCompile "mcp.mobius.waila:Waila:${waila_version}_${minecraft_version}"
-  deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
+// deobfCompile "MCMultiPart:MCMultiPart:${mcmutipart_version}:universal"
+// deobfCompile "mcp.mobius.waila:Waila:${waila_version}_${minecraft_version}"
+   deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
 }
 
 processResources

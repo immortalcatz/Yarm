@@ -4,6 +4,9 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
+1.9-4.0.0:
+	* Updated TO 1.9.4 BETA RELISE DID NOT TEST
+	
 1.9-3.9.0-Beta:
 	? Reworte the Registery and a few other things
 	? More Textures

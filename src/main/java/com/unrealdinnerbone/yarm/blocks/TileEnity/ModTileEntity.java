@@ -161,7 +161,7 @@ public class ModTileEntity extends TileEntity implements IInventory {
     }
 
     @Override
-    public void writeToNBT(NBTTagCompound nbt) {
+    public NBTTagCompound writeToNBT(NBTTagCompound nbt) {
         super.writeToNBT(nbt);
 
         NBTTagList list = new NBTTagList();
@@ -178,5 +178,6 @@ public class ModTileEntity extends TileEntity implements IInventory {
         if (this.hasCustomName()) {
             nbt.setString("CustomName", this.getCustomName());
         }
+        return nbt;
     }
 }

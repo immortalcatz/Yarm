@@ -11,7 +11,7 @@ import com.unrealdinnerbone.yarm.blocks.Ores.*;
 
 public class ModBlocks
 {
-    //Things
+    //Thiangs
     public static final BlockUnRealFace BLOCK_UNREAL_FACE = new BlockUnRealFace();
     //Ores
     public static final BlockAntimonyOre BLOCK_ANTIMONY_ORE = new BlockAntimonyOre();
