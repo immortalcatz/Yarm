@@ -1,6 +1,5 @@
 package com.unrealdinnerbone.yarm.proxy;
 
-
 import com.unrealdinnerbone.yarm.Achievements.Achievements;
 import com.unrealdinnerbone.yarm.Achievements.AchievementsHandler;
 import com.unrealdinnerbone.yarm.Util.LogHelper;

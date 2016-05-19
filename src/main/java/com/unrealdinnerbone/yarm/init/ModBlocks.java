@@ -4,6 +4,7 @@ import com.unrealdinnerbone.yarm.Util.ItemStacks;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.OreDictionaryNames;
 import com.unrealdinnerbone.yarm.Util.RegisterHelper;
+import com.unrealdinnerbone.yarm.blocks.ConnectedBlocks.BlockConnectedGlass;
 import com.unrealdinnerbone.yarm.blocks.Faces.BlockUnRealFace;
 import com.unrealdinnerbone.yarm.blocks.NetherStarBlocks.*;
 import com.unrealdinnerbone.yarm.blocks.Normal.BlockAntimony;
@@ -40,6 +41,7 @@ public class ModBlocks
     public static final BlockNetherStar6 BLOCK_NETHER_STAR_6 = new BlockNetherStar6();
     public static final BlockNetherStar7 BLOCK_NETHER_STAR_7 = new BlockNetherStar7();
     public static final BlockNetherStar8 BLOCK_NETHER_STAR_8 = new BlockNetherStar8();
+    public static final BlockConnectedGlass BLOCK_CONNECTED_GLASS = new BlockConnectedGlass();
 
 
 
@@ -70,6 +72,7 @@ public class ModBlocks
          RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_6, 0, BlockNetherStar6.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_6, ItemStacks.BlockNetherStar6(1));
          RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_7, 0, BlockNetherStar7.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_7, ItemStacks.BlockNetherStar7(1));
          RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_8, 0, BlockNetherStar8.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_8, ItemStacks.BlockNetherStar8(1));
+         RegisterHelper.RegisterBlockWithoutOreDictionary(BLOCK_CONNECTED_GLASS, 0, BlockConnectedGlass.getName());
         LogHelper.info("Loaded Blocks");
     }
 }
