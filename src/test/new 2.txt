@@ -1,0 +1,706 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "blocks/dirt"
+    },
+    "model": "cube_all",
+    "uvlock": true
+  },
+  "variants": {
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c0"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=true,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c1"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=true,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c1", "x": 180
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=true,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c1", "x": 90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=true,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c1", "x": -90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=true": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c1", "x": 90, "y": -90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=true,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c1", "x": 90, "y": 90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=true,connected_north=false,connected_south=false,connected_up=true,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2angle"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=true,connected_west=true": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2angle", "y": 180
+        }
+      },
+      "false": {}
+    },
+    "connected_down=true,connected_east=true,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2angle", "x": 180
+        }
+      },
+      "false": {}
+    },
+    "connected_down=true,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=true": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2angle", "x": 180, "y": 180
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=true,connected_south=false,connected_up=true,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2angle", "y": -90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=true,connected_up=true,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2angle", "y": 90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=true,connected_east=false,connected_north=true,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2angle", "x": 180, "y": -90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=true,connected_east=false,connected_north=false,connected_south=true,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2angle", "x": 180, "y": 90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=true,connected_north=true,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2angle", "x": 90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=true,connected_north=false,connected_south=true,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2angle", "x": -90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=true,connected_south=false,connected_up=false,connected_west=true": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2angle", "x": 90, "y": -90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=true,connected_up=false,connected_west=true": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2angle", "x": -90, "y": 90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=true,connected_east=false,connected_north=false,connected_south=false,connected_up=true,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=true,connected_north=false,connected_south=false,connected_up=false,connected_west=true": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2", "x": -90, "y": 90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=true,connected_south=true,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c2", "x": -90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=true,connected_east=false,connected_north=false,connected_south=false,connected_up=true,connected_west=true": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c3T1"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=true,connected_east=false,connected_north=false,connected_south=true,connected_up=true,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c3T1", "y": -90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=true,connected_east=true,connected_north=false,connected_south=false,connected_up=true,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c3T1", "y": -180
+        }
+      },
+      "false": {}
+    },
+    "connected_down=true,connected_east=false,connected_north=true,connected_south=false,connected_up=true,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c3T1", "y": 90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=true,connected_south=true,connected_up=false,connected_west=true": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c3T1", "x": -90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=true,connected_north=true,connected_south=true,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c3T1", "x": -90, "y": 180
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=true,connected_north=false,connected_south=false,connected_up=true,connected_west=true": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c3T2"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=true,connected_north=false,connected_south=true,connected_up=false,connected_west=true": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c3T2", "x": -90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=true,connected_east=true,connected_north=false,connected_south=false,connected_up=false,connected_west=true": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c3T2", "x": 180
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=true,connected_north=true,connected_south=false,connected_up=false,connected_west=true": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "yarm:BlockConnectedGlass_c3T2", "x": 90
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=true,connected_south=true,connected_up=true,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    },
+    "connected_down=false,connected_east=false,connected_north=false,connected_south=false,connected_up=false,connected_west=false": {
+      "true": {
+        "textures": {
+          "all": "blocks/cobblestone_mossy"
+        },
+        "submodel": {
+          "model": "CHANGEME"
+        }
+      },
+      "false": {}
+    }
+  }
+}
+s

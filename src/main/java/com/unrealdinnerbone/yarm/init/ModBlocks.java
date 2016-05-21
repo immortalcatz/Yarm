@@ -72,7 +72,7 @@ public class ModBlocks
          RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_6, 0, BlockNetherStar6.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_6, ItemStacks.BlockNetherStar6(1));
          RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_7, 0, BlockNetherStar7.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_7, ItemStacks.BlockNetherStar7(1));
          RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_NETHER_STAR_8, 0, BlockNetherStar8.getName(), OreDictionaryNames.BLOCK_NETHER_STAR_8, ItemStacks.BlockNetherStar8(1));
-         RegisterHelper.RegisterBlockWithoutOreDictionary(BLOCK_CONNECTED_GLASS, 0, BlockConnectedGlass.getName());
+         RegisterHelper.RegisterBlockWithoutOreDictionary(BLOCK_CONNECTED_GLASS, 0, "BlockConnectedGlass");
         LogHelper.info("Loaded Blocks");
     }
 }
