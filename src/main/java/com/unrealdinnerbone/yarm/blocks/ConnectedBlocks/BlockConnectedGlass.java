@@ -8,12 +8,9 @@ import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockConnectedGlass extends BlockYarm
 {
@@ -34,29 +31,12 @@ public class BlockConnectedGlass extends BlockYarm
         super(Material.ROCK);
         this.setUnlocalizedName(Reference.RE_PREFIX + "BlockConnectedGlass");
         this.setCreativeTab(Tab.Yarm_Tab);
+        this.isVisuallyOpaque();
 
         // By default none of the sides are connected.
         this.setDefaultState(this.blockState.getBaseState().withProperty(CONNECTED_DOWN, Boolean.FALSE).withProperty(CONNECTED_EAST, Boolean.FALSE).withProperty(CONNECTED_NORTH, Boolean.FALSE).withProperty(CONNECTED_SOUTH, Boolean.FALSE).withProperty(CONNECTED_UP, Boolean.FALSE).withProperty(CONNECTED_WEST, Boolean.FALSE));
 
     }
-
-    @Override
-    public boolean isOpaqueCube(IBlockState p_isOpaqueCube_1_) {
-        return true;
-    }
-
-
-    @Override
-    @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer() {
-        return BlockRenderLayer.TRANSLUCENT;
-    }
-
-    @Override
-    public boolean isFullCube(IBlockState p_isFullCube_1_) {
-        return false;
-    }
-
 
     @Override
     public IBlockState getActualState (IBlockState state, IBlockAccess world, BlockPos position) {

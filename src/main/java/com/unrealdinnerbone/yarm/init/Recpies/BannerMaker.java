@@ -12,7 +12,6 @@ public class BannerMaker {
         BannerUtils.addCraftingPattern("UnRealFace", new ItemStack(ModItems.Item_UnRealFace));
         BannerUtils.addCraftingPattern("Elytra", new ItemStack(Items.ELYTRA));
         BannerUtils.addCraftingPattern("Pearcell", new ItemStack(Items.BEETROOT));
-        net.darkhax.bookshelf.lib.util.BannerUtils.addCraftingPattern("Test", "Test2", new ItemStack(Items.APPLE));
     }
 
 }
