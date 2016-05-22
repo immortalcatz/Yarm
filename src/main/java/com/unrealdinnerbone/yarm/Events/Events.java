@@ -34,6 +34,8 @@ public class Events {
 
     private static final ResourceLocation CAPE_UNREALDINNERBONE = new ResourceLocation("yarm", "textures/entity/player/cape_UnRealDinnerbone.png");
     private static final ResourceLocation ELYTRA_UNREALDINNERBONE = new ResourceLocation("yarm", "textures/entity/player/elytra_UnRealDinnerbone.png");
+	private static final ResourceLocation CAPE_MANMAED = new ResourceLocation("yarm", "textures/entity/player/cape_manmaed.png");
+    private static final ResourceLocation ELYTRA_MANMAED = new ResourceLocation("yarm", "textures/entity/player/elytra_manmaed.png");
 
 
     public static void init() {
@@ -84,6 +86,12 @@ public class Events {
                 makePlayerFancy(player, CAPE_UNREALDINNERBONE, ELYTRA_UNREALDINNERBONE);
             }
                 // Syco
+				else if (id.toString().equals("2eebcb1a-f63e-4a80-b380-801a10f88d4e")) {
+                makePlayerFancy(player, CAPE_MANMAED, ELYTRA_MANMAED);
+				}
+				else if (id.toString().equals("0ed61b61-c2b3-4d3d-b30f-9796a302d82b")) {
+                makePlayerFancy(player, CAPE_MANMAED, ELYTRA_MANMAED);
+				}
 
         }
     }
