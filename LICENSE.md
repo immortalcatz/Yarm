@@ -15,15 +15,14 @@ Section 2: License
 Section 3: Distribution
 	
 	A. This Mod source code may only be on Github or other sites that are owned by Github
-	B. You may use less then 25% of this mod source code in your mod with out perms and credit, if the code is less then 50% but more
-	then 25% you must ask.
-	C. If you want to use more then 50% of my code you can't.
-	D. The Owner may use his code in another or from another of his mod with out perms/credits.
-	E. This Mod may be distributed on Curse, CurseForge or others unless it was stated elsewhere in this License
-	F. You may not sell any items, blocks, or any outher thing form this mod, if you do i may taken legal action.
+	B. You may use samll use small parts of my code in your own mod unless the top of that class says "THIS CODE IS ALL RIGHT RESIVED" the only way to use that code in your mod is by being me or expecet persm for me
+	C. The Owner may use his code in another or from another of his mod with out perms/credits.
+	D. This Mod may be distributed on Curse, CurseForge or others unless it was stated elsewhere in this License
+	E. You may not sell any items, blocks, or any outher thing form this mod, if you do i may taken legal action.
 Section 3B: ModPacks
 	
-	A. This mod may only be on packs on the FTB Luncher or on The Curse Client if you want to use this mod in a pack that is not on of the two litsed above you may ask the Owner if you can use it.
+	A. This mod may only be on packs on the FTB Luncher or on The Curse Client or AtLuncher if you want to use this mod in a pack that is not on of the three litsed above you may ask the Owner if you can use it.
+	B. This mod may "Beta" version (the ones the are on the serect jenkins page/Lastest Code Base) may not be uploaded to curse packs as in "Extra Mod" if you need a new version of the mod on curse msg UnRealDinnerbone vi Email (unrealdinnerbone@gmail.com) or Twitter
 	
 Section 4: Owner Rights
 
