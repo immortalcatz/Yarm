@@ -125,61 +125,60 @@ public class ItemStacks
     {
         return new ItemStack(ModItems.ItemTool_OpPick, Count);
     }
-
+    public static ItemStack BlockBismuthOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_BISMUTH_ORE, Count);
+    }
+    public static ItemStack BlockChromiumOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_CHROMIUM_ORE, Count);
+    }
+    public static ItemStack BlockCobaltOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_COBALT_ORE, Count);
+    }
+    public static ItemStack BlockCopperOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_COPPER_ORE, Count);
+    }
+    public static ItemStack BlockGalliumOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_GALLIUM_ORE, Count);
+    }
+    public static ItemStack BlockIndiumOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_INDIUM_ORE, Count);
+    }
+    public static ItemStack BlockLeadOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_LEAD_ORE, Count);
+    }
+    public static ItemStack BlockMagnesiumOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_MAGNESIUM_ORE, Count);
+    }
+    public static ItemStack BlockNickelOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_NICKEL_ORE, Count);
+    }
+    public static ItemStack BlockSilverOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_SILVER_ORE, Count);
+    }
+    public static ItemStack BlockTinOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_TIN_ORE, Count);
+    }
+    public static ItemStack BlockTitaniumOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_TITANIUM_ORE, Count);
+    }
+    public static ItemStack BlockZincOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_ZINC_ORE, Count);
+    }
+    public static ItemStack BlockZirconiumOre(int Count)
+    {
+        return new ItemStack(ModBlocks.BLOCK_ZIRCONIUM_ORE, Count);
+    }
 }
-//    public static ItemStack BlockBismuthOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_BISMUTH_ORE, Count);
-//    }
-//    public static ItemStack BlockChromiumOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_CHROMIUM_ORE, Count);
-//    }
-//    public static ItemStack BlockCobaltOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_COBALT_ORE, Count);
-//    }
-//    public static ItemStack BlockCopperOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_COPPER_ORE, Count);
-//    }
-//    public static ItemStack BlockGalliumOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_GALLIUM_ORE, Count);
-//    }
-//    public static ItemStack BlockIndiumOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_INDIUM_ORE, Count);
-//    }
-//    public static ItemStack BlockLeadOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_LEAD_ORE, Count);
-//    }
-//    public static ItemStack BlockMagnesiumOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_MAGNESIUM_ORE, Count);
-//    }
-//    public static ItemStack BlockNickelOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_NICKEL_ORE, Count);
-//    }
-//    public static ItemStack BlockSilverOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_SILVER_ORE, Count);
-//    }
-//    public static ItemStack BlockTinOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_TIN_ORE, Count);
-//    }
-//    public static ItemStack BlockTitaniumOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_TITANIUM_ORE, Count);
-//    }
-//    public static ItemStack BlockZincOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_ZINC_ORE, Count);
-//    }
-//    public static ItemStack BlockZirconiumOre(int Count)
-//    {
-//        return new ItemStack(ModBlocks.BLOCK_ZIRCONIUM_ORE, Count);
-//    }

@@ -28,12 +28,26 @@ public class ModBlocks
     public static final BlockNetherStar8 BLOCK_NETHER_STAR_8 = new BlockNetherStar8();
     public static final BlockConnectedGlass BLOCK_CONNECTED_GLASS = new BlockConnectedGlass();
 
+    public static final BlockBismuthOre BLOCK_BISMUTH_ORE = new BlockBismuthOre();
+    public static final BlockChromiumOre BLOCK_CHROMIUM_ORE = new BlockChromiumOre();
+    public static final BlockCobaltOre BLOCK_COBALT_ORE = new BlockCobaltOre();
+    public static final BlockCopperOre BLOCK_COPPER_ORE = new BlockCopperOre();
+    public static final BlockGalliumOre BLOCK_GALLIUM_ORE = new BlockGalliumOre();
+    public static final BlockIndiumOre BLOCK_INDIUM_ORE = new BlockIndiumOre();
+    public static final BlockLeadOre BLOCK_LEAD_ORE = new BlockLeadOre();
+    public static final BlockNickelOre BLOCK_NICKEL_ORE = new BlockNickelOre();
+    public static final BlockSilverOre BLOCK_SILVER_ORE = new BlockSilverOre();
+    public static final BlockTinOre BLOCK_TIN_ORE = new BlockTinOre();
+    public static final BlockTitaniumOre BLOCK_TITANIUM_ORE = new BlockTitaniumOre();
+    public static final BlockZincOre BLOCK_ZINC_ORE = new BlockZincOre();
+    public static final BlockZirconiumOre BLOCK_ZIRCONIUM_ORE = new BlockZirconiumOre();
+    public static final BlockMagnesiumOre BLOCK_MAGNESIUM_ORE = new BlockMagnesiumOre();
+
 
 
     public static void init()
     {
 
-        //Todo Work on ore to make the mod better Disabled them for now till get a better Config System
 //         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_ZINC_ORE, 0, BlockZincOre.getName(), OreDictionaryNames.BLOCK_ZINC_ORE, ItemStacks.BlockZincOre(1));
 //         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_ZIRCONIUM_ORE, 0, BlockZirconiumOre.getName(), OreDictionaryNames.BLOCK_ZIRCONIUM_ORE, ItemStacks.BlockZirconiumOre(1));
 //         RegisterHelper.RegisterBlockWithOreDictionary(BLOCK_TITANIUM_ORE, 0, BlockTitaniumOre.getName(), OreDictionaryNames.BLOCK_TITANIUM_ORE, ItemStacks.BlockTitaniumOre(1));
@@ -65,17 +79,3 @@ public class ModBlocks
     }
 }
 
-//    public static final BlockBismuthOre BLOCK_BISMUTH_ORE = new BlockBismuthOre();
-//    public static final BlockChromiumOre BLOCK_CHROMIUM_ORE = new BlockChromiumOre();
-//    public static final BlockCobaltOre BLOCK_COBALT_ORE = new BlockCobaltOre();
-//    public static final BlockCopperOre BLOCK_COPPER_ORE = new BlockCopperOre();
-//    public static final BlockGalliumOre BLOCK_GALLIUM_ORE = new BlockGalliumOre();
-//    public static final BlockIndiumOre BLOCK_INDIUM_ORE = new BlockIndiumOre();
-//    public static final BlockLeadOre BLOCK_LEAD_ORE = new BlockLeadOre();
-//    public static final BlockNickelOre BLOCK_NICKEL_ORE = new BlockNickelOre();
-//    public static final BlockSilverOre BLOCK_SILVER_ORE = new BlockSilverOre();
-//    public static final BlockTinOre BLOCK_TIN_ORE = new BlockTinOre();
-//    public static final BlockTitaniumOre BLOCK_TITANIUM_ORE = new BlockTitaniumOre();
-//    public static final BlockZincOre BLOCK_ZINC_ORE = new BlockZincOre();
-//    public static final BlockZirconiumOre BLOCK_ZIRCONIUM_ORE = new BlockZirconiumOre();
-//    public static final BlockMagnesiumOre BLOCK_MAGNESIUM_ORE = new BlockMagnesiumOre();
