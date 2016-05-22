@@ -22,5 +22,10 @@ public class Tab
         {
             return LangHelper.TAB.translateMessage("YarmTab");
         }
+        @Override
+        public boolean hasSearchBar() {
+            return true;
+        }
     };
+
 }

@@ -1,6 +1,5 @@
 package com.unrealdinnerbone.yarm;
 
-import com.unrealdinnerbone.yarm.Events.Events;
 import com.unrealdinnerbone.yarm.config.ConfigManger;
 import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.proxy.*;
@@ -10,7 +9,15 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.*;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MC_VERSION, guiFactory = Reference.GUI_FACTORY_CLASS, canBeDeactivated = true, updateJSON = Reference.MOD_UPDATE_JSON_URL)
+@Mod
+(
+        modid = Reference.MOD_ID,
+        name = Reference.MOD_NAME,
+        version = Reference.VERSION,
+        acceptedMinecraftVersions = Reference.MC_VERSION,
+        guiFactory = Reference.GUI_FACTORY_CLASS,
+        updateJSON = Reference.MOD_UPDATE_JSON_URL
+)
 public class yarm {
 
     @Mod.Instance(Reference.MOD_ID)
@@ -34,7 +41,6 @@ public class yarm {
         ClientProxy.Int(Event);
         CommonProxy.Int(Event);
         ServerProxy.Int(Event);
-        Events.init();
     }
     @Mod.EventHandler
     public static void PostInit(FMLPostInitializationEvent PostEvent)

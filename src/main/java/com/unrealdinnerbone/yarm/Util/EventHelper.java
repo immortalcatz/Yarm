@@ -13,10 +13,10 @@ public class EventHelper
 
     public EventHelper()
     {
-        DateCheker();
+        DateChecker();
     }
 
-    public static void DateCheker()
+    public static void DateChecker()
     {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());

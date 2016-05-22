@@ -4,7 +4,11 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
-1.9-4.0.0:
+1.9.4-4.1.0:
+	* ADDED BOOKSHELF AS A DEPEDNCE
+    * TEMP REMOVED ORE
+    * BROKE ORE DIC	
+1.9.4-4.0.0:
 	* Updated TO 1.9.4 BETA RELISE DID NOT TEST
 	
 1.9-3.9.0-Beta:

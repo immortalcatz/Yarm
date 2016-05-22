@@ -2,6 +2,7 @@ package com.unrealdinnerbone.yarm.proxy;
 
 import com.unrealdinnerbone.yarm.Achievements.Achievements;
 import com.unrealdinnerbone.yarm.Achievements.AchievementsHandler;
+import com.unrealdinnerbone.yarm.Events.Events;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.World.ModWorldGen;
 import com.unrealdinnerbone.yarm.init.*;
@@ -38,6 +39,7 @@ public abstract class CommonProxy implements IProxy
         AchievementsHandler.RegisterPage();
         BannerMaker.initCraftingBanners();
         NetworkRegistry.INSTANCE.registerGuiHandler(yarm.instance, new GUIHandler());
+        Events.init();
 
     }
     public static void PostInt(FMLPostInitializationEvent PostEvent)

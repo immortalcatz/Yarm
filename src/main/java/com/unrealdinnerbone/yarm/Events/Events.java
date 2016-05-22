@@ -1,17 +1,40 @@
 package com.unrealdinnerbone.yarm.Events;
 
-import com.unrealdinnerbone.yarm.Util.*;
+import com.mojang.authlib.minecraft.MinecraftProfileTexture;
+import com.unrealdinnerbone.yarm.Util.CharHelper;
+import com.unrealdinnerbone.yarm.Util.ItemStacks;
+import com.unrealdinnerbone.yarm.Util.OpChecker;
+import com.unrealdinnerbone.yarm.Util.UUIDHelper;
 import com.unrealdinnerbone.yarm.config.OtherConfig;
+import net.darkhax.bookshelf.client.ProxyClient;
+import net.darkhax.bookshelf.client.RenderUtils;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.passive.EntityVillager;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.ServerChatEvent;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+import java.util.UUID;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+
 public class Events {
+
+    private static final ExecutorService THREAD_POOL = new ThreadPoolExecutor(0, 2, 1L, TimeUnit.MINUTES, new LinkedBlockingQueue());
+
+    private static final ResourceLocation CAPE_UNREALDINNERBONE = new ResourceLocation("yarm", "textures/entity/player/cape_UnRealDinnerbone.png");
+    private static final ResourceLocation ELYTRA_UNREALDINNERBONE = new ResourceLocation("yarm", "textures/entity/player/elytra_UnRealDinnerbone.png");
+
 
     public static void init() {
 
@@ -46,5 +69,50 @@ public class Events {
                 }
             }
         }
+    }
+
+    @SubscribeEvent
+    public void entityJoinWorld (EntityJoinWorldEvent event) {
+
+        if (event.getEntity() instanceof AbstractClientPlayer) {
+
+            final AbstractClientPlayer player = (AbstractClientPlayer) event.getEntity();
+            final UUID id = player.getUniqueID();
+
+            // Darkhax
+            if (id.toString().equals(UUIDHelper.UnRealDinnerbone)) {
+                makePlayerFancy(player, CAPE_UNREALDINNERBONE, ELYTRA_UNREALDINNERBONE);
+            }
+                // Syco
+
+        }
+    }
+    private static void makePlayerFancy (final AbstractClientPlayer player, final ResourceLocation cape, final ResourceLocation elytra) {
+
+        THREAD_POOL.submit(new Runnable() {
+
+            @Override
+            public void run () {
+
+                try {
+
+                    Thread.sleep(100);
+                }
+                catch (final InterruptedException e) {
+
+                    return;
+                }
+
+                Minecraft.getMinecraft().addScheduledTask(new Runnable() {
+
+                    @Override
+                    public void run () {
+
+                        RenderUtils.setPlayerTexture(MinecraftProfileTexture.Type.CAPE, player, cape);
+                        RenderUtils.setPlayerTexture(MinecraftProfileTexture.Type.ELYTRA, player, elytra);
+                    }
+                });
+            }
+        });
     }
 }
