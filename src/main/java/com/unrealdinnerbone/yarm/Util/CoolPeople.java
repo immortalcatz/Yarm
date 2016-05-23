@@ -11,6 +11,7 @@ public class CoolPeople
 
         CoolPeople.add(UUIDHelper.iChun);
         CoolPeople.add(UUIDHelper.UnRealDinnerbone);
+        CoolPeople.add(UUIDHelper.Miniman182);
         CoolPeople.add(UUIDHelper.Manmaed);
         CoolPeople.add(UUIDHelper.JohnSmith0508);
         CoolPeople.add(UUIDHelper.Amadornes);

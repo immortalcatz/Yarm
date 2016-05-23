@@ -1,8 +1,8 @@
 package com.unrealdinnerbone.yarm.config;
 
-import com.unrealdinnerbone.yarm.Util.CharHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import com.unrealdinnerbone.yarm.client.gui.ModGuiConfig;
+import net.darkhax.bookshelf.lib.VanillaColor;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -27,8 +27,8 @@ public class ConfigManger
         OtherConfig.IronAppleGivesPositiveEffects = configuration.getBoolean("Iron Apple Positive Effects", ModGuiConfig.General, true, "Does the iron apple give that player positive effects when it is eaten");
         OtherConfig.IronAppleGivesNegativesEffects = configuration.getBoolean("Iron Apple Gives Negative Effects", ModGuiConfig.General, true, "Does the iron apple give that player negative effects when it is eaten");
         OtherConfig.CraftableNotchApples = configuration.getBoolean("Craftable Notch Apples", ModGuiConfig.General, true, "Can you craft notch apples?");
-        OtherConfig.DoLoging = configuration.getBoolean("Do Logging", ModGuiConfig.General, true, CharHelper.RED + "WARRING WILL TURN OF ALL YARM LOGS");
-        OtherConfig.VillgersDropEmeralds = configuration.getBoolean("Villager drop emeralds", ModGuiConfig.General, true, CharHelper.GREEN + "Do villgers drop emerlads when they die");
+        OtherConfig.DoLoging = configuration.getBoolean("Do Logging", ModGuiConfig.General, true, "WARRING WILL TURN OF ALL YARM LOGS");
+        OtherConfig.VillgersDropEmeralds = configuration.getBoolean("Villager drop emeralds", ModGuiConfig.General, true, "Do villgers drop emerlads when they die");
 
         //OreGen
         configuration.setCategoryLanguageKey(ModGuiConfig.WorldGen, "config.worldgen");

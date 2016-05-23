@@ -13,5 +13,6 @@ public class Reference
     public static final String MOD_UPDATE_JSON_URL = "http://mc.unrealdinnerbone.x10.bz/Yarm/Updater.json";
 
     public static final String RE_PREFIX = MOD_ID.toLowerCase() + ":";
+    public static final String RE_PREFIX_ = MOD_ID.toLowerCase() + "_";
     public static final String MOD_DISPLAY_NAME_WITH_VERSION = MOD_ID.toUpperCase() + VERSION;
 }

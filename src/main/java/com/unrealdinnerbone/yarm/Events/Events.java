@@ -1,13 +1,12 @@
 package com.unrealdinnerbone.yarm.Events;
 
 import com.mojang.authlib.minecraft.MinecraftProfileTexture;
-import com.unrealdinnerbone.yarm.Util.CharHelper;
 import com.unrealdinnerbone.yarm.Util.ItemStacks;
 import com.unrealdinnerbone.yarm.Util.OpChecker;
 import com.unrealdinnerbone.yarm.Util.UUIDHelper;
 import com.unrealdinnerbone.yarm.config.OtherConfig;
-import net.darkhax.bookshelf.client.ProxyClient;
 import net.darkhax.bookshelf.client.RenderUtils;
+import net.darkhax.bookshelf.lib.VanillaColor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.entity.item.EntityItem;
@@ -51,7 +50,7 @@ public class Events {
             String msg = event.getMessage();
             if (UUID.equals(UUIDHelper.UnRealDinnerbone)) {
                 event.setCanceled(true);
-                OpChecker.sendChatMessageServerWide(new TextComponentString(CharHelper.BLUE + "<" + event.getUsername() + "™" + "> " + CharHelper.WHITE + msg));
+                OpChecker.sendChatMessageServerWide(new TextComponentString( "<" + event.getUsername() + "™" + "> " + VanillaColor.WHITE + msg));
             }else
             {
 
@@ -81,17 +80,18 @@ public class Events {
             final AbstractClientPlayer player = (AbstractClientPlayer) event.getEntity();
             final UUID id = player.getUniqueID();
 
-            // Darkhax
-            if (id.toString().equals(UUIDHelper.UnRealDinnerbone)) {
+            if (id.toString().equals(UUIDHelper.UnRealDinnerbone))
+            {
                 makePlayerFancy(player, CAPE_UNREALDINNERBONE, ELYTRA_UNREALDINNERBONE);
+            }else
+            if (id.toString().equals(UUIDHelper.Manmaed))
+            {
+                makePlayerFancy(player, CAPE_MANMAED, ELYTRA_MANMAED);
+            }else
+            if (id.toString().equals(UUIDHelper.Miniman182))
+            {
+                makePlayerFancy(player, CAPE_MANMAED, ELYTRA_MANMAED);
             }
-                // Syco
-				else if (id.toString().equals("2eebcb1a-f63e-4a80-b380-801a10f88d4e")) {
-                makePlayerFancy(player, CAPE_MANMAED, ELYTRA_MANMAED);
-				}
-				else if (id.toString().equals("0ed61b61-c2b3-4d3d-b30f-9796a302d82b")) {
-                makePlayerFancy(player, CAPE_MANMAED, ELYTRA_MANMAED);
-				}
 
         }
     }

@@ -1,8 +1,8 @@
 package com.unrealdinnerbone.yarm.client.gui;
 
-import com.unrealdinnerbone.yarm.Util.CharHelper;
 import com.unrealdinnerbone.yarm.config.ConfigManger;
 import com.unrealdinnerbone.yarm.Util.Reference;
+import net.darkhax.bookshelf.lib.VanillaColor;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.fml.client.config.GuiConfig;
@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 public class ModGuiConfig extends GuiConfig
 {
-    public static String WorldGen = CharHelper.BLUE + "worldgen";
+    public static String WorldGen = "worldgen";
     public static String General = "general";
 
     public ModGuiConfig(GuiScreen parentScreen) {

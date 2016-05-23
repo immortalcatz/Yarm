@@ -63,10 +63,10 @@ repositories
 
 dependencies
 {
-// deobfCompile "MCMultiPart:MCMultiPart:${mcmutipart_version}:universal"
+   deobfCompile "MCMultiPart:MCMultiPart:${mcmutipart_version}:universal"
    deobfCompile "mcp.mobius.waila:Waila:${waila_version}_${minecraft_version}"
    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
-   compile "net.darkhax.bookshelf:Bookshelf:${minecraft_version}-${bookshelf_version}"
+   deobfcompile "net.darkhax.bookshelf:Bookshelf:${minecraft_version}-${bookshelf_version}"
 }
 
 processResources

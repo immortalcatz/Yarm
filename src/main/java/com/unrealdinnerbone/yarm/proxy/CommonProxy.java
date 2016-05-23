@@ -7,11 +7,12 @@ import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.World.ModWorldGen;
 import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.init.Recpies.BannerMaker;
+import com.unrealdinnerbone.yarm.init.Recpies.ShadedRecipes;
 import com.unrealdinnerbone.yarm.init.Recpies.ShaplessRecpices;
-import com.unrealdinnerbone.yarm.init.Recpies.ShpaedRecpices;
 import com.unrealdinnerbone.yarm.init.Recpies.SmeltingRecpices;
 import com.unrealdinnerbone.yarm.client.gui.GUIHandler;
 import com.unrealdinnerbone.yarm.yarm;
+import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -31,7 +32,7 @@ public abstract class CommonProxy implements IProxy
     public static void Int(FMLInitializationEvent Event)
     {
         ModWorldGen WorldGen = new ModWorldGen();
-        ShpaedRecpices.init();
+        ShadedRecipes.init();
         SmeltingRecpices.init();
         ShaplessRecpices.init();
         GameRegistry.registerWorldGenerator(WorldGen, 1);
