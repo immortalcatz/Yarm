@@ -4,6 +4,10 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
+1.9.4-4.2.0:
+	* Add Things
+    * Remved Color form commands temp as i broke something 
+	* MORE CODE MOVING TO BOOKSHELF
 1.9.4-4.1.0:
 	* ADDED BOOKSHELF AS A DEPEDNCE
     * TEMP REMOVED ORE
