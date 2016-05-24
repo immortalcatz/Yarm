@@ -1,9 +1,7 @@
 package com.unrealdinnerbone.yarm.Events;
 
 import com.mojang.authlib.minecraft.MinecraftProfileTexture;
-import com.unrealdinnerbone.yarm.Util.ItemStacks;
-import com.unrealdinnerbone.yarm.Util.OpChecker;
-import com.unrealdinnerbone.yarm.Util.UUIDHelper;
+import com.unrealdinnerbone.yarm.Util.*;
 import com.unrealdinnerbone.yarm.config.OtherConfig;
 import net.darkhax.bookshelf.client.RenderUtils;
 import net.darkhax.bookshelf.lib.VanillaColor;
@@ -50,7 +48,7 @@ public class Events {
             String msg = event.getMessage();
             if (UUID.equals(UUIDHelper.UnRealDinnerbone)) {
                 event.setCanceled(true);
-                OpChecker.sendChatMessageServerWide(new TextComponentString( "<" + event.getUsername() + "™" + "> " + VanillaColor.WHITE + msg));
+                OpChecker.sendChatMessageServerWide(new TextComponentString(VanillaColor.BLUE + "<" + event.getUsername() + "™" + "> " + msg));
             }else
             {
 
@@ -80,17 +78,25 @@ public class Events {
             final AbstractClientPlayer player = (AbstractClientPlayer) event.getEntity();
             final UUID id = player.getUniqueID();
 
-            if (id.toString().equals(UUIDHelper.UnRealDinnerbone))
+            if(HolidayUtils.isAprilFirst == false) {
+                LogHelper.info("AAAAAAA");
+                if (id.toString().equals(UUIDHelper.UnRealDinnerbone)) {
+                    makePlayerFancy(player, CAPE_UNREALDINNERBONE, ELYTRA_UNREALDINNERBONE);
+                } else if (id.toString().equals(UUIDHelper.Manmaed)) {
+                    makePlayerFancy(player, CAPE_MANMAED, ELYTRA_MANMAED);
+                } else if (id.toString().equals(UUIDHelper.Miniman182)) {
+                    makePlayerFancy(player, CAPE_MANMAED, ELYTRA_MANMAED);
+                }
+            }else
+            if(HolidayUtils.isAprilFirst == true)
             {
+                if (id.toString().equals(UUIDHelper.UnRealDinnerbone)) {
+                makePlayerFancy(player, CAPE_MANMAED, CAPE_MANMAED);
+            } else if (id.toString().equals(UUIDHelper.Manmaed)) {
                 makePlayerFancy(player, CAPE_UNREALDINNERBONE, ELYTRA_UNREALDINNERBONE);
-            }else
-            if (id.toString().equals(UUIDHelper.Manmaed))
-            {
-                makePlayerFancy(player, CAPE_MANMAED, ELYTRA_MANMAED);
-            }else
-            if (id.toString().equals(UUIDHelper.Miniman182))
-            {
-                makePlayerFancy(player, CAPE_MANMAED, ELYTRA_MANMAED);
+            } else if (id.toString().equals(UUIDHelper.Miniman182)) {
+                makePlayerFancy(player, CAPE_UNREALDINNERBONE, ELYTRA_UNREALDINNERBONE);
+            }
             }
 
         }
