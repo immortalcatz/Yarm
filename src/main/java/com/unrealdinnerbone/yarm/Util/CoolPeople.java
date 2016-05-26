@@ -17,7 +17,6 @@ public class CoolPeople
         CoolPeople.add(UUIDHelper.Amadornes);
         CoolPeople.add(UUIDHelper.Fireball1725);
         CoolPeople.add(UUIDHelper.Direwolf20);
-        CoolPeople.add(UUIDHelper.Soaryn);
         CoolPeople.add(UUIDHelper.FavioP96);
         CoolPeople.add(UUIDHelper.Dmaster8);
         CoolPeople.add(UUIDHelper.Rushmead);

@@ -67,6 +67,7 @@ dependencies
    deobfCompile "mcp.mobius.waila:Waila:${waila_version}_${minecraft_version}"
    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
    deobfCompile "net.darkhax.bookshelf:Bookshelf:${minecraft_version}-${bookshelf_version}"
+   deobfCompile "mcjty.theoneprobe:TheOneProbe:${minecraft_version}-${theoneprobe_version}"
 }
 
 processResources
