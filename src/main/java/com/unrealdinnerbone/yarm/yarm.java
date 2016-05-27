@@ -1,6 +1,7 @@
 package com.unrealdinnerbone.yarm;
 
 import com.unrealdinnerbone.yarm.Util.HolidayUtils;
+import com.unrealdinnerbone.yarm.Util.StatsGetter;
 import com.unrealdinnerbone.yarm.config.ConfigManger;
 import com.unrealdinnerbone.yarm.init.*;
 import com.unrealdinnerbone.yarm.proxy.*;
@@ -31,6 +32,7 @@ public class yarm {
     public static void PreInit(FMLPreInitializationEvent PreEvent)
     {
        HolidayUtils.checkDates();
+        StatsGetter.ReadPepsData();
        ClientProxy.PreInt(PreEvent);
        CommonProxy.PreInt(PreEvent);
        ServerProxy.PreInt(PreEvent);

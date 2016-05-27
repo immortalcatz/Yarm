@@ -51,7 +51,7 @@ public class RegisterHelper
     }
     private static void RegisterOreDictionary(String OreDictionaryName, ItemStack itemStack)
     {
-        OreDictionary.registerOre(OreDictionaryName, itemStack);
+     //   OreDictionary.registerOre(OreDictionaryName, itemStack);
     }
     private static void IntItem(Item item, String name)
     {

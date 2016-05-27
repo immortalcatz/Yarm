@@ -4,6 +4,11 @@ ICONS
     + Added
     ~ BugFix
     ? Something Else
+1.9.4-4.3.0:
+	* Updated Bookshelf to the lastest version
+	+ Custom Capes and Elytra for the devs and a few friends (Works of json and should never need updateing to added people)
+	"*" Maked Bookshelf requrie to load so the game does not crash
+	"*" Fixed the color codes in the game
 1.9.4-4.2.0:
 	* Add Things
     * Remved Color form commands temp as i broke something 
