@@ -3,22 +3,22 @@
 		"playerID": "ae9c317a-cf2e-43c5-9b32-37a6ae83879f",
 		"type": "Dev",
 		"confirmed": true,
-		"elytraTexture": "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.9.4/Files/Players/Elytra/UnRealDinnerbone.png",
-		"capeTexture": "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.9.4/Files/Players/Capes/UnRealDinnerbone.png"
+		"elytraTexture": "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.9.4/Files/People/Elytra/UnRealDinnerbone.png",
+		"capeTexture": "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.9.4/Files/People/Capes/UnRealDinnerbone.png"
 	},
 	"manmaed": {
 		"playerID": "2eebcb1a-f63e-4a80-b380-801a10f88d4e",
 		"type": "Dev",
 		"confirmed": true,
-		"elytraTexture": "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.9.4/Files/Players/Elytra/Manmaed.png",
-		"capeTexture": "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.9.4/Files/Players/Capes/Manmaed.png"
+		"elytraTexture": "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.9.4/Files/People/Elytra/Manmaed.png",
+		"capeTexture": "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.9.4/Files/People/Capes/Manmaed.png"
 	},
 	,
 	"miniman182": {
 		"playerID": "0ed61b61-c2b3-4d3d-b30f-9796a302d82b",
 		"type": "Dev",
 		"confirmed": true,
-		"elytraTexture": "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.9.4/Files/Players/Elytra/Miniman182.png",
-		"capeTexture": "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.9.4/Files/Players/Capes/Miniman182.png"
+		"elytraTexture": "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.9.4/Files/People/Elytra/Miniman182.png",
+		"capeTexture": "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.9.4/Files/People/Capes/Miniman182.png"
 	}
 }

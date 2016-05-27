@@ -99,11 +99,13 @@ public class StatsGetter {
         catch (final MalformedURLException e) {
 
             e.printStackTrace();
+            LogHelper.info(e.getCause());
         }
 
         catch (final IOException e) {
 
             e.printStackTrace();
+            LogHelper.info(e.getCause());
         }
     }
 
