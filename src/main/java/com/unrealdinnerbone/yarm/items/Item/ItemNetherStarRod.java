@@ -2,7 +2,7 @@ package com.unrealdinnerbone.yarm.items.Item;
 
 import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarm;
 import com.unrealdinnerbone.yarm.Util.Reference;
-import net.darkhax.bookshelf.lib.util.Utilities;
+import net.darkhax.bookshelf.lib.util.RenderUtils;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
@@ -38,7 +38,7 @@ public class ItemNetherStarRod extends ItemYarm {
         double z = 0.01;
         while(i < 2)
         {
-            Utilities.spawnParticleRing(world, EnumParticleTypes.FLAME, entityPlayer.chasingPosX, entityPlayer.posY + i, entityPlayer.posZ, 0.01, 0.01, 0.01, 0.01);
+            RenderUtils.spawnParticleRing(world, EnumParticleTypes.FLAME, entityPlayer.chasingPosX, entityPlayer.posY + i, entityPlayer.posZ, 0.01, 0.01, 0.01, 0.01);
             i = i + z;
 
         }

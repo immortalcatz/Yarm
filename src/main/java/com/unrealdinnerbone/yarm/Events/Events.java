@@ -3,8 +3,8 @@ package com.unrealdinnerbone.yarm.Events;
 import com.mojang.authlib.minecraft.MinecraftProfileTexture;
 import com.unrealdinnerbone.yarm.Util.*;
 import com.unrealdinnerbone.yarm.config.OtherConfig;
-import net.darkhax.bookshelf.client.RenderUtils;
 import net.darkhax.bookshelf.lib.VanillaColor;
+import net.darkhax.bookshelf.lib.util.RenderUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.entity.item.EntityItem;
@@ -18,7 +18,6 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -76,33 +75,16 @@ public class Events {
         if (event.getEntity() instanceof AbstractClientPlayer) {
 
             final AbstractClientPlayer player = (AbstractClientPlayer) event.getEntity();
-            final UUID id = player.getUniqueID();
+            final StatsGetter.SupporterData data = StatsGetter.getSupporterData(player);
 
-            if(HolidayUtils.isAprilFirst == false) {
-                LogHelper.info("AAAAAAA");
-                if (id.toString().equals(UUIDHelper.UnRealDinnerbone)) {
-                    makePlayerFancy(player, CAPE_UNREALDINNERBONE, ELYTRA_UNREALDINNERBONE);
-                } else if (id.toString().equals(UUIDHelper.Manmaed)) {
-                    makePlayerFancy(player, CAPE_MANMAED, ELYTRA_MANMAED);
-                } else if (id.toString().equals(UUIDHelper.Miniman182)) {
-                    makePlayerFancy(player, CAPE_MANMAED, ELYTRA_MANMAED);
-                }
-            }else
-            if(HolidayUtils.isAprilFirst == true)
-            {
-                if (id.toString().equals(UUIDHelper.UnRealDinnerbone)) {
-                makePlayerFancy(player, CAPE_MANMAED, CAPE_MANMAED);
-            } else if (id.toString().equals(UUIDHelper.Manmaed)) {
-                makePlayerFancy(player, CAPE_UNREALDINNERBONE, ELYTRA_UNREALDINNERBONE);
-            } else if (id.toString().equals(UUIDHelper.Miniman182)) {
-                makePlayerFancy(player, CAPE_UNREALDINNERBONE, ELYTRA_UNREALDINNERBONE);
-            }
-            }
-
+            if (data != null)
+                makePlayerFancy(player, data.getCapeTexture(), data.getElytraTexture());
         }
     }
     private static void makePlayerFancy (final AbstractClientPlayer player, final ResourceLocation cape, final ResourceLocation elytra) {
 
+        System.out.println(cape.toString());
+        System.out.println(elytra.toString());
         THREAD_POOL.submit(new Runnable() {
 
             @Override

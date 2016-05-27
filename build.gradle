@@ -21,14 +21,12 @@ buildscript
     {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
         classpath "gradle.plugin.com.matthewprenger:CurseGradle:1.0.7"
-		classpath 'ModsIOUpload:ModsIOUpload:+'
     }
 }
 
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'maven'
 apply plugin: "com.matthewprenger.cursegradle"
-apply plugin: 'modsio'
 
 version = "${mod_version}"
 group= "com.unrealdinnerbone.yarm"
@@ -73,7 +71,6 @@ dependencies
    deobfCompile "mcp.mobius.waila:Waila:${waila_version}_${minecraft_version}"
    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
    deobfCompile "net.darkhax.bookshelf:Bookshelf:${minecraft_version}-${bookshelf_version}"
-   deobfCompile "mcjty.theoneprobe:TheOneProbe:${minecraft_version}-${theoneprobe_version}"
 }
 
 processResources
@@ -108,13 +105,4 @@ curseforge {
       displayName = "Yarm-$project.version"
     }
   }
-}
-uploadToModsIO {
-	modId = "${modid_project_id}"
-	minecraft = "${minecraft_version}"
-	changelog = file('changelog.txt')
-	tag = ${release_type}
-	apiKey = ${modsio_api_key}
-	artifact = jar.archivePath
-	current = false;
 }

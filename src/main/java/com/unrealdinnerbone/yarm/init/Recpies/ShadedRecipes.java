@@ -1,6 +1,5 @@
 package com.unrealdinnerbone.yarm.init.Recpies;
 
-import com.unrealdinnerbone.yarm.config.ConfigManger;
 import com.unrealdinnerbone.yarm.Util.ItemStacks;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.OreDictionaryNames;
@@ -128,6 +127,11 @@ public class ShadedRecipes {
                     "ABA",
                     "AAA",
                     'A', Blocks.GOLD_BLOCK, 'B', Items.APPLE);
+        GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 4),
+                "   ",
+                " A ",
+                " A ",
+                'A', Blocks.WOODEN_PRESSURE_PLATE);
         }
         //Golden Apple
         LogHelper.info("Loaded Shaped Recipes");
