@@ -61,7 +61,7 @@ repositories
     maven
     {
         name = "BookShelf Repo"
-        url  = "http://maven.rubbix.net"
+        url  = "http://maven.epoxide.xyz/"
     }
 }
 

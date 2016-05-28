@@ -18,22 +18,21 @@ import net.minecraft.util.ResourceLocation;
 
 /**
  * TAKEN FOR BOOKSHELF MOD
- *
+ * https://github.com/Darkhax-Minecraft/Bookshelf/blob/master/src/main/java/net/darkhax/bookshelf/handler/SupporterHandler.java
  * This class is used to handle my supporters data. This class is not intended for other mod
  * authors to access in their code. If you want, you can copy and modify this code to add
  * support for your own supporters and rewards.
  */
 public class StatsGetter {
 
-    private static final ResourceLocation MISSING_CAPE = new ResourceLocation(Reference.RE_PREFIX_, "textures/entity/player/missing_cape.png");
-    private static final ResourceLocation MISSING_ELYTRA = new ResourceLocation(Reference.RE_PREFIX_, "textures/entity/player/missing_elytra.png");
+
+    private static final ResourceLocation MISSING_CAPE = new ResourceLocation(Reference.MOD_ID, "textures/entity/player/cape_error.png");
+    private static final ResourceLocation MISSING_ELYTRA = new ResourceLocation(Reference.MOD_ID, "textures/entity/player/elytra_error.png");
 
     private static final List<SupporterData> DATA = new ArrayList<SupporterData>();
     private static final String SUPPORTER_URL = "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/" + Reference.MC_VERSION + "/Files/People/People.json";
 
     public static void ReadPepsData() {
-
-        LogHelper.info(">>>>>>>>>>>>  READING <<<<<<<<<<<<<");
 
         try {
 
@@ -226,7 +225,7 @@ public class StatsGetter {
          */
         public ResourceLocation getCapeTexture () {
 
-            return this.CAPE_TEXTURE != null && !this.CAPE_TEXTURE.isEmpty() ? RenderUtils.downloadResourceLocation(this.CAPE_TEXTURE, new ResourceLocation("bookshelf", "cape/" + this.PLAYER_ID.toString()), MISSING_CAPE, null) : null;
+            return this.CAPE_TEXTURE != null && !this.CAPE_TEXTURE.isEmpty() ? RenderUtils.downloadResourceLocation(this.CAPE_TEXTURE, new ResourceLocation(Reference.MOD_ID, "cape/" + this.PLAYER_ID.toString()), MISSING_CAPE, null) : null;
         }
 
         /**
@@ -237,7 +236,7 @@ public class StatsGetter {
          */
         public ResourceLocation getElytraTexture () {
 
-            return this.ELYTRA_TEXTURE != null && !this.ELYTRA_TEXTURE.isEmpty() ? RenderUtils.downloadResourceLocation(this.ELYTRA_TEXTURE, new ResourceLocation("bookshelf", "elytra/" + this.getPlayerID().toString()), MISSING_ELYTRA, null) : null;
+            return this.ELYTRA_TEXTURE != null && !this.ELYTRA_TEXTURE.isEmpty() ? RenderUtils.downloadResourceLocation(this.ELYTRA_TEXTURE, new ResourceLocation(Reference.MOD_ID, "elytra/" + this.getPlayerID().toString()), MISSING_ELYTRA, null) : null;
         }
 
         /**
