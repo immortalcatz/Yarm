@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.Events;
 
+import com.unrealdinnerbone.yarm.Util.StatsGetter.SupporterData;
 import com.mojang.authlib.minecraft.MinecraftProfileTexture;
 import com.unrealdinnerbone.yarm.Util.*;
 import com.unrealdinnerbone.yarm.config.OtherConfig;
@@ -75,7 +76,7 @@ public class Events {
         if (event.getEntity() instanceof AbstractClientPlayer) {
 
             final AbstractClientPlayer player = (AbstractClientPlayer) event.getEntity();
-            final StatsGetter.SupporterData data = StatsGetter.getSupporterData(player);
+            final SupporterData data = StatsGetter.getSupporterData(player);
 
             if (data != null)
                 makePlayerFancy(player, data.getCapeTexture(), data.getElytraTexture());
