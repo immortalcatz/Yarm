@@ -5,6 +5,8 @@ import com.unrealdinnerbone.yarm.config.ConfigManger;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import com.unrealdinnerbone.yarm.config.OtherConfig;
+import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarm;
+import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarmFood;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemFood;
@@ -14,7 +16,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ItemFoodIronApple extends ItemFood {
+public class ItemFoodIronApple extends ItemYarmFood {
 
     private static String name = "ItemFoodIronApple";
 
@@ -25,7 +27,8 @@ public class ItemFoodIronApple extends ItemFood {
         this.setAlwaysEdible();
         this.setCreativeTab(Tab.Yarm_Tab);
     }
-        @Override
+
+    @Override
         protected void onFoodEaten(ItemStack par1ItemStack, World world, EntityPlayer player)
     {
 

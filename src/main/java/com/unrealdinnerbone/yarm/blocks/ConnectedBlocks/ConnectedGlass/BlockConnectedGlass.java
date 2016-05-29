@@ -1,38 +1,31 @@
-package com.unrealdinnerbone.yarm.blocks.ConnectedBlocks;
+package com.unrealdinnerbone.yarm.blocks.ConnectedBlocks.ConnectedGlass;
 
 import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import com.unrealdinnerbone.yarm.blocks.BlockYarm;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+
+import static com.unrealdinnerbone.yarm.blocks.ConnectedBlocks.YarmBlockConnectedBlock.*;
 
 public class BlockConnectedGlass extends BlockYarm
 {
 
-    // These are the properties used for determining whether or not a side is connected. They
-    // do NOT take up block IDs, they are unlisted properties. If you plan to create multiple
-    // blocks that can have connected faces and plan on giving them different classes, I would
-    // recommend putting them in a centralized class.
-    public static final PropertyBool CONNECTED_DOWN = PropertyBool.create("connected_down");
-    public static final PropertyBool CONNECTED_UP = PropertyBool.create("connected_up");
-    public static final PropertyBool CONNECTED_NORTH = PropertyBool.create("connected_north");
-    public static final PropertyBool CONNECTED_SOUTH = PropertyBool.create("connected_south");
-    public static final PropertyBool CONNECTED_WEST = PropertyBool.create("connected_west");
-    public static final PropertyBool CONNECTED_EAST = PropertyBool.create("connected_east");
+    private static String name = "BlockConnectedGlass";
 
     public BlockConnectedGlass() {
 
         super(Material.ROCK);
-        this.setUnlocalizedName(Reference.RE_PREFIX + "BlockConnectedGlass");
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
         this.setCreativeTab(Tab.Yarm_Tab);
 
         // By default none of the sides are connected.
@@ -40,21 +33,15 @@ public class BlockConnectedGlass extends BlockYarm
 
     }
 
-    @Override
-    public boolean isOpaqueCube(IBlockState p_isOpaqueCube_1_) {
-        return true;
-    }
+    @Override public boolean isBeaconBase (World worldObj, int x, int y, int z, int beaconX, int beaconY, int beaconZ) {
 
+        return false;
+    }
 
     @Override
     @SideOnly(Side.CLIENT)
     public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.TRANSLUCENT;
-    }
-
-    @Override
-    public boolean isFullCube(IBlockState p_isFullCube_1_) {
-        return false;
     }
 
 
@@ -69,9 +56,6 @@ public class BlockConnectedGlass extends BlockYarm
     @Override
     protected BlockStateContainer createBlockState () {
 
-        // This returns the connected properties as part of the BlockStateContainer. This is
-        // used all over the place in vanilla to represent properties without having them take
-        // up metadata values.
         return new BlockStateContainer(this, new IProperty[] { CONNECTED_DOWN, CONNECTED_UP, CONNECTED_NORTH, CONNECTED_SOUTH, CONNECTED_WEST, CONNECTED_EAST });
     }
 
@@ -97,5 +81,10 @@ public class BlockConnectedGlass extends BlockYarm
 
         final IBlockState state = world.getBlockState(pos.offset(side));
         return (state == null) ? false : state.getBlock() == this;
+    }
+
+    public static String getName()
+    {
+        return name;
     }
 }

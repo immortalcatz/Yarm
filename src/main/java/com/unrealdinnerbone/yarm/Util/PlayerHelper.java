@@ -1,7 +1,8 @@
 package com.unrealdinnerbone.yarm.Util;
 
+import com.mojang.authlib.minecraft.MinecraftProfileTexture.Type;
+
 import com.mojang.authlib.minecraft.MinecraftProfileTexture;
-import net.darkhax.bookshelf.lib.util.RenderUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.util.ResourceLocation;
@@ -17,8 +18,6 @@ public class PlayerHelper
 
     public static void makePlayerFancy (final AbstractClientPlayer player, final ResourceLocation cape, final ResourceLocation elytra) {
 
-        System.out.println(cape.toString());
-        System.out.println(elytra.toString());
         THREAD_POOL.submit(new Runnable() {
 
             @Override
@@ -38,11 +37,25 @@ public class PlayerHelper
                     @Override
                     public void run () {
 
-                        RenderUtils.setPlayerTexture(MinecraftProfileTexture.Type.CAPE, player, cape);
-                        RenderUtils.setPlayerTexture(MinecraftProfileTexture.Type.ELYTRA, player, elytra);
+                        changePlayerTexture(MinecraftProfileTexture.Type.CAPE, player, cape);
+                        changePlayerTexture(MinecraftProfileTexture.Type.ELYTRA, player, elytra);
                     }
                 });
             }
         });
     }
+
+    public static boolean changePlayerTexture (Type type, AbstractClientPlayer player, ResourceLocation texture) {
+
+        if (player.hasPlayerInfo())
+        {
+            if(texture != null)
+            {
+                player.getPlayerInfo().playerTextures.put(type, texture);
+            }
+            return true;
+        }
+        return false;
+    }
+
 }

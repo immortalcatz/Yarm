@@ -4,7 +4,8 @@ import net.minecraft.util.text.translation.I18n;
 
 public enum LangHelper {
     TAB("tab"),
-    Achievement("achievement");
+    Achievement("achievement"),
+    Banner("Banner");
 
     private String name;
 

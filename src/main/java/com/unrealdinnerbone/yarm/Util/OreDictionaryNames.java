@@ -1,6 +1,8 @@
 package com.unrealdinnerbone.yarm.Util;
 
-public class OreDictionaryNames 
+import net.minecraftforge.oredict.OreDictionary;
+
+public class OreDictionaryNames
 {
     public final static String Item_UnRealFace = "materialUnRealFace";
     public final static String Item_ManmaedFace = "materialManmaedFace";
@@ -43,6 +45,6 @@ public class OreDictionaryNames
     public final static String Item_Tool_OpSpade = "toolnetherStarSpade";
     public final static String Item_Tool_OpPic = "toolnetherStarPic";
     public final static String Item_Tool_OpHoe = "toolnetherStarHoe";
-
+    public final static String BLOCK_CONNECTED_GLASS = "blockGlass";
 
 }

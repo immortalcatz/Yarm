@@ -3,6 +3,7 @@ package com.unrealdinnerbone.yarm.Util;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -10,65 +11,85 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 
-public class RegisterHelper
-{
+public class RegisterHelper {
 
-    public static void RegisterBlockWithoutOreDictionary(Block block, int meta, String name)
-    {
-        IntBlock(block, name);
-        if(Side.CLIENT.isClient())
-        {
-            RenderBlock(block, meta, name);
-        }
+    public static void RegisterBlock (Block block, int meta, String name) {
 
-    }
-    public static void RegisterBlockWithOreDictionary(Block block, int meta, String name, String OreDictionaryName, ItemStack itemStack)
-    {
-        IntBlock(block, name);
-        RegisterOreDictionary(OreDictionaryName, itemStack);
-        if(Side.CLIENT.isClient())
-        {
-            RenderBlock(block, meta, name);
+        block.setRegistryName(name);
+        GameRegistry.register(block);
+        GameRegistry.register(new ItemBlock(block), block.getRegistryName());
+        if (Side.CLIENT.isClient()) {
+            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), meta, new ModelResourceLocation(Reference.RE_PREFIX + name));
         }
+    }
 
-    }
-    public static void RegisterItemWithOreDictionary(Item item, int meta, String name, String OreDictionaryName, ItemStack itemStack)
-    {
-        IntItem(item, name);
-        RegisterOreDictionary(OreDictionaryName, itemStack);
-        if(Side.CLIENT.isClient())
-        {
-            RenderItem(item, meta, name);
+    public static void RegisterBlock (Block block, String name) {
+
+        block.setRegistryName(name);
+        GameRegistry.register(block);
+        GameRegistry.register(new ItemBlock(block), block.getRegistryName());
+        if (Side.CLIENT.isClient()) {
+            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Reference.RE_PREFIX + name));
         }
     }
-    public static void RegisterItemWithoutOreDictionary(Item item, int meta, String name)
-    {
-        IntItem(item, name);
-        if(Side.CLIENT.isClient())
-        {
-            RenderItem(item, meta, name);
+
+    public static void RegisterBlock (Block block, int meta, String name, String oreDictionaryName) {
+
+        block.setRegistryName(name);
+        GameRegistry.register(block);
+        GameRegistry.register(new ItemBlock(block), block.getRegistryName());
+        if (Side.CLIENT.isClient()) {
+            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), meta, new ModelResourceLocation(Reference.RE_PREFIX + name));
+        }
+        OreDictionary.registerOre(oreDictionaryName, new ItemStack(block, 1, meta));
+    }
+
+    public static void RegisterBlock (Block block, String name, String oreDictionaryName) {
+
+        block.setRegistryName(name);
+        GameRegistry.register(block);
+        GameRegistry.register(new ItemBlock(block), block.getRegistryName());
+        if (Side.CLIENT.isClient()) {
+            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Reference.RE_PREFIX + name));
+        }
+        OreDictionary.registerOre(oreDictionaryName, new ItemStack(block, 1, 0));
+    }
+
+    public static void RegisterItem (Item item, int meta, String name) {
+
+        item.setRegistryName(name);
+        GameRegistry.register(item);
+        if (Side.CLIENT.isClient()) {
+            ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(Reference.RE_PREFIX + name, "inventory"));
         }
     }
-    private static void RegisterOreDictionary(String OreDictionaryName, ItemStack itemStack)
-    {
-     //   OreDictionary.registerOre(OreDictionaryName, itemStack);
+
+    public static void RegisterItem (Item item, String name) {
+
+        item.setRegistryName(name);
+        GameRegistry.register(item);
+        if (Side.CLIENT.isClient()) {
+            ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(Reference.RE_PREFIX + name, "inventory"));
+        }
     }
-    private static void IntItem(Item item, String name)
-    {
-        GameRegistry.registerItem(item, name);
+
+    public static void RegisterItem (Item item, int meta, String name, String oreDictionaryName) {
+
+        item.setRegistryName(name);
+        GameRegistry.register(item);
+        if (Side.CLIENT.isClient()) {
+            ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(Reference.RE_PREFIX + name, "inventory"));
+        }
+        OreDictionary.registerOre(oreDictionaryName, new ItemStack(item, 1, meta));
     }
-    private static void RenderItem(Item item, int meta, String name)
-    {
-        String InventoryName = "inventory";
-        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(Reference.RE_PREFIX + name, InventoryName));
-    }
-    private static void IntBlock(Block block, String name)
-    {
-        GameRegistry.registerBlock(block, name);
-    }
-    @SideOnly(Side.CLIENT)
-    private static void RenderBlock(Block block, int meta, String name)
-    {
-        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), meta, new ModelResourceLocation(Reference.RE_PREFIX + name));
+
+    public static void RegisterItem (Item item, String name, String oreDictionaryName) {
+
+        item.setRegistryName(name);
+        GameRegistry.register(item);
+        if (Side.CLIENT.isClient()) {
+            ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(Reference.RE_PREFIX + name, "inventory"));
+        }
+        OreDictionary.registerOre(oreDictionaryName, new ItemStack(item, 1, 0));
     }
 }

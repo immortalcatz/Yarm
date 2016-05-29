@@ -126,12 +126,18 @@ public class ShadedRecipes {
                     "AAA",
                     "ABA",
                     "AAA",
-                    'A', Blocks.GOLD_BLOCK, 'B', Items.APPLE);
+                    'A', Blocks.GOLD_BLOCK,
+                    'B', Items.APPLE);
         GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 4),
                 "   ",
                 " A ",
                 " A ",
                 'A', Blocks.WOODEN_PRESSURE_PLATE);
+        GameRegistry.addRecipe(new ItemStack(Blocks.STONE, 4),
+                "   ",
+                " A ",
+                " A ",
+                'A', Blocks.STONE_PRESSURE_PLATE);
         }
         //Golden Apple
         LogHelper.info("Loaded Shaped Recipes");

@@ -2,12 +2,14 @@ package com.unrealdinnerbone.yarm.items.Foods;
 
 import com.unrealdinnerbone.yarm.CreativeTab.Tab;
 import com.unrealdinnerbone.yarm.Util.Reference;
+import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarm;
+import com.unrealdinnerbone.yarm.items.ItemHelpers.ItemYarmFood;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 
-/**
- * Created by UnRealDinnerbone on 4/14/2016.
- */
-public class ItemFoodIronCarrot extends ItemFood {
+public class ItemFoodIronCarrot extends ItemYarmFood {
 
     private static String name = "ItemFoodIronCarrot";
 
@@ -18,6 +20,12 @@ public class ItemFoodIronCarrot extends ItemFood {
         this.setAlwaysEdible();
         this.setCreativeTab(Tab.Yarm_Tab);
     }
+
+    @Override
+    protected void onFoodEaten (ItemStack par1ItemStack, World world, EntityPlayer player) {
+
+    }
+
     public static String getName()
     {
         return name;

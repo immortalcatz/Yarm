@@ -12,7 +12,6 @@ import java.util.UUID;
 
 import com.google.gson.stream.JsonReader;
 
-import net.darkhax.bookshelf.lib.util.RenderUtils;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
 
@@ -225,7 +224,7 @@ public class StatsGetter {
          */
         public ResourceLocation getCapeTexture () {
 
-            return this.CAPE_TEXTURE != null && !this.CAPE_TEXTURE.isEmpty() ? RenderUtils.downloadResourceLocation(this.CAPE_TEXTURE, new ResourceLocation(Reference.MOD_ID, "cape/" + this.PLAYER_ID.toString()), MISSING_CAPE, null) : null;
+            return this.CAPE_TEXTURE != null && !this.CAPE_TEXTURE.isEmpty() ? DownloadHelper.downloadResourceLocation(this.CAPE_TEXTURE, new ResourceLocation(Reference.MOD_ID, "cape/" + this.PLAYER_ID.toString()), MISSING_CAPE, null) : null;
         }
 
         /**
@@ -236,7 +235,7 @@ public class StatsGetter {
          */
         public ResourceLocation getElytraTexture () {
 
-            return this.ELYTRA_TEXTURE != null && !this.ELYTRA_TEXTURE.isEmpty() ? RenderUtils.downloadResourceLocation(this.ELYTRA_TEXTURE, new ResourceLocation(Reference.MOD_ID, "elytra/" + this.getPlayerID().toString()), MISSING_ELYTRA, null) : null;
+            return this.ELYTRA_TEXTURE != null && !this.ELYTRA_TEXTURE.isEmpty() ? DownloadHelper.downloadResourceLocation(this.ELYTRA_TEXTURE, new ResourceLocation(Reference.MOD_ID, "elytra/" + this.getPlayerID().toString()), MISSING_ELYTRA, null) : null;
         }
 
         /**

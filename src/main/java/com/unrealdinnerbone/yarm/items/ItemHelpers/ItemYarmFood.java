@@ -14,5 +14,5 @@ public abstract class ItemYarmFood extends ItemFood
         this.setMaxStackSize(64);
     }
 
-    public abstract ItemStack onEaten(ItemStack itemStack, World world, EntityPlayer player);
+    protected abstract void onFoodEaten (ItemStack par1ItemStack, World world, EntityPlayer player);
 }

@@ -2,7 +2,6 @@ package com.unrealdinnerbone.yarm.config;
 
 import com.unrealdinnerbone.yarm.Util.Reference;
 import com.unrealdinnerbone.yarm.client.gui.ModGuiConfig;
-import net.darkhax.bookshelf.lib.VanillaColor;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

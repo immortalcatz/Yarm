@@ -2,7 +2,6 @@ package com.unrealdinnerbone.yarm.client.gui;
 
 import com.unrealdinnerbone.yarm.config.ConfigManger;
 import com.unrealdinnerbone.yarm.Util.Reference;
-import net.darkhax.bookshelf.lib.VanillaColor;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.fml.client.config.GuiConfig;

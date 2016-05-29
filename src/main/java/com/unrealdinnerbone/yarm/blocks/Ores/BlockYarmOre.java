@@ -5,7 +5,7 @@ import com.unrealdinnerbone.yarm.blocks.BlockYarm;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class BlockYarmOre extends BlockYarm
+public abstract class BlockYarmOre extends BlockYarm
 {
     public BlockYarmOre(Material material)
     {

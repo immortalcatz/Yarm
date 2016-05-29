@@ -18,7 +18,8 @@ import net.minecraftforge.fml.common.event.*;
         version = Reference.VERSION,
         acceptedMinecraftVersions = Reference.MC_VERSION,
         guiFactory = Reference.GUI_FACTORY_CLASS,
-        updateJSON = Reference.MOD_UPDATE_JSON_URL
+        updateJSON = Reference.MOD_UPDATE_JSON_URL,
+        dependencies = "required-after:Forge@[12.17.0.1922,)"
 )
 public class yarm {
 
@@ -31,8 +32,9 @@ public class yarm {
     @Mod.EventHandler
     public static void PreInit(FMLPreInitializationEvent PreEvent)
     {
+
        HolidayUtils.checkDates();
-        StatsGetter.ReadPepsData();
+       StatsGetter.ReadPepsData();
        ClientProxy.PreInt(PreEvent);
        CommonProxy.PreInt(PreEvent);
        ServerProxy.PreInt(PreEvent);
