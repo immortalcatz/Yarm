@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.blocks.NetherStarBlocks;
 
+import com.unrealdinnerbone.yarm.Util.LangHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraft.world.World;
 
@@ -17,6 +18,10 @@ public class BlockNetherStar7 extends BlockBaseNetherStar {
         return true;
     }
 
+    @Override
+    public String getLocalizedName() {
+        return LangHelper.Block.translateMessage(name);
+    }
 
     public static String getName()
     {

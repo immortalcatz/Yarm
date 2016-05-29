@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.Util;
+package com.unrealdinnerbone.yarm.core.Util;
 
 import com.mojang.authlib.minecraft.MinecraftProfileTexture.Type;
 

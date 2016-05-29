@@ -1,9 +1,8 @@
 package com.unrealdinnerbone.yarm.blocks.ConnectedBlocks.ConnectedGlass;
 
-import com.unrealdinnerbone.yarm.CreativeTab.Tab;
+import com.unrealdinnerbone.yarm.Util.Tab;
+import com.unrealdinnerbone.yarm.Util.LangHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
-import com.unrealdinnerbone.yarm.blocks.BlockYarm;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -11,20 +10,16 @@ import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import static com.unrealdinnerbone.yarm.blocks.ConnectedBlocks.YarmBlockConnectedBlock.*;
-
-public class BlockConnectedGlass extends BlockYarm
+public class BlockConnectedGlass extends YarmBlockConnectedGlass
 {
 
     private static String name = "BlockConnectedGlass";
 
     public BlockConnectedGlass() {
 
-        super(Material.ROCK);
         this.setUnlocalizedName(Reference.RE_PREFIX + name);
         this.setCreativeTab(Tab.Yarm_Tab);
 
@@ -33,9 +28,9 @@ public class BlockConnectedGlass extends BlockYarm
 
     }
 
-    @Override public boolean isBeaconBase (World worldObj, int x, int y, int z, int beaconX, int beaconY, int beaconZ) {
-
-        return false;
+    @Override
+    public String getLocalizedName() {
+        return LangHelper.Block.translateMessage(name);
     }
 
     @Override
@@ -77,7 +72,7 @@ public class BlockConnectedGlass extends BlockYarm
      * @param side The side of the block to check.
      * @return Whether or not the side is connectable.
      */
-    private boolean isSideConnectable (IBlockAccess world, BlockPos pos, EnumFacing side) {
+    public boolean isSideConnectable(IBlockAccess world, BlockPos pos, EnumFacing side) {
 
         final IBlockState state = world.getBlockState(pos.offset(side));
         return (state == null) ? false : state.getBlock() == this;

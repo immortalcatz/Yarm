@@ -34,7 +34,7 @@ tile.yarm:BlockNetherStar5.name=Quintuple Compressed Nether Star Block
 tile.yarm:BlockNetherStar6.name=Sextuple Compressed Nether Star Block
 tile.yarm:BlockNetherStar7.name=Septuple Compressed Nether Star Block
 tile.yarm:BlockNetherStar8.name=Octuple Compressed Nether Star Block
-
+tile.yarm:BlockConnectedGlass.name= Clear Connected Glass
 
 tile.yarm:BlockAntimonyOre.name= Antimony Ore
 tile.yarm:BlockZirconiumOre.name= Zirconium Ore

@@ -27,7 +27,6 @@ public abstract class YarmBlockConnectedBlock extends BlockYarm
     @Override
     public abstract int getMetaFromState (IBlockState state);
 
-
     public abstract boolean isSideConnectable (IBlockAccess world, BlockPos pos, EnumFacing side);
 
 }

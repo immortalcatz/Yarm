@@ -1,6 +1,6 @@
 package com.unrealdinnerbone.yarm.items.Tools;
 
-import com.unrealdinnerbone.yarm.CreativeTab.Tab;
+import com.unrealdinnerbone.yarm.Util.Tab;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraft.item.ItemSpade;
 

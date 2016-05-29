@@ -1,10 +1,9 @@
 package com.unrealdinnerbone.yarm.blocks;
 
-import com.unrealdinnerbone.yarm.CreativeTab.Tab;
+import com.unrealdinnerbone.yarm.Util.Tab;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.world.World;
 
 public abstract class BlockYarm extends Block
 {
@@ -21,6 +20,7 @@ public abstract class BlockYarm extends Block
         this.setSoundType(SoundType.METAL);
     }
 
-    public abstract boolean isBeaconBase (World worldObj, int x, int y, int z, int beaconX, int beaconY, int beaconZ);
+    @Override
+    public abstract String getLocalizedName();
 
 }

@@ -5,7 +5,8 @@ import net.minecraft.util.text.translation.I18n;
 public enum LangHelper {
     TAB("tab"),
     Achievement("achievement"),
-    Banner("Banner");
+    Banner("Banner"),
+    Block("Block");
 
     private String name;
 
@@ -16,7 +17,7 @@ public enum LangHelper {
 
     public String translateMessage(String message) {
         if (this.name == "")
-            return I18n.translateToLocal(message);
+            return "YARM" + I18n.translateToLocal(message);
 
         return I18n.translateToLocal(String.format("%s.%s.%s", this.name, Reference.MOD_ID, message + ""));
     }

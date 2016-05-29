@@ -1,5 +1,6 @@
 package com.unrealdinnerbone.yarm.init.Recpies;
 
+import com.unrealdinnerbone.yarm.Util.CraftingHelper;
 import com.unrealdinnerbone.yarm.Util.ItemStacks;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.OreDictionaryNames;
@@ -12,64 +13,23 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
+import static com.unrealdinnerbone.yarm.init.ModBlocks.*;
+
 public class ShadedRecipes {
     public static void init() {
 
         //UnRealFace's To UnRealBlock
-        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.BlockUnRealFace(1),
-                "AAA",
-                "AAA",
-                "AAA",
-                'A', OreDictionaryNames.Item_UnRealFace));
+        CraftingHelper.RegisterFullBlockRecipe(OreDictionaryNames.Item_UnRealFace, ModBlocks.BLOCK_UNREAL_FACE);
+        CraftingHelper.RegisterFullBlockRecipe(OreDictionaryNames.Item_AntimonyIngot, ModBlocks.BLOCK_ANTIMONY);
+        CraftingHelper.RegisterFullBlockRecipe(OreDictionaryNames.NetherStar, ModBlocks.BLOCK_NETHER_STAR_1);
+        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_1, BLOCK_NETHER_STAR_2);
+        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_2, BLOCK_NETHER_STAR_3);
+        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_3, BLOCK_NETHER_STAR_4);
+        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_4, BLOCK_NETHER_STAR_5);
+        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_5, BLOCK_NETHER_STAR_6);
+        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_6, BLOCK_NETHER_STAR_7);
+        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_7, BLOCK_NETHER_STAR_8);
 
-        //Antimony Ingot To Antimony Block
-        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.BlockAntimony(1),
-                "AAA",
-                "AAA",
-                "AAA",
-                'A', OreDictionaryNames.Item_AntimonyIngot));
-
-        //Nether Star incess
-        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.BlockNetherStar1(1),
-                "AAA",
-                "AAA",
-                "AAA",
-                'A', OreDictionaryNames.NetherStar));
-        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.BlockNetherStar2(1),
-                "AAA",
-                "AAA",
-                "AAA",
-                'A', OreDictionaryNames.BLOCK_NETHER_STAR_1));
-        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.BlockNetherStar3(1),
-                "AAA",
-                "AAA",
-                "AAA",
-                'A', OreDictionaryNames.BLOCK_NETHER_STAR_2));
-        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.BlockNetherStar4(1),
-                "AAA",
-                "AAA",
-                "AAA",
-                'A', OreDictionaryNames.BLOCK_NETHER_STAR_3));
-        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.BlockNetherStar5(1),
-                "AAA",
-                "AAA",
-                "AAA",
-                'A', OreDictionaryNames.BLOCK_NETHER_STAR_4));
-        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.BlockNetherStar6(1),
-                "AAA",
-                "AAA",
-                "AAA",
-                'A', OreDictionaryNames.BLOCK_NETHER_STAR_5));
-        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.BlockNetherStar7(1),
-                "AAA",
-                "AAA",
-                "AAA",
-                'A', OreDictionaryNames.BLOCK_NETHER_STAR_6));
-        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.BlockNetherStar8(1),
-                "AAA",
-                "AAA",
-                "AAA",
-                'A', OreDictionaryNames.BLOCK_NETHER_STAR_7));
 
         //Nether Star Axe
         GameRegistry.addRecipe(new ItemStack(ModItems.ItemTool_OpAxe),

@@ -21,10 +21,10 @@ public class ModItems
     public static final ItemYarm Item_NetherStarRod = new ItemNetherStarRod();
     public static final ItemYarm Item_IronNugget = new ItemIronNugget();
     public static final ItemAxe ItemTool_OpAxe = new ItemToolOpAxe();
-    public static final ItemHoe ItemTool_OpHoe = new ItemToolOpHoe(ToolTypes.OpTools);
-    public static final ItemPickaxe ItemTool_OpPick = new ItemToolOpPick(ToolTypes.OpTools);
-    public static final ItemSpade ItemTool_OpSpade = new ItemToolOpSpade(ToolTypes.OpTools);
-    public static final ItemSword ItemTool_OpSword = new ItemToolOpSword(ToolTypes.OpTools);
+    public static final ItemHoe ItemTool_OpHoe = new ItemToolOpHoe(ToolTypes.OpToolsAxe);
+    public static final ItemPickaxe ItemTool_OpPick = new ItemToolOpPick(ToolTypes.OpToolsPic);
+    public static final ItemSpade ItemTool_OpSpade = new ItemToolOpSpade(ToolTypes.OpToolsSpade);
+    public static final ItemSword ItemTool_OpSword = new ItemToolOpSword(ToolTypes.OpToolsSword);
     public static final ItemYarmFood ItemFood_IronApple = new ItemFoodIronApple(10, 10.0f, false);
     public static final ItemYarmFood ItemFood_IronCarrot = new ItemFoodIronCarrot(10, 20.0f, false);
 

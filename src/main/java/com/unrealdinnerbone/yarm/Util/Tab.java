@@ -1,4 +1,4 @@
-package com.unrealdinnerbone.yarm.CreativeTab;
+package com.unrealdinnerbone.yarm.Util;
 
 import com.unrealdinnerbone.yarm.Util.LangHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
@@ -18,12 +18,13 @@ public class Tab
         }
 
         @Override
-    public String getTranslatedTabLabel()
+        public String getTranslatedTabLabel()
         {
             return LangHelper.TAB.translateMessage("YarmTab");
         }
         @Override
-        public boolean hasSearchBar() {
+        public boolean hasSearchBar()
+        {
             return true;
         }
     };

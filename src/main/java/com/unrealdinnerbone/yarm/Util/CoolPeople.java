@@ -1,13 +1,13 @@
 package com.unrealdinnerbone.yarm.Util;
 
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class CoolPeople
 {
     public static ArrayList CoolPeople = new ArrayList();
 
-    private static void CoolPeople() {
+    private static void CoolPeople()
+    {
 
         CoolPeople.add(UUIDHelper.iChun);
         CoolPeople.add(UUIDHelper.UnRealDinnerbone);

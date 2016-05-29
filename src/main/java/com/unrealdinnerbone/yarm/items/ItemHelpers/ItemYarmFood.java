@@ -1,6 +1,6 @@
 package com.unrealdinnerbone.yarm.items.ItemHelpers;
 
-import com.unrealdinnerbone.yarm.CreativeTab.Tab;
+import com.unrealdinnerbone.yarm.Util.Tab;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;

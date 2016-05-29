@@ -1,7 +1,8 @@
 package com.unrealdinnerbone.yarm.items.Tools;
 
-import com.unrealdinnerbone.yarm.CreativeTab.Tab;
+import com.unrealdinnerbone.yarm.Util.Tab;
 import com.unrealdinnerbone.yarm.Util.Reference;
+import com.unrealdinnerbone.yarm.Util.ToolTypes;
 import net.minecraft.item.ItemAxe;
 
 public class ItemToolOpAxe extends ItemAxe {
