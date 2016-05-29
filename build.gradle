@@ -70,7 +70,7 @@ dependencies
 // deobfCompile "MCMultiPart:MCMultiPart:${mcmutipart_version}:universal"
    deobfCompile "mcp.mobius.waila:Waila:${waila_version}_${minecraft_version}"
    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
-   deobfCompile "net.darkhax.bookshelf:Bookshelf:${minecraft_version}-${bookshelf_version}"
+//   deobfCompile "net.darkhax.bookshelf:Bookshelf:${minecraft_version}-${bookshelf_version}"
 }
 
 processResources
@@ -86,6 +86,8 @@ processResources
     {
         exclude 'mcmod.info'
     }
+
+    rename '(.+_at.cfg)', 'META-INF/$1'
 }
 
 minecraft
@@ -93,11 +95,20 @@ minecraft
    useDepAts = true
 }
 
+jar {
+
+    manifest {
+
+        attributes 'FMLAT': 'yarm_at.cfg'
+    }
+}
+
+
 curseforge {
   apiKey = project.curse_api_key
   project {
     id = project.curse_project_id
-    changelog = file('changelog.txt')
+    changelog = file('changelog.html')
     releaseType = project.release_type
     addGameVersion project.minecraft_version
 
