@@ -28,7 +28,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'maven'
 apply plugin: "com.matthewprenger.cursegradle"
 
-version = "${mod_version}"
+version = "${minecraft_version}-${mod_version}"
 group= "com.unrealdinnerbone.yarm"
 archivesBaseName = "yarm"
 
@@ -44,11 +44,6 @@ minecraft
 
 repositories
 {
-    maven
-    {
-        name = "Amadornes Repo"
-        url = "http://maven.amadornes.com/"
-    }
     maven {
         name = "The JEI Repo"
         url = "http://dvs1.progwml6.com/files/maven"
@@ -58,19 +53,12 @@ repositories
         name = "Waila Repo"
         url = "http://mobiusstrip.eu/maven"
     }
-    maven
-    {
-        name = "BookShelf Repo"
-        url  = "http://maven.epoxide.xyz/"
-    }
 }
 
 dependencies
 {
-// deobfCompile "MCMultiPart:MCMultiPart:${mcmutipart_version}:universal"
    deobfCompile "mcp.mobius.waila:Waila:${waila_version}_${minecraft_version}"
    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
-//   deobfCompile "net.darkhax.bookshelf:Bookshelf:${minecraft_version}-${bookshelf_version}"
 }
 
 processResources
