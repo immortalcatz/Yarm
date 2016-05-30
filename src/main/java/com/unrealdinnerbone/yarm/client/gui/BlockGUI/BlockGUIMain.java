@@ -2,7 +2,7 @@ package com.unrealdinnerbone.yarm.client.gui.BlockGUI;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
-import com.unrealdinnerbone.yarm.init.ModItems;
+import com.unrealdinnerbone.yarm.common.init.ModItems;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;

@@ -1,18 +1,17 @@
 package com.unrealdinnerbone.yarm.proxy;
 
-import com.unrealdinnerbone.yarm.Achievements.Achievements;
-import com.unrealdinnerbone.yarm.Achievements.AchievementsHandler;
-import com.unrealdinnerbone.yarm.Events.Events;
+import com.unrealdinnerbone.yarm.common.Achievements.Achievements;
+import com.unrealdinnerbone.yarm.common.Achievements.AchievementsHandler;
+import com.unrealdinnerbone.yarm.common.Events.Events;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
-import com.unrealdinnerbone.yarm.World.ModWorldGen;
-import com.unrealdinnerbone.yarm.init.*;
-import com.unrealdinnerbone.yarm.init.Recpies.BannerMaker;
-import com.unrealdinnerbone.yarm.init.Recpies.ShadedRecipes;
-import com.unrealdinnerbone.yarm.init.Recpies.ShaplessRecpices;
-import com.unrealdinnerbone.yarm.init.Recpies.SmeltingRecpices;
+import com.unrealdinnerbone.yarm.common.World.ModWorldGen;
+import com.unrealdinnerbone.yarm.common.init.*;
+import com.unrealdinnerbone.yarm.common.init.Recpies.BannerMaker;
+import com.unrealdinnerbone.yarm.common.init.Recpies.ShadedRecipes;
+import com.unrealdinnerbone.yarm.common.init.Recpies.ShaplessRecpices;
+import com.unrealdinnerbone.yarm.common.init.Recpies.SmeltingRecpices;
 import com.unrealdinnerbone.yarm.client.gui.GUIHandler;
 import com.unrealdinnerbone.yarm.yarm;
-import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;

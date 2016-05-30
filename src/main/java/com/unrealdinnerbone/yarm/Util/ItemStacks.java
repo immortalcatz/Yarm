@@ -1,14 +1,9 @@
 package com.unrealdinnerbone.yarm.Util;
 
 
-import com.unrealdinnerbone.yarm.init.ModBlocks;
-import com.unrealdinnerbone.yarm.init.ModItems;
-import net.minecraft.block.Block;
+import com.unrealdinnerbone.yarm.common.init.ModBlocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.oredict.OreDictionary;
 
 public class ItemStacks
 {

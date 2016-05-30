@@ -1,11 +1,11 @@
 package com.unrealdinnerbone.yarm;
 
-import com.unrealdinnerbone.yarm.Sounds.Sounds;
+import com.unrealdinnerbone.yarm.client.Sounds.Sounds;
 import com.unrealdinnerbone.yarm.Util.HolidayUtils;
 import com.unrealdinnerbone.yarm.Util.StatsGetter;
-import com.unrealdinnerbone.yarm.config.ConfigManger;
+import com.unrealdinnerbone.yarm.common.config.ConfigManger;
 import com.unrealdinnerbone.yarm.core.yarmcore;
-import com.unrealdinnerbone.yarm.init.*;
+import com.unrealdinnerbone.yarm.common.init.*;
 import com.unrealdinnerbone.yarm.proxy.*;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraftforge.fml.common.FMLCommonHandler;

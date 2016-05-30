@@ -1,6 +1,6 @@
 package com.unrealdinnerbone.yarm.client.gui;
 
-import com.unrealdinnerbone.yarm.config.ConfigManger;
+import com.unrealdinnerbone.yarm.common.config.ConfigManger;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;

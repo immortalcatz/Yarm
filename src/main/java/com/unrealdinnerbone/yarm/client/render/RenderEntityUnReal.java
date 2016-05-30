@@ -1,6 +1,6 @@
 package com.unrealdinnerbone.yarm.client.render;
 
-import com.unrealdinnerbone.yarm.entitys.entityUnReal;
+import com.unrealdinnerbone.yarm.common.entitys.entityUnReal;
 import com.unrealdinnerbone.yarm.Util.Reference;
 
 import net.minecraft.client.renderer.entity.RenderManager;

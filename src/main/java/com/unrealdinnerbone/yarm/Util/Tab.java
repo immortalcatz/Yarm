@@ -1,8 +1,6 @@
 package com.unrealdinnerbone.yarm.Util;
 
-import com.unrealdinnerbone.yarm.Util.LangHelper;
-import com.unrealdinnerbone.yarm.Util.Reference;
-import com.unrealdinnerbone.yarm.init.ModItems;
+import com.unrealdinnerbone.yarm.common.init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 

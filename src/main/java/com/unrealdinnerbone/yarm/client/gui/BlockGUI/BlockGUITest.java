@@ -2,9 +2,9 @@ package com.unrealdinnerbone.yarm.client.gui.BlockGUI;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
-import com.unrealdinnerbone.yarm.blocks.TileEnity.ContainerModTileEnity;
-import com.unrealdinnerbone.yarm.blocks.TileEnity.ModTileEntity;
-import com.unrealdinnerbone.yarm.init.ModItems;
+import com.unrealdinnerbone.yarm.common.blocks.TileEnity.ContainerModTileEnity;
+import com.unrealdinnerbone.yarm.common.blocks.TileEnity.ModTileEntity;
+import com.unrealdinnerbone.yarm.common.init.ModItems;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
