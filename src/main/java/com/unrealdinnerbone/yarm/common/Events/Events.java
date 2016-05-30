@@ -8,6 +8,8 @@ import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraftforge.client.event.RenderLivingEvent;
+import net.minecraftforge.client.event.RenderPlayerEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.ServerChatEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
@@ -65,5 +67,10 @@ public class Events {
                 PlayerHelper.makePlayerFancy(player, data.getCapeTexture(), data.getElytraTexture());
             }
         }
+    }
+    @SubscribeEvent
+    public void renderEvenet (RenderLivingEvent event)
+    {
+//        event.getRenderer().renderName();
     }
 }
