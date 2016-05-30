@@ -5,6 +5,7 @@ import com.unrealdinnerbone.yarm.Util.*;
 import com.unrealdinnerbone.yarm.common.config.OtherConfig;
 import com.unrealdinnerbone.yarm.Util.PlayerHelper;
 import net.minecraft.client.entity.AbstractClientPlayer;
+import net.minecraft.client.renderer.entity.layers.LayerDeadmau5Head;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.util.text.TextComponentString;
@@ -16,6 +17,7 @@ import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 public class Events {
 
@@ -69,8 +71,9 @@ public class Events {
         }
     }
     @SubscribeEvent
-    public void renderEvenet (RenderLivingEvent event)
+    public void ArmourEvent (TickEvent.PlayerTickEvent event)
     {
-//        event.getRenderer().renderName();
+        LogHelper.info(event.player.getArmorInventoryList().toString());
+
     }
 }

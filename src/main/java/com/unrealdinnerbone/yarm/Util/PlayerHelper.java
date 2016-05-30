@@ -5,6 +5,8 @@ import com.mojang.authlib.minecraft.MinecraftProfileTexture.Type;
 import com.mojang.authlib.minecraft.MinecraftProfileTexture;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.AbstractClientPlayer;
+import net.minecraft.client.model.ModelPlayer;
+import net.minecraft.entity.player.EnumPlayerModelParts;
 import net.minecraft.util.ResourceLocation;
 
 import java.util.concurrent.ExecutorService;
@@ -45,12 +47,13 @@ public class PlayerHelper
         });
     }
 
-    public static boolean changePlayerTexture (Type type, AbstractClientPlayer player, ResourceLocation texture) {
 
+    public static boolean changePlayerTexture (Type type, AbstractClientPlayer player, ResourceLocation texture) {
         if (player.hasPlayerInfo())
         {
             if(texture != null)
             {
+
                 player.getPlayerInfo().playerTextures.put(type, texture);
             }
             return true;

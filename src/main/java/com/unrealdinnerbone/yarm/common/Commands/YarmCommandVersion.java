@@ -1,6 +1,7 @@
 package com.unrealdinnerbone.yarm.common.Commands;
 
 import com.unrealdinnerbone.yarm.Util.Reference;
+import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;

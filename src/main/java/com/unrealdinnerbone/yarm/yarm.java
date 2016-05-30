@@ -4,7 +4,6 @@ import com.unrealdinnerbone.yarm.client.Sounds.Sounds;
 import com.unrealdinnerbone.yarm.Util.HolidayUtils;
 import com.unrealdinnerbone.yarm.Util.StatsGetter;
 import com.unrealdinnerbone.yarm.common.config.ConfigManger;
-import com.unrealdinnerbone.yarm.core.yarmcore;
 import com.unrealdinnerbone.yarm.common.init.*;
 import com.unrealdinnerbone.yarm.proxy.*;
 import com.unrealdinnerbone.yarm.Util.Reference;
