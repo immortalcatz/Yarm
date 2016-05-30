@@ -1,10 +1,10 @@
 package com.unrealdinnerbone.yarm.common.init;
 
 import com.unrealdinnerbone.yarm.Util.LogHelper;
-import com.unrealdinnerbone.yarm.entitys.entityManmaed;
+import com.unrealdinnerbone.yarm.common.entitys.entityManmaed;
 import com.unrealdinnerbone.yarm.yarm;
 
-import com.unrealdinnerbone.yarm.entitys.entityUnReal;
+import com.unrealdinnerbone.yarm.common.entitys.entityUnReal;
 
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 

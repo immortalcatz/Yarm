@@ -1,6 +1,6 @@
 package com.unrealdinnerbone.yarm.common.init;
 
-import com.unrealdinnerbone.yarm.Commands.YarmCommandVersion;
+import com.unrealdinnerbone.yarm.common.Commands.YarmCommandVersion;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 

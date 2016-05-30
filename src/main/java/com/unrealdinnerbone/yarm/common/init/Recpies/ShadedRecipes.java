@@ -4,7 +4,7 @@ import com.unrealdinnerbone.yarm.Util.CraftingHelper;
 import com.unrealdinnerbone.yarm.Util.ItemStacks;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.OreDictionaryNames;
-import com.unrealdinnerbone.yarm.config.OtherConfig;
+import com.unrealdinnerbone.yarm.common.config.OtherConfig;
 import com.unrealdinnerbone.yarm.common.init.ModBlocks;
 import com.unrealdinnerbone.yarm.common.init.ModItems;
 import net.minecraft.init.Blocks;
