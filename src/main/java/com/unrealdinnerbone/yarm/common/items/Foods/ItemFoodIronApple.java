@@ -32,7 +32,6 @@ public class ItemFoodIronApple extends ItemYarmFood {
         int Tick = 20;
         if(OtherConfig.IronAppleGivesPositiveEffects == true) {
         player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 100, Tick * 10));
-        LogHelper.info("AAAAAAAA");
         //AvA
     }
         if(OtherConfig.IronAppleGivesNegativesEffects == true) {
