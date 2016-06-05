@@ -8,20 +8,17 @@ import net.minecraft.item.ItemStack;
 
 import java.util.List;
 
-public abstract class YarmItemWing extends ItemYarm
-{
-    public YarmItemWing()
-    {
+public abstract class YarmItemWing extends ItemYarm {
+    public YarmItemWing () {
+
         super();
         this.setMaxStackSize(1);
-        this.isValidArmor(new ItemStack(this), EntityEquipmentSlot.CHEST);
     }
 
+    public abstract void addInformation (ItemStack itemStack, EntityPlayer player, List tooltip, boolean advanced);
 
-    public abstract void addInformation(ItemStack itemStack, EntityPlayer player, List tooltip, boolean advanced);
+    @Override public boolean isValidArmor (ItemStack stack, EntityEquipmentSlot armorType, Entity entity) {
 
-    public boolean isValidArmor(ItemStack stack, EntityEquipmentSlot armorType, Entity entity)
-    {
-        return net.minecraft.entity.EntityLiving.getSlotForItemStack(stack) == armorType;
-
+        return true;
     }
+}

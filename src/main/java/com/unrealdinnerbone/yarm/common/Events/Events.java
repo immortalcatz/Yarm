@@ -4,31 +4,26 @@ import com.unrealdinnerbone.yarm.Util.StatsGetter.SupporterData;
 import com.unrealdinnerbone.yarm.Util.*;
 import com.unrealdinnerbone.yarm.common.config.OtherConfig;
 import com.unrealdinnerbone.yarm.Util.PlayerHelper;
-import com.unrealdinnerbone.yarm.common.init.ModBlocks;
 import com.unrealdinnerbone.yarm.common.init.ModItems;
 import net.minecraft.client.entity.AbstractClientPlayer;
-import net.minecraft.client.renderer.entity.layers.LayerDeadmau5Head;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.init.Items;
+import net.minecraft.entity.player.PlayerCapabilities;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.TextComponentString;
-import net.minecraftforge.client.event.RenderLivingEvent;
-import net.minecraftforge.client.event.RenderPlayerEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.ServerChatEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
-import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 public class Events {
 
-    private InventoryPlayer a;
+    private InventoryPlayer pl;
+    private PlayerCapabilities plcap;
 
     public static void init() {
 
@@ -82,56 +77,45 @@ public class Events {
     @SubscribeEvent
     public void ArmourEvent (TickEvent.PlayerTickEvent event)
     {
-        if(!event.player.isCreative()) {
-            if (event.player.inventory.hasItemStack(new ItemStack(ModItems.ITEM_WING_1))) {
-                event.player.capabilities.allowFlying = true;
-                event.player.capabilities.setFlySpeed(0.05f);
-            } else
-            if (event.player.inventory.hasItemStack(new ItemStack(ModItems.ITEM_WING_2))) {
-                event.player.capabilities.allowFlying = true;
-                event.player.capabilities.setFlySpeed(0.10f);
-            } else
-            if (event.player.inventory.hasItemStack(new ItemStack(ModItems.ITEM_WING_3))) {
-                event.player.capabilities.allowFlying = true;
-                event.player.capabilities.setFlySpeed(0.15f);
-            } else
-            if (event.player.inventory.hasItemStack(new ItemStack(ModItems.ITEM_WING_4))) {
-                event.player.capabilities.allowFlying = true;
-                event.player.capabilities.setFlySpeed(0.20f);
-            }
-            if (event.player.inventory.hasItemStack(new ItemStack(ModItems.ITEM_WING_5))) {
-                event.player.capabilities.allowFlying = true;
-                event.player.capabilities.setFlySpeed(0.25f);
-            }  else
-            if (event.player.inventory.hasItemStack(new ItemStack(ModItems.ITEM_WING_6))) {
-                event.player.capabilities.allowFlying = true;
-                event.player.capabilities.setFlySpeed(0.30f);
-            }else
-            if (event.player.inventory.hasItemStack(new ItemStack(ModItems.ITEM_WING_7))) {
-                event.player.capabilities.allowFlying = true;
-                event.player.capabilities.setFlySpeed(0.35f);
-            }  else
-            if (event.player.inventory.hasItemStack(new ItemStack(ModItems.ITEM_WING_8))) {
-                event.player.capabilities.allowFlying = true;
-                event.player.capabilities.setFlySpeed(0.40f);
-            } else
-            a = event.player.inventory;
-            if (!event.player.inventory.hasItemStack(new ItemStack(ModItems.ITEM_WING_8)) &&
-                    !a.hasItemStack(new ItemStack(ModItems.ITEM_WING_7)) &&
-                    !a.hasItemStack(new ItemStack(ModItems.ITEM_WING_6)) &&
-                    !a.hasItemStack(new ItemStack(ModItems.ITEM_WING_5)) &&
-                    !a.hasItemStack(new ItemStack(ModItems.ITEM_WING_4)) &&
-                    !a.hasItemStack(new ItemStack(ModItems.ITEM_WING_3)) &&
-                    !a.hasItemStack(new ItemStack(ModItems.ITEM_WING_2)) &&
-                    !a.hasItemStack(new ItemStack(ModItems.ITEM_WING_1))){
-                event.player.capabilities.allowFlying = false;
-                event.player.capabilities.isFlying = false;
-            }
-        }
-        if(event.player.isCreative())
+        plcap = event.player.capabilities;
+        pl = event.player.inventory;
+
+        if(!event.player.isCreative() && !event.player.isSpectator())
         {
-            event.player.capabilities.allowFlying = true;
-            event.player.capabilities.setFlySpeed(0.05f);
+            if (pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_8))) {
+                FlyingUtils.SetFlying(plcap, 0.40f);
+            } else
+            if (pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_7))) {
+                FlyingUtils.SetFlying(plcap, 0.35f);
+            } else
+            if (pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_6))) {
+                FlyingUtils.SetFlying(plcap, 0.30f);
+            } else
+            if (pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_5))) {
+                FlyingUtils.SetFlying(plcap, 0.25f);
+            } else
+            if (pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_4))) {
+                FlyingUtils.SetFlying(plcap, 0.20f);
+            }  else
+            if (pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_3))) {
+                FlyingUtils.SetFlying(plcap, 0.15f);
+            } else
+            if (pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_2))) {
+                FlyingUtils.SetFlying(plcap, 0.10f);
+            } else
+            if (pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_1))) {
+                FlyingUtils.SetFlying(plcap, 0.05f);
+            } else
+            if (!event.player.inventory.hasItemStack(new ItemStack(ModItems.ITEM_WING_8)) &&
+                    !pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_7)) &&
+                    !pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_6)) &&
+                    !pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_5)) &&
+                    !pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_4)) &&
+                    !pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_3)) &&
+                    !pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_2)) &&
+                    !pl.hasItemStack(new ItemStack(ModItems.ITEM_WING_1))){
+                FlyingUtils.DenyFlight(plcap);
+            }
         }
     }
 }
