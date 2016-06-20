@@ -6,7 +6,9 @@ public enum LangHelper {
     TAB("tab"),
     Achievement("achievement"),
     Banner("Banner"),
-    Block("Block");
+    Block("Block"),
+    CONFIG("Config"),
+    TOOLTIP("ToolTip");
 
     private String name;
 
@@ -17,7 +19,7 @@ public enum LangHelper {
 
     public String translateMessage(String message) {
         if (this.name == "")
-            return "YARM" + I18n.translateToLocal(message);
+            return I18n.translateToLocal(message);
 
         return I18n.translateToLocal(String.format("%s.%s.%s", this.name, Reference.MOD_ID, message + ""));
     }

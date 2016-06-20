@@ -15,4 +15,5 @@ public class Reference
     public static final String RE_PREFIX = MOD_ID.toLowerCase() + ":";
     public static final String RE_PREFIX_ = MOD_ID.toLowerCase() + "_";
     public static final String MOD_DISPLAY_NAME_WITH_VERSION = MOD_ID.toUpperCase() + VERSION;
+    public static final String RE_PREFIX_GUI = MOD_ID + "/textures/gui";
 }

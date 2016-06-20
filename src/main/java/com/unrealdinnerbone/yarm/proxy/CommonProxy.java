@@ -2,7 +2,6 @@ package com.unrealdinnerbone.yarm.proxy;
 
 import com.unrealdinnerbone.yarm.common.Achievements.Achievements;
 import com.unrealdinnerbone.yarm.common.Achievements.AchievementsHandler;
-import com.unrealdinnerbone.yarm.common.Events.Events;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.common.World.ModWorldGen;
 import com.unrealdinnerbone.yarm.common.init.*;
@@ -10,13 +9,11 @@ import com.unrealdinnerbone.yarm.common.init.Recpies.BannerMaker;
 import com.unrealdinnerbone.yarm.common.init.Recpies.ShadedRecipes;
 import com.unrealdinnerbone.yarm.common.init.Recpies.ShaplessRecpices;
 import com.unrealdinnerbone.yarm.common.init.Recpies.SmeltingRecpices;
-import com.unrealdinnerbone.yarm.client.gui.GUIHandler;
-import com.unrealdinnerbone.yarm.yarm;
+import com.unrealdinnerbone.yarm.compact.CompactHelper;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public abstract class CommonProxy implements IProxy
@@ -26,10 +23,10 @@ public abstract class CommonProxy implements IProxy
         ModBlocks.init();
         ModItems.init();
         ModEntity.initEntity();
-        MinecraftForge.EVENT_BUS.register(new AchievementsHandler());
     }
     public static void Int(FMLInitializationEvent Event)
     {
+        MinecraftForge.EVENT_BUS.register(new AchievementsHandler());
         ModWorldGen WorldGen = new ModWorldGen();
         ShadedRecipes.init();
         SmeltingRecpices.init();
@@ -38,8 +35,8 @@ public abstract class CommonProxy implements IProxy
         Achievements.LoadAchievements();
         AchievementsHandler.RegisterPage();
         BannerMaker.initCraftingBanners();
-        NetworkRegistry.INSTANCE.registerGuiHandler(yarm.instance, new GUIHandler());
-        Events.init();
+        CompactHelper.registerTOP();
+        CompactHelper.registerWaila();
 
     }
     public static void PostInt(FMLPostInitializationEvent PostEvent)

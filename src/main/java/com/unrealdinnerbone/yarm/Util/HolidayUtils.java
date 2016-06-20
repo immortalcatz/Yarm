@@ -11,16 +11,16 @@ public class HolidayUtils {
     public static void checkDates () {
 
         dateChecker();
-        if (isNewYears == true) {
+        if (isNewYears) {
             LogHelper.info("Happy New Year");
         }
-        else if (isAprilFirst == true) {
+        else if (isAprilFirst) {
             LogHelper.info("Happy April Fools Day");
         }
-        else if (isHalloween == true) {
+        else if (isHalloween) {
             LogHelper.info("Happy Halloween");
         }
-        else if (isChristmas == true) {
+        else if (isChristmas) {
             LogHelper.info("Merry Christmas");
         }
         else {

@@ -24,7 +24,6 @@ public class OreDictionaryNames
     public final static String Food_IronApple = "foodIronApple";
     public final static String Food_IronCarrot = "foodIronCarrot";
     public final static String NetherStar = "netherStar";
-    public final static String IngotIron = "ingotIron";
     public final static String BLOCK_ANTIMONY_ORE = "oreAntimony";
     public final static String BLOCK_BISMUTH_ORE = "oreBismuth";
     public final static String BLOCK_CHROMIUM_ORE = "oreChromium";

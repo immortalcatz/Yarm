@@ -21,6 +21,7 @@ import net.minecraft.util.ResourceLocation;
  * This class is used to handle my supporters data. This class is not intended for other mod
  * authors to access in their code. If you want, you can copy and modify this code to add
  * support for your own supporters and rewards.
+ *  *** I JUST COPED THIS TO BE NICE TO DARKHAX SO SOME OF IT MAY NOT MAKE SINCE :P ***
  */
 public class StatsGetter {
 

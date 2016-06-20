@@ -37,7 +37,7 @@ targetCompatibility = JavaVersion.VERSION_1_8
 
 minecraft
 {
-    version = "${minecraft_version}-${forge_version}-${minecraft_version}"
+    version = "${minecraft_version}-${forge_version}"
     mappings = "${forge_mappings}"
     runDir = "run"
 
@@ -53,8 +53,16 @@ repositories
     }
     maven
     {
-        name = "Waila Repo"
+        name = "Maven Repo"
         url = "http://mobiusstrip.eu/maven"
+    }
+    maven {
+        name = 'Tesla'
+        url 'http://maven.epoxide.xyz'
+    }
+    maven { // TOP
+        name = 'tterrag maven'
+        url = "http://maven.tterrag.com/"
     }
 }
 
@@ -62,6 +70,8 @@ dependencies
 {
    deobfCompile "mcp.mobius.waila:Waila:${waila_version}_${minecraft_version}"
    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
+   deobfCompile "net.darkhax.tesla:Tesla:${minecraft_version}-${tesla_version}"
+   deobfCompile "mcjty.theoneprobe:TheOneProbe:${minecraft_version}-${top_version}"
 }
 
 processResources
@@ -87,9 +97,7 @@ minecraft
 }
 
 jar {
-
     manifest {
-
         attributes 'FMLAT': 'yarm_at.cfg'
     }
 }

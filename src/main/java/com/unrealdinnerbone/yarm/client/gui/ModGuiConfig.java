@@ -11,14 +11,13 @@ import java.util.Arrays;
 
 public class ModGuiConfig extends GuiConfig
 {
-    public static String WorldGen = "worldgen";
-    public static String General = "general";
 
     public ModGuiConfig(GuiScreen parentScreen) {
         super(parentScreen,
                 Arrays.asList(new IConfigElement[] {
-                        new ConfigElement(ConfigManger.configuration.getCategory(WorldGen)),
-                        new ConfigElement(ConfigManger.configuration.getCategory(General))
+                        new ConfigElement(ConfigManger.configuration.getCategory(ConfigManger.WorldGen)),
+                        new ConfigElement(ConfigManger.configuration.getCategory(ConfigManger.General)),
+                        new ConfigElement(ConfigManger.configuration.getCategory(ConfigManger.Panels))
                 }),
                 Reference.MOD_ID, false, false, "Yarm Config");
     }
