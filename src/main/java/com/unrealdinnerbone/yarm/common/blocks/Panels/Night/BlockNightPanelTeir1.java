@@ -2,6 +2,7 @@ package com.unrealdinnerbone.yarm.common.blocks.Panels.Night;
 
 import com.unrealdinnerbone.yarm.Util.MessageHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
+import com.unrealdinnerbone.yarm.client.gui.NightPanelGUI.GUINightPanel;
 import com.unrealdinnerbone.yarm.common.Containers.Panels.Night.ContainerNightPanelTeir1;
 import com.unrealdinnerbone.yarm.common.TileEnity.Panels.Night.TileEntityNightPanelTeir1;
 import com.unrealdinnerbone.yarm.common.blocks.BlockYarm;
@@ -18,6 +19,7 @@ import net.darkhax.tesla.api.ITeslaProducer;
 import net.darkhax.tesla.capability.TeslaCapabilities;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -60,6 +62,7 @@ public class BlockNightPanelTeir1 extends BlockYarm implements ITileEntityProvid
 
             if (tile instanceof TileEntityNightPanelTeir1 && !tile.isInvalid()) {
 
+
                 final TileEntityNightPanelTeir1 panel = (TileEntityNightPanelTeir1) tile;
                 final ContainerNightPanelTeir1 container = (ContainerNightPanelTeir1) panel.getCapability(TeslaCapabilities.CAPABILITY_HOLDER, EnumFacing.DOWN);
 
@@ -68,6 +71,21 @@ public class BlockNightPanelTeir1 extends BlockYarm implements ITileEntityProvid
 
 
                 MessageHelper.sendSpamlessMessage(617698741, new TextComponentString(String.format(Stored + "/"  + Cap + "T", container.getStoredPower(), container.getCapacity(), ConfigPanels.NightPanelTeir1_GenRate)));
+            }
+        }
+        if (!worldIn.isRemote) {
+            final TileEntity tile = worldIn.getTileEntity(pos);
+
+            if (tile instanceof TileEntityNightPanelTeir1 && !tile.isInvalid()) {
+
+                final TileEntityNightPanelTeir1 panel = (TileEntityNightPanelTeir1) tile;
+                final ContainerNightPanelTeir1 container = (ContainerNightPanelTeir1) panel.getCapability(TeslaCapabilities.CAPABILITY_HOLDER, EnumFacing.DOWN);
+
+                int Stored = (int) container.getStoredPower();
+                int Cap = (int) container.getCapacity();
+
+                GUINightPanel.Stored = Stored;
+                Minecraft.getMinecraft().displayGuiScreen(new GUINightPanel());
             }
         }
 

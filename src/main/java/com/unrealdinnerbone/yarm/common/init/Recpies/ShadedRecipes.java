@@ -1,7 +1,6 @@
 package com.unrealdinnerbone.yarm.common.init.Recpies;
 
 import com.unrealdinnerbone.yarm.Util.CraftingHelper;
-import com.unrealdinnerbone.yarm.Util.ItemStacks;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.OreDictionaryNames;
 import com.unrealdinnerbone.yarm.common.config.OtherConfig;
@@ -70,7 +69,7 @@ public class ShadedRecipes {
                 " B ",
                 'A', ModBlocks.BLOCK_NETHER_STAR_3,
                 'B', ModItems.Item_NetherStarRod);
-        GameRegistry.addRecipe(new ShapedOreRecipe(ItemStacks.ItemIronIngot(1),
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.Item_IronNugget, 1),
                 "AAA",
                 "AAA",
                 "AAA",
@@ -86,7 +85,7 @@ public class ShadedRecipes {
                 "AAA",
                 'A', ModItems.Item_IronNugget, 'B', Items.CARROT);
         if(OtherConfig.CraftableNotchApples = true) {
-            GameRegistry.addRecipe(ItemStacks.ItemGoldenApple(1, 1),
+            GameRegistry.addRecipe(new ItemStack(Items.GOLDEN_APPLE, 1, 1),
                     "AAA",
                     "ABA",
                     "AAA",
