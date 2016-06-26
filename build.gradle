@@ -68,10 +68,10 @@ repositories
 
 dependencies
 {
-   deobfCompile "mcp.mobius.waila:Waila:${waila_version}_${minecraft_version}"
+   deobfCompile "mcp.mobius.waila:Waila:${waila_version}_1.9.4"
    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
-   deobfCompile "net.darkhax.tesla:Tesla:${minecraft_version}-${tesla_version}"
-   deobfCompile "mcjty.theoneprobe:TheOneProbe:${minecraft_version}-${top_version}"
+   deobfCompile "net.darkhax.tesla:Tesla:1.9.4-${tesla_version}"
+   deobfCompile "mcjty.theoneprobe:TheOneProbe:1.9.4-${top_version}"
 }
 
 processResources
