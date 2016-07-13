@@ -30,7 +30,7 @@ public class StatsGetter {
     private static final ResourceLocation MISSING_ELYTRA = new ResourceLocation(Reference.MOD_ID, "textures/entity/player/elytra_error.png");
 
     private static final List<SupporterData> DATA = new ArrayList<SupporterData>();
-    private static final String SUPPORTER_URL = "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/" + Reference.MC_VERSION + "/Files/People/People.json";
+    private static final String SUPPORTER_URL = "https://raw.githubusercontent.com/UnRealDinnerbone/Yarm/1.10.2/Files/People/People.json";
 
     public static void ReadPepsData() {
 

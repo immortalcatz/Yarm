@@ -1,27 +1,68 @@
 package com.unrealdinnerbone.yarm.client.gui.NightPanelGUI;
 
-import com.unrealdinnerbone.yarm.Util.LangHelper;
+import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
-import net.minecraft.client.gui.GuiScreen;
+import com.unrealdinnerbone.yarm.client.gui.Utils.GUIScreenBase;
+import com.unrealdinnerbone.yarm.client.gui.Utils.GUIScreenBaseWIthButton;
+import net.minecraft.block.BlockTNT;
+import net.minecraft.client.gui.GuiButton;
 import net.minecraft.util.ResourceLocation;
+import sun.rmi.runtime.Log;
 
-public class GUINightPanel extends GuiScreen
+import java.io.IOException;
+
+public class GUINightPanel extends GUIScreenBaseWIthButton
 {
-    public static int Stored = 0;
-    private static int GUIWidth = 148;
-    private static int GUIHeight = 80;
+    private static int PrintPowerToChatID = 1;
+
+    GuiButton PrintPowerToChatButton;
+
+    public static int Stored;
+    private static int GUIWidth = 200;
+    private static int GUIHeight = 100;
+
 
     @Override
     public void drawScreen(int x, int y, float ticks)
     {
-        int GUIX = (width - GUIWidth) / 2;
+        int GUIX = (width - GUIHeight) / 2;
+        int GUIY = (height - GUIHeight) / 2;
+
+        String PowerStored = String.valueOf(Stored);
+       // mc.renderEngine.bindTexture(new ResourceLocation(Reference.MOD_ID,"textures/gui/test/test.png"));
+       // drawTexturedModalRect(GUIX, GUIY, 0, 0, GUIWidth, GUIHeight);
+//        fontRendererObj.drawString(PowerStored,GUIX ,GUIY,1,false);
+
+    }
+
+
+    @Override
+    public void initGui() {
+
+        int GUIX = (width - GUIHeight) / 2;
         int GUIY = (height - GUIWidth) / 2;
 
-        drawTexturedModalRect(GUIX, GUIY, 0, 0, GUIWidth, GUIHeight);
-        String Storred = String.valueOf(Stored);
-        fontRendererObj.drawSplitString(Storred ,GUIX ,GUIY,1,1);
-        mc.renderEngine.bindTexture(new ResourceLocation(Reference.RE_PREFIX_GUI + "/test/test.png"));
+        PrintPowerToChatButton = new GuiButton(PrintPowerToChatID, GUIX - 10, GUIY + 10, 20, 20, "Press Me");
 
-        super.drawScreen(x, y, ticks);
+        buttonList.clear();
+        buttonList.add(PrintPowerToChatButton);
+    }
+
+    @Override
+    public boolean doesGuiPauseGame()
+    {
+        return false;
+    }
+
+
+
+
+    @Override
+    protected void actionPerformed(GuiButton button) throws IOException {
+        switch (button.id)
+        {
+
+
+        }
     }
 }

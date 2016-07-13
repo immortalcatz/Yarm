@@ -6,7 +6,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.event.FMLInterModComms;
-import sun.rmi.runtime.Log;
 
 import javax.annotation.Nullable;
 
@@ -20,7 +19,6 @@ public class TOPCompact
         registered = true;
         FMLInterModComms.sendFunctionMessage("theoneprobe", "getTheOneProbe", "com.unrealdinnerbone.yarm.compact.TOP.TOPCompact$GetTheOneProbe");
 
-        LogHelper.info("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
     }
 
 
@@ -29,7 +27,6 @@ public class TOPCompact
         public static ITheOneProbe probe;
 
         @Nullable
-        @Override
         public Void apply(ITheOneProbe theOneProbe) {
             probe = theOneProbe;
             LogHelper.info("Enabled support for The One Probe");

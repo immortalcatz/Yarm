@@ -3,9 +3,10 @@ package com.unrealdinnerbone.yarm.common.entitys;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.world.World;
 
-public class enityYarmPlayer extends EntityAnimal {
+public class enityYarmPlayer extends EntityWolf {
 
     public enityYarmPlayer(World world)
     {
@@ -22,15 +23,5 @@ public class enityYarmPlayer extends EntityAnimal {
         this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(0.5D);
     }
 
-
-    public boolean isAIEnable()
-    {
-        return true;
-    }
-    @Override
-    public EntityAgeable createChild(EntityAgeable p_90011_1_)
-    {
-        return new entityUnReal(worldObj);
-    }
 
 }

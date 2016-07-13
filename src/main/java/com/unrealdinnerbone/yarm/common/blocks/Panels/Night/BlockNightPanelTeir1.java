@@ -70,7 +70,7 @@ public class BlockNightPanelTeir1 extends BlockYarm implements ITileEntityProvid
                 int Cap = (int) container.getCapacity();
 
 
-                MessageHelper.sendSpamlessMessage(617698741, new TextComponentString(String.format(Stored + "/"  + Cap + "T", container.getStoredPower(), container.getCapacity(), ConfigPanels.NightPanelTeir1_GenRate)));
+                // MessageHelper.sendSpamlessMessage(617698741, new TextComponentString(String.format(Stored + "/"  + Cap + "T", container.getStoredPower(), container.getCapacity(), ConfigPanels.NightPanelTeir1_GenRate)));
             }
         }
         if (!worldIn.isRemote) {

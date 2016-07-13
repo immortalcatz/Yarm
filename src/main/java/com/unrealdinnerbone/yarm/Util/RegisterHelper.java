@@ -21,6 +21,15 @@ public class RegisterHelper {
         LogHelper.info("Registering block " + block.getRegistryName() + "to the Regersty");
     }
 
+    public static void RegisterBlock (Block block, String name)
+    {
+        block.setRegistryName(name);
+        GameRegistry.register(block);
+        GameRegistry.register(new ItemBlock(block), block.getRegistryName());
+        LogHelper.info("Registering block " + block.getRegistryName() + "to the Regersty");
+    }
+
+
     public static void RegisterItem (Item item, String name) {
 
         item.setRegistryName(name);

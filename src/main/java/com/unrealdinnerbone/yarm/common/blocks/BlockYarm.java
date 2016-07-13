@@ -2,6 +2,7 @@ package com.unrealdinnerbone.yarm.common.blocks;
 
 import com.unrealdinnerbone.yarm.Util.Tab;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockTNT;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
@@ -19,6 +20,7 @@ public abstract class BlockYarm extends Block
         this.setHardness(3.5F);
         this.setSoundType(SoundType.METAL);
     }
+
 
     @Override
     public abstract String getLocalizedName();

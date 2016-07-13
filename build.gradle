@@ -64,6 +64,10 @@ repositories
         name = 'tterrag maven'
         url = "http://maven.tterrag.com/"
     }
+	maven {
+		name = "CB Repo"
+		url = "http://chickenbones.net/maven"
+	}
 }
 
 dependencies
