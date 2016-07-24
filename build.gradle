@@ -74,7 +74,7 @@ dependencies
 {
    deobfCompile "mcp.mobius.waila:Waila:${waila_version}_1.9.4"
    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
-   deobfCompile "net.darkhax.tesla:Tesla:1.9.4-${tesla_version}"
+   deobfCompile "net.darkhax.tesla:Tesla:1.10-${tesla_version}"
    deobfCompile "mcjty.theoneprobe:TheOneProbe:1.10-${top_version}"
 }
 
