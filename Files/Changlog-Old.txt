@@ -3,7 +3,7 @@ ICONS
     - Removed  
     + Added  
     ~ BugFix  
-    ? Something Else  PL
+    ? Something Else 
 1.9.4-4.3.0:  
   * Updated Bookshelf to the lastest version  
   + Custom Capes and Elytra for the devs and a few friends (Works of json and should never need updateing to added people)  
