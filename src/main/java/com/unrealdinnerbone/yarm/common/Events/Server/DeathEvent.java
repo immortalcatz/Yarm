@@ -1,6 +1,6 @@
 package com.unrealdinnerbone.yarm.common.Events.Server;
 
-import com.unrealdinnerbone.yarm.common.config.OtherConfig;
+import com.unrealdinnerbone.yarm.common.config.GeneralConfig;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.init.Items;
@@ -23,7 +23,7 @@ public class DeathEvent
 
         if (event.getEntity() instanceof EntityVillager) {
             if (!event.getEntity().worldObj.isRemote) {
-                if (OtherConfig.VillgersDropEmeralds) {
+                if (GeneralConfig.villgersDropEmeralds) {
                     EntityItem entityItem = new EntityItem(event.getEntityLiving().worldObj);
                     entityItem.setEntityItemStack(new ItemStack(Items.EMERALD , 1));
                     entityItem.setPosition(event.getEntityLiving().posX, event.getEntityLiving().posY, event.getEntityLiving().posZ);

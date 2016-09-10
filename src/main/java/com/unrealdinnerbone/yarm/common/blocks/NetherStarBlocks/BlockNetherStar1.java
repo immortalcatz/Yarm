@@ -2,6 +2,7 @@ package com.unrealdinnerbone.yarm.common.blocks.NetherStarBlocks;
 
 import com.unrealdinnerbone.yarm.Util.LangHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
+import net.minecraft.block.Block;
 import net.minecraft.world.World;
 
 public class BlockNetherStar1 extends BlockBaseNetherStar {

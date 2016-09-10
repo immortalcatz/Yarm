@@ -3,7 +3,7 @@ package com.unrealdinnerbone.yarm.common.init.Recpies;
 import com.unrealdinnerbone.yarm.Util.CraftingHelper;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.OreDictionaryNames;
-import com.unrealdinnerbone.yarm.common.config.OtherConfig;
+import com.unrealdinnerbone.yarm.common.config.GeneralConfig;
 import com.unrealdinnerbone.yarm.common.init.ModBlocks;
 import com.unrealdinnerbone.yarm.common.init.ModItems;
 import com.unrealdinnerbone.yarm.common.init.Recpies.Shaped.SolarPanelsRecipes;
@@ -20,18 +20,18 @@ public class ShadedRecipes {
     public static void init() {
         SolarPanelsRecipes.init();
         //UnRealFace's To UnRealBlock
-        CraftingHelper.RegisterFullBlockRecipe(OreDictionaryNames.Item_UnRealFace, ModBlocks.BLOCK_UNREAL_FACE);
-        CraftingHelper.RegisterFullBlockRecipe(OreDictionaryNames.Item_AntimonyIngot, ModBlocks.BLOCK_ANTIMONY);
-        CraftingHelper.RegisterFullBlockRecipe(OreDictionaryNames.NetherStar, ModBlocks.BLOCK_NETHER_STAR_1);
-        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_1, BLOCK_NETHER_STAR_2);
-        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_2, BLOCK_NETHER_STAR_3);
-        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_3, BLOCK_NETHER_STAR_4);
-        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_4, BLOCK_NETHER_STAR_5);
-        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_5, BLOCK_NETHER_STAR_6);
-        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_6, BLOCK_NETHER_STAR_7);
-        CraftingHelper.RegisterFullBlockRecipe(BLOCK_NETHER_STAR_7, BLOCK_NETHER_STAR_8);
+        CraftingHelper.registerFullBlockRecipe(OreDictionaryNames.Item_UnRealFace, ModBlocks.BLOCK_UNREAL_FACE);
+        CraftingHelper.registerFullBlockRecipe(OreDictionaryNames.Item_AntimonyIngot, ModBlocks.BLOCK_ANTIMONY);
+        CraftingHelper.registerFullBlockRecipe(OreDictionaryNames.NetherStar, ModBlocks.BLOCK_NETHER_STAR_1);
+        CraftingHelper.registerFullBlockRecipe(BLOCK_NETHER_STAR_1, BLOCK_NETHER_STAR_2);
+        CraftingHelper.registerFullBlockRecipe(BLOCK_NETHER_STAR_2, BLOCK_NETHER_STAR_3);
+        CraftingHelper.registerFullBlockRecipe(BLOCK_NETHER_STAR_3, BLOCK_NETHER_STAR_4);
+        CraftingHelper.registerFullBlockRecipe(BLOCK_NETHER_STAR_4, BLOCK_NETHER_STAR_5);
+        CraftingHelper.registerFullBlockRecipe(BLOCK_NETHER_STAR_5, BLOCK_NETHER_STAR_6);
+        CraftingHelper.registerFullBlockRecipe(BLOCK_NETHER_STAR_6, BLOCK_NETHER_STAR_7);
+        CraftingHelper.registerFullBlockRecipe(BLOCK_NETHER_STAR_7, BLOCK_NETHER_STAR_8);
 
-        CraftingHelper.RegisterRingRecipe(BLOCK_NETHER_STAR_1, ITEM_RING_1);
+        CraftingHelper.registerRingRecipe(BLOCK_NETHER_STAR_1, ITEM_RING_1);
 
 
         //Nether Star Axe
@@ -84,7 +84,7 @@ public class ShadedRecipes {
                 "ABA",
                 "AAA",
                 'A', ModItems.Item_IronNugget, 'B', Items.CARROT);
-        if(OtherConfig.CraftableNotchApples = true) {
+        if(GeneralConfig.craftableNotchApples = true) {
             GameRegistry.addRecipe(new ItemStack(Items.GOLDEN_APPLE, 1, 1),
                     "AAA",
                     "ABA",

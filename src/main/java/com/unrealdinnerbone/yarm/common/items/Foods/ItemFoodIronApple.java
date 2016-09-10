@@ -1,9 +1,8 @@
 package com.unrealdinnerbone.yarm.common.items.Foods;
 
 import com.unrealdinnerbone.yarm.Util.Tab;
-import com.unrealdinnerbone.yarm.Util.LogHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
-import com.unrealdinnerbone.yarm.common.config.OtherConfig;
+import com.unrealdinnerbone.yarm.common.config.GeneralConfig;
 import com.unrealdinnerbone.yarm.common.items.ItemHelpers.ItemYarmFood;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -30,11 +29,11 @@ public class ItemFoodIronApple extends ItemYarmFood {
     {
 
         int Tick = 20;
-        if(OtherConfig.IronAppleGivesPositiveEffects == true) {
+        if(GeneralConfig.ironAppleGivesPositiveEffects == true) {
         player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 100, Tick * 10));
         //AvA
     }
-        if(OtherConfig.IronAppleGivesNegativesEffects == true) {
+        if(GeneralConfig.ironAppleGivesNegativesEffects == true) {
             player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 100, Tick * 15));
            // player.addPotionEffect(new PotionEffect(MobEffects.LEVITATION, -200, Tick * 15));
         }

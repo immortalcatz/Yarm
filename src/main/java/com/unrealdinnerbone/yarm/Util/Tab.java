@@ -12,7 +12,6 @@ public class Tab
         public Item getTabIconItem()
         {
             return ModItems.Item_UnRealFace;
-
         }
 
         @Override

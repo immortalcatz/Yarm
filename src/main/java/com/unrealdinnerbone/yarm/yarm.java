@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.*;
+import java.io.File;
 
 import java.util.concurrent.TimeUnit;
 
@@ -48,7 +49,15 @@ public class yarm {
        CommonProxy.PreInt(PreEvent);
        ClientProxy.PreInt(PreEvent);
        ServerProxy.PreInt(PreEvent);
-       ConfigManger.ConfigManger(PreEvent.getSuggestedConfigurationFile());
+
+       final File folder = new File(PreEvent.getModConfigurationDirectory(), "UnRealDinnerbone");
+
+        if (!folder.exists())
+            folder.mkdir();
+
+       ConfigManger.generalConfig(new File(folder, "yarm_general.cfg"));
+       ConfigManger.oreConfig(new File(folder, "yarm_worldgen.cfg"));
+       ConfigManger.clientConfig(new File(folder, "yarm_client.cfg"));
        FMLCommonHandler.instance().bus().register(new ConfigManger());
        LogHelper.info("Finished PreInt after (" + PreIntCounter.elapsed(TimeUnit.MILLISECONDS) + " ms)");
        PreIntCounter.stop();

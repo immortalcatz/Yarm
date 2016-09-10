@@ -54,6 +54,7 @@ public class StatsGetter {
                 boolean confirmed = false;
                 String elytraTexture = null;
                 String capeTexture = null;
+                boolean dinnerbone = false;
 
                 // Opens up the player entry object
                 reader.beginObject();
@@ -78,13 +79,16 @@ public class StatsGetter {
                     else if (name.equals("capeTexture"))
                         capeTexture = reader.nextString();
 
+                    else if (name.equals("dinnerbone"))
+                        dinnerbone  = reader.nextBoolean();
+
                         // Skips values we don't care about so they don't break us.
                     else
                         reader.skipValue();
                 }
 
                 // Adds the data that was read to the list.
-                DATA.add(new SupporterData(playerID, type, confirmed, elytraTexture, capeTexture));
+                DATA.add(new SupporterData(playerID, type, confirmed, elytraTexture, capeTexture, dinnerbone));
 
                 // Ends the current player object, allowing us to read the next player object.
                 reader.endObject();
@@ -167,13 +171,16 @@ public class StatsGetter {
          */
         private final String CAPE_TEXTURE;
 
-        protected SupporterData(UUID playerID, String type, boolean confirmed, String elytraTexture, String capeTexture) {
+        private final boolean DINNERBONE;
+
+        protected SupporterData(UUID playerID, String type, boolean confirmed, String elytraTexture, String capeTexture, boolean dinnerbone) {
 
             this.PLAYER_ID = playerID;
             this.TYPE = type;
             this.CONFIRMED = confirmed;
             this.ELYTRA_TEXTURE = elytraTexture;
             this.CAPE_TEXTURE = capeTexture;
+            this.DINNERBONE = dinnerbone;
         }
 
         /**
@@ -194,6 +201,13 @@ public class StatsGetter {
         public boolean isConfirmed () {
 
             return this.CONFIRMED;
+        }
+
+
+
+        public boolean isDinnerbone()
+        {
+            return this.DINNERBONE;
         }
 
 

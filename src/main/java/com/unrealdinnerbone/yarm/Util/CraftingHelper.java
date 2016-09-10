@@ -9,7 +9,7 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 
 public class CraftingHelper
 {
-    public static void RegisterFullBlockRecipe(Object oreDictionaryNametoUse, Block blockToGet)
+    public static void registerFullBlockRecipe(Object oreDictionaryNametoUse, Block blockToGet)
     {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(blockToGet, 1, 0),
                 "AAA",
@@ -17,7 +17,7 @@ public class CraftingHelper
                 "AAA",
                 'A', oreDictionaryNametoUse));
     }
-    public static void RegisterFullBlockRecipe(Item item, Block blockToGet)
+    public static void registerFullBlockRecipe(Item item, Block blockToGet)
     {
         GameRegistry.addRecipe(new ItemStack(blockToGet, 1, 0),
                 "AAA",
@@ -25,7 +25,7 @@ public class CraftingHelper
                 "AAA",
                 'A', new ItemStack(item, 1, 0));
     }
-    public static void RegisterRingRecipe(Block ringblock, Item Ringtoget)
+    public static void registerRingRecipe(Block ringblock, Item Ringtoget)
     {
         GameRegistry.addRecipe(new ItemStack(Ringtoget),
                 " A ",
@@ -34,7 +34,7 @@ public class CraftingHelper
                 'A', Items.STICK,
                 'B', ringblock);
     }
-    public static void RegisterFullBlockRecipe(Block blockToUse, Block blockToGet)
+    public static void registerFullBlockRecipe(Block blockToUse, Block blockToGet)
     {
         GameRegistry.addRecipe(new ItemStack(blockToGet, 1, 0),
                 "AAA",

@@ -1,6 +1,6 @@
 package com.unrealdinnerbone.yarm.Util;
 
-import com.unrealdinnerbone.yarm.common.config.OtherConfig;
+import com.unrealdinnerbone.yarm.common.config.GeneralConfig;
 import net.minecraftforge.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
 
@@ -8,7 +8,7 @@ public class LogHelper
 {
     private static void log(Level logLevel, Object object)
     {
-        if(OtherConfig.DoLoging)
+        if(GeneralConfig.loging)
         {
             FMLLog.log(Reference.MOD_ID, logLevel, "["+ Reference.MOD_ID.toUpperCase() + "] [" + logLevel + "] " + String.valueOf(object));
         }

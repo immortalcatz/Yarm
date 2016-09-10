@@ -8,7 +8,7 @@ public abstract class BlockBaseNetherStar extends BlockYarm {
     public BlockBaseNetherStar()
     {
         super();
-        this.setHardness(3);
+        this.setHardness(3.0F);
         this.setResistance(100);
     }
     public abstract boolean isBeaconBase (World worldObj, int x, int y, int z, int beaconX, int beaconY, int beaconZ);

@@ -11,7 +11,6 @@ public class OpChecker
         return FMLCommonHandler.instance().getMinecraftServerInstance();
     }
 
-
     public static boolean isPlayerOpped(GameProfile player) {
 
         if (getServer().getPlayerList().getOppedPlayerNames().length > 0) {
@@ -22,6 +21,6 @@ public class OpChecker
             }
             return false;
         }
-        return true;
+        return false;
     }
 }

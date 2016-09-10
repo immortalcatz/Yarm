@@ -1,6 +1,7 @@
 package com.unrealdinnerbone.yarm.proxy;
 
 import com.unrealdinnerbone.yarm.common.Events.Client.EnityJoinEvent;
+import com.unrealdinnerbone.yarm.common.Events.Client.PlayerRenderEvent;
 import com.unrealdinnerbone.yarm.common.init.ModBlocks;
 import com.unrealdinnerbone.yarm.common.init.ModItems;
 import com.unrealdinnerbone.yarm.yarm;
@@ -23,8 +24,9 @@ public class ClientProxy extends CommonProxy
         if(Event.getSide().isClient())
         {
             EnityJoinEvent.init();
-//            ConfigManger.ConfigManger(PreEvent.getSuggestedConfigurationFile());
-//            FMLCommonHandler.instance().bus().register(new ConfigManger());
+            PlayerRenderEvent.init();
+//            generalConfig.generalConfig(PreEvent.getSuggestedConfigurationFile());
+//            FMLCommonHandler.instance().bus().register(new generalConfig());
         }
     }
     public static void PostInt(FMLPostInitializationEvent Event)
