@@ -14,7 +14,7 @@ import java.util.List;
 
 public class ItemFoodIronApple extends ItemYarmFood {
 
-    private static String name = "ItemFoodIronApple";
+    private static String name = "iron_apple";
 
     public ItemFoodIronApple(int healamount, float saturation, boolean wolffood)
     {

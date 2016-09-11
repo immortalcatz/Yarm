@@ -6,11 +6,11 @@ import net.minecraft.world.World;
 
 public class BlockChromiumOre extends BlockYarmOre
 {
-    private static String name = "BlockChromiumOre";
+    private static String name = "chromium_ore";
 
     public BlockChromiumOre()
     {
-        this.setUnlocalizedName(Reference.RE_PREFIX + name);
+        this.setUnlocalizedName(Reference.itemBlockId + name);
     }
 
     @Override

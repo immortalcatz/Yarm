@@ -7,13 +7,13 @@ import com.unrealdinnerbone.yarm.Util.Reference;
 public class BlockAntimony extends BlockYarm
 {
 
-    private static String name = "BlockAntimony";
+    private static String name = "antimony_block";
 
 
     public BlockAntimony()
     {
         super();
-        this.setUnlocalizedName(Reference.RE_PREFIX + name);
+        this.setUnlocalizedName(Reference.itemBlockId + name);
 
     }
 

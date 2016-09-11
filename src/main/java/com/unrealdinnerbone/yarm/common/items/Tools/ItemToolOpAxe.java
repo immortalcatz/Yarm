@@ -6,7 +6,7 @@ import net.minecraft.item.ItemAxe;
 
 public class ItemToolOpAxe extends ItemAxe {
 
-    private static String name = "ItemToolOpAxe";
+    private static String name = "op_axe";
 
     public ItemToolOpAxe() {
 

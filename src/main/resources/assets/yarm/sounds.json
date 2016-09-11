@@ -1,3 +1,3 @@
 {
-  "Siren": {"category": "ambient","sounds": ["Siren"]}
+  "RickRoll":{"sounds":[{"name":"yamm:RickRoll","stream":true}],"category":"ambient"}
 }

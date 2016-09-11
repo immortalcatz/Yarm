@@ -16,11 +16,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class BlockConnectedGlass extends YarmBlockConnectedGlass
 {
 
-    private static String name = "BlockConnectedGlass";
+    private static String name = "connected_glass";
 
     public BlockConnectedGlass() {
 
-        this.setUnlocalizedName(Reference.RE_PREFIX + name);
+        this.setUnlocalizedName(Reference.itemBlockId + name);
         this.setCreativeTab(Tab.Yarm_Tab);
 
         // By default none of the sides are connected.
