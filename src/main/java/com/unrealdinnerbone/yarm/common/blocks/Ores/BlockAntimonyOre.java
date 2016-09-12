@@ -6,11 +6,11 @@ import net.minecraft.world.World;
 
 public class BlockAntimonyOre extends BlockYarmOre {
 
-    private static String name = "antimony_ore";
+    private static String name = "BlockAntimonyOre";
 
     public BlockAntimonyOre()
     {
-        this.setUnlocalizedName(Reference.itemBlockId + name);
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
     }
 
     @Override

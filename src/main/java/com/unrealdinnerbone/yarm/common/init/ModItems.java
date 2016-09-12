@@ -9,8 +9,9 @@ import com.unrealdinnerbone.yarm.common.items.Foods.ItemFoodIronCarrot;
 import com.unrealdinnerbone.yarm.common.items.Item.*;
 import com.unrealdinnerbone.yarm.common.items.ItemHelpers.ItemYarm;
 import com.unrealdinnerbone.yarm.common.items.ItemHelpers.ItemYarmFood;
+import com.unrealdinnerbone.yarm.common.items.Rings.*;
 import com.unrealdinnerbone.yarm.common.items.Tools.*;
-import com.unrealdinnerbone.yarm.common.items.records.YarmRecord;
+import com.unrealdinnerbone.yarm.common.items.Wings.*;
 import net.minecraft.item.*;
 
 public class ModItems
@@ -29,7 +30,22 @@ public class ModItems
     public static final ItemSword ItemTool_OpSword = new ItemToolOpSword(ToolTypes.OpToolsSword);
     public static final ItemYarmFood ItemFood_IronApple = new ItemFoodIronApple(10, 10.0f, false);
     public static final ItemYarmFood ItemFood_IronCarrot = new ItemFoodIronCarrot(10, 20.0f, false);
-    public static final ItemRecord itemYarmRecord = new YarmRecord();
+    public static final YarmItemWing ITEM_WING_1 = new ItemWings1();
+    public static final YarmItemWing ITEM_WING_2 = new ItemWings2();
+    public static final YarmItemWing ITEM_WING_3 = new ItemWings3();
+    public static final YarmItemWing ITEM_WING_4 = new ItemWings4();
+    public static final YarmItemWing ITEM_WING_5 = new ItemWings4();
+    public static final YarmItemWing ITEM_WING_6 = new ItemWings6();
+    public static final YarmItemWing ITEM_WING_7 = new ItemWings7();
+    public static final YarmItemWing ITEM_WING_8 = new ItemWings8();
+    public static final ItemYarmRing ITEM_RING_1 = new ItemRing1();
+    public static final ItemYarmRing ITEM_RING_2 = new ItemRing2();
+    public static final ItemYarmRing ITEM_RING_3 = new ItemRing3();
+    public static final ItemYarmRing ITEM_RING_4 = new ItemRing4();
+    public static final ItemYarmRing ITEM_RING_5 = new ItemRing5();
+    public static final ItemYarmRing ITEM_RING_6 = new ItemRing6();
+    public static final ItemYarmRing ITEM_RING_7 = new ItemRing7();
+    public static final ItemYarmRing ITEM_RING_8 = new ItemRing8();
 
     public static void init()
     {
@@ -48,7 +64,22 @@ public class ModItems
         RegisterHelper.RegisterItem(Item_IronNugget, ItemIronNugget.getName(), OreDictionaryNames.Item_IronNugget);
         RegisterHelper.RegisterItem(ItemFood_IronApple, ItemFoodIronApple.getName(), OreDictionaryNames.Food_IronApple);
         RegisterHelper.RegisterItem(ItemFood_IronCarrot, ItemFoodIronCarrot.getName(), OreDictionaryNames.Food_IronCarrot);
-        RegisterHelper.RegisterItem(itemYarmRecord, YarmRecord.getName());
+        RegisterHelper.RegisterItem(ITEM_WING_1, ItemWings1.getName());
+        RegisterHelper.RegisterItem(ITEM_WING_2, ItemWings2.getName());
+        RegisterHelper.RegisterItem(ITEM_WING_3, ItemWings3.getName());
+        RegisterHelper.RegisterItem(ITEM_WING_4, ItemWings4.getName());
+        RegisterHelper.RegisterItem(ITEM_WING_5, ItemWings5.getName());
+        RegisterHelper.RegisterItem(ITEM_WING_6, ItemWings6.getName());
+        RegisterHelper.RegisterItem(ITEM_WING_7, ItemWings7.getName());
+        RegisterHelper.RegisterItem(ITEM_WING_8, ItemWings8.getName());
+        RegisterHelper.RegisterItem(ITEM_RING_1, ItemRing1.getName());
+        RegisterHelper.RegisterItem(ITEM_RING_2, ItemRing2.getName());
+        RegisterHelper.RegisterItem(ITEM_RING_3, ItemRing3.getName());
+        RegisterHelper.RegisterItem(ITEM_RING_4, ItemRing4.getName());
+        RegisterHelper.RegisterItem(ITEM_RING_5, ItemRing5.getName());
+        RegisterHelper.RegisterItem(ITEM_RING_6, ItemRing6.getName());
+        RegisterHelper.RegisterItem(ITEM_RING_7, ItemRing7.getName());
+        RegisterHelper.RegisterItem(ITEM_RING_8, ItemRing8.getName());
         LogHelper.info("Finished item Registration");
     }
 
@@ -69,7 +100,22 @@ public class ModItems
         RegisterHelper.RenderItem(Item_IronNugget, ItemIronNugget.getName());
         RegisterHelper.RenderItem(ItemFood_IronApple, ItemFoodIronApple.getName());
         RegisterHelper.RenderItem(ItemFood_IronCarrot, ItemFoodIronCarrot.getName());
-        RegisterHelper.RenderItem(itemYarmRecord, YarmRecord.getName());
+        RegisterHelper.RenderItem(ITEM_WING_1, ItemWings1.getName());
+        RegisterHelper.RenderItem(ITEM_WING_2, ItemWings2.getName());
+        RegisterHelper.RenderItem(ITEM_WING_3, ItemWings3.getName());
+        RegisterHelper.RenderItem(ITEM_WING_4, ItemWings4.getName());
+        RegisterHelper.RenderItem(ITEM_WING_5, ItemWings5.getName());
+        RegisterHelper.RenderItem(ITEM_WING_6, ItemWings6.getName());
+        RegisterHelper.RenderItem(ITEM_WING_7, ItemWings7.getName());
+        RegisterHelper.RenderItem(ITEM_WING_8, ItemWings8.getName());
+        RegisterHelper.RenderItem(ITEM_RING_1, ItemRing1.getName());
+        RegisterHelper.RenderItem(ITEM_RING_2, ItemRing2.getName());
+        RegisterHelper.RenderItem(ITEM_RING_3, ItemRing3.getName());
+        RegisterHelper.RenderItem(ITEM_RING_4, ItemRing4.getName());
+        RegisterHelper.RenderItem(ITEM_RING_5, ItemRing5.getName());
+        RegisterHelper.RenderItem(ITEM_RING_6, ItemRing6.getName());
+        RegisterHelper.RenderItem(ITEM_RING_7, ItemRing7.getName());
+        RegisterHelper.RenderItem(ITEM_RING_8, ItemRing8.getName());
         LogHelper.info("Finished Item Rendering");
 
     }

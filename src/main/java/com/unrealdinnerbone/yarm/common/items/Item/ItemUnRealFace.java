@@ -5,7 +5,7 @@ import com.unrealdinnerbone.yarm.Util.Reference;
 
 public class ItemUnRealFace extends ItemYarm
 {
-    private static String name = "unreal_face";
+    private static String name = "ItemUnRealFace";
 
     public ItemUnRealFace()
     {

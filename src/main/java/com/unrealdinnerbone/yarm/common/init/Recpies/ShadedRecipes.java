@@ -8,12 +8,13 @@ import com.unrealdinnerbone.yarm.common.init.ModBlocks;
 import com.unrealdinnerbone.yarm.common.init.ModItems;
 import com.unrealdinnerbone.yarm.common.init.Recpies.Shaped.SolarPanelsRecipes;
 import net.minecraft.init.Blocks;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
 import static com.unrealdinnerbone.yarm.common.init.ModBlocks.*;
+import static com.unrealdinnerbone.yarm.common.init.ModItems.*;
 
 public class ShadedRecipes {
     public static void init() {
@@ -30,6 +31,7 @@ public class ShadedRecipes {
         CraftingHelper.registerFullBlockRecipe(BLOCK_NETHER_STAR_6, BLOCK_NETHER_STAR_7);
         CraftingHelper.registerFullBlockRecipe(BLOCK_NETHER_STAR_7, BLOCK_NETHER_STAR_8);
 
+        CraftingHelper.registerRingRecipe(BLOCK_NETHER_STAR_1, ITEM_RING_1);
 
 
         //Nether Star Axe
@@ -100,6 +102,15 @@ public class ShadedRecipes {
                 " A ",
                 " A ",
                 'A', Blocks.STONE_PRESSURE_PLATE);
+        GameRegistry.addRecipe(new ItemStack(ModItems.ITEM_WING_1),
+                "A A",
+                "BCB",
+                "DBD",
+                'A', Items.FEATHER,
+                'B', Items.STICK,
+                'C', ModItems.ITEM_RING_2,
+                'D', ModBlocks.BLOCK_NETHER_STAR_1
+        );
         //Golden Apple
         LogHelper.info("Loaded Shaped Recipes");
 

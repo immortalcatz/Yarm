@@ -5,7 +5,7 @@ import com.unrealdinnerbone.yarm.common.items.ItemHelpers.ItemYarm;
 
 public class ItemIronNugget extends ItemYarm
 {
-    private static String name = "iron_nugget";
+    private static String name = "ItemIronNugget";
 
     public ItemIronNugget() {
         super();

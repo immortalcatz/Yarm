@@ -8,13 +8,13 @@ import net.minecraft.block.material.Material;
 
 public class BlockUnRealFace extends BlockYarm
 {
-    private static String name = "unrealface_block";
+    private static String name = "BlockUnRealFace";
 
     public BlockUnRealFace()
        {
        super(Material.ROCK);
        this.setCreativeTab(Tab.Yarm_Tab);
-       this.setUnlocalizedName(Reference.itemBlockId + name);
+       this.setUnlocalizedName(Reference.RE_PREFIX + name);
        }
 
     @Override

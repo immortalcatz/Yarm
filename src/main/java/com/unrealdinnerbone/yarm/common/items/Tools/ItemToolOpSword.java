@@ -6,7 +6,7 @@ import net.minecraft.item.ItemSword;
 
 public class ItemToolOpSword extends ItemSword
 {
-    private static String name = "op_sword";
+    private static String name = "ItemToolOpSword";
 
     public ItemToolOpSword(ToolMaterial material) {
         super(material);

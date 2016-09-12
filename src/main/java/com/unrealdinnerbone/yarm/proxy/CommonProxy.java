@@ -1,6 +1,5 @@
 package com.unrealdinnerbone.yarm.proxy;
 
-import com.unrealdinnerbone.yarm.Util.Sounds;
 import com.unrealdinnerbone.yarm.common.Achievements.Achievements;
 import com.unrealdinnerbone.yarm.common.Achievements.AchievementsHandler;
 import com.unrealdinnerbone.yarm.Util.LogHelper;
@@ -36,7 +35,6 @@ public abstract class CommonProxy implements IProxy
         Achievements.LoadAchievements();
         AchievementsHandler.RegisterPage();
         BannerMaker.initCraftingBanners();
-        Sounds.init();
         CompactHelper.registerTOP();
         CompactHelper.registerWaila();
 

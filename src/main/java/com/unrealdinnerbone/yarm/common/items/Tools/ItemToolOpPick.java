@@ -6,7 +6,7 @@ import net.minecraft.item.ItemPickaxe;
 
 public class ItemToolOpPick extends ItemPickaxe
 {
-    private static String name = "op_pick";
+    private static String name = "ItemToolOpPick";
 
     public ItemToolOpPick(ToolMaterial material) {
         super(material);

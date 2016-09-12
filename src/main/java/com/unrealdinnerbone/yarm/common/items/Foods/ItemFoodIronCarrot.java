@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 
 public class ItemFoodIronCarrot extends ItemYarmFood {
 
-    private static String name = "iron_carrot";
+    private static String name = "ItemFoodIronCarrot";
 
     public ItemFoodIronCarrot(int healamount, float saturation, boolean wolffood)
     {

@@ -5,7 +5,7 @@ import com.unrealdinnerbone.yarm.Util.Reference;
 
 public class ItemTheKayneGameFace extends ItemYarm
 {
-    private static String name = "thekaynegame_face";
+    private static String name = "ItemTheKayneGameFace";
 
     public ItemTheKayneGameFace()
     {

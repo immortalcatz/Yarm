@@ -6,11 +6,11 @@ import net.minecraft.world.World;
 
 public class BlockMagnesiumOre extends BlockYarmOre
 {
-    private static String name = "magnesium_ore";
+    private static String name = "BlockMagnesiumOre";
 
     public BlockMagnesiumOre()
     {
-        this.setUnlocalizedName(Reference.itemBlockId + name);
+        this.setUnlocalizedName(Reference.RE_PREFIX + name);
     }
 
     @Override

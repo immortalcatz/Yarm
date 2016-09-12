@@ -6,7 +6,7 @@ import net.minecraft.item.ItemSpade;
 
 public class ItemToolOpSpade extends ItemSpade
 {
-    private static String name = "op_spade";
+    private static String name = "ItemToolOpSpade";
 
     public ItemToolOpSpade(ToolMaterial material) {
         super(material);
