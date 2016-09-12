@@ -6,11 +6,11 @@ import net.minecraft.world.World;
 
 public class BlockNetherStar4 extends BlockBaseNetherStar {
 
-    private static String name = "BlockNetherStar4";
+    private static String name = "quadruple_compressed_netherstar";
 
     public BlockNetherStar4()
     {
-        this.setUnlocalizedName(Reference.RE_PREFIX + name);
+        this.setUnlocalizedName(Reference.itemBlockId + name);
     }
 
     @Override

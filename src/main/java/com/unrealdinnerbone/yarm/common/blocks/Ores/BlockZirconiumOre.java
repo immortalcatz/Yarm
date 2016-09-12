@@ -6,11 +6,11 @@ import net.minecraft.world.World;
 
 public class BlockZirconiumOre extends BlockYarmOre
 {
-    private static String name = "BlockZirconiumOre";
+    private static String name = "zirconium_ore";
 
     public BlockZirconiumOre()
     {
-        this.setUnlocalizedName(Reference.RE_PREFIX + name);
+        this.setUnlocalizedName(Reference.itemBlockId + name);
     }
 
     @Override public boolean isBeaconBase (World worldObj, int x, int y, int z, int beaconX, int beaconY, int beaconZ) {

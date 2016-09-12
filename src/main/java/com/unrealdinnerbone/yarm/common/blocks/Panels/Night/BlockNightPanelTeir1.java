@@ -1,15 +1,12 @@
 package com.unrealdinnerbone.yarm.common.blocks.Panels.Night;
 
-import com.unrealdinnerbone.yarm.Util.MessageHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import com.unrealdinnerbone.yarm.client.gui.NightPanelGUI.GUINightPanel;
 import com.unrealdinnerbone.yarm.common.Containers.Panels.Night.ContainerNightPanelTeir1;
 import com.unrealdinnerbone.yarm.common.TileEnity.Panels.Night.TileEntityNightPanelTeir1;
 import com.unrealdinnerbone.yarm.common.blocks.BlockYarm;
-import com.unrealdinnerbone.yarm.common.config.ConfigPanels;
-import com.unrealdinnerbone.yarm.common.init.ModItems;
-import com.unrealdinnerbone.yarm.compact.WAILA.WailaInfoProvider;
 import com.unrealdinnerbone.yarm.compact.TOP.TOPInfoProvider;
+import com.unrealdinnerbone.yarm.compact.WAILA.WailaInfoProvider;
 import mcjty.theoneprobe.api.IProbeHitData;
 import mcjty.theoneprobe.api.IProbeInfo;
 import mcjty.theoneprobe.api.ProbeMode;
@@ -26,18 +23,14 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.TextComponentString;
-import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
 public class BlockNightPanelTeir1 extends BlockYarm implements ITileEntityProvider, WailaInfoProvider, TOPInfoProvider, ITeslaProducer
 {
 
-    private static String name = "BlockNightPanelTeir1";
+    private static String name = "night_panel_teir1";
 
     @Override
     public String getLocalizedName() {
@@ -48,7 +41,7 @@ public class BlockNightPanelTeir1 extends BlockYarm implements ITileEntityProvid
 
         super();
         this.isBlockContainer = true;
-        this.setUnlocalizedName(Reference.RE_PREFIX + name);
+        this.setUnlocalizedName(Reference.itemBlockId + name);
         this.setHardness(0.2F);
         this.setLightOpacity(0);
     }

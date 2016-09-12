@@ -6,11 +6,11 @@ import net.minecraft.world.World;
 
 public class BlockCopperOre extends BlockYarmOre
 {
-    private static String name = "BlockCopperOre";
+    private static String name = "copper_ore";
 
     public BlockCopperOre()
     {
-        this.setUnlocalizedName(Reference.RE_PREFIX + name);
+        this.setUnlocalizedName(Reference.itemBlockId + name);
     }
 
     @Override

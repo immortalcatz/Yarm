@@ -13,7 +13,7 @@ public class ItemNetherStarRod extends ItemYarm {
         return FMLCommonHandler.instance().getMinecraftServerInstance();
     }
 
-    private static String name = "ItemNetherStarRod";
+    private static String name = "netherstar_rod";
 
     public ItemNetherStarRod() {
         super();
