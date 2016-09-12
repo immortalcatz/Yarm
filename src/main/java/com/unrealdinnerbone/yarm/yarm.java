@@ -50,7 +50,7 @@ public class yarm {
        ClientProxy.PreInt(PreEvent);
        ServerProxy.PreInt(PreEvent);
 
-       final File folder = new File(PreEvent.getModConfigurationDirectory(), "UnRealDinnerbone");
+       final File folder = new File(PreEvent.getModConfigurationDirectory(), "yamm");
 
         if (!folder.exists())
             folder.mkdir();
@@ -59,7 +59,7 @@ public class yarm {
        ConfigManger.oreConfig(new File(folder, "yarm_worldgen.cfg"));
        ConfigManger.clientConfig(new File(folder, "yarm_client.cfg"));
        FMLCommonHandler.instance().bus().register(new ConfigManger());
-       LogHelper.info("Finished PreInt after (" + PreIntCounter.elapsed(TimeUnit.MILLISECONDS) + " ms)");
+       LogHelper.info("Finished PreInt after ( " + PreIntCounter.elapsed(TimeUnit.MILLISECONDS) + " ms)");
        PreIntCounter.stop();
     }
     @Mod.EventHandler

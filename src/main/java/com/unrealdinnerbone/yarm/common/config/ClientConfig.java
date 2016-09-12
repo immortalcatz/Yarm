@@ -13,6 +13,7 @@ public class ClientConfig
         ClientConfig.playerRoating = clientConfig.getBoolean("Spin Players", client, true, "Do players on the list get seined", client);
         ClientConfig.playerCapes = clientConfig.getBoolean("Render Capes", client, true, "Do players capes render", client);
 
+
         if (clientConfig.hasChanged())
         {
             clientConfig.save();
