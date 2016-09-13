@@ -1,6 +1,6 @@
 package com.unrealdinnerbone.yarm.common.Events.Client;
 
-import com.unrealdinnerbone.yarm.Util.PlayerHelper;
+import com.unrealdinnerbone.yarm.Util.PlayerUtils;
 import com.unrealdinnerbone.yarm.Util.StatsGetter;
 import com.unrealdinnerbone.yarm.common.config.ClientConfig;
 import net.minecraft.client.entity.AbstractClientPlayer;
@@ -25,7 +25,7 @@ public class EnityJoinEvent {
             final StatsGetter.SupporterData data = StatsGetter.getSupporterData(player);
 
             if (data != null && ClientConfig.playerCapes) {
-                PlayerHelper.makePlayerFancy(player, data.getCapeTexture(), data.getElytraTexture());
+                PlayerUtils.makePlayerFancy(player, data.getCapeTexture(), data.getElytraTexture());
             }
 
         }

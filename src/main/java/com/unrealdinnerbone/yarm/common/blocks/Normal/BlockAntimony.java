@@ -3,6 +3,9 @@ package com.unrealdinnerbone.yarm.common.blocks.Normal;
 import com.unrealdinnerbone.yarm.Util.LangHelper;
 import com.unrealdinnerbone.yarm.common.blocks.BlockYarm;
 import com.unrealdinnerbone.yarm.Util.Reference;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 
 public class BlockAntimony extends BlockYarm
 {
@@ -27,10 +30,7 @@ public class BlockAntimony extends BlockYarm
         return name;
     }
 
-//    @Override
-//    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
-//    {
-//        playerIn.openGui(yarm.instance, GUIHandler.TEST_GUI_MAIN_MASTER, worldIn, pos.getX(), pos.getY(), pos.getZ());
-//        return true;
-//    }
+
+
+
 }

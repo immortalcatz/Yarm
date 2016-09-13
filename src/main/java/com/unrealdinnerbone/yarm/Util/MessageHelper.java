@@ -12,13 +12,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class MessageHelper
 {
 
-    public static MinecraftServer getServer() {
-
-        return FMLCommonHandler.instance().getMinecraftServerInstance();
-    }
-
     public static void sendChatMessageServerWide(TextComponentString message) {
-        for (EntityPlayer player : getServer().getPlayerList().getPlayerList()) {
+        for (EntityPlayer player : ServerUtils.getServer().getPlayerList().getPlayerList()) {
             player.addChatMessage(message);
 
         }

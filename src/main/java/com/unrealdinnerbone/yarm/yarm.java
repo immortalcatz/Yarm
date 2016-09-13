@@ -80,9 +80,9 @@ public class yarm {
         ClientProxy.PostInt(PostEvent);
         CommonProxy.PostInt(PostEvent);
         ServerProxy.PostInt(PostEvent);
-        LogHelper.info("Finished PreInt after (" + PostIntCounter.elapsed(TimeUnit.MILLISECONDS) + " ms)");
+        LogHelper.info("Finished PostInt after (" + PostIntCounter.elapsed(TimeUnit.MILLISECONDS) + " ms)");
         PostIntCounter.stop();
-        LogHelper.info("Finished PreInt after (" + MasterCounter.elapsed(TimeUnit.MILLISECONDS) + " ms)");
+        LogHelper.info("Finished Loadeding after (" + MasterCounter.elapsed(TimeUnit.MILLISECONDS) + " ms)");
         MasterCounter.stop();
     }
     @Mod.EventHandler

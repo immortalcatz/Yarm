@@ -1,19 +1,19 @@
 package com.unrealdinnerbone.yarm.common.blocks.Panels.Night;
 
-import com.unrealdinnerbone.yarm.Util.MessageHelper;
 import com.unrealdinnerbone.yarm.Util.Reference;
 import com.unrealdinnerbone.yarm.client.gui.NightPanelGUI.GUINightPanel;
 import com.unrealdinnerbone.yarm.common.Containers.Panels.Night.ContainerNightPanelTeir1;
 import com.unrealdinnerbone.yarm.common.TileEnity.Panels.Night.TileEntityNightPanelTeir1;
-import com.unrealdinnerbone.yarm.common.TileEnity.Panels.Night.TileEntityNightPanelTeir2;
 import com.unrealdinnerbone.yarm.common.blocks.BlockYarm;
-import com.unrealdinnerbone.yarm.compact.WAILA.WailaInfoProvider;
 import com.unrealdinnerbone.yarm.compact.TOP.TOPInfoProvider;
+import com.unrealdinnerbone.yarm.compact.WAILA.WailaInfoProvider;
 import mcjty.theoneprobe.api.IProbeHitData;
 import mcjty.theoneprobe.api.IProbeInfo;
 import mcjty.theoneprobe.api.ProbeMode;
 import mcp.mobius.waila.api.IWailaConfigHandler;
 import mcp.mobius.waila.api.IWailaDataAccessor;
+import net.darkhax.tesla.api.ITeslaProducer;
+import net.darkhax.tesla.capability.TeslaCapabilities;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
@@ -23,25 +23,21 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.TextComponentString;
-import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class BlockNightPanelTeir1 extends BlockYarm implements ITileEntityProvider, WailaInfoProvider, TOPInfoProvider
+public class BlockNightPanelTeir2 extends BlockYarm implements ITileEntityProvider, WailaInfoProvider, TOPInfoProvider, ITeslaProducer
 {
 
-    private static String name = "BlockNightPanelTeir1";
+    private static String name = "BlockNightPanelTeir2";
 
     @Override
     public String getLocalizedName() {
         return null;
     }
 
-    public BlockNightPanelTeir1() {
+    public BlockNightPanelTeir2() {
 
         super();
         this.isBlockContainer = true;
@@ -57,11 +53,14 @@ public class BlockNightPanelTeir1 extends BlockYarm implements ITileEntityProvid
 
             final TileEntity tile = worldIn.getTileEntity(pos);
 
-            if (tile instanceof TileEntityNightPanelTeir2 && !tile.isInvalid()) {
+            if (tile instanceof TileEntityNightPanelTeir1 && !tile.isInvalid()) {
 
 
-                final TileEntityNightPanelTeir2 panel = (TileEntityNightPanelTeir2) tile;
+                final TileEntityNightPanelTeir1 panel = (TileEntityNightPanelTeir1) tile;
+                final ContainerNightPanelTeir1 container = (ContainerNightPanelTeir1) panel.getCapability(TeslaCapabilities.CAPABILITY_HOLDER, EnumFacing.DOWN);
 
+                int Stored = (int) container.getStoredPower();
+                int Cap = (int) container.getCapacity();
 
 
                 // MessageHelper.sendSpamlessMessage(617698741, new TextComponentString(String.format(Stored + "/"  + Cap + "T", container.getStoredPower(), container.getCapacity(), ConfigPanels.NightPanelTeir1_GenRate)));
@@ -73,12 +72,12 @@ public class BlockNightPanelTeir1 extends BlockYarm implements ITileEntityProvid
             if (tile instanceof TileEntityNightPanelTeir1 && !tile.isInvalid()) {
 
                 final TileEntityNightPanelTeir1 panel = (TileEntityNightPanelTeir1) tile;
-//                final ContainerNightPanelTeir1 container = (ContainerNightPanelTeir1) panel.getCapability(TeslaCapabilities.CAPABILITY_HOLDER, EnumFacing.DOWN);
+                final ContainerNightPanelTeir1 container = (ContainerNightPanelTeir1) panel.getCapability(TeslaCapabilities.CAPABILITY_HOLDER, EnumFacing.DOWN);
 
-//                int Stored = (int) container.getStoredPower();
-//                int Cap = (int) container.getCapacity();
+                int Stored = (int) container.getStoredPower();
+                int Cap = (int) container.getCapacity();
 
-//                GUINightPanel.Stored = Stored;
+                GUINightPanel.Stored = Stored;
                 Minecraft.getMinecraft().displayGuiScreen(new GUINightPanel());
             }
         }
